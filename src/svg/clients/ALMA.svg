@@ -1,0 +1,59 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+.letter {
+stroke: #000;
+fill: red;
+stroke-width: 0;
+}
+</style>
+
+<rect x="0" y="0" width="1200" height="1200" fill="white" stroke-width="100" stroke="black"/>
+<!-- <rect x="0" y="0" width="600" height="600" fill="transparent" stroke-width="50" stroke="black"/> -->
+<!-- <rect x="600" y="600" width="600" height="600" fill="transparent" stroke-width="50" stroke="black"/> -->
+<!-- <rect x="0" y="0" width="1200" height="1200" fill="transparent" stroke-width="5" stroke="red"/> -->
+<!-- <path stroke="blue" stroke-width="1"
+ d="
+    M600,0 L600,1200 601,0Z
+    M0,600 L1200,600 1200,601 0,601 Z
+"/> -->
+<!-- <rect x="50" y="50" width="525" height="525" fill="yellow" stroke-width="0" stroke="transparent"/> -->
+<!-- <rect x="625" y="625" width="525" height="525" fill="orange" stroke-width="0" stroke="transparent"/> -->
+
+<!-- top left -->
+<!-- <rect x="125" y="100" width="450" height="475" fill="green" stroke-width="0" stroke="transparent"/> -->
+<path 
+    class="letter" 
+    d="
+        M375,100 L175,575 L125,575 L325,100 375,100 575,575 525,575 325,100 Z
+        M265,361 L435,361 451,398 249,398 Z
+    "/>
+
+<!-- top right -->
+<!-- <rect x="625" y="100" width="450" height="475" fill="turquoise" stroke-width="0" stroke="transparent"/> -->
+<path 
+    class="letter" 
+    d="
+        M625,100 L625,575 975,575 975,525 675,525 675,100 Z
+    "/>
+<!-- bottom left -->
+<!-- <rect x="125" y="625" width="450" height="475" fill="dodgerblue" stroke-width="0" stroke="transparent"/> -->
+<path 
+    class="letter" 
+    d="
+        M125,1100 L125,625 175,625 350,1050 525,625 575,625 575,1100 525,1100 525,735 375,1100 325,1100 175,735 175,1100 Z
+    "/>
+<!-- bottom right -->
+<!-- <rect x="625" y="625" width="450" height="475" fill="blue" stroke-width="0" stroke="transparent"/> -->
+<path 
+    class="letter" 
+    d="
+        M875,1100 L675,625 L625,625 825,1100 875,1100 1075,625 1025,625 825,1100 Z
+        M749,802 L950,802 935,839 765,839 Z
+    "/>
+
+
+<!-- <path d="M196.828 186.562H111.047L91.7812 240H63.9375L142.125 35.25H165.75L244.078 240H216.375L196.828 186.562ZM119.203 164.344H188.812L153.938 68.5781L119.203 164.344Z" fill="black"/>
+<path d="M290.906 217.922H387.938V240H263.766V35.25H290.906V217.922Z" fill="black"/>
+<path d="M94.8075 253L153.938 420.266L213.068 253H244V458H220.149V378.168L222.385 292.001L163.006 458H144.745L85.4907 292.423L87.8509 378.168V458H64V253H94.8075Z" fill="black"/>
+<path d="M311.172 307.437L396.953 307.437L416.219 254L444.063 254L365.875 458.75L342.25 458.75L263.922 254L291.625 254L311.172 307.437ZM388.797 329.656L319.188 329.656L354.063 425.422L388.797 329.656Z" fill="black"/> -->
+</svg>

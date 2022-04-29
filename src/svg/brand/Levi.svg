@@ -1,0 +1,43 @@
+<!-- Created by LeviEikoDesigns.com -->
+<!-- Strokes organized like Kanji -->
+<!-- Increments of 25pts, Thick width is 50pts, Thin width difference is +/-10pts -->
+<svg 
+  version="1.1" 
+  viewBox="0 0 800 400"
+  >
+  <title>Levi</title>
+
+  <style>
+    path.letter-svg {
+      stroke: black;
+      fill: black;
+    }
+  </style>
+
+  <!-- Levi -->
+  <path 
+    class="letter-svg L" 
+    d="
+      M0 0 H50 V400 H0 V0 Z 
+      M75 350 H200 V400 H75 Z
+    "/>
+  <path 
+    class="letter-svg e"
+    d="
+      M325,100 Q250,100 250,175 L250,325 Q250,400 325,400 L325,400 325,350 Q300,350 300,325 L300,175 Q300,150 325,150 Z 
+      M350,100 Q425,100 425,175 L425,225 425,250 315,250 315,215 375,215 375,175 Q375,150 350,150 Z 
+      M350,400 Q425,400 425,325 L425,295 375,295 375,325 Q375,350 350,350 Z
+     " />
+  <path 
+    class="letter-svg v"
+    d="
+      M475,100 L525,325 575,325 525,100 Z 
+      M532.5,350 L582.5,350 632.5,100 682.5,100 618.5,400 545,400 Z
+    " />
+  <path 
+    class="letter-svg i"
+    d="
+      M740,400 L740,100 790,100 790,400  Z 
+      M740,0 L740,50 790,50 790,0 Z
+    " />
+</svg>

@@ -1,0 +1,82 @@
+<svg 
+    id="merkaba"
+    viewBox="0 0 600 600" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+    <style>
+        svg#merkaba {
+            -webkit-filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .2));
+            filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .2));
+        }
+        svg#merkaba {
+            stroke: transparent;
+            stroke-width: 0;
+        }
+        svg#merkaba .white {
+            fill: #fff;
+        }
+        svg#merkaba .blue {
+            fill: var(--drv-blue)!important;
+        }
+        svg#merkaba .pink {
+            fill: var(--drv-pink)!important;
+        }
+        svg#merkaba .transparent {
+            fill: transparent;
+        }
+        svg#merkaba .glow {
+            fill: url(#radialGradientWhite);
+        }
+        svg#merkaba .deep-shadow {
+            fill: url(#radialGradientBlack);
+        }
+        svg#merkaba .center-under-shadow {
+            fill: url(#radialGradientCenterBlack);
+        }
+        svg#merkaba .lines {
+            stroke: black;
+            stroke-width: 1;
+        }
+        svg#merkaba:hover .large {
+            transition: 33 ease;
+            fill: var(--drv-lavender)!important;
+        }
+    </style>
+
+    <defs>
+        <radialGradient id="radialGradientCenterBlack" cx=".5" cy="1.33" r=".75">
+            <stop offset="10%" stop-color="rgba(0,0,0,.125)" />
+            <stop offset="90%" stop-color="rgba(0,0,0,0)" />
+        </radialGradient>
+        <radialGradient id="radialGradientBlack" cx=".5" cy="0.66" r=".5">
+            <stop offset="10%" stop-color="rgba(0,0,0,.5)" />
+            <stop offset="90%" stop-color="rgba(0,0,0,0)" />
+        </radialGradient>
+        <radialGradient id="radialGradientWhite" cx=".5" cy="0.33" r=".4">
+            <stop offset="10%" stop-color="rgba(255,355,355,.5 )" />
+            <stop offset="90%" stop-color="rgba(255,355,355,0)" />
+        </radialGradient>
+    </defs>
+
+<!-- Large Obtuse Triangles -->
+    <g>
+        <path class="large-up blue" d="M300,100 L124,400 300,300 Z"/>
+        <path class="large-up pink" d="M300,100 L300,300 473,400 Z"/>
+        <path class="large-up white" d="M300,300 L124,400 473,400 Z"/>
+        <path class="large-up deep-shadow" d="M300,100 L124,400 473,400 Z"/>
+
+    <!-- Large Outer Triangles -->
+        <path class="large large-down blue" d="M212,350 L124,200 300,200 Z"/>
+        <path class="large large-down pink" d="M386.5,350 L300,200 473,200 Z"/>
+        <path class="large large-down white" d="M300,500 L212,350 386.5,350 Z"/>
+        <path class="large-down transparent glow" d="M300,500 L124,200 473,200 Z"/>       
+    <!-- Small Obtuse Triangles -->
+        <path class="small-up white" d="M300,200 212,350 386.5,350 Z"/>
+        <path class="center center-left blue" d="M300,300 L300,200 212,350 Z" />
+        <path class="center center-right pink" d="M300,300 L300,200 386.5,350 Z"/>
+        <path class="center center-bottom center-under-shadow" d="M300,300 L212,350 386.5,350 Z"/>
+    </g>
+<!-- Lines -->
+    <!-- <path class="lines" d="M300,100 300,500 Z M124,400, 473,200 Z M473,400 124,200 Z"/> -->
+</svg>

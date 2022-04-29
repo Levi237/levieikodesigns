@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Roboto&family=Big+Shoulders+Stencil+Text:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+:root {
+  --black: rgb(0, 23, 47);
+  --blue: rgb(75, 125, 190);
+  --darkblue: rgb(0, 54, 110);
+  --darkgrey: #424656;
+  --lightgrey: #A6ABBD;
+  --darkbrown: #483300;
+  --lightbrown: #7C6225;
+
+  --drv-blue: rgb(85, 205, 252);
+  --drv-pink: rgb(247, 168, 184);
+  --drv-periwinkle: rgb(166,187,218);
+  --drv-lavender: rgb(169, 170, 219);
+  --drv-black: rgb(48, 48, 48);
+
+/* Update color  & font roots */
+  --color-color-black: 0 23 47;
+  --color-color-blue: 75 125 190;
+  --color-color-darkblue: 0 54 110;
+  --color-color-darkgrey: 66 70 86;
+  --color-color-lightgrey: 166 171 189;
+  --color-color-darkbrown: 72 51 0;
+  --color-color-lightbrown: 124 98 37;
+
+  --font-fancy: 'Alegreya Sans SC', Helvetica, sans-serif;
+  --font-standard: 'Alegreya Sans', Helvetica, sans-serif;
+}
+
+body {
+  color: var(--black);
+  margin: 0;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+svg * {
+  transition: .3s ease;
+}
+h1,h2,h3,h4,h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 100%;
+}
+h1 {
+  font-family: 'Big Shoulders Stencil Text', courier;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 40px auto!important;
+}
+h2 {
+  font-family: 'Big Shoulders Stencil Text', courier;
+  letter-spacing: 2px;
+}
+
+/* Desktop vs Mobile toggle */
+.mobile-block, .mobile-inline {
+  display: none!important;
+}
+.desktop-block {
+  display: block;
+} 
+.desktop-inline {
+  display: inline-block;
+}
+@media screen and (max-width: 945px){
+  .desktop-block, .desktop-inline {
+    display: none!important;
+  }
+  .mobile-block {
+    display: block!important;
+  } 
+  .mobile-inline {
+    display: inline-block!important;
+  }
+}
+
+/*==================== HAMBURGER ICON ====================*/
+.hamburger-close {
+  padding-top: 10px;
+}
+.hamburger-close > section {
+  margin: 8px 0!important;
+}
+.hamburger-close > section:first-of-type {
+  transform: rotate(45deg)!important;
+}
+.hamburger-close > section:last-of-type {
+  transform: rotate(-45deg)!important;
+  margin-top: -12px!important;
+}  
+
+#hamburger-btn > section {
+  margin: 6px 0;
+  width: 35px;
+  height: 4px;
+  background-color: #fff;
+  transition: all .3s ease;
+  /* border-radius: 3px; */
+}
+@media screen and (orientation: portrait) and (max-width: 940px) {
+  /* #hamburger-btn {
+    display: block;
+  } */
+}
+
+/* ON/OFF MODAL SWITCH */
+#modal.active {
+  max-width: 100vw;
+}
+#menu.active {
+  max-width: 40vw;
+}
+.active {
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  transition: .8s ease-in-out;
+}
+
+#modal.inactive{
+  max-height: 0px;
+}
+#menu.inactive {
+  max-height: 100vh;
+  font-size: 1px;
+  color: transparent!important;
+}
+.inactive {
+  max-width: 0;
+  transition: .8s ease-in-out;
+  transition-delay: .3s !important;
+}
+
+@media screen and (max-width: 945px){
+  #menu.active, #modal.active {
+    max-width: 100vw;
+  }
+  .active {
+    max-width: 100vw;
+  }
+}
+
+.nav-active {
+  color:#29bfff !important;
+}
+
+/* Email Form */
+button.selectedHighlighted {
+  background-color: rgba(41, 191, 255, .3)!important;
+  /* color: #fff; */
+}
+/* Background Phase */
+@keyframes slideleft {
+  0% { background-position: 0%; }
+  50% { background-position: 100%; }
+  100% { background-position: 0%; }
+}
+
+.titleDecoration {
+    font-family: 'Big Shoulders Stencil Text';
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin: 0 auto!important;
+}
+
+@-webkit-keyframes bounce {
+  20%, 53%, 80%, 93%, 98%, 0%, 100% { transform: translateY(0px); opacity: 1}
+  40%, 43% { transform: translateY(-20px); opacity: .0; }
+  70%, 73% { transform: translateY(-10px); opacity: .1; }
+  90%, 93% { transform: translateY(-5px); opacity: .4; }
+  96%, 97% { transform: translateY(-2px); opacity: .9; }
+}
+@-moz-keyframes bounce {
+  20%, 53%, 80%, 93%, 98%, 0%, 100% { transform: translateY(0px); opacity: 1}
+  40%, 43% { transform: translateY(-20px); opacity: .0; }
+  70%, 73% { transform: translateY(-10px); opacity: .1; }
+  90%, 93% { transform: translateY(-5px); opacity: .4; }
+  96%, 97% { transform: translateY(-2px); opacity: .9; }
+}
+@keyframes bounce {
+  20%, 53%, 80%, 93%, 98%, 0%, 100% { transform: translateY(0px); opacity: 1}
+  40%, 43% { transform: translateY(-20px); opacity: .0; }
+  70%, 73% { transform: translateY(-10px); opacity: .1; }
+  90%, 93% { transform: translateY(-5px); opacity: .4; }
+  96%, 97% { transform: translateY(-2px); opacity: .9; }
+}
+
+#down-arrow-container {
+  position: absolute;
+  bottom: 10vh;
+  width: 100vw;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: regular;
+  font-size: 24px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+@media screen and (min-width: 640px) {
+  #down-arrow-container {
+    bottom: 40px;
+  }
+}
+#down-arrow ,
+.down-arrow-class {
+  position: relative;
+  text-align: center;
+  padding: 1px;
+  margin: 0 auto;
+  height: 1px;
+  width: 100px;
+}
+#down-arrow {
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+#down-arrow:before,
+.down-arrow-class:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: white;
+  transform: skew(0deg, 20deg);
+}
+#down-arrow:after,
+.down-arrow-class:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: white;
+  transform: skew(0deg, -20deg);
+}
+.down-arrow-class:before,
+.down-arrow-class:after {
+  background: rgba(0,0,0,.25);
+}
+#down-arrow:before,
+#down-arrow:after {
+  background: #fff;
+}
