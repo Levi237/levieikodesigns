@@ -12,8 +12,8 @@ export default class MobileFirstBanner extends Component {
         </section>
         <section>
           <div>
-            <h1>WHY MOBILE-FIRST</h1>
-            <h3>You actually <b>don't</b> need an app for that.</h3>
+            <h1>Why Mobile-First</h1>
+            <h3>So.. you actually <b>don't</b> need an app for that..</h3>
             <h4>[Mobile-First Website] vs [Website + Android App + iPhone App]</h4>
             <p>
               For most people their primary device is their cell phone.
