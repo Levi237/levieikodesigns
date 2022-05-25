@@ -1,7 +1,7 @@
-import React, { Component }     from 'react';
-import styled      from 'styled-components';
-import { Link } from 'react-router-dom';
-import * as routes from '../constants/routes';
+import React, { Component } from 'react';
+import styled               from 'styled-components';
+import { Link }             from 'react-router-dom';
+import * as routes          from '../constants/routes';
 
 export default class FeaturedBanner extends Component {
   state = {
