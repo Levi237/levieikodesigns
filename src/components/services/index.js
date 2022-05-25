@@ -57,9 +57,7 @@ export default class ServicesPage extends Component {
       <LocalWrapper>
 
         <BarNav id="scroll-to">
-          <h1>LEVI 
-            
-            EIKO DESIGNS</h1>
+          <h1>LEVI EIKO DESIGNS</h1>
         </BarNav>
 
         <LocalBodyWrapper>  
