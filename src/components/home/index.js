@@ -3,8 +3,8 @@ import styled               from 'styled-components';
 import { NavLink }          from 'react-router-dom';
 import * as routes          from '../../constants/routes';
 
-import FeaturedBanner from '../FeaturedBanner';
-import EmailMarketing      from '../EmailMarketing';
+import FeaturedBanner       from '../FeaturedBanner';
+import EmailMarketing       from '../EmailMarketing';
 import WireframeBanner      from '../WireframeBanner';
 import MobileFirstBanner    from '../MobileFirstBanner';
 import Footer               from '../Footer';
@@ -36,8 +36,8 @@ export default class HomePage extends Component {
         <HomeBodyWrapper>  
           <FeaturedBanner/>
           <MobileFirstBanner/>
-          <WireframeBanner/>
           <EmailMarketing/>
+          <WireframeBanner/>
           <Footer/>
           <div className="down-arrow-class"></div>
         </HomeBodyWrapper>
