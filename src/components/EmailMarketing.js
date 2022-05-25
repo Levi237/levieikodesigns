@@ -30,7 +30,10 @@ export default class EmailMarketing extends Component {
                   Tag or target specific audience segments
                 </li>
                 <li>
-                  Promote sales &amp; share value added content
+                  Develop stronger relationships w/ audience
+                </li>
+                <li>
+                  Create effective promotional campaigns
                 </li>
                 <li>
                   Track opens, clicks and user activity
