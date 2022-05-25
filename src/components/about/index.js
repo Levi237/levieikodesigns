@@ -93,7 +93,7 @@ const Container = styled.div`
   h2 {
     margin: 0 10%;
     font-size: 36px;
-    font-family: "Big Shoulders Stencil Text";
+    // font-family: "Big Shoulders Stencil Text";
     text-align: center;
   }
   p {
