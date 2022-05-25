@@ -110,7 +110,7 @@ export default class App extends Component {
         <Routes>
           <Route path={routes.MAIL} exact element={<GoblinValleyImageAnimation/>}/>
           <Route path={routes.CNFM} exact element={<HeroImageDivAnimation/>}/>
-          <Route path={routes.PORT} exact element={<HeroImageDiv/>}/>
+          <Route path={routes.PORT} exact element={<></>}/>
           <Route path={routes.SERV} exact element={<HeroImageDiv/>}/>
           <Route path={routes.ROOT} exact element={<HeroImageDivAnimation/>}/>
           <Route path={routes.ROOT} element={<HeroImageDivAnimation/>}/>
