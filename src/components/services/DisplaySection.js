@@ -11,7 +11,7 @@ export default class ServicesPage extends Component {
       return <section key={k}><div>✔</div><div>{ item }</div></section>
     })
     const mapCollage = service.collage.map((item, k) => {
-      return <div key={k}><img src={`./services/${item}`} alt="collage one"/></div>
+      return <div key={k}><img src={`./${item}`} alt="collage one"/></div>
     })
     return(
           <GraphicsBanner className={`${service.position.text}`}>
