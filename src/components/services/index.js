@@ -6,6 +6,28 @@ import DisplaySection               from './DisplaySection';
 export default class ServicesPage extends Component {
   state = {
     services: {
+      email: {
+        title: `Email Marketing`,
+        subtitle: `Blasts & Automations`,
+        subtext: `Building better relationships through targeted email campaigns.`,
+        paragraph: `Email marketing is an excellent way to strengthen your relationship with your customers. `,
+        listName: `What I do:`,
+        checklist: [
+          'Target audiences to promote sales & new products',
+          'Upgrade your professional look',
+          'Feature custom graphic designs',
+          'Bypass the spam, get into the Inbox',
+          'Create value-added content to build trust'
+        ],
+        collage: [
+          'clients/coveredperfectly_3.png', 
+          'clients/baddie-by-divinity_2.jpg',
+          'clients/bravo-built_3.jpg'
+        ],
+        position: {
+          text: 'left bottom'
+        }
+      },
       graphics: {
         title: `Graphic Design`,
         subtitle: `DIGITAL CREATIONS`,
@@ -19,9 +41,9 @@ export default class ServicesPage extends Component {
           'Logos & brand identity development'
         ],
         collage: [
-          'bravo-video.png', 
-          'divinity-youtube.png',
-          'red5-collection.png'
+          'services/bravo-video.png', 
+          'services/divinity-youtube.png',
+          'services/red5-collection.png'
         ],
         position: {
           text: 'right bottom'
@@ -40,9 +62,9 @@ export default class ServicesPage extends Component {
           'Create marketing strategies to capture leads & drive sales'
         ],
         collage: [
-          'divinity-home.png', 
-          'metamorphosis-banner.png',
-          'momo-quiz.png'
+          'services/divinity-home.png', 
+          'services/metamorphosis-banner.png',
+          'services/momo-quiz.png'
         ],
         position: {
           text: 'left bottom'
@@ -52,7 +74,7 @@ export default class ServicesPage extends Component {
   }
   
   render(){
-
+const { services } = this.state;
     return(
       <LocalWrapper>
 
@@ -61,8 +83,9 @@ export default class ServicesPage extends Component {
         </BarNav>
 
         <LocalBodyWrapper>  
-          <DisplaySection service={this.state.services.websites}/>
-          <DisplaySection service={this.state.services.graphics}/>
+          <DisplaySection service={services.websites}/>
+          <DisplaySection service={services.graphics}/>
+          <DisplaySection service={services.email}/>
           <Footer/>
         </LocalBodyWrapper>
 
