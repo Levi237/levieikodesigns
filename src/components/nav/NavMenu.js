@@ -9,8 +9,8 @@ const NavMenu = ({ animateSlideMe, btnHamburger, toggleMenu }) => {
         <NavContainer id="menu" className="inactive">
             <div>
                 <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>HOME</NavLink>
-                <NavLink activeClassName="nav-active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CLIENTS</NavLink>
                 <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>SERVICES</NavLink>
+                <NavLink activeClassName="nav-active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CLIENTS</NavLink>
                 <NavLink activeClassName="nav-active" to={routes.INFO} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>ABOUT ME</NavLink>
                 <NavLink activeClassName="nav-active" to={routes.MAIL} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CONTACT</NavLink>
                 <NavLink activeClassName="nav-active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink>
