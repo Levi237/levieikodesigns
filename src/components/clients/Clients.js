@@ -83,6 +83,7 @@ export default class Clients extends Component {
         },{
             title: "Baddie by Divinity",
             image: "./clients/baddie-by-divinity.jpg",
+            image2: "./clients/baddie-by-divinity_2.jpg",
             link: "baddiebydivinity.com",
             status: "live",
             startDate: "2021",
@@ -238,7 +239,6 @@ const ClientContainer = styled.div`
         font-size: 16px;
     }
     p {
-        // font-style: italic;
         font-size: 14px;
         margin: 10px auto;
     }
