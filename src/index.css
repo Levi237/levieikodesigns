@@ -17,13 +17,15 @@
   --drv-black: rgb(48, 48, 48);
 
 /* Update color  & font roots */
-  --color-color-black: 0 23 47;
-  --color-color-blue: 75 125 190;
-  --color-color-darkblue: 0 54 110;
-  --color-color-darkgrey: 66 70 86;
-  --color-color-lightgrey: 166 171 189;
-  --color-color-darkbrown: 72 51 0;
-  --color-color-lightbrown: 124 98 37;
+--color-white: 255 255 255;
+  --color-black: 0 23 47;
+  --color-blue: 75 125 190;
+  --color-darkblue: 0 54 110;
+  --color-darkgrey: 66 70 86;
+  --color-grey: 58 57 57;
+  --color-lightgrey: 166 171 189;
+  --color-darkbrown: 72 51 0;
+  --color-lightbrown: 124 98 37;
 
   --font-fancy: 'Alegreya Sans SC', Helvetica, sans-serif;
   --font-standard: 'Alegreya Sans', Helvetica, sans-serif;
