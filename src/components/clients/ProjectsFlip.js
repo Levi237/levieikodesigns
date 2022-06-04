@@ -7,7 +7,7 @@ const ProjectsFlip = ({ projects }) => {
     return(
         <Container>
             <br/><br/><br/><br/>
-            <h1>Past Projects</h1>
+            <h1>Fun Projects</h1>
             <FlipCards projects={projects} />
         </Container>
     );

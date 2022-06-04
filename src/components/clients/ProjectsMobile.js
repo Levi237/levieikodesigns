@@ -28,7 +28,7 @@ export default class ProjectsMobile extends Component {
         return(
             <Container>
                 <br/><br/><br/><br/>
-                <h1>Past Projects</h1>
+                <h1>Fun Projects</h1>
                 {mapped}
             </Container>
         );

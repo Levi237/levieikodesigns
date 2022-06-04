@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled               from 'styled-components';
 
 import Footer               from '../Footer';
-import DisplaySection               from './DisplaySection';
+import DisplaySection       from './DisplaySection';
 export default class ServicesPage extends Component {
   state = {
     services: {
@@ -10,7 +10,7 @@ export default class ServicesPage extends Component {
         title: `Email Marketing`,
         subtitle: `Blasts & Automations`,
         subtext: `Building better relationships through targeted email campaigns.`,
-        paragraph: `Email marketing is an excellent way to strengthen your relationship with your customers. `,
+        paragraph: `Emailing your customers is an excellent way to maintain a positive relationship while promoting specials they might be interested in.  It's all about tact.  Knowing what to send to who and when is important.  The better you target you audiences the more effective you can be at driving up sales but now and in the long term.`,
         listName: `What I do:`,
         checklist: [
           'Target audiences to promote sales & new products',
@@ -50,13 +50,13 @@ export default class ServicesPage extends Component {
         }
       },
       websites: {
-        title: `Online Businesses`,
-        subtitle: `WEB DEVELOPMENT`,
+        title: `Web Development`,
+        subtitle: `ONLINE BUSINESSES w/ ECOMMERCE`,
         subtext: `and much, much more.`,
-        paragraph: `For many small businesses, starting an online store is a big step.  You have a great idea, you have the market, all you need is to open shop!  Not only do I build websites, but I help get your whole digital storefront up and running.`,
+        paragraph: `For many small businesses, starting an online store is a big step.  You have a great idea, you have the market, all you need now is to open shop!  Not only do I build websites, but I help get your whole digital storefront up and running.`,
         listName: `What I do:`,
         checklist: [
-          'Design & develop eCommerce websites',
+          'Design & develop eCommerce websites & blogs',
           'Connect third party accounts, including email',
           'Assist in product design, cover images, etc.',
           'Create marketing strategies to capture leads & drive sales'
@@ -83,9 +83,11 @@ const { services } = this.state;
         </BarNav>
 
         <LocalBodyWrapper>  
+          <div>
           <DisplaySection service={services.websites}/>
           <DisplaySection service={services.graphics}/>
           <DisplaySection service={services.email}/>
+          </div>
           <Footer/>
         </LocalBodyWrapper>
 
@@ -94,130 +96,17 @@ const { services } = this.state;
   };
 }
 
-// const Checklist = styled.div`
-
-// > section {
-//   width: 100%;
-//   display: flex;
-//   > div {
-//     margin-bottom: 6px;
-//     &:first-of-type {
-//       width: 10px;
-//       padding-left: 40px;
-//       color: var(--blue);
-//     }
-//     &:last-of-type {
-//       width: calc(100% - 10px);
-//       padding-left: 20px;
-//     }
-//   }
-// }
-// `;
-// const GraphicsBanner = styled.div`
-//   color: var(--darkgrey);
-
-//   display: grid;
-//   grid-template-rows: auto auto auto;
-//   grid-template-columns: 30px 1fr 1fr 30px;
-//   column-gap: 10px;
-//   row-gap: 10px;
-//   grid-template-areas: '. title title .' '. text collage .' '. gallery gallery .';
-//   @media screen and (max-width: 749px) {
-//     grid-template-rows: auto auto auto auto;
-//     grid-template-columns: 100%;
-//     grid-template-areas: ' title ' ' text ' ' collage ' ' gallery ';
-//   }
-
-//   .title {
-//     grid-area: title;
-//     // background-color: lightgray;
-//   }
-//   .text {
-//     grid-area: text;
-//     // background-color: #fff;
-//     }
-//   }
-//   .collage {
-//     grid-area: collage;
-//     display: inline-grid;
-//     grid-template-areas: 'main main' 'second third';
-//     grid-template-rows: auto auto;
-//     grid-template-columns: 1fr 1fr;
-//     column-gap: 10px;
-//     row-gap: 10px;
-    
-//     img { 
-//       width: 100%; 
-//     }
-
-//     .main {
-//       grid-area: main;
-//       background-color: blue;
-//     }
-//     .second {
-//       grid-area: second;
-//       background-color: yellow;
-//     }
-//     .third {
-//       grid-area: third;
-//       background-color: red;
-//     }
-//   }
-//   .gallery {
-//     grid-area: gallery;
-//     background-color: pink;
-//     display: inline-grid;
-//     grid-template-rows: 1fr;
-//     grid-template-columns: repeat(6, 1fr);
-//     text-align: center;
-//     button {
-//       background: transparent;
-//       border: none;
-//       padding: 0;
-//     }
-
-//     .left-btn {
-//       grid-area: left-btn;
-//       background-color: green;
-//     }
-//     .right-btn {
-//       grid-area: right-btn;
-//       background-color: red;
-//     }
-//     .scroll {
-//       grid-area: scroll;
-//       background-color: blue;
-//       overflow-x: scroll;
-//       height: 120px;
-//       width: 100%;
-//       > div { 
-//         section {
-//           min-height: 100px; 
-//           min-width: 100px;
-//           display: inline-block;
-//         }
-//       }
-//     }
-//   }
-
-//   h1 {
-//     // margin: 0!important;
-//   }
-//   @media screen and (max-width: 749px) {
-
-//   }
-// `;
-
 const LocalWrapper = styled.div`
   scroll-snap-type: y mandatory;
   height: 100vh;
   width: 100vw;
+  background-color: rgba(var(--color-white) / 100%);
   overflow: scroll;
 `;
 const BarNav = styled.nav`
   height: calc(50px + 5vw);
   z-index: 2;
-  background-color: var(--blue);
+  background-color: rgba(var(--color-blue) / 100%);
   -webkit-scroll-snap-align: start;
   -moz-scroll-snap-align: start;
   -ms-scroll-snap-align: start;
@@ -243,13 +132,12 @@ const LocalBodyWrapper = styled.div`
   background-color: #fff;
   overflow: scroll;
   position: relative;
-
-  // .down-arrow-class {
-  //   position: fixed;
-  //   bottom: 2vw;
-  //   left: calc(50vw - 51px);
-  // }
-
+  
+  > div {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
   > h1 {
     color: var(--darkblue);
     font-size: 32px;
