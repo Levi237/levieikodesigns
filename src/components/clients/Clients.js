@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled               from 'styled-components';
 
 export default class Clients extends Component {
     state = {
@@ -140,18 +140,12 @@ export default class Clients extends Component {
         const liveClients = clientList.filter(client => client.status === 'live')
         const mapClientList = liveClients.map((client, key) => {
             const responsibilitiesList = client.responsibilities.map((r, k) => {
-                return <li key={k}>{r}</li>
+                return <li key={k}><span>{r}</span></li>
             })
-            // const technologiesList = client.technologies.map((c, k) => {
-            //     return <span key={k}>{c}</span>
-            // })
             return(
                 <ClientContainer key={key}>
                     <MobileImg href={`https://${client.link}`} target="_blank">
                         <img src={client.image} alt={client.title}/>
-                        {
-                            client.image2 && <img src={client.image2} alt={client.title}/>
-                        }
                     </MobileImg>
                     <section>
                         <h2>
@@ -163,15 +157,14 @@ export default class Clients extends Component {
                         <p>
                             “{client.statement}”
                         </p>
-
-                        <ul>
-                            {responsibilitiesList}
-                        </ul>
-                        {/* <h3>
-                            Technologies: 
-                        </h3>
-                            {technologiesList}
-                        <hr/>    */}
+                        <MobileColumns className="mobile-columns">
+                            <ul>
+                                {responsibilitiesList}
+                            </ul>
+                            {
+                                client.image2 && <img className="mobile-block" src={client.image2} alt={client.title}/>
+                            }
+                        </MobileColumns>
                         <br></br>
                     </section>
                     <DesktopImg href={`https://${client.link}`} target="_blank">
@@ -186,11 +179,23 @@ export default class Clients extends Component {
         })
         return(
             <Container>
-                {mapClientList}                
+                {mapClientList}          
             </Container>
         );
     };
 };
+
+const MobileColumns = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    ul {
+        width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+    }
+`;
 
 const ClientContainer = styled.div`
     margin: 40px auto;
@@ -253,9 +258,7 @@ const ClientContainer = styled.div`
         width: 100%;
         margin: 0px auto 20px;
     }
-    // >hr:last-of-type {
-    //     margin: 40px auto 0;
-    // }
+
     section > hr {
         display: none;
     }
@@ -280,6 +283,13 @@ const ClientContainer = styled.div`
             width: 80%;
             margin: 5% auto;
         }
+        ul {
+            padding-left: 24px;
+        }
+        li span {
+            position: relative;
+            left: -5px;
+          }
     }
 `;
 
@@ -314,9 +324,9 @@ const Container = styled.div`
         background-color: #fff;
         border: none;
     }
-img {
-    object-fit: cover;
-}
+    img {
+        object-fit: cover;
+    }
     @media screen and (max-width: 900px) {
         section, img {
             width: 90%;

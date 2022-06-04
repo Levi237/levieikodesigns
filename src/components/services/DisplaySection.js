@@ -30,14 +30,7 @@ export default class ServicesPage extends Component {
             <div className="collage">
               { mapCollage }
             </div>
-            <div className="gallery">
-              {/* <section>0</section>
-              <section>0</section>
-              <section>0</section>
-              <section>0</section>
-              <section>0</section>
-              <section>0</section> */}
-            </div>
+
           </GraphicsBanner>
     );
   };
@@ -111,7 +104,7 @@ const GraphicsBanner = styled.div`
     }
 
     div {
-      border: 1px solid rgba(0,0,0,.1);
+      // border: 1px solid rgba(0,0,0,.1);
       // box-shadow: 0 0 200px rgb(0 0 0 / 12.5%);
       &:first-of-type {
         grid-area: main;

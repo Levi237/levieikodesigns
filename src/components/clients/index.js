@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
+import Footer               from '../Footer';
+
 import Skills               from './Skills';
 import Clients              from './Clients';
 import PastClients          from './PastClients';
@@ -65,6 +67,7 @@ export default class PortfolioPage extends Component {
                 <PastClients/>
                 <ProjectsFlip projects={projects} /><ProjectsMobile projects={projects} />
                 {/* <Photography/> */}
+                <Footer/>      
             </Container>
         );
     };
@@ -72,7 +75,7 @@ export default class PortfolioPage extends Component {
 
 const Container = styled.div`
     background-color: rgba(19,17,17,.8);
-    padding: 80px 0;
+    padding: 80px 0 0;
     margin: 0 auto!important;
 
     @media screen and (max-width: 745px){
