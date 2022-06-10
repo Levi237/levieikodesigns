@@ -1,5 +1,5 @@
 import React, { Component }           from 'react';
-import { Routes, Route }              from 'react-router-dom';
+import { Routes, Route, Link }              from 'react-router-dom';
 import styled                         from 'styled-components';
 
 import { ReactComponent as LogoSVG }  from './svg/brand/logo.svg';
@@ -18,6 +18,8 @@ import PortfolioPage                  from './components/clients';
 import ContactPage                    from './components/contact';
 import EmailConfirmation              from './components/contact/EmailConfirmation';
 
+import { ReactComponent as Mail }       from './svg/icons/iconfinder_mail.svg';
+
 import FontList                       from './fonts';
 
 export default class App extends Component {
@@ -27,30 +29,31 @@ export default class App extends Component {
       home: {
         title: '',
         color: '#fff',
-        fill: '#fff',
         displayLogo: 'none',
       },
       about: {
         title: '',
-        color: '#181717',
+        color: 'var(--blue)',
         displayLogo: 'none',
       },
       portfolio: {
         title: 'portfolio',
         color: '#fff',
         displayLogo: 'inline-block',
-        fill: '#fff',
       },
       faq: {
         title: 'faq',
         color: '#181717',
-        fill: '#181717',
         displayLogo: 'inline-block',
+      },
+      services: {
+        title: 'contact',
+        color: '#fff',
+        displayLogo: 'none',
       },
       mail: {
         title: 'contact',
         color: '#fff',
-        fill: '#fff',
         displayLogo: 'inline-block',
       },
       root: {
@@ -106,6 +109,17 @@ export default class App extends Component {
         <LogoSVG className="establish-logo" style={{width: '0', height: '0', position: 'absolute'}}/>
         <NavMenu btnHamburger={this.btnHamburger} resetslideMe={this.resetslideMe} toggleMenu={this.toggleMenu} animateSlideMe={this.animateSlideMe}/>
         <ModalWindow contactType={modalType} toggleModal={this.toggleModal}/>
+        <Routes>
+            <Route path={routes.MAIL} exact element={ <></> }/>
+            <Route path={routes.CNFM} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
+            <Route path={routes.PORT} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
+            <Route path={routes.INFO} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
+            <Route path={routes.FAQS} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
+            <Route path={routes.SERV} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
+            <Route path={routes.ROOT} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
+            <Route path={routes.ROOT} element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
+          
+        </Routes>
 
         <Routes>
           <Route path={routes.MAIL} exact element={<GoblinValleyImageAnimation/>}/>
@@ -145,6 +159,19 @@ export default class App extends Component {
     );
   };
 };
+
+const ContactMe = styled.div`
+  position: absolute;
+  z-index: 2;
+  bottom: 12px;
+  right: 12px;
+  width: 48px;
+  a svg { 
+    fill: var(--blue);
+  }
+  a:hover svg var(--darkblue);
+  }
+`;
 
 const ContentContainer = styled.div`
   color: #fff;

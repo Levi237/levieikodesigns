@@ -8,12 +8,12 @@ const NavMenu = ({ animateSlideMe, btnHamburger, toggleMenu }) => {
     return(
         <NavContainer id="menu" className="inactive">
             <div>
-                <NavLink activeClassName="nav-active" to={routes.ROOT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>HOME</NavLink>
-                <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>SERVICES</NavLink>
-                <NavLink activeClassName="nav-active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CLIENTS</NavLink>
-                <NavLink activeClassName="nav-active" to={routes.INFO} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>ABOUT ME</NavLink>
-                <NavLink activeClassName="nav-active" to={routes.MAIL} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CONTACT</NavLink>
-                <NavLink activeClassName="nav-active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink>
+                <NavLink activeClassName="active" to={routes.ROOT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>HOME</NavLink>
+                <NavLink exact activeClassName="active" to={routes.SERV} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>SERVICES</NavLink>
+                <NavLink exact activeClassName="active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CLIENTS</NavLink>
+                <NavLink exact activeClassName="active" to={routes.INFO} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>ABOUT ME</NavLink>
+                <NavLink exact activeClassName="active" to={routes.MAIL} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CONTACT</NavLink>
+                <NavLink exact activeClassName="active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink>
             </div>
         </NavContainer>
     );
@@ -30,12 +30,13 @@ const NavContainer = styled.div`
     background-color: rgba(19,17,17,.9);
     color: #FFF;
     position: fixed;
-    a {
+
+    > div > a {
         text-decoration: none;
         display: block;
         height: 44px;
         padding-top: 20px;
-        color: #FFF!important;
+        color: #FFF;
     }
     a:hover {
         color: #29bfff!important;

@@ -99,7 +99,7 @@ const Container = styled.div`
   p {
     margin: 15px 15%;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 160%;
     b {
       font-weight: 500;

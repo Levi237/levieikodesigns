@@ -21,17 +21,17 @@ const Footer = () => {
               <NavLink to={routes.ROOT}>
                 Home
               </NavLink> 
-              <NavLink to={routes.MAIL}>
-                Contact
-              </NavLink> 
-              <NavLink to={routes.INFO}>
-                About
+              <NavLink to={routes.SERV}>
+                Services
               </NavLink>    
               <NavLink to={routes.PORT}>
                 Clients
               </NavLink>   
               <NavLink to={routes.FAQS}>
                 FAQ
+              </NavLink> 
+              <NavLink to={routes.MAIL}>
+                Contact
               </NavLink>             
             </section>
             <NavIcons/>
@@ -52,6 +52,8 @@ const Container = styled.footer`
   width: 100vw;
   text-align: center;
   background-color: var(--black);
+  position: relative;
+  z-index: 3;
   h2 {
     margin-bottom: 5px!important;
   }

@@ -4,17 +4,17 @@ import { NavLink } from 'react-router-dom';
 import * as routes from '../../constants/routes';
 
 import { ReactComponent as LogoSVG }      from '../../svg/brand/logo.svg';
-import { ReactComponent as HamburgerSVG } from '../../svg/icons/hamburger.svg';
+// import { ReactComponent as HamburgerSVG } from '../../svg/icons/hamburger.svg';
 
 const NavBar = ({ btnHamburger, toggleMenu, pageStyle }) => {
   return(<>
     <Logo>
       <NavLink to={routes.ROOT}>
-        <LogoSVG className="" style={{fill: pageStyle.fill, display: pageStyle.displayLogo}}/>
+        <LogoSVG className="" style={{fill: pageStyle.color, display: pageStyle.displayLogo}}/>
       </NavLink>
     </Logo>
     <Hamburger name="toggleMenu" onClick={(e) => {toggleMenu(e); btnHamburger(); }}>
-      <nav id="hamburger-btn" className=""><section></section><section></section></nav>
+      <nav id="hamburger-btn" className=""><section style={{background: pageStyle.color}}></section><section style={{background: pageStyle.color}}></section></nav>
     </Hamburger>
   </>);
 };

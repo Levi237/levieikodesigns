@@ -4,6 +4,7 @@ import styled               from 'styled-components';
 import Footer               from '../Footer';
 
 import Skills               from './Skills';
+import Hero                 from './Hero';
 import Clients              from './Clients';
 import PastClients          from './PastClients';
 import ProjectsFlip         from './ProjectsFlip';
@@ -191,6 +192,7 @@ export default class PortfolioPage extends Component {
         const { clientList, projects, skills } = this.state;
         return (
             <Container>
+                {/* <Hero clientList={clientList}/> */}
                 <h1 className="titleDecoration">CLIENTS</h1>
                 <Clients clientList={clientList}/>
                 <Skills skills={skills}/>

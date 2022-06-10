@@ -21,7 +21,7 @@ export default class HomePage extends Component {
 
         <HomeHeroWrapper>
           <NavLink to={routes.PORT}>
-            <LogoSVG className="" style={{fill: pageStyle.fill, display: pageStyle.display}}/>
+            <LogoSVG className="" style={{fill: pageStyle.color, display: pageStyle.display}}/>
           </NavLink>
           <div id="down-arrow-container" onClick={() => btnScroll()}>
           LEARN MORE<br/><br/>

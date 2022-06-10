@@ -59,7 +59,8 @@ export default class EmailForm extends Component {
                 novalidate 
             >
                 {this.props.children}
-                <h3>I'd love to hear your ideas, let's make some goals!</h3>
+                {/* <h3>I'd love to hear your ideas, let's make some goals!</h3> */}
+                <h3>Schedule your complimentary consultation today.<br/>Let's make some goals!</h3>
                 <label htmlFor='MERGE1'>
                     <input 
                         type="text" 
@@ -163,9 +164,9 @@ const Form = styled.form`
     text-align: center;
 
     h3 {
-        font-weight: 500;
+        font-weight: 300;
         padding: 0px 5% 20px;
-        color: rgba(75, 125, 190, 1);
+        color: rgba(0 0 0 / 100%);
     }
     p {
         max-width: 500px;
