@@ -50,7 +50,7 @@ export default class EmailForm extends Component {
         // });
         return(<>
             <Form 
-                action={`https://${process.env.REACT_APP_MAILCHIMP_SRC}.us5.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&amp;id=${process.env.REACT_APP_MAILCHIMP_ID}`}
+                action={`https://LeviEiko.us5.list-manage.com/subscribe/post?u=fd3d8729543e3dd38afa3ff51&amp;id=f08d59ca6f`}
                 // action={`https://${process.env.REACT_APP_MAILCHIMP_SRC}.us5.list-manage.com/contact-form/post?u=${process.env.REACT_APP_MAILCHIMP_U}&amp;id=${process.env.REACT_APP_MAILCHIMP_IDXXX}`}
                 method="POST" 
                 id="mc-embedded-subscribe-form" 
@@ -59,7 +59,6 @@ export default class EmailForm extends Component {
                 novalidate 
             >
                 {this.props.children}
-                {/* <h3>I'd love to hear your ideas, let's make some goals!</h3> */}
                 <h3>Schedule your complimentary consultation today.<br/>Let's make some goals!</h3>
                 <label htmlFor='MERGE1'>
                     <input 
@@ -97,7 +96,7 @@ export default class EmailForm extends Component {
                 </label>
                 <label htmlFor='WEBSITE'>
                     <input 
-                        type="url" 
+                        type="text" 
                         name="WEBSITE" 
                         id="WEBSITE" 
                         value={websiteValue}
@@ -105,17 +104,6 @@ export default class EmailForm extends Component {
                         onChange={(e)=>{this.setState({websiteValue: e.target.value});}}
                     />
                 </label>
-
-                {/* <h3>What are You Intrested In?</h3>
-                <div className="services-section">
-                    {buttonSelectors}
-                    <input 
-                        type="hidden" 
-                        name="SERVICES" 
-                        id="SERVICES" 
-                        value={addServices}
-                    />
-                </div> */}
 
                 <label htmlFor='MESSAGE'>
                     <textarea 

@@ -24,7 +24,8 @@ export default class HomePage extends Component {
             <LogoSVG className="" style={{fill: pageStyle.color, display: pageStyle.display}}/>
           </NavLink>
           <div id="down-arrow-container" onClick={() => btnScroll()}>
-          LEARN MORE<br/><br/>
+            LEARN MORE
+            <br/><br/>
             <div id="down-arrow"></div>
           </div>
         </HomeHeroWrapper>
