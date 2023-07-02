@@ -96,7 +96,7 @@ export default class EmailForm extends Component {
                 </label>
                 <label htmlFor='WEBSITE'>
                     <input 
-                        type="text" 
+                        type="url" 
                         name="WEBSITE" 
                         id="WEBSITE" 
                         value={websiteValue}
