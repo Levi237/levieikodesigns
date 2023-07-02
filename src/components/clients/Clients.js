@@ -7,7 +7,7 @@ export default class Clients extends Component {
         const { clientList } = this.props
         const liveClients = clientList.filter(client => client.status === 'live')
         const mapClientList = liveClients.map((client, key) => {
-            const responsibilitiesList = client.responsibilities.map((r, k) => {
+            const tasksList = client.tasks.map((r, k) => {
                 return <li key={k}><span>{r}</span></li>
             })
             return(
@@ -27,7 +27,7 @@ export default class Clients extends Component {
                         </p>
                         <MobileColumns className="mobile-columns">
                             <ul>
-                                {responsibilitiesList}
+                                {tasksList}
                             </ul>
                             {
                                 client.image2 && <img className="mobile-block" src={client.image2} alt={client.title}/>

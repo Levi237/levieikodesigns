@@ -12,7 +12,7 @@ export default class PastClients extends Component {
             startDate: "2023",
             endDate: "",
             statement: "Endless options printed on demand.",
-            responsibilities: ["Create custom tools on purchaed template","Wallpaper size/price calculator","Color swatch tool in Collections","Color matching display on Products"],
+            tasks: ["Create custom tools on purchaed template","Wallpaper size/price calculator","Color swatch tool in Collections","Color matching display on Products"],
             technologies: ["Shopify","Liquid","JS","CSS","SVG","Photoshop","MailChimp","FIGMA"]
         },{
             title: "Baddie by Divinity",
@@ -23,7 +23,7 @@ export default class PastClients extends Component {
             startDate: "2021",
             endDate: "",
             statement: "Baddie By Divinity is here to help us find and embrace our badassery, no matter what form it takes and no matter how we show it to the world.",
-            responsibilities: ["Custom built Shopify website","Graphic design & touchups","Email marketing & automation"],
+            tasks: ["Custom built Shopify website","Graphic design & touchups","Email marketing & automation"],
             technologies: ["Shopify","Liquid","JS","CSS","SVG","Photoshop","MailChimp","FIGMA"]
         },{
             title: "Andrea Sells Maui",
@@ -33,10 +33,9 @@ export default class PastClients extends Component {
             startDate: "2020",
             endDate: "",
             statement: "Maui real estate agent serving her local community",
-            responsibilities: ["Wordpress real estate website", "Graphic design", "Ad creation" ],
+            tasks: ["Wordpress real estate website", "Graphic design", "Ad creation" ],
             technologies: ["WordPress", "JS", "CSS", "Photoshop", "FIGMA", "IDX Broker"]
-        },{
-            
+        },{          
             title: "FITPLAN",
             link: "fitplanapp.com",
             image: "./clients/fitplan-giftcard.png",
@@ -44,7 +43,7 @@ export default class PastClients extends Component {
             startDate: "",
             endDate: "",
             statement: "Workout with elite personal trainers.",
-            responsibilities: ["Custom email: design & marketing","Web development, design & troubleshooting","Graphic design"],
+            tasks: ["Custom email: design & marketing","Web development, design & troubleshooting","Graphic design"],
             technologies: ["React","Shopify","Liquid","CSS","JS","WordPress","Photoshop","Figma","MailChimp"]
         },{
             title: "IT After Hours",
@@ -54,7 +53,7 @@ export default class PastClients extends Component {
             startDate: "",
             endDate: "",
             statement: "Professional, affordable computer service company",
-            responsibilities: ["Streamline WordPress & resolve bugs","Customize CSS code","Mobile friendly upgrade","Currently undergoing host & server"],
+            tasks: ["Streamline WordPress & resolve bugs","Customize CSS code","Mobile friendly upgrade","Currently undergoing host & server"],
             technologies: ["WordPress","CSS","JS"]
         },{
             title: "HeatSeeker Hot Sauce",
@@ -64,7 +63,7 @@ export default class PastClients extends Component {
             startDate: "",
             endDate: "",
             statement: "Bold and minimal, pure and simple... That's what we do.",
-            responsibilities: ["Re-design Shopify website","Streamline content & UX"],
+            tasks: ["Re-design Shopify website","Streamline content & UX"],
             technologies: ["Shopify","Liquid","CSS","JS","Photoshop","Figma"]
         },{
             title: "La Madre is Watching",
@@ -74,7 +73,7 @@ export default class PastClients extends Component {
             startDate: "",
             endDate: "",
             statement: "Photographing the edgy side of the Los Angeles night scene.",
-            responsibilities: ["Build custom social media website","Party events shareable photo gallery","Graphic design"],
+            tasks: ["Build custom social media website","Party events shareable photo gallery","Graphic design"],
             technologies: ["HTML","CSS","Javascript","Photoshop"]
         }]
     }

@@ -22,7 +22,7 @@ export default class PortfolioPage extends Component {
             startDate: "2023",
             endDate: "",
             statement: "Sustainable modular housing.",
-            responsibilities: ["Custom built Shopify website","Client friendly editable content"],
+            tasks: ["Custom built Shopify website","Client friendly editable content"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "Photoshop", "FIGMA"]
         },{
             title: "Our Highest Mantra",
@@ -33,7 +33,7 @@ export default class PortfolioPage extends Component {
             startDate: "2023",
             endDate: "",
             statement: "Find your higher self.",
-            responsibilities: ["Custom built Shopify website","Animated user experience"],
+            tasks: ["Custom built Shopify website","Animated user experience"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "Photoshop", "FIGMA"]
         },{
             title: "Covered Perfectly",
@@ -44,7 +44,7 @@ export default class PortfolioPage extends Component {
             startDate: "2022",
             endDate: "",
             statement: "Because looking beautiful never gets old.",
-            responsibilities: ["Re-design Shopify website", "Email Marketing", "Social Media Imagery", "Logo re-design"],
+            tasks: ["Re-design Shopify website", "Email Marketing", "Social Media Imagery", "Logo re-design"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "Photoshop", "FIGMA"]
         },{
             title: "Scared But Alive",
@@ -55,7 +55,7 @@ export default class PortfolioPage extends Component {
             startDate: "2021",
             endDate: "",
             statement: "Where street meets fitness. Unisex clothing with specific fit for AFAB, non-binary + women.",
-            responsibilities: ["Custom built Shopify website", "Customized sections & blocks", "Photoshop"],
+            tasks: ["Custom built Shopify website", "Customized sections & blocks", "Photoshop"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "Photoshop", "FIGMA", "Klaviyo"]
         },{
             title: "Momo[Muscle]",
@@ -66,7 +66,7 @@ export default class PortfolioPage extends Component {
             startDate: "2020",
             endDate: "",
             statement: "Basically, I design tools to teach women & AFAB babes to see sustainable results in less time. I want you to feel more like yourself & fitness is the catalyst.",
-            responsibilities: ["Custom built Shopify website", "Custom quiz w/ data capture", "User friendly editable content", "Graphic design & touchups"],
+            tasks: ["Custom built Shopify website", "Custom quiz w/ data capture", "User friendly editable content", "Graphic design & touchups"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "Photoshop", "FIGMA", "MailChimp", "Klaviyo"]
         },{
             title: "Red5 Performance",
@@ -77,7 +77,7 @@ export default class PortfolioPage extends Component {
             startDate: "2020",
             endDate: "",
             statement: "THE EQUATION IS SIMPLE: PHYSICS + DISCIPLINE + RED5 = HAPPIER, HEALTHIER, STRONGER YOU",
-            responsibilities: ["Custom built Shopify website", "MailChimp email capture", "Photoshop, graphics design", "Digital product design & development", "Marketing strategic planning"],
+            tasks: ["Custom built Shopify website", "MailChimp email capture", "Photoshop, graphics design", "Digital product design & development", "Marketing strategic planning"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "MailChimp", "Photoshop", "FIGMA"]
         },{
             title: "Prana Wellness",
@@ -88,7 +88,7 @@ export default class PortfolioPage extends Component {
             startDate: "2019",
             endDate: "",
             statement: "Prana is Sanskrit for breath, considered as a life-giving force.  Prana is seen as a universal energy, which flows in currents in and around the body.",
-            responsibilities: ["Custom React/Firebase website", "MailChimp email automation", "Photoshop & general designs"],
+            tasks: ["Custom React/Firebase website", "MailChimp email automation", "Photoshop & general designs"],
             technologies: ["React", "JS", "CSS", "Firebase", "Photoshop", "FIGMA", "MailChimp"]
         },{
             title: "D I V I N I T Y",
@@ -99,7 +99,7 @@ export default class PortfolioPage extends Component {
             startDate: "2021",
             endDate: "",
             statement: "With a passion for beauty, fashion and mental health, Divinity offers a refreshing approach to the world of social media.",
-            responsibilities: ["Custom built Shopify website", "Graphic design", "Dropshipping integration"],
+            tasks: ["Custom built Shopify website", "Graphic design", "Dropshipping integration"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "Photoshop", "FIGMA", "MailChimp"]
         },{
             title: "Bravo Built",
@@ -110,7 +110,7 @@ export default class PortfolioPage extends Component {
             startDate: "2021",
             endDate: "",
             statement: "Within these programs you will find a constant changing routine that helps build a brick by brick foundation.",
-            responsibilities: ["Custom built Shopify website", "MailChimp email automation", "Photoshop/graphic design", "Marketing strategic planning", "Merch/product design"],
+            tasks: ["Custom built Shopify website", "MailChimp email automation", "Photoshop/graphic design", "Marketing strategic planning", "Merch/product design"],
             technologies: ["Shopify","Liquid", "JS", "CSS", "SVG", "Photoshop", "FIGMA", "MailChimp"]
         },{
             title: "Metamorphosis Medical Center",
@@ -120,7 +120,7 @@ export default class PortfolioPage extends Component {
             startDate: "2021",
             endDate: "",
             statement: "Our MISSION is to provide a safe, nurturing environment in which patients may access personalized therapies delivered at the highest standard of care, enabling them to heal and transform into their full potential for health and well-being.",
-            responsibilities: ["Custom single-page website"],
+            tasks: ["Custom single-page website"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "SVG", "Photoshop", "MailChimp", "FIGMA"]
         },{
             title: "Sathi Roy",
@@ -131,21 +131,21 @@ export default class PortfolioPage extends Component {
             startDate: "2021",
             endDate: "",
             statement: "I help people reach their highest potential every day by taking a holistic and customized approach involving their mind, body, soul, and spirit.",
-            responsibilities: ["Custom built Shopify", "Graphic design", "Vector & digital graphics"],
+            tasks: ["Custom built Shopify", "Graphic design", "Vector & digital graphics"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "SVG", "Photoshop", "FIGMA"]
         }],
         skills: [
             'Shopify',
+            'Liquid',
             'WordPress',
             'Figma',
             'MailChimp',
-            'Liquid',
+            'Klaviyo',
             'React',
             'NodeJs',
             'GitHub',
             'Git',
             'Adobe PhotoShop',
-            'IDX Broker',
             'Firebase',
             'JavaScript',
             'VanillaJS',
@@ -175,7 +175,7 @@ export default class PortfolioPage extends Component {
             image: './projects/blackjack.png',
             link: 'https://levi237.github.io/blackjack-reup/',
             lineOne: 'Black Jack circa 1990.',
-            lineTwo: 'Javascript, VanillaJS, HTML5, CSS3'
+            lineTwo: 'Javascript, VanillaJS, HTML, CSS'
         }]
     }
     render(){
