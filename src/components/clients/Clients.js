@@ -58,10 +58,10 @@ const MobileColumns = styled.div`
     grid-template-columns: 1fr;
     gap: 5px;
     ul {
-        width: 100%;
+        // width: 100%;
     }
     @media screen and (max-width: 900px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 60% 40%;
     }
 `;
 
