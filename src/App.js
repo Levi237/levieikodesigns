@@ -186,7 +186,7 @@ const BodyContainer = styled.div`
 const AppContainer = styled.div`
   h1 {
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
   a {
     color: var(--darkblue);
