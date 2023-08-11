@@ -31,7 +31,7 @@ export default class HomePage extends Component {
         </HomeHeroWrapper>
 
         <HomeSecondNav id="scroll-to">
-          <h1>LEVI EIKO DESIGNS</h1>
+          <h1>Levi Eiko Designs</h1>
         </HomeSecondNav>
 
         <HomeBodyWrapper>  
