@@ -18,7 +18,7 @@ export default class EmailMarketing extends Component {
             <section>
               <ul>
                 <li>
-                  Get in that Inbox, <b><i>not spam</i></b>
+                  Get in that Inbox, <b>not spam</b>
                 </li>
                 <li>
                   Create email automations & single blasts
