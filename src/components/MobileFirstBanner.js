@@ -14,15 +14,15 @@ export default class MobileFirstBanner extends Component {
           <div>
             <h1>Why Mobile-First</h1>
             <h3>So.. you actually <b>don't</b> need an app for that..</h3>
-            <h4>[Mobile-First Website] vs [Website + Android App + iPhone App]</h4>
             <p>
-              For most people their primary device is their cell phone.
-              With a mobile-first website you can create that same app 
-              experience without forcing users to download more stuff.
+              There are a lot of things a website can do that apps can do, but there are big perks when it comes to building a website that is mobile friendly first.
             </p>
-            <p>
-              Welcome to the future!
-            </p>
+            <ul>
+              <li>Cheaper to start</li>
+              <li>Accessible to a larger audience</li>
+              <li>No downloads required to start</li>
+              <li>Test UX/UI before App development</li>
+            </ul>
           </div>
         </section>
         <div></div>
@@ -111,8 +111,11 @@ const MobileFirstBannerWrapper = styled.section`
         font-size: 3.5vw;
         &:last-of-type {
           margin-bottom: 0!important;
-          font-weight: bold;
+          // font-weight: bold;
         }
+      }
+      ul, li {
+        font-size: 15px;
       }
     }
   }
