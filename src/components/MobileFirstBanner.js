@@ -100,7 +100,6 @@ const MobileFirstBannerWrapper = styled.section`
       h3 {
         font-size: 4vw;
         font-weight: 500;
-        font-style: italic;
         margin: 0!important;
       }
       h4 {

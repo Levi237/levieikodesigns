@@ -39,8 +39,6 @@ const FAQPage = () => {
                 Example: &nbsp;
               </span>
               I log onto FaceBook through Google Chrome because the FaceBook App file is too large and I don't want it digging more into my personal life.
-              <br/>
-              <i><small>(TBH, the only reason I am on FaceBook is because this is one of the few ways I get to see my nephews and neice.)</small></i>
             </p>
           </section>
           <section>
@@ -152,7 +150,7 @@ const FAQPage = () => {
               <img src="/faq/no-ssl_example.png"/>
             </div>
           </section>
-          <div style={{textAlign: 'center', marginTop: '200px', fontStyle: 'italic'}}>This FAQ was last updated April 2021.</div>
+          <div style={{textAlign: 'center', marginTop: '200px'}}>This FAQ was last updated April 2021.</div>
         </div>
     </Container>
   );

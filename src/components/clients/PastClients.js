@@ -170,7 +170,7 @@ const ClientContainer = styled.div`
     }
     p {
         margin: 10px auto;
-        font-style: italic;
+        // font-style: italic;
         font-size: 14px;
     }
     ul, span {

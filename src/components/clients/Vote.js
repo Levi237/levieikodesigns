@@ -65,7 +65,7 @@ const Container = styled.div`
     }
     p {
         font-family: Didot,Times New Roman;
-        font-style: italic;
+        // font-style: italic;
         font-weight: 800;
         font-size: 14px;
         width: 200px;
