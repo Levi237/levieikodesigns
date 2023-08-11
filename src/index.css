@@ -92,6 +92,10 @@ h2 {
   }
 }
 
+.no-break {
+  display: inline-block!important;
+}
+
 /*==================== HAMBURGER ICON ====================*/
 .hamburger-close {
   padding-top: 10px;
