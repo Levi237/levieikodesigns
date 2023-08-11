@@ -26,6 +26,17 @@ export default class PastClients extends Component {
             tasks: ["Custom built Shopify website","Graphic design & touchups","Email marketing & automation"],
             technologies: ["Shopify","Liquid","JS","CSS","SVG","Photoshop","MailChimp","FIGMA"]
         },{
+            title: "Bravo Built",
+            image: "./clients/bravo-built.jpg",
+            image2: "./clients/bravo-built_2.jpg",
+            link: "bravobuiltfit.com",
+            status: "live",
+            startDate: "2021",
+            endDate: "",
+            statement: "Within these programs you will find a constant changing routine that helps build a brick by brick foundation.",
+            tasks: ["Custom built Shopify website", "MailChimp email automation", "Photoshop/graphic design", "Marketing strategic planning", "Merch/product design"],
+            technologies: ["Shopify","Liquid", "JS", "CSS", "SVG", "Photoshop", "FIGMA", "MailChimp"]
+        },{
             title: "Andrea Sells Maui",
             image: "./clients/andreasellsmaui2.jpg",
             link: "andreasellsmaui.com",
@@ -40,7 +51,7 @@ export default class PastClients extends Component {
             link: "fitplanapp.com",
             image: "./clients/fitplan-giftcard.png",
             status: "live",
-            startDate: "",
+            startDate: "2019",
             endDate: "",
             statement: "Workout with elite personal trainers.",
             tasks: ["Custom email: design & marketing","Web development, design & troubleshooting","Graphic design"],
@@ -50,27 +61,27 @@ export default class PastClients extends Component {
             link: "it-afterhours.com",
             image: "./clients/it-afterhours.png",
             status: "inactive",
-            startDate: "",
+            startDate: "2019",
             endDate: "",
             statement: "Professional, affordable computer service company",
-            tasks: ["Streamline WordPress & resolve bugs","Customize CSS code","Mobile friendly upgrade","Currently undergoing host & server"],
+            tasks: ["Streamline WordPress & resolve bugs","Customize CSS code","Mobile friendly upgrade"],
             technologies: ["WordPress","CSS","JS"]
         },{
             title: "HeatSeeker Hot Sauce",
             link: "heatseekersauce.com",
             image: "./clients/heatseeker.png",
             status: "inactive",
-            startDate: "",
+            startDate: "2019",
             endDate: "",
             statement: "Bold and minimal, pure and simple... That's what we do.",
-            tasks: ["Re-design Shopify website","Streamline content & UX"],
+            tasks: ["Re-design Shopify website","Streamline content & UX", "Add wholesale accounts"],
             technologies: ["Shopify","Liquid","CSS","JS","Photoshop","Figma"]
         },{
             title: "La Madre is Watching",
             image: "./clients/lamadreiswatching-ongina.JPG",
             link: "lamadreiswatching.com",
             status: "inactive",
-            startDate: "",
+            startDate: "2007",
             endDate: "",
             statement: "Photographing the edgy side of the Los Angeles night scene.",
             tasks: ["Build custom social media website","Party events shareable photo gallery","Graphic design"],
@@ -82,26 +93,23 @@ export default class PastClients extends Component {
         const mappastClientList = pastClientList.map((client, key) => {
             const technologiesList = client.technologies.map((c, k) => {
                 return <span key={k}>{c}</span>
-            })
+            });
+            const tasksList = client.tasks.map((r, k) => {
+                return <li key={k}><span>{r}</span></li>
+            });
             return(
                 <ClientContainer key={key}>
                     <section>
                         <img src={client.image} alt={client.title}/>
                     </section>
                     <section>
-                        <h2>
-                            {client.title}
-                        </h2>
-                        <h4>
-                            {client.link}
-                        </h4>
-                        <p>
-                            “{client.statement}”
-                        </p>
-                        <h3>
-                            Technologies: 
-                        </h3>
-                            {technologiesList}
+                        <h2>{client.title}</h2>
+                        <small>{client.startDate}</small>
+                        <h4>{client.link}</h4>
+                        <p>“{client.statement}”</p>
+                        <ul>{tasksList}</ul>
+                        <h3>Technologies: </h3>
+                        {technologiesList}
                     </section>
                 </ClientContainer>
             )
@@ -170,6 +178,7 @@ const ClientContainer = styled.div`
     }
     ul {
         margin: 10px auto!important;
+        padding-inline-start: 12px;
     }
     @media screen and (max-width: 640px) {
         width: 45%;

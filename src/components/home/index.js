@@ -35,7 +35,7 @@ export default class HomePage extends Component {
         </HomeSecondNav>
 
         <HomeBodyWrapper>  
-          <FeaturedBanner/>
+          {/* <FeaturedBanner/> */}
           <MobileFirstBanner/>
           <EmailMarketing/>
           <WireframeBanner/>

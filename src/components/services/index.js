@@ -41,9 +41,9 @@ export default class ServicesPage extends Component {
           'Logos & brand identity development'
         ],
         collage: [
+          'services/red5-collection.png',
           'services/bravo-video.png', 
-          'services/divinity-youtube.png',
-          'services/red5-collection.png'
+          'services/divinity-youtube.png'
         ],
         position: {
           text: 'right bottom'

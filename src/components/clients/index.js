@@ -74,7 +74,7 @@ export default class PortfolioPage extends Component {
             image2: "./clients/red5performance_2.jpg",
             link: "red5performance.com",
             status: "live",
-            startDate: "2020",
+            startDate: "2021",
             endDate: "",
             statement: "THE EQUATION IS SIMPLE: PHYSICS + DISCIPLINE + RED5 = HAPPIER, HEALTHIER, STRONGER YOU",
             tasks: ["Custom built Shopify website", "MailChimp email capture", "Photoshop, graphics design", "Digital product design & development", "Marketing strategic planning"],
@@ -101,17 +101,6 @@ export default class PortfolioPage extends Component {
             statement: "With a passion for beauty, fashion and mental health, Divinity offers a refreshing approach to the world of social media.",
             tasks: ["Custom built Shopify website", "Graphic design", "Dropshipping integration"],
             technologies: ["Shopify", "Liquid", "JS", "CSS", "Photoshop", "FIGMA", "MailChimp"]
-        },{
-            title: "Bravo Built",
-            image: "./clients/bravo-built.jpg",
-            image2: "./clients/bravo-built_2.jpg",
-            link: "bravobuiltfit.com",
-            status: "live",
-            startDate: "2021",
-            endDate: "",
-            statement: "Within these programs you will find a constant changing routine that helps build a brick by brick foundation.",
-            tasks: ["Custom built Shopify website", "MailChimp email automation", "Photoshop/graphic design", "Marketing strategic planning", "Merch/product design"],
-            technologies: ["Shopify","Liquid", "JS", "CSS", "SVG", "Photoshop", "FIGMA", "MailChimp"]
         },{
             title: "Metamorphosis Medical Center",
             image: "./clients/metamorphosis.jpg",

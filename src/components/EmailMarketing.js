@@ -41,8 +41,8 @@ export default class EmailMarketing extends Component {
               </ul>
             </section>
             <section className="desktop">
-              <img src="/mailchimp-automation.png"/>
-              <img src="/mailchimp-forms.png"/>
+              <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
+              <img src="/mailchimp-forms.png" alt="MailChimp Example Forms"/>
             </section>
           </div>
         </div>
@@ -83,7 +83,6 @@ const EmailMarketingWrapper = styled.section`
     max-width: 900px;
     margin: 0 auto;
     > h3 {
-      font-family: 'Arial Narrow', Arial, sans-serif;
       letter-spacing: .33vw;
       text-transform: uppercase;
       text-align: center;
