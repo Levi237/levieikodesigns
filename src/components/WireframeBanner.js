@@ -7,7 +7,7 @@ export default class WireframeBanner extends Component {
       <WireframeBannerWrapper>
         <h1>SEEING THE BIG PICTURE</h1>
         <p>Start with a plan and wireframe. You'll be surprised at what we can develop!</p>
-        <p>MomoMuscle.co 2020 design</p>
+        <b>MomoMuscle.co 2020 design</b>
         <div>
           <img className="desktop" src="/momo-wireframe-desktop.png" alt="Website display with Momo Muscle circa 2020"/>
           <img className="mobile" src="/momo-wireframe-mobile.png" alt="Website display with Momo Muscle circa 2020"/>
