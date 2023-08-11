@@ -17,7 +17,7 @@ export default class Clients extends Component {
                     </MobileImg>
                     <section>
                         <h2>
-                            {client.title}<i> <small> <small> Since </small>{client.startDate}</small></i>
+                            {client.title}<b> <small className="no-break"> <small> Since </small>{client.startDate}</small></b>
                         </h2>
                         <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
                             {client.link}

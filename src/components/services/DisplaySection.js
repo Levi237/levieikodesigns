@@ -18,7 +18,7 @@ export default class ServicesPage extends Component {
             <div className="title"><h1>{service.title}</h1></div>
             <div className="text">
               <h2>{service.subtitle}</h2>
-              <i>{service.subtext}</i>
+              <span>{service.subtext}</span>
               <p>{service.paragraph}</p>
               <br/>
               <h4>{service.listName}</h4>

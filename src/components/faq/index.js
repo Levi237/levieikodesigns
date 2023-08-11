@@ -16,7 +16,7 @@ const FAQPage = () => {
             </p>
             <p>
               DJs, photographers, coffee shops, etc.  Your identity and your brand are what get people to fall in love with you.  
-              Having a fully custom website gives you that extra professional look and <i><b>the freedom to really dream</b></i>.
+              Having a fully custom website gives you that extra professional look and <b>the freedom to really dream</b>.
               If you see an animation you like, then it's possible to build it.  
               Plus, with Firebase, hosting starts off free and only charges if you see a lot of traffic onto your site.
               <br/>
@@ -58,7 +58,7 @@ const FAQPage = () => {
               <br/>
             </p>
             <p>
-              <i>Certain expenses vary, like hosting, domain name, SSL, email, thid party integrations and generally have monthly or annual expenses.</i>
+              <b>Certain expenses vary, like hosting, domain name, SSL, email, thid party integrations and generally have monthly or annual expenses.</b>
             </p>
           </section>
           <section>
@@ -125,7 +125,7 @@ const FAQPage = () => {
           <section>
             <h3>What is FIGMA?</h3>
             <p>
-              FIGMA is currently one of the best Free <i>"collaborative interface design tool(s)."</i>
+              FIGMA is currently one of the best Free <b>"collaborative interface design tool(s)."</b>
               <br/>
               Right now this is what I use to wireframe websites, and is an excellent way to share images.
             </p>
@@ -134,7 +134,7 @@ const FAQPage = () => {
             <h3>What is an SSL certificate?</h3>
             <div>
               <p>
-                It's the <i>s</i> in <i>https</i>, meaning <i>Secure</i>.
+                It's the <b>s</b> in <b>https</b>, meaning <b>Secure</b>.
               </p>
               <p>
                 SSL stands for "Secure Sockets Layer".
