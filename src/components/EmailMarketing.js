@@ -10,8 +10,8 @@ export default class EmailMarketing extends Component {
         <h1 className="mobile-inline">Solutions</h1>
         <div>
           <section className="mobile">
-            <img src="/mailchimp-automation.png"/>
-            <img src="/mailchimp-forms.png"/>
+          <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
+              <img src="/mailchimp-forms.png" alt="MailChimp Example Forms"/>
           </section>
           <h3>How using an email service provider can help.</h3>
           <div>
@@ -97,7 +97,7 @@ const EmailMarketingWrapper = styled.section`
       &:last-of-type {
         box-shadow: 0px 0px 4px rgba(0,0,0,.25);
         margin-left: 25%;
-        margin-top: -28%;
+        margin-top: -31%;
       }
     }
     > div {
@@ -166,7 +166,7 @@ const EmailMarketingWrapper = styled.section`
       }
       img {
         &:last-of-type {
-          margin-top: -25%;
+          margin-top: -31%;
         }
       }
       > div {
