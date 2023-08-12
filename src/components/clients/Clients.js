@@ -16,7 +16,7 @@ const Clients = ({ clientList }) => {
                     </MobileImg>
                     <section>
                         <h2>
-                            {client.title}<b> <small className="no-break"> <small> Since </small>{client.startDate}</small></b>
+                            {client.title}&nbsp;<small className="no-break">{client.startDate}</small>
                         </h2>
                         <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
                             {client.link}
@@ -106,15 +106,21 @@ const ClientContainer = styled.div`
     h1 {
         margin-bottom: 10px!important;
     }
+    h2 {
+        font-weight: 500;
+        small {
+            font-weight: 100;
+        }
+    }
     h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
         margin: 10px auto;
     }
     ul, span {
-        font-size: 14px;
+        font-size: 16px;
     }
     ul {
         margin: 10px auto!important;
