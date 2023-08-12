@@ -4,12 +4,8 @@ import styled               from 'styled-components';
 import Footer               from '../Footer';
 
 import Skills               from './Skills';
-// import Hero                 from './Hero';
 import Clients              from './Clients';
 import PastClients          from './PastClients';
-// import ProjectsFlip         from './ProjectsFlip';
-// import ProjectsMobile       from './ProjectsMobile';
-// import Photography          from './Photography';
 
 export default class PortfolioPage extends Component {
     state = {
@@ -141,13 +137,13 @@ export default class PortfolioPage extends Component {
             'HTML',
             'CSS'
         ],
-        projects: [{
-            title: 'PokeGen',
-            image: './projects/pokegen.png',
-            link: 'https://pokegen.herokuapp.com/',
-            lineOne: 'Build your own Pokemon Card MEME.',
-            lineTwo: 'MongoDB, Express, NodeJS [MEN]'
-        },{
+        // projects: [{
+        //     title: 'PokeGen',
+        //     image: './projects/pokegen.png',
+        //     link: 'https://pokegen.herokuapp.com/',
+        //     lineOne: 'Build your own Pokemon Card MEME.',
+        //     lineTwo: 'MongoDB, Express, NodeJS [MEN]'
+        // },{
         //     title: 'Hi Sierra!',
         //     image: './projects/hi-sierra.png',
         //     link: 'https://parkintel.herokuapp.com/home',
@@ -160,25 +156,22 @@ export default class PortfolioPage extends Component {
         //     lineOne: 'Tools for the public to help',
         //     lineTwo: 'report homeless needs.'
         // },{
-            title: 'BlackJack',
-            image: './projects/blackjack.png',
-            link: 'https://levi237.github.io/blackjack-reup/',
-            lineOne: 'Black Jack circa 1990.',
-            lineTwo: 'Javascript, VanillaJS, HTML, CSS'
-        }]
+        //     title: 'BlackJack',
+        //     image: './projects/blackjack.png',
+        //     link: 'https://levi237.github.io/blackjack-reup/',
+        //     lineOne: 'Black Jack circa 1990.',
+        //     lineTwo: 'Javascript, VanillaJS, HTML, CSS'
+        // }]
     }
     render(){
-        const { clientList, projects, skills } = this.state;
+        const { clientList,  skills } = this.state;
         return (
             <Container>
-                {/* <Hero clientList={clientList}/> */}
                 <h1 className="titleDecoration">PROJECTS</h1>
                 <Clients clientList={clientList}/>
                 <Skills skills={skills}/>
                 <h1>PAST WORK</h1>
                 <PastClients/>
-                {/* <ProjectsFlip projects={projects} /><ProjectsMobile projects={projects} /> */}
-                {/* <Photography/> */}
                 <Footer/>      
             </Container>
         );
@@ -187,7 +180,7 @@ export default class PortfolioPage extends Component {
 
 const Container = styled.div`
     background-color: rgba(43, 41, 41, 1);
-    padding: 80px 0 0;
+    padding: 60px 0 0;
     margin: 0 auto!important;
 
     @media screen and (max-width: 745px){
