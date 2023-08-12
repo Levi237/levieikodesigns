@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React, { useRef } from 'react';
 import styled               from 'styled-components';
 
-export default class Clients extends Component {
-    state = {}
-    render(){
-        const { clientList } = this.props
+const Clients = ({ clientList }) => {
+        const myRef = useRef();
+        // const  = this.props
         const liveClients = clientList.filter(client => client.status === 'live')
         const mapClientList = liveClients.map((client, key) => {
             const tasksList = client.tasks.map((r, k) => {
                 return <li key={k}><span>{r}</span></li>
             })
             return(
-                <ClientContainer key={key}>
+                <ClientContainer key={key} ref={myRef}>
                     <MobileImg href={`https://${client.link}`} target="_blank">
                         <img src={client.image} alt={client.title}/>
                     </MobileImg>
@@ -50,7 +49,6 @@ export default class Clients extends Component {
                 {mapClientList}          
             </Container>
         );
-    };
 };
 
 const MobileColumns = styled.div`
@@ -205,3 +203,5 @@ const Container = styled.div`
         }
     }
 `;
+
+export default Clients;
