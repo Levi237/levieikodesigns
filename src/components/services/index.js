@@ -78,6 +78,7 @@ const { services } = this.state;
     return(
       <LocalWrapper>
         <LocalBodyWrapper>  
+          <h1 className="titleDecoration">Services</h1>
           <div>
           <DisplaySection service={services.websites}/>
           <DisplaySection service={services.graphics}/>
@@ -96,9 +97,10 @@ const LocalWrapper = styled.div`
   width: 100vw;
   background-color: rgba(var(--color-white) / 100%);
   overflow: scroll;
-`;
-
+  `;
+  
 const LocalBodyWrapper = styled.div`
+  padding: 60px 0 0;
   position: relative;
   width: 100vw;
   height: calc(100vh - 5vw - 50px);
@@ -111,10 +113,7 @@ const LocalBodyWrapper = styled.div`
     margin: 0 auto;
     max-width: 1200px;
   }
-  > h1 {
-    color: var(--darkblue);
-    font-size: 32px;
-  }
+
   > section {
     width: 100%;
   }
