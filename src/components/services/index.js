@@ -102,7 +102,7 @@ const LocalBodyWrapper = styled.div`
   position: relative;
   width: 100vw;
   height: calc(100vh - 5vw - 50px);
-  background-color: #fff;
+  background-color: rgb(var(--color-rgb-darkgrey-new));;
   overflow: scroll;
   position: relative;
   
@@ -120,6 +120,6 @@ const LocalBodyWrapper = styled.div`
   }
 
   @media screen and (min-width: 945px) {
-    height: calc(100vh - 80px);
+    height: calc(100vh);
   }
 `;
