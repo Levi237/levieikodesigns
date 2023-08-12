@@ -56,7 +56,7 @@ const HomeWrapper = styled.div`
   overflow: scroll;
 `;
 const HomeSecondNav = styled.nav`
-  height: calc(50px + 5vw);
+  height: 80px;
   z-index: 2;
   background-color: var(--blue);
   -webkit-scroll-snap-align: start;

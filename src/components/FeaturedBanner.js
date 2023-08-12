@@ -64,7 +64,7 @@ export default class FeaturedBanner extends Component {
 }
 
 const FeaturedWrapper = styled.section`
-  height: calc(100vh - 50px - 5vw);
+  height: calc(100dvh);
   overflow: hidden;
   position: relative;
   .logo-image {

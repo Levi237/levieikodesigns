@@ -159,7 +159,7 @@ const FAQPage = () => {
 const Container = styled.div`
   background-color: #fff;
   color: #181717;
-  padding: 80px 0;
+  padding: 60px 0;
   margin: 0 auto!important;
   > div {
     margin: 60px auto;
@@ -169,7 +169,7 @@ const Container = styled.div`
       margin-bottom: 60px;
     }
     > h2 {
-      margin: 120px 0 40px;
+      margin: 20px 0 40px;
       font-size: 28px;
       text-align: center;
     }
@@ -217,9 +217,9 @@ const Container = styled.div`
   }
   @media screen and (max-width: 745px){
     padding-top: 60px;  
-    > h1 {
-        padding: 20px;
-    }
+    // > h1 {
+    //     padding: 20px;
+    // }
     > div {
       > section {
         h3 {

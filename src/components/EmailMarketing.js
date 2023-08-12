@@ -155,7 +155,7 @@ const EmailMarketingWrapper = styled.section`
       margin-top: 80px!important;
       margin-bottom: -20px!important;
       &:last-of-type {
-        margin-top: 5vw!important;
+        margin-top: 12px!important;
       }
     }
     > div {

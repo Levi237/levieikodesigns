@@ -29,7 +29,7 @@ const GlobalDiv = styled.div`
     cursor: pointer;
   }
   @media screen and (max-width: 945px) {
-    top: 5vw;
+    top: 28px;
   }
 `;
 const Logo = styled(GlobalDiv)`
