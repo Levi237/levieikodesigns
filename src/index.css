@@ -98,6 +98,23 @@ h3, h4, h5, p, li {
   display: inline-block!important;
 }
 
+/*==================== NavBar STYLE ====================*/
+.nav-bar svg {
+  fill: var(---color);
+  display: inline-block;
+}
+.nav-bar > #hamburger-btn > section {
+  background-color: var(---color);;
+}
+
+.default {
+  ---color: var(--blue);
+}
+.home,
+.white {
+  ---color: #FFF;
+}
+
 /*==================== HAMBURGER ICON ====================*/
 .hamburger-close {
   padding-top: 10px;
