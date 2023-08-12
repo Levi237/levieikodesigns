@@ -1,3 +1,8 @@
+// HIDE FAQ and FontList for now
+// update FAQ, change style to match new style.
+// create generic style for all pages (hieght: 80px; etc.)
+// replace pageStyle state with designStyle class
+
 import React, { Component }           from 'react';
 import { Routes, Route, Link }              from 'react-router-dom';
 import styled                         from 'styled-components';
@@ -8,10 +13,9 @@ import * as routes                    from './constants/routes';
 import ModalWindow                    from './components/Modal';
 import NavMenu                        from './components/nav/NavMenu';
 import NavBar                         from './components/nav/NavBar';
-import Footer                         from './components/Footer';
 
 import AboutPage                      from './components/about';
-import FAQPage                        from './components/faq';
+// import FAQPage                        from './components/faq';
 import HomePage                       from './components/home';
 import ServicesPage                   from './components/services';
 import PortfolioPage                  from './components/clients';
@@ -19,8 +23,7 @@ import ContactPage                    from './components/contact';
 import EmailConfirmation              from './components/contact/EmailConfirmation';
 
 import { ReactComponent as Mail }       from './svg/icons/iconfinder_mail.svg';
-
-import FontList                       from './fonts';
+// import FontList                       from './fonts';
 
 export default class App extends Component {
   state = {

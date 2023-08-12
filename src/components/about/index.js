@@ -11,7 +11,7 @@ const AboutPage = ({ slideMe }) => {
     <AboutContainer>
       <Container>
         <div className={slideMe}>
-          <h2> Meet Levi</h2>
+          <h2>Meet Levi</h2>
           <p>
             <b>Who am I?</b>
             &emsp;A web developer, of the great outdoors & photographer of random things...{" "}
@@ -30,22 +30,8 @@ const AboutPage = ({ slideMe }) => {
             &emsp;If you have a project you want to come{" "}
             to life, an existing page that needs upgrades,{" "}
             some graphic design or email marketing assitance I'm your person. <br/><br/>
-            <NavLink to={routes.MAIL}>Schedule your free consultation today!</NavLink>
+            <NavLink to={routes.MAIL}>Schedule your complimentary consultation today ➡</NavLink>
           </p>
-          {/* <section>
-            <a target="_blank" rel="noreferrer" href="https://github.com/Levi237">
-              <Github className="svg-about-link"/>
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/leviwinans">
-              <Linkedin className="svg-about-link"/>
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/levi_eiko/">
-              <Instagram className="svg-about-link"/>
-            </a>
-            <NavLink to={routes.MAIL}>
-              <Mail className="svg-about-link"/>
-            </NavLink>
-          </section> */}
           <NavIcons/>
         </div>
       </Container>
@@ -63,19 +49,10 @@ const Container = styled.div`
   width: 50%;
   max-width: 50%;
   vertical-align: top;
-  // svg.svg-about-link {
-  //   width: 40px;
-  //   height: 40px;
-  //   margin: 2.5%;
-  // }
+
   a {
     font-weight: 500;
     transition: .3s ease;
-    &:hover {
-      // > svg.svg-about-link * {
-      //   fill: var(--blue)!important;
-      // }
-    }
   }
   div {
     background-color: rgba(250,250,250,.8);
@@ -89,7 +66,6 @@ const Container = styled.div`
   h2 {
     margin: 0 10%;
     font-size: 36px;
-    // font-family: "Big Shoulders Stencil Text";
     text-align: center;
   }
   p {
@@ -101,24 +77,6 @@ const Container = styled.div`
       font-weight: 500;
     }
   }
-  // section {
-  //   text-align: center;
-  //   img {
-  //     width: 15%;
-  //     max-width: 40px;
-  //     margin: 2.5%;
-  //   }
-  //   > span {
-  //     width: 15%;
-  //     max-height: 40px;
-  //     max-width: 40px;
-  //     margin: 2.5%;
-  //     transition: .3s ease;
-  //     &:hover {
-  //       cursor: pointer;
-  //     }
-  //   }
-  // }
   @media screen and (max-width: 900px) {
     width: 80%;
     max-width: 80%;
