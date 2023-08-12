@@ -31,7 +31,8 @@ export default class HomePage extends Component {
         </HomeHeroWrapper>
 
         <HomeSecondNav id="scroll-to">
-          <h1>Levi Eiko Designs</h1>
+          <LogoSVG/>
+          {/* <h1>Levi Eiko Designs</h1> */}
         </HomeSecondNav>
 
         <HomeBodyWrapper>  
@@ -40,7 +41,7 @@ export default class HomePage extends Component {
           <EmailMarketing/>
           <WireframeBanner/>
           <Footer/>
-          <div className="down-arrow-class"></div>
+          {/* <div className="down-arrow-class"></div> */}
         </HomeBodyWrapper>
 
       </HomeWrapper>
@@ -62,11 +63,21 @@ const HomeSecondNav = styled.nav`
   -moz-scroll-snap-align: start;
   -ms-scroll-snap-align: start;
   scroll-snap-align: start;
+  position: relative;
   > h1 {
-    margin: calc(5vw + 2px)!important;
+    // margin: calc(5vw + 2px)!important;
     display: inline-block;
     font-size: 32px;
     line-height: 100%;
+  }
+  > svg {
+    position: absolute;
+    z-index: 999;
+    top: 24px;
+    left: 5vw;
+    width: 36px;
+    height: 36px;
+    fill: #fff;
   }
   @media screen and (min-width: 945px) {
     height: 80px;
