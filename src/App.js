@@ -123,9 +123,9 @@ export default class App extends Component {
             <Route path={routes.INFO} exact element={<>
               <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
               </>}/>
-            <Route path={routes.FAQS} exact element={<>
+            {/* <Route path={routes.FAQS} exact element={<>
               <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
-              </>}/>
+              </>}/> */}
             <Route path={routes.SERV} exact element={<>
               <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
               </>}/>
@@ -159,11 +159,11 @@ export default class App extends Component {
                 <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="info"/>
                 <AboutPage slideMe={slideMe} animateSlideMe={this.animateSlideMe}/>
                 </>}/>
-              <Route path={routes.FAQS} exact element={<>
+              {/* <Route path={routes.FAQS} exact element={<>
                 <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="blue"/>
                 <FAQPage/>
                 <Footer/>
-                </>}/>
+                </>}/> */}
               <Route path={routes.SERV} exact element={<>
                 <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="white"/>
                 <ServicesPage pageStyle={pageStyle.portfolio}/>

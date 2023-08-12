@@ -13,7 +13,7 @@ const NavMenu = ({ animateSlideMe, btnHamburger, toggleMenu }) => {
                 <NavLink activeclassname="active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>PROJECTS</NavLink>
                 <NavLink activeclassname="active" to={routes.INFO} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>ABOUT ME</NavLink>
                 <NavLink activeclassname="active" to={routes.MAIL} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CONTACT</NavLink>
-                <NavLink activeclassname="active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink>
+                {/* <NavLink activeclassname="active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink> */}
             </div>
         </NavContainer>
     );
