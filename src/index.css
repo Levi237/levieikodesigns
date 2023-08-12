@@ -70,7 +70,7 @@ h2 {
   letter-spacing: 2px;
 }
 h3, h4, h5, p, li {
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 /* Desktop vs Mobile toggle */
 .mobile-block, .mobile-inline {

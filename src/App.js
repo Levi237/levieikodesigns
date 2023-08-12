@@ -135,9 +135,9 @@ export default class App extends Component {
             <Route path={routes.MAIL} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.mail}/> }/>
             <Route path={routes.CNFM} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.home}/> }/>
             <Route path={routes.PORT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.portfolio}/> }/>
-            <Route path={routes.INFO} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.about}/> }/>
+            <Route path={routes.INFO} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.portfolio}/> }/>
             <Route path={routes.FAQS} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.faq}/> }/>
-            <Route path={routes.SERV} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.home}/> }/>
+            <Route path={routes.SERV} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.faq}/> }/>
             <Route path={routes.ROOT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.home}/> }/>
             <Route path={routes.ROOT} element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.root}/> }/>
           </Routes>
@@ -149,7 +149,7 @@ export default class App extends Component {
               <Route path={routes.PORT} exact element={<PortfolioPage/> }/>
               <Route path={routes.INFO} exact element={<AboutPage slideMe={slideMe} animateSlideMe={this.animateSlideMe}/> }/>
               <Route path={routes.FAQS} exact element={<><FAQPage/><Footer/></> }/>
-              <Route path={routes.SERV} exact element={<ServicesPage/> }/>
+              <Route path={routes.SERV} exact element={<ServicesPage pageStyle={pageStyle.portfolio}/> }/>
               <Route path={routes.ROOT} exact element={<HomePage btnScroll={this.btnScroll} pageStyle={pageStyle.home}/> }/>
               <Route path={routes.ROOT} element={<HomePage btnScroll={this.btnScroll} pageStyle={pageStyle.home}/> }/>
             </Routes>

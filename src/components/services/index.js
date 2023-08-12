@@ -78,9 +78,6 @@ const { services } = this.state;
     return(
       <LocalWrapper>
 
-        <BarNav id="scroll-to">
-          <h1>Levi Eiko Designs</h1>
-        </BarNav>
 
         <LocalBodyWrapper>  
           <div>

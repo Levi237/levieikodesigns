@@ -14,12 +14,9 @@ const AboutPage = ({ slideMe }) => {
           <h2> Meet Levi</h2>
           <p>
             <b>Who am I?</b>
-            &emsp;A web developer, LEGO enthusaist, camping{" "}
-            guru & photographer of random things... with a{" "}
-            green thumb. I'd like to think I have the eye{" "}
-            of an artist & the mind of an engineer, and my{" "}
-            <NavLink to={routes.PORT}>clients</NavLink>{" "}
-            seem to agree, so that's nice! 🤗
+            &emsp;A web developer, of the great outdoors & photographer of random things...{" "}
+            with a creative spirit. I'd like to think I have the eye of an artist{" "}
+            & the mind of an engineer.
           </p>
           <p>
             <b>What I do:</b>
@@ -29,12 +26,11 @@ const AboutPage = ({ slideMe }) => {
             I can build/enhance your website for that extra digital edge.
           </p>
           <p>
-            <b>WHY??</b>
+            <b>Why me??</b>
             &emsp;If you have a project you want to come{" "}
             to life, an existing page that needs upgrades,{" "}
-            some graphic design or email marketing assitance,{" "}
-            <NavLink to={routes.MAIL}>contact</NavLink>{" "}
-            me by clicking the envelope below!
+            some graphic design or email marketing assitance I'm your person. <br/><br/>
+            <NavLink to={routes.MAIL}>Schedule your free consultation today!</NavLink>
           </p>
           {/* <section>
             <a target="_blank" rel="noreferrer" href="https://github.com/Levi237">
@@ -100,7 +96,7 @@ const Container = styled.div`
     margin: 15px 15%;
     font-size: 15px;
     font-weight: 300;
-    line-height: 160%;
+    line-height: 120%;
     b {
       font-weight: 500;
     }

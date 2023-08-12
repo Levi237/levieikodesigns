@@ -4,7 +4,7 @@ import styled               from 'styled-components';
 import Footer               from '../Footer';
 
 import Skills               from './Skills';
-import Hero                 from './Hero';
+// import Hero                 from './Hero';
 import Clients              from './Clients';
 import PastClients          from './PastClients';
 // import ProjectsFlip         from './ProjectsFlip';

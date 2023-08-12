@@ -9,11 +9,11 @@ const NavMenu = ({ animateSlideMe, btnHamburger, toggleMenu }) => {
         <NavContainer id="menu" className="inactive">
             <div>
                 <NavLink activeclassname="active" to={routes.ROOT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>HOME</NavLink>
-                <NavLink exact="true" activeclassname="active" to={routes.SERV} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>SERVICES</NavLink>
-                <NavLink exact="true" activeclassname="active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CLIENTS</NavLink>
-                <NavLink exact="true" activeclassname="active" to={routes.INFO} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>ABOUT ME</NavLink>
-                <NavLink exact="true" activeclassname="active" to={routes.MAIL} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CONTACT</NavLink>
-                <NavLink exact="true" activeclassname="active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink>
+                <NavLink activeclassname="active" to={routes.SERV} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>SERVICES</NavLink>
+                <NavLink activeclassname="active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>PROJECTS</NavLink>
+                <NavLink activeclassname="active" to={routes.INFO} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>ABOUT ME</NavLink>
+                <NavLink activeclassname="active" to={routes.MAIL} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CONTACT</NavLink>
+                <NavLink activeclassname="active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink>
             </div>
         </NavContainer>
     );
