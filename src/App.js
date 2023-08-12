@@ -110,48 +110,72 @@ export default class App extends Component {
         <NavMenu btnHamburger={this.btnHamburger} resetslideMe={this.resetslideMe} toggleMenu={this.toggleMenu} animateSlideMe={this.animateSlideMe}/>
         <ModalWindow contactType={modalType} toggleModal={this.toggleModal}/>
         <Routes>
-            <Route path={routes.MAIL} exact element={ <></> }/>
-            <Route path={routes.CNFM} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
-            <Route path={routes.PORT} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
-            <Route path={routes.INFO} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
-            <Route path={routes.FAQS} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
-            <Route path={routes.SERV} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
-            <Route path={routes.ROOT} exact element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
-            <Route path={routes.ROOT} element={ <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe> }/>
-          
-        </Routes>
-
-        <Routes>
-          <Route path={routes.MAIL} exact element={<GoblinValleyImageAnimation/>}/>
-          <Route path={routes.CNFM} exact element={<HeroImageDivAnimation/>}/>
-          <Route path={routes.PORT} exact element={<></>}/>
-          <Route path={routes.SERV} exact element={<HeroImageDiv/>}/>
-          <Route path={routes.ROOT} exact element={<HeroImageDivAnimation/>}/>
-          <Route path={routes.ROOT} element={<HeroImageDivAnimation/>}/>
+            <Route path={routes.MAIL} exact element={<>
+              <GoblinValleyImageAnimation/>
+              </>}/>
+            <Route path={routes.CNFM} exact element={<>
+              <HeroImageDivAnimation/>
+              <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
+              </>}/>
+            <Route path={routes.PORT} exact element={<>
+              <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
+              </>}/>
+            <Route path={routes.INFO} exact element={<>
+              <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
+              </>}/>
+            <Route path={routes.FAQS} exact element={<>
+              <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
+              </>}/>
+            <Route path={routes.SERV} exact element={<>
+              <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
+              </>}/>
+            <Route path={routes.ROOT} exact element={<>
+              <HeroImageDivAnimation/>
+              <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
+              </>}/>
+            <Route path={routes.ROOT} element={<>
+              <HeroImageDivAnimation/>
+              <ContactMe><Link to={routes.MAIL}><Mail/></Link></ContactMe>
+              </>}/>
         </Routes>
 
         <BodyContainer>
-          <Routes>         
-            <Route path={routes.MAIL} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="white"/> }/>
-            <Route path={routes.CNFM} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/> }/>
-            <Route path={routes.PORT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
-            <Route path={routes.INFO} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
-            <Route path={routes.FAQS} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
-            <Route path={routes.SERV} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
-            <Route path={routes.ROOT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/> }/>
-            <Route path={routes.ROOT} element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/> }/>
-          </Routes>
           <ContentContainer>
             <Routes>         
-              <Route path={routes.FONT} exact element={<FontList/> }/>
-              <Route path={routes.MAIL} exact element={<ContactPage contactType={modalType}/> }/>
-              <Route path={routes.CNFM} exact element={<EmailConfirmation/> }/>
-              <Route path={routes.PORT} exact element={<PortfolioPage/> }/>
-              <Route path={routes.INFO} exact element={<AboutPage slideMe={slideMe} animateSlideMe={this.animateSlideMe}/> }/>
-              <Route path={routes.FAQS} exact element={<><FAQPage/><Footer/></> }/>
-              <Route path={routes.SERV} exact element={<ServicesPage pageStyle={pageStyle.portfolio}/> }/>
-              <Route path={routes.ROOT} exact element={<HomePage btnScroll={this.btnScroll} pageStyle={pageStyle.home}/> }/>
-              <Route path={routes.ROOT} element={<HomePage btnScroll={this.btnScroll} pageStyle={pageStyle.home}/> }/>
+              {/* <Route path={routes.FONT} exact element={<FontList/> }/> */}
+              <Route path={routes.MAIL} exact element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="white"/>
+                <ContactPage contactType={modalType}/>
+                </>}/>
+              <Route path={routes.CNFM} exact element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/>
+                <EmailConfirmation/>
+                </>}/>
+              <Route path={routes.PORT} exact element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="white"/>
+                <PortfolioPage/>
+                </>}/>
+              <Route path={routes.INFO} exact element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="info"/>
+                <AboutPage slideMe={slideMe} animateSlideMe={this.animateSlideMe}/>
+                </>}/>
+              <Route path={routes.FAQS} exact element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="blue"/>
+                <FAQPage/>
+                <Footer/>
+                </>}/>
+              <Route path={routes.SERV} exact element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="white"/>
+                <ServicesPage pageStyle={pageStyle.portfolio}/>
+                </>}/>
+              <Route path={routes.ROOT} exact element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/>
+                <HomePage btnScroll={this.btnScroll} pageStyle={pageStyle.home}/>
+                </>}/>
+              <Route path={routes.ROOT} element={<>
+                <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/>
+                <HomePage btnScroll={this.btnScroll} pageStyle={pageStyle.home}/>
+                </>}/>
             </Routes>
           </ContentContainer>
         </BodyContainer>   
