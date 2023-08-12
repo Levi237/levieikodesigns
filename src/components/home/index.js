@@ -3,7 +3,7 @@ import styled               from 'styled-components';
 import { NavLink }          from 'react-router-dom';
 import * as routes          from '../../constants/routes';
 
-import FeaturedBanner       from '../FeaturedBanner';
+// import FeaturedBanner       from '../FeaturedBanner';
 import EmailMarketing       from '../EmailMarketing';
 import WireframeBanner      from '../WireframeBanner';
 import MobileFirstBanner    from '../MobileFirstBanner';
