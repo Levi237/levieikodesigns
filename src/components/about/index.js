@@ -53,9 +53,13 @@ const Container = styled.div`
   a {
     font-weight: 500;
     transition: .3s ease;
+    color: var(--blue)!important;
+  }
+  a:hover {
+    color: var(--darkblue)!important;
   }
   div {
-    background-color: rgba(250,250,250,.8);
+    background-color: rgba(250,250,250,1);
     padding: 30px 0;
     transition: transform 2s ease;
     transform: translateX(0)
@@ -67,6 +71,7 @@ const Container = styled.div`
     margin: 0 10%;
     font-size: 36px;
     text-align: center;
+    color: var(--blue);
   }
   p {
     margin: 15px 15%;

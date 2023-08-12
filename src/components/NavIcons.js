@@ -56,6 +56,7 @@ section {
             width: 40px;
             height: 40px;
             margin: 2.5%;
+            fill: rgb(var(--color-rgb-darkgrey-new));
           }
         &:hover {
           > svg.svg-about-link * {
