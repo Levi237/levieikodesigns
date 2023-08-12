@@ -132,14 +132,14 @@ export default class App extends Component {
 
         <BodyContainer>
           <Routes>         
-            <Route path={routes.MAIL} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.mail}/> }/>
-            <Route path={routes.CNFM} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.home}/> }/>
-            <Route path={routes.PORT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.portfolio}/> }/>
-            <Route path={routes.INFO} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.portfolio}/> }/>
-            <Route path={routes.FAQS} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.faq}/> }/>
-            <Route path={routes.SERV} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.faq}/> }/>
-            <Route path={routes.ROOT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.home}/> }/>
-            <Route path={routes.ROOT} element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} pageStyle={pageStyle.root}/> }/>
+            <Route path={routes.MAIL} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="white"/> }/>
+            <Route path={routes.CNFM} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/> }/>
+            <Route path={routes.PORT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
+            <Route path={routes.INFO} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
+            <Route path={routes.FAQS} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
+            <Route path={routes.SERV} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="default"/> }/>
+            <Route path={routes.ROOT} exact element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/> }/>
+            <Route path={routes.ROOT} element={<NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="home"/> }/>
           </Routes>
           <ContentContainer>
             <Routes>         
