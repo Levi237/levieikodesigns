@@ -186,7 +186,7 @@ export default class PortfolioPage extends Component {
 };
 
 const Container = styled.div`
-    background-color: rgba(19,17,17,.8);
+    background-color: rgba(43, 41, 41, 1);
     padding: 80px 0 0;
     margin: 0 auto!important;
 
