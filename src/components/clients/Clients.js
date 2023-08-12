@@ -96,7 +96,7 @@ const ClientContainer = styled.div`
     }
 
     a {
-        color: grey!important;
+        color: var(--blue);
         text-decoration: none;
         margin-bottom: 40px;
         &:hover {
