@@ -107,14 +107,22 @@ h3, h4, h5, p, li {
   background-color: var(---color);;
 }
 
-.default {
+.nav-bar.blue {
   ---color: var(--blue);
 }
-.home,
-.white {
+.nav-bar.home,
+.nav-bar.white {
   ---color: #FFF;
 }
-
+.nav-bar.home svg {
+  display: none;
+}
+.nav-bar.info svg {
+  ---color: #FFF;
+}
+.nav-bar.info > #hamburger-btn > section {
+  ---color: var(--blue);
+}
 /*==================== HAMBURGER ICON ====================*/
 .hamburger-close {
   padding-top: 10px;
