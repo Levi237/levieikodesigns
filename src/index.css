@@ -69,7 +69,9 @@ h2 {
   font-weight: 300;
   letter-spacing: 2px;
 }
-
+h3, h4, h5, p, li {
+  letter-spacing: 1px;
+}
 /* Desktop vs Mobile toggle */
 .mobile-block, .mobile-inline {
   display: none!important;
