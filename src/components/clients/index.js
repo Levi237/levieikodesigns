@@ -7,8 +7,8 @@ import Skills               from './Skills';
 import Hero                 from './Hero';
 import Clients              from './Clients';
 import PastClients          from './PastClients';
-import ProjectsFlip         from './ProjectsFlip';
-import ProjectsMobile       from './ProjectsMobile';
+// import ProjectsFlip         from './ProjectsFlip';
+// import ProjectsMobile       from './ProjectsMobile';
 // import Photography          from './Photography';
 
 export default class PortfolioPage extends Component {
@@ -172,12 +172,12 @@ export default class PortfolioPage extends Component {
         return (
             <Container>
                 {/* <Hero clientList={clientList}/> */}
-                <h1 className="titleDecoration">CLIENTS</h1>
+                <h1 className="titleDecoration">PROJECTS</h1>
                 <Clients clientList={clientList}/>
                 <Skills skills={skills}/>
-                <h1>PAST CLIENTS</h1>
+                <h1>PAST WORK</h1>
                 <PastClients/>
-                <ProjectsFlip projects={projects} /><ProjectsMobile projects={projects} />
+                {/* <ProjectsFlip projects={projects} /><ProjectsMobile projects={projects} /> */}
                 {/* <Photography/> */}
                 <Footer/>      
             </Container>
