@@ -118,7 +118,7 @@ const LocalBodyWrapper = styled.div`
     width: 100%;
   }
 .title h1 {
-  font-weight: 600;
+  font-weight: 500;
 }
   @media screen and (min-width: 945px) {
     height: calc(100vh);
