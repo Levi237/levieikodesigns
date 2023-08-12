@@ -98,7 +98,7 @@ const MobileFirstBannerWrapper = styled.section`
         text-align: left;
       }
       h3 {
-        font-size: 4vw;
+        font-size: 3.6vw;
         font-weight: 500;
         margin: 0!important;
       }
@@ -163,7 +163,7 @@ const MobileFirstBannerWrapper = styled.section`
         }
         h1 {
           color: var(--black);
-          font-size: 4vw;
+          font-size: 3.6vw;
           margin: 0% 0% 5%!important;
           text-align: left;
         }
