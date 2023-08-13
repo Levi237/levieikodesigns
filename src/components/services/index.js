@@ -49,6 +49,27 @@ export default class ServicesPage extends Component {
           text: 'right bottom'
         }
       },
+      additions: {
+        title: `Custom Additions`,
+        subtitle: `BUILD ON YOUR EXISTING PAGE`,
+        subtext: ``,
+        paragraph: `Maybe you already have a website but your "Current Theme" doesn't have the Section style in your Template you want. Maybe you want a holiday promotional banner set up to capture a little extra revenue this season.`,
+        listName: `What I do:`,
+        checklist: [
+          'Build customer friendly editable & reusable templates',
+          'Custom coded unique sections inserted directly onto a page',
+          'Utilize existing templates to design stylish presentations',
+          'Install, integrate and personalize third party apps',
+        ],
+        collage: [
+          'services/custom-red5-section.jpg', 
+          'services/custom-nexus-section.jpg', 
+          'services/custom-sba-section.jpg', 
+        ],
+        position: {
+          text: 'left bottom'
+        }
+      },
       websites: {
         title: `Web Development`,
         subtitle: `ONLINE BUSINESSES w/ ECOMMERCE`,
@@ -59,15 +80,15 @@ export default class ServicesPage extends Component {
           'Design & develop eCommerce websites & blogs',
           'Connect third party accounts, including email',
           'Assist in product design, cover images, etc.',
-          'Create marketing strategies to capture leads & drive sales'
+          'Create marketing strategies to capture leads & drive sales',
         ],
         collage: [
           'services/divinity-home.png', 
           'services/metamorphosis-banner.png',
-          'services/momo-quiz.png'
+          'services/momo-quiz.png',
         ],
         position: {
-          text: 'left bottom'
+          text: 'left bottom',
         }
       }
     }
@@ -81,6 +102,7 @@ const { services } = this.state;
           <h1 className="titleDecoration">Services</h1>
           <div>
           <DisplaySection service={services.websites}/>
+          <DisplaySection service={services.additions}/>
           <DisplaySection service={services.graphics}/>
           <DisplaySection service={services.email}/>
           </div>
