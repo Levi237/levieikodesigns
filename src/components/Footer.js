@@ -36,7 +36,7 @@ const Footer = () => {
             </section>
             <NavIcons/>
             <section>
-              Built by LeviEikoDesigns.com
+              Built by LeviEikoDesigns
             </section>
 
           </div>
