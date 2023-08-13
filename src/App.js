@@ -195,8 +195,16 @@ const ContactMe = styled.div`
   width: 48px;
   a svg { 
     fill: var(--blue);
+    transition: transform .3s ease;
   }
-  a:hover svg var(--darkblue);
+  a:hover svg {
+    transform: scale(1.1);
+    // fill: var(--darkblue);
+    transition: transform .1s linear;
+  }
+  a:active svg {
+    transform: scale(1.1) translate(0px,2px);
+    // fill: var(--darkblue);
   }
 `;
 
