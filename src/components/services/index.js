@@ -25,7 +25,7 @@ export default class ServicesPage extends Component {
           'clients/bravo-built_3.jpg'
         ],
         position: {
-          text: 'left bottom'
+          text: 'right bottom'
         }
       },
       graphics: {
@@ -46,7 +46,7 @@ export default class ServicesPage extends Component {
           'services/divinity-youtube.png'
         ],
         position: {
-          text: 'right bottom'
+          text: 'left bottom'
         }
       },
       additions: {
@@ -63,11 +63,11 @@ export default class ServicesPage extends Component {
         ],
         collage: [
           'services/custom-red5-section.jpg', 
+          'services/custom-red5-file.jpg', 
           'services/custom-nexus-section.jpg', 
-          'services/custom-sba-section.jpg', 
         ],
         position: {
-          text: 'left bottom'
+          text: 'right bottom'
         }
       },
       websites: {
