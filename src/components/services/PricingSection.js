@@ -3,8 +3,9 @@ import styled       from 'styled-components';
 
 const PricingSection = () => { 
     return(
-        <Pricing>
-        <div className="title"><h1>Pricing</h1></div>
+      <Pricing>
+        <div className="title"><h1 className="h1">Pricing</h1>
+        <h2>Listed below are estimates of prices and examples of services</h2></div>
           <div className="content">
             <div>
               <div>
@@ -109,15 +110,19 @@ const PricingSection = () => {
             <li><h2>Your budget</h2></li>
           </ul>
         </div>
-        </Pricing>
+      </Pricing>
     );
 };
 
 const Pricing = styled.div`
   max-width: 1120px;
   margin: 0 auto;
-
-
+  h1.h1 {
+    margin: 40px 0 10px!important;
+  }
+  h2 {
+    text-align: center;
+  }
   .title {}
   .content {
     > div:first-of-type {
