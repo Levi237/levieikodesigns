@@ -193,6 +193,18 @@ a, h3, h4, h5, p, li {
 a.active {
   color:#29bfff !important;
 }
+/* turn a list from column to row */
+.horizontal-list {
+  padding-inline-start: 0;
+  text-align: center;
+}
+.horizontal-list li {
+  display: inline-block;
+  padding: 0 24px;
+}
+.horizontal-list li + li {
+  border-left: 1px solid var(--blue);
+}
 
 /* Email Form */
 button.selectedHighlighted {
