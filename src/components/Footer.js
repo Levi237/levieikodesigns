@@ -34,7 +34,7 @@ const Footer = () => {
                 Contact
               </NavLink>             
             </section>
-            <NavIcons/>
+            {/* <NavIcons/> */}
             <section>
               <p>Built by LeviEikoDesigns</p>
             </section>
