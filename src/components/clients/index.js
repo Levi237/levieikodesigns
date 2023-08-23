@@ -51,7 +51,7 @@ export default class PortfolioPage extends Component {
             startDate: "2023",
             endDate: "",
             statement: "Find your higher self.",
-            tasks: ["Shopify landing page", "Customized Product page", "Integrated 3rd part App"],
+            tasks: ["Shopify landing page", "Customized Product page", "Integrated 3rd part App", "Photoshop Edits to Logo"],
             technologies: ["Shopify", "Liquid", "Photoshop", "FIGMA"]
         },{
             title: "Covered Perfectly",
