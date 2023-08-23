@@ -3,6 +3,7 @@ import styled               from 'styled-components';
 
 import Footer               from '../Footer';
 import DisplaySection       from './DisplaySection';
+import PricingSection       from './PricingSection';
 export default class ServicesPage extends Component {
   state = {
     services: {
@@ -101,10 +102,11 @@ const { services } = this.state;
         <LocalBodyWrapper>  
           <h1 className="titleDecoration">Services</h1>
           <div>
-          <DisplaySection service={services.websites}/>
-          <DisplaySection service={services.additions}/>
-          <DisplaySection service={services.graphics}/>
-          <DisplaySection service={services.email}/>
+            <DisplaySection service={services.websites}/>
+            <PricingSection/>
+            <DisplaySection service={services.additions}/>
+            <DisplaySection service={services.graphics}/>
+            <DisplaySection service={services.email}/>
           </div>
           <Footer/>
         </LocalBodyWrapper>
