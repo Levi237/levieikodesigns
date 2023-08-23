@@ -10,17 +10,6 @@ import PastClients          from './PastClients';
 export default class PortfolioPage extends Component {
     state = {
         clientList: [{
-            title: "Red5 Performance",
-            image: "./clients/red5performance.jpg",
-            image2: "./clients/red5performance_2.jpg",
-            link: "red5performance.com",
-            status: "live",
-            startDate: "2021",
-            endDate: "",
-            statement: "THE EQUATION IS SIMPLE: PHYSICS + DISCIPLINE + RED5 = HAPPIER, HEALTHIER, STRONGER YOU",
-            tasks: ["Shopify store", "MailChimp campaigns", "Photoshop, graphics design", "Digital product design & development", "Marketing strategic planning"],
-            technologies: ["Shopify", "Liquids", "MailChimp", "Photoshop", "FIGMA"]
-        },{
             title: "Momo[Muscle]",
             image: "./clients/momomuscle-meta.png",
             image2: "./clients/momomuscle-meta_2.jpg",
@@ -31,6 +20,17 @@ export default class PortfolioPage extends Component {
             statement: "Basically, I design tools to teach women & AFAB babes to see sustainable results in less time. I want you to feel more like yourself & fitness is the catalyst.",
             tasks: ["Shopify store", "Custom quiz w/ data capture", "User friendly editable template", "Graphic design & Photoshop"],
             technologies: ["Shopify", "Liquid", "Photoshop", "FIGMA", "MailChimp", "Klaviyo"]
+        },{
+            title: "Red5 Performance",
+            image: "./clients/red5performance.jpg",
+            image2: "./clients/red5performance_2.jpg",
+            link: "red5performance.com",
+            status: "live",
+            startDate: "2021",
+            endDate: "",
+            statement: "THE EQUATION IS SIMPLE: PHYSICS + DISCIPLINE + RED5 = HAPPIER, HEALTHIER, STRONGER YOU",
+            tasks: ["Shopify store", "MailChimp campaigns", "Photoshop, graphics design", "Digital product design & development", "Marketing strategic planning"],
+            technologies: ["Shopify", "Liquids", "MailChimp", "Photoshop", "FIGMA"]
         },{
             title: "Nexus Housing",
             image: "./clients/nexushousing.jpg",
