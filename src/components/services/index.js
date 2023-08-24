@@ -121,7 +121,7 @@ const LocalWrapper = styled.div`
   width: 100vw;
   background-color: rgba(var(--color-white) / 100%);
   overflow: scroll;
-  `;
+`;
   
 const LocalBodyWrapper = styled.div`
   padding: 60px 0 0;
