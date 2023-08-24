@@ -193,6 +193,14 @@ a, h3, h4, h5, p, li {
 a.active {
   color:#29bfff !important;
 }
+
+.hide-intersection {
+  opacity: 0!important;
+  margin-top: 20px!important;
+  transition: 1s ease;
+}
+
+
 /* turn a list from column to row */
 .horizontal-list {
   padding-inline-start: 0;

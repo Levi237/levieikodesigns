@@ -3,6 +3,7 @@ import styled               from 'styled-components';
 
 
 const ServicesPage = ({ service }) => {
+  // Add intersection observer to the section 
   const intersectionRef = useRef();
   const [refIntersection, setRefIntersection] = useState();
   console.log("refIntersection", refIntersection);
@@ -12,10 +13,9 @@ const ServicesPage = ({ service }) => {
           const entry = entries[0];
           setRefIntersection(entry.isIntersecting);
           if (entry.isIntersecting){
-            entry.target.classList.add('test');
+            entry.target.classList.remove('hide-intersection');
             console.log('interested', entry.target);
-          } else {
-            entry.target.classList.remove('test');
+            observer.disconnect();
           }
           console.log('entry', entry.target.className);
       });
@@ -28,7 +28,7 @@ const ServicesPage = ({ service }) => {
       return <div key={k}><img src={`./${item}`} alt="collage one"/></div>
     })
     return(
-          <GraphicsBanner ref={intersectionRef} className={`${service.position.text}`}>
+          <GraphicsBanner ref={intersectionRef} className={`${service.position.text} hide-intersection`}>
             <div className="title"><h1>{service.title}</h1></div>
             <div className="text">
               <h2>{service.subtitle}</h2>
@@ -69,6 +69,12 @@ const Checklist = styled.div`
 }
 `;
 const GraphicsBanner = styled.div`
+// animation for interestionObserver class.remove('hide-intersecion')
+  opacity: 1;
+  margin-top: 0;
+  transition: 2s ease;
+
+// Style
   color: #fff;
 
   display: grid;
@@ -161,6 +167,7 @@ const GraphicsBanner = styled.div`
         }
       }
     }
+
   }
 
   @media screen and (max-width: 749px) {
