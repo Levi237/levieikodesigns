@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled               from 'styled-components';
 import { NavLink }          from 'react-router-dom';
 import * as routes          from '../../constants/routes';
@@ -10,44 +10,38 @@ import MobileFirstBanner    from '../MobileFirstBanner';
 import Footer               from '../Footer';
 
 import { ReactComponent as LogoSVG } from '../../svg/brand/logo.svg';
+const HomePage = ({ pageStyle, btnScroll }) => {
+  return(
+    <HomeWrapper>
 
-export default class HomePage extends Component {
-  render(){
+      <HomeHeroWrapper>
+        <NavLink to={routes.PORT}>
+          <LogoSVG className="" style={{fill: pageStyle.color, display: pageStyle.display}}/>
+        </NavLink>
+        <div id="down-arrow-container" onClick={() => btnScroll()}>
+          LEARN MORE
+          <br/><br/>
+          <div id="down-arrow"></div>
+        </div>
+      </HomeHeroWrapper>
 
-    const { pageStyle, btnScroll } = this.props
+      <HomeSecondNav id="scroll-to">
+        <LogoSVG/>
+        {/* <h1>Levi Eiko Designs</h1> */}
+      </HomeSecondNav>
 
-    return(
-      <HomeWrapper>
+      <HomeBodyWrapper>  
+        {/* <FeaturedBanner/> */}
+        <MobileFirstBanner/>
+        <EmailMarketing/>
+        <WireframeBanner/>
+        <Footer/>
+        {/* <div className="down-arrow-class"></div> */}
+      </HomeBodyWrapper>
 
-        <HomeHeroWrapper>
-          <NavLink to={routes.PORT}>
-            <LogoSVG className="" style={{fill: pageStyle.color, display: pageStyle.display}}/>
-          </NavLink>
-          <div id="down-arrow-container" onClick={() => btnScroll()}>
-            LEARN MORE
-            <br/><br/>
-            <div id="down-arrow"></div>
-          </div>
-        </HomeHeroWrapper>
-
-        <HomeSecondNav id="scroll-to">
-          <LogoSVG/>
-          {/* <h1>Levi Eiko Designs</h1> */}
-        </HomeSecondNav>
-
-        <HomeBodyWrapper>  
-          {/* <FeaturedBanner/> */}
-          <MobileFirstBanner/>
-          <EmailMarketing/>
-          <WireframeBanner/>
-          <Footer/>
-          {/* <div className="down-arrow-class"></div> */}
-        </HomeBodyWrapper>
-
-      </HomeWrapper>
-    );
-  };
-}
+    </HomeWrapper>
+  );
+};
 
 const HomeWrapper = styled.div`
   scroll-snap-type: y mandatory;
@@ -130,3 +124,5 @@ const HomeBodyWrapper = styled.div`
     height: calc(100vh - 80px);
   }
 `;
+
+export default HomePage;

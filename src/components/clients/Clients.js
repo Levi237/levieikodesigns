@@ -2,53 +2,49 @@ import React, { useRef } from 'react';
 import styled               from 'styled-components';
 
 const Clients = ({ clientList }) => {
-        const myRef = useRef();
-        // const  = this.props
-        const liveClients = clientList.filter(client => client.status === 'live')
-        const mapClientList = liveClients.map((client, key) => {
-            const tasksList = client.tasks.map((r, k) => {
-                return <li key={k}><span>{r}</span></li>
-            })
-            return(
-                <ClientContainer key={key} ref={myRef}>
-                    <MobileImg href={`https://${client.link}`} target="_blank">
-                        <img src={client.image} alt={client.title}/>
-                    </MobileImg>
-                    <section>
-                        <h2>
-                            {client.title}&nbsp;<small className="no-break">{client.startDate}</small>
-                        </h2>
-                        <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
-                            {client.link}
-                        </a>
-                        <p>
-                            “{client.statement}”
-                        </p>
-                        <MobileColumns className="mobile-columns">
-                            <ul>
-                                {tasksList}
-                            </ul>
-                            {
-                                client.image2 && <img className="mobile-block" src={client.image2} alt={client.title}/>
-                            }
-                        </MobileColumns>
-                        <br></br>
-                    </section>
-                    <DesktopImg href={`https://${client.link}`} target="_blank">
-                        <img src={client.image} alt={client.title}/>
-                        {
-                            client.image2 && <img className="image-2" src={client.image2} alt={client.title}/>
-                        }
-                    </DesktopImg>
-                    <hr/>
-                </ClientContainer>
-            )
-        })
+    const myRef = useRef();
+
+    const liveClients = clientList.filter(client => client.status === 'live');
+    const mapClientList = liveClients.map((client, key) => {
+        const tasksList = client.tasks.map((r, k) => {
+            return <li key={k}><span>{r}</span></li>
+        });
         return(
-            <Container>
-                {mapClientList}          
-            </Container>
+            <ClientContainer key={key} ref={myRef}>
+                <MobileImg href={`https://${client.link}`} target="_blank">
+                    <img src={client.image} alt={client.title}/>
+                </MobileImg>
+                <section>
+                    <h2>
+                        {client.title}&nbsp;<small className="no-break">{client.startDate}</small>
+                    </h2>
+                    <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
+                        {client.link}
+                    </a>
+                    <p>
+                        “{client.statement}”
+                    </p>
+                    <MobileColumns className="mobile-columns">
+                        <ul>
+                            {tasksList}
+                        </ul>
+                        {client.image2 && <img className="mobile-block" src={client.image2} alt={client.title}/>}
+                    </MobileColumns>
+                    <br></br>
+                </section>
+                <DesktopImg href={`https://${client.link}`} target="_blank">
+                    <img src={client.image} alt={client.title}/>
+                    {client.image2 && <img className="image-2" src={client.image2} alt={client.title}/>}
+                </DesktopImg>
+                <hr/>
+            </ClientContainer>
         );
+    });
+    return(
+        <Container>
+            {mapClientList}          
+        </Container>
+    );
 };
 
 const MobileColumns = styled.div`

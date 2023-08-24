@@ -1,22 +1,20 @@
-import React, { Component }     from 'react';
-import styled      from 'styled-components';
+import React      from 'react';
+import styled     from 'styled-components';
 
-export default class WireframeBanner extends Component {
-  render(){
-    return(
-      <WireframeBannerWrapper>
-        <h1>SEEING THE BIG PICTURE</h1>
-        <p>Start with a plan and wireframe. You'll be surprised at what we can develop!</p>
-        <b>MomoMuscle.co 2020 design</b>
-        <div>
-          <img className="desktop" src="/momo-wireframe-desktop.png" alt="Website display with Momo Muscle circa 2020"/>
-          <img className="mobile" src="/momo-wireframe-mobile.png" alt="Website display with Momo Muscle circa 2020"/>
-        </div>
-        <br/><br/><br/><br/>
-      </WireframeBannerWrapper>
-    );
-  };
-}
+const WireframeBanner = () => {
+  return(
+    <WireframeBannerWrapper>
+      <h1>SEEING THE BIG PICTURE</h1>
+      <p>Start with a plan and wireframe. You'll be surprised at what we can develop!</p>
+      <b>MomoMuscle.co 2020 design</b>
+      <div>
+        <img className="desktop" src="/momo-wireframe-desktop.png" alt="Website display with Momo Muscle circa 2020"/>
+        <img className="mobile" src="/momo-wireframe-mobile.png" alt="Website display with Momo Muscle circa 2020"/>
+      </div>
+      <br/><br/><br/><br/>
+    </WireframeBannerWrapper>
+  );
+};
 
 const WireframeBannerWrapper = styled.section`
     -webkit-scroll-snap-align: start;
@@ -73,3 +71,5 @@ const WireframeBannerWrapper = styled.section`
  
   }
 `;
+
+export default WireframeBanner

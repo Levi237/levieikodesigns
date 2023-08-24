@@ -1,35 +1,33 @@
-import React, { Component }     from 'react';
-import styled      from 'styled-components';
+import React    from 'react';
+import styled   from 'styled-components';
 
-export default class MobileFirstBanner extends Component {
-  render(){
-    return(
-      <MobileFirstBannerWrapper>
-        <section>
-          <div></div>
-          <img src="/pranawellnessworks-mobile-small.png"/>
-          <section></section>
-        </section>
-        <section>
-          <div>
-            <h1>Why Mobile-First</h1>
-            <h3>So.. you actually <b>don't</b> need an app for that..</h3>
-            <p>
-              There are a lot of things a website can do that apps can do, but there are big perks when it comes to building a website that is mobile friendly first.
-            </p>
-            <ul>
-              <li>Cheaper to start</li>
-              <li>Accessible to a larger audience</li>
-              <li>No downloads required to start</li>
-              <li>Test UX/UI before App development</li>
-            </ul>
-          </div>
-        </section>
+const MobileFirstBanner = () => {
+  return(
+    <MobileFirstBannerWrapper>
+      <section>
         <div></div>
-      </MobileFirstBannerWrapper>
-    );
-  };
-}
+        <img src="/pranawellnessworks-mobile-small.png" alt="mobile example"/>
+        <section></section>
+      </section>
+      <section>
+        <div>
+          <h1>Why Mobile-First</h1>
+          <h3>So.. you actually <b>don't</b> need an app for that..</h3>
+          <p>
+            There are a lot of things a website can do that apps can do, but there are big perks when it comes to building a website that is mobile friendly first.
+          </p>
+          <ul>
+            <li>Cheaper to start</li>
+            <li>Accessible to a larger audience</li>
+            <li>No downloads required to start</li>
+            <li>Test UX/UI before App development</li>
+          </ul>
+        </div>
+      </section>
+      <div></div>
+    </MobileFirstBannerWrapper>
+  );
+};
 
 const MobileFirstBannerWrapper = styled.section`
   -webkit-scroll-snap-align: start;
@@ -225,3 +223,5 @@ const MobileFirstBannerWrapper = styled.section`
     }
   }
 `;
+
+export default MobileFirstBanner;

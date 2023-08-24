@@ -3,7 +3,7 @@ import styled               from 'styled-components';
 
 import Footer               from '../Footer';
 import DisplaySection       from './DisplaySection';
-import PricingSection       from './PricingSection';
+// import PricingSection       from './PricingSection';
 export default class ServicesPage extends Component {
   state = {
     services: {
@@ -96,14 +96,14 @@ export default class ServicesPage extends Component {
   }
   
   render(){
-const { services } = this.state;
+    const { services } = this.state;
     return(
       <LocalWrapper>
         <LocalBodyWrapper>  
           <h1 className="titleDecoration">Services</h1>
           <div>
             <DisplaySection service={services.websites}/>
-            <PricingSection/>
+            {/* <PricingSection/> */}
             <DisplaySection service={services.additions}/>
             <DisplaySection service={services.graphics}/>
             <DisplaySection service={services.email}/>
@@ -113,7 +113,7 @@ const { services } = this.state;
       </LocalWrapper>
     );
   };
-}
+};
 
 const LocalWrapper = styled.div`
   scroll-snap-type: y mandatory;

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 export default class EmailForm extends Component { 
     state = {
-        emailValue: '',
-        fNameValue: '',
-        lNameValue: '',
-        websiteValue: '',
-        messageValue: '',
-        authFilter: '',
-        addServices: ['Services Request:'],
-        services: ["Online Store", "Professional Website", "Email Marketing", "Graphic Design"],
+        emailValue: ``,
+        fNameValue: ``,
+        lNameValue: ``,
+        websiteValue: ``,
+        messageValue: ``,
+        authFilter: ``,
+        addServices: [`Services Request:`],
+        services: [`Online Store`, `Professional Website`, `Email Marketing`, `Graphic Design`],
     };
 
     handleSelect = (e, service) => {
@@ -32,26 +32,11 @@ export default class EmailForm extends Component {
     };
 
     render(){
-        const { emailValue, fNameValue, lNameValue, websiteValue, messageValue , addServices, services, authFilter} = this.state
+        const { emailValue, fNameValue, lNameValue, websiteValue, messageValue, authFilter} = this.state
 
-        // const buttonSelectors = services.map((service, key) => {
-        //     return(
-        //         <button 
-        //             key={key} 
-        //             id={key}
-        //             name={service}
-        //             value={service}
-        //             className="select-service white"
-        //             onClick={(e) => {this.handleSelect(e, service)}
-        //         }>
-        //            {service}
-        //         </button>
-        //     );
-        // });
         return(<>
             <Form 
                 action={`https://LeviEiko.us5.list-manage.com/subscribe/post?u=fd3d8729543e3dd38afa3ff51&amp;id=f08d59ca6f`}
-                // action={`https://${process.env.REACT_APP_MAILCHIMP_SRC}.us5.list-manage.com/contact-form/post?u=${process.env.REACT_APP_MAILCHIMP_U}&amp;id=${process.env.REACT_APP_MAILCHIMP_IDXXX}`}
                 method="POST" 
                 id="mc-embedded-subscribe-form" 
                 name="mc-embedded-subscribe-form" 

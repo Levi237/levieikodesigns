@@ -4,9 +4,7 @@ import styled               from 'styled-components';
 
 export default class ServicesPage extends Component {
   render(){
-
     const { service } = this.props;
-    
     const mapChecklist = service.checklist.map((item, k) => {
       return <section key={k}><div>✔</div><div>{ item }</div></section>
     })
@@ -34,7 +32,7 @@ export default class ServicesPage extends Component {
           </GraphicsBanner>
     );
   };
-}
+};
 
 const Checklist = styled.div`
 
@@ -106,8 +104,6 @@ const GraphicsBanner = styled.div`
     }
 
     div {
-      // border: 1px solid rgba(0,0,0,.1);
-      // box-shadow: 0 0 200px rgb(0 0 0 / 12.5%);
       &:first-of-type {
         grid-area: main;
       }
@@ -152,65 +148,7 @@ const GraphicsBanner = styled.div`
     }
   }
 
-  h1 {
-    // margin: 0!important;
-  }
   @media screen and (max-width: 749px) {
 
-  }
-`;
-
-// const LocalWrapper = styled.div`
-//   scroll-snap-type: y mandatory;
-//   height: 100vh;
-//   width: 100vw;
-//   overflow: scroll;
-// `;
-// const BarNav = styled.nav`
-//   height: calc(50px + 5vw);
-//   z-index: 2;
-//   background-color: var(--blue);
-//   -webkit-scroll-snap-align: start;
-//   -moz-scroll-snap-align: start;
-//   -ms-scroll-snap-align: start;
-//   scroll-snap-align: start;
-//   > h1 {
-//     margin: calc(5vw + 2px)!important;
-//     display: inline-block;
-//     font-size: 32px;
-//     line-height: 100%;
-//   }
-//   @media screen and (min-width: 945px) {
-//     height: 80px;
-//     > h1 {
-//       margin: 24px!important;
-//     }
-//   }
-// `;
-
-const LocalBodyWrapper = styled.div`
-  position: relative;
-  width: 100vw;
-  height: calc(100vh - 5vw - 50px);
-  background-color: #fff;
-  overflow: scroll;
-  position: relative;
-
-  // .down-arrow-class {
-  //   position: fixed;
-  //   bottom: 2vw;
-  //   left: calc(50vw - 51px);
-  // }
-
-  > h1 {
-    color: var(--darkblue);
-    font-size: 32px;
-  }
-  > section {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 945px) {
-    height: calc(100vh - 80px);
   }
 `;

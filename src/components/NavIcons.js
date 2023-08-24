@@ -9,24 +9,24 @@ import { ReactComponent as Linkedin }   from '../svg/icons/iconfinder_linkedin.s
 import { ReactComponent as Github }     from '../svg/icons/iconfinder_github.svg';
 
 
-const NavIcons = ({  }) => { 
+const NavIcons = () => { 
   return(
-      <Container>
-          <section>
-            <a target="_blank" rel="noreferrer" href="https://github.com/Levi237">
-              <Github className="svg-about-link"/>
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/leviwinans">
-              <Linkedin className="svg-about-link"/>
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/levi_eiko/">
-              <Instagram className="svg-about-link"/>
-            </a>
-            <NavLink to={routes.MAIL}>
-              <Mail className="svg-about-link"/>
-            </NavLink>
-        </section>
-      </Container>
+    <Container>
+        <section>
+          <a target="_blank" rel="noreferrer" href="https://github.com/Levi237">
+            <Github className="svg-about-link"/>
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/leviwinans">
+            <Linkedin className="svg-about-link"/>
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/levi_eiko/">
+            <Instagram className="svg-about-link"/>
+          </a>
+          <NavLink to={routes.MAIL}>
+            <Mail className="svg-about-link"/>
+          </NavLink>
+      </section>
+    </Container>
   );
 };
 

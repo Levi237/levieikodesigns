@@ -27,45 +27,45 @@ import { ReactComponent as Mail }       from './svg/icons/iconfinder_mail.svg';
 
 export default class App extends Component {
   state = {
-    modalType: '',
+    modalType: ``,
     pageStyle: {
       home: {
-        title: '',
-        color: '#fff',
-        displayLogo: 'none',
+        title: ``,
+        color: `#fff`,
+        displayLogo: `none`,
       },
       about: {
-        title: '',
-        color: 'var(--blue)',
-        displayLogo: 'none',
+        title: ``,
+        color: `var(--blue)`,
+        displayLogo: `none`,
       },
       portfolio: {
-        title: 'portfolio',
-        color: '#fff',
-        displayLogo: 'inline-block',
+        title: `portfolio`,
+        color: `#fff`,
+        displayLogo: `inline-block`,
       },
       faq: {
-        title: 'faq',
-        color: '#181717',
-        displayLogo: 'inline-block',
+        title: `faq`,
+        color: `#181717`,
+        displayLogo: `inline-block`,
       },
       services: {
-        title: 'contact',
-        color: '#fff',
-        displayLogo: 'none',
+        title: `contact`,
+        color: `#fff`,
+        displayLogo: `none`,
       },
       mail: {
-        title: 'contact',
-        color: '#fff',
-        displayLogo: 'inline-block',
+        title: `contact`,
+        color: `#fff`,
+        displayLogo: `inline-block`,
       },
       root: {
-        title: '',
-        color: '#fff',
-        displayLogo: 'none',
+        title: ``,
+        color: `#fff`,
+        displayLogo: `none`,
       }
     },
-    slideMe: ''
+    slideMe: ``,
   };
 
   setslideMe = async () => {

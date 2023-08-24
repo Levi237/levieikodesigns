@@ -1,55 +1,54 @@
-import React, { Component }   from 'react';
-import styled                 from 'styled-components';
+import React   from 'react';
+import styled  from 'styled-components';
 
-export default class EmailMarketing extends Component {
-  render(){
-    return(
-      <EmailMarketingWrapper>
-        <h1 className="desktop-block">Email Marketing Solutions</h1>
-        <h1 className="mobile-block">Email Marketing</h1>
-        <h1 className="mobile-inline">Solutions</h1>
+const EmailMarketing = () => {
+  return(
+    <EmailMarketingWrapper>
+      <h1 className="desktop-block">Email Marketing Solutions</h1>
+      <h1 className="mobile-block">Email Marketing</h1>
+      <h1 className="mobile-inline">Solutions</h1>
+      <div>
+        <section className="mobile">
+        <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
+            <img src="/mailchimp-forms.png" alt="MailChimp Example Forms"/>
+        </section>
+        <h3>How using an email service provider can help.</h3>
         <div>
-          <section className="mobile">
-          <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
-              <img src="/mailchimp-forms.png" alt="MailChimp Example Forms"/>
+          <section>
+            <ul>
+              <li>
+                Get in that Inbox, <b>not spam</b>
+              </li>
+              <li>
+                Create email automations & single blasts
+              </li>
+              <li>
+                Collect leads &amp; manage CSV files
+              </li>
+              <li>
+                Tag or target specific audience segments
+              </li>
+              <li>
+                Develop stronger relationships w/ audience
+              </li>
+              <li>
+                Create effective promotional campaigns
+              </li>
+              <li>
+                Track opens, clicks and user activity
+              </li>
+            </ul>
           </section>
-          <h3>How using an email service provider can help.</h3>
-          <div>
-            <section>
-              <ul>
-                <li>
-                  Get in that Inbox, <b>not spam</b>
-                </li>
-                <li>
-                  Create email automations & single blasts
-                </li>
-                <li>
-                  Collect leads &amp; manage CSV files
-                </li>
-                <li>
-                  Tag or target specific audience segments
-                </li>
-                <li>
-                  Develop stronger relationships w/ audience
-                </li>
-                <li>
-                  Create effective promotional campaigns
-                </li>
-                <li>
-                  Track opens, clicks and user activity
-                </li>
-              </ul>
-            </section>
-            <section className="desktop">
-              <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
-              <img src="/mailchimp-forms.png" alt="MailChimp Example Forms"/>
-            </section>
-          </div>
+          <section className="desktop">
+            <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
+            <img src="/mailchimp-forms.png" alt="MailChimp Example Forms"/>
+          </section>
         </div>
-      </EmailMarketingWrapper>
-    );
-  };
-}
+      </div>
+    </EmailMarketingWrapper>
+  );
+};
+
 
 const EmailMarketingWrapper = styled.section`
   -webkit-scroll-snap-align: start;
@@ -200,3 +199,5 @@ const EmailMarketingWrapper = styled.section`
     }
   }
 `;
+
+export default EmailMarketing;

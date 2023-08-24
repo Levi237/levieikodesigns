@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled               from 'styled-components';
 
 export default class EmailConfirmation extends Component {
-    state = {}
     toggleEmailConfirmation = (e) => {
         const hamburgerMenu = document.getElementById('confirmation');
         hamburgerMenu.classList.toggle('active');
