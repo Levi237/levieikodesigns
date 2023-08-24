@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import styled               from 'styled-components';
+import React    from 'react';
+import styled   from 'styled-components';
 
-export default class Photography extends Component {
-    render(){
-        return (
-            <LocalWrapper>
-            </LocalWrapper>
-        );
-    };
+const Photography = () => {
+    return (
+        <LocalWrapper>
+        </LocalWrapper>
+    );
 };
+
 const LocalWrapper = styled.div`
     position: relative;
 `;
+
+export default Photography;
