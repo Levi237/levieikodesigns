@@ -74,7 +74,7 @@ const GraphicsBanner = styled.div`
   margin-top: 0;
   transition: 2s ease;
 
-// Style
+//*************** STYLE
   color: #fff;
 
   display: grid;
