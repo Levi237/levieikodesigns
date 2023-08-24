@@ -1,10 +1,26 @@
-import React, { Component } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled               from 'styled-components';
 
 
-export default class ServicesPage extends Component {
-  render(){
-    const { service } = this.props;
+const ServicesPage = ({ service }) => {
+  const intersectionRef = useRef();
+  const [refIntersection, setRefIntersection] = useState();
+  console.log("refIntersection", refIntersection);
+  useEffect(() => {
+      console.log('intersectionRef', intersectionRef.current);
+      const observer = new IntersectionObserver((entries) => {
+          const entry = entries[0];
+          setRefIntersection(entry.isIntersecting);
+          if (entry.isIntersecting){
+            entry.target.classList.add('test');
+            console.log('interested', entry.target);
+          } else {
+            entry.target.classList.remove('test');
+          }
+          console.log('entry', entry.target.className);
+      });
+      observer.observe(intersectionRef.current);
+  }, []);
     const mapChecklist = service.checklist.map((item, k) => {
       return <section key={k}><div>✔</div><div>{ item }</div></section>
     })
@@ -12,7 +28,7 @@ export default class ServicesPage extends Component {
       return <div key={k}><img src={`./${item}`} alt="collage one"/></div>
     })
     return(
-          <GraphicsBanner className={`${service.position.text}`}>
+          <GraphicsBanner ref={intersectionRef} className={`${service.position.text}`}>
             <div className="title"><h1>{service.title}</h1></div>
             <div className="text">
               <h2>{service.subtitle}</h2>
@@ -32,7 +48,6 @@ export default class ServicesPage extends Component {
           </GraphicsBanner>
     );
   };
-};
 
 const Checklist = styled.div`
 
@@ -152,3 +167,5 @@ const GraphicsBanner = styled.div`
 
   }
 `;
+
+export default ServicesPage;
