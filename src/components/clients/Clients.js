@@ -1,8 +1,7 @@
-import React, { useRef } from 'react';
-import styled               from 'styled-components';
+import React                    from 'react';
+import styled                   from 'styled-components';
 
 const Clients = ({ clientList }) => {
-    const myRef = useRef();
 
     const liveClients = clientList.filter(client => client.status === 'live');
     const mapClientList = liveClients.map((client, key) => {
@@ -10,7 +9,7 @@ const Clients = ({ clientList }) => {
             return <li key={k}><span>{r}</span></li>
         });
         return(
-            <ClientContainer key={key} ref={myRef}>
+            <ClientContainer key={key}>
                 <MobileImg href={`https://${client.link}`} target="_blank">
                     <img src={client.image} alt={client.title}/>
                 </MobileImg>
@@ -40,6 +39,7 @@ const Clients = ({ clientList }) => {
             </ClientContainer>
         );
     });
+
     return(
         <Container>
             {mapClientList}          
@@ -51,9 +51,6 @@ const MobileColumns = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
-    ul {
-        // width: 100%;
-    }
     @media screen and (max-width: 900px) {
         grid-template-columns: 60% 40%;
     }
