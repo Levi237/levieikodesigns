@@ -25,12 +25,7 @@ const ClientSection = ({ client }) => {
       });
       observer.observe(intersectionRef.current);
   }, []);
-    // const mapChecklist = service.checklist.map((item, k) => {
-    //   return <section key={k}><div>✔</div><div>{ item }</div></section>
-    // })
-    // const mapCollage = service.collage.map((item, k) => {
-    //   return <div key={k}><img src={`./${item}`} alt="collage one"/></div>
-    // })
+
     const tasksList = client.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
@@ -102,9 +97,6 @@ const Wrapper = styled.div`
             box-shadow: 0 1px 12px rgba(0,0,0,.2);
         }
     }
-    // &:nth-of-type(odd) > a {
-    //     float: left;
-    // }
 
     a {
         color: var(--blue)!important;
