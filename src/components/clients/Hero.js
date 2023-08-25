@@ -11,8 +11,8 @@ const PortfolioHero = ({ clientList }) => {
         return (
                 <div style={{backgroundImage: `url(${client.image})`}}>
                 </div>
-            )
-        })
+            );
+        });
     return(
         <Container>
             {mapList}

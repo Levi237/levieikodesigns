@@ -25,8 +25,8 @@ const LeviLogo = () => {
                 { svgLogo }
             </section>
         </LogoWrapper>
-    )
-}
+    );
+};
 
 const LogoWrapper = styled.a`
     display: inline-block;

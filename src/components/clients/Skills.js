@@ -1,10 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Skills =({skills})=> {
+const Skills =()=> {
+  const skills = [
+    `Shopify`,
+    `Liquid`,
+    `WordPress`,
+    `JavaScript`,
+    `VanillaJS`,
+    `HTML`,
+    `CSS`,
+    `React`,
+    `NodeJs`,
+    `Firebase`,
+    `GitHub`,
+    `Git`,
+    `MailChimp`,
+    `Klaviyo`,
+    `Figma`,
+    `Adobe PhotoShop`,
+  ]
   const skillsList = skills.map((skill, k) => {
     return <span key={k}>{skill}</span>
-  })
+  });
   return(
       <Container>
           <h1>Skills</h1>

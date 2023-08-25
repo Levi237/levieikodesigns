@@ -72,4 +72,4 @@ const WireframeBannerWrapper = styled.section`
   }
 `;
 
-export default WireframeBanner
+export default WireframeBanner;

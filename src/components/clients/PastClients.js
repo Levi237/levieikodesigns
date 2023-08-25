@@ -87,7 +87,7 @@ export default class PastClients extends Component {
             tasks: [`Build custom social media website`,`Party events shareable photo gallery`,`Graphic design`],
             technologies: [`HTML`,`CSS`,`Javascript`,`Photoshop`]
         }]
-    }
+    };
     render(){
         const { pastClientList } = this.state
         const mappastClientList = pastClientList.map((client, key) => {
@@ -112,8 +112,8 @@ export default class PastClients extends Component {
                         {technologiesList}
                     </section>
                 </ClientContainer>
-            )
-        })
+            );
+        });
         return(
             <Container>
                 {mappastClientList}                
