@@ -7,60 +7,60 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled               from 'styled-components';
 
 const ClientSection = ({ client }) => {
-  // Add intersection observer to the section 
-  const intersectionRef = useRef();
-  const [refIntersection, setRefIntersection] = useState();
-  console.log("refIntersection", refIntersection);
-  useEffect(() => {
-      console.log('intersectionRef', intersectionRef.current);
-      const observer = new IntersectionObserver((entries) => {
-          const entry = entries[0];
-          setRefIntersection(entry.isIntersecting);
-          if (entry.isIntersecting){
-            entry.target.classList.remove('hide-intersection');
-            console.log('interested', entry.target);
-            observer.disconnect();
-          }
-          console.log('entry', entry.target.className);
-      });
-      observer.observe(intersectionRef.current);
-  }, []);
+// Add intersection observer to the section 
+    const intersectionRef = useRef();
+    const [refIntersection, setRefIntersection] = useState();
+    console.log("refIntersection", refIntersection);
+    useEffect(() => {
+        console.log('intersectionRef', intersectionRef.current);
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setRefIntersection(entry.isIntersecting);
+            if (entry.isIntersecting){
+                entry.target.classList.remove('hide-intersection');
+                console.log('interested', entry.target);
+                observer.disconnect();
+            }
+            console.log('entry', entry.target.className);
+        });
+        observer.observe(intersectionRef.current);
+    }, []);
 
     const tasksList = client.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
     console.log('client', client)
     return(
-          <Wrapper ref={intersectionRef} className={`hide-intersection`}>
-                <MobileImg href={`https://${client.link}`} target="_blank">
-                    <img src={client.image} alt={client.title}/>
-                </MobileImg>
-                <section>
-                    <h2>
-                        {client.title}&nbsp;<small className="no-break">{client.startDate}</small>
-                    </h2>
-                    <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
-                        {client.link}
-                    </a>
-                    <p>
-                        “{client.statement}”
-                    </p>
-                    <MobileColumns className="mobile-columns">
-                        <ul>
-                            {tasksList}
-                        </ul>
-                        {client.image2 && <img className="mobile-block" src={client.image2} alt={client.title}/>}
-                    </MobileColumns>
-                    <br></br>
-                </section>
-                <DesktopImg href={`https://${client.link}`} target="_blank">
-                    <img src={client.image} alt={client.title}/>
-                    {client.image2 && <img className="image-2" src={client.image2} alt={client.title}/>}
-                </DesktopImg>
-                <hr/>
-          </Wrapper>
+        <Wrapper ref={intersectionRef} className={`hide-intersection`}>
+            <MobileImg href={`https://${client.link}`} target="_blank">
+                <img src={client.image} alt={client.title}/>
+            </MobileImg>
+            <section>
+                <h2>
+                    {client.title}&nbsp;<small className="no-break">{client.startDate}</small>
+                </h2>
+                <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
+                    {client.link}
+                </a>
+                <p>
+                    “{client.statement}”
+                </p>
+                <MobileColumns className="mobile-columns">
+                    <ul>
+                        {tasksList}
+                    </ul>
+                    {client.image2 && <img className="mobile-block" src={client.image2} alt={client.title}/>}
+                </MobileColumns>
+                <br></br>
+            </section>
+            <DesktopImg href={`https://${client.link}`} target="_blank">
+                <img src={client.image} alt={client.title}/>
+                {client.image2 && <img className="image-2" src={client.image2} alt={client.title}/>}
+            </DesktopImg>
+            <hr/>
+        </Wrapper>
     );
-  };
+};
 
 
 const Wrapper = styled.div`
