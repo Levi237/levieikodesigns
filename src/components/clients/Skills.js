@@ -19,10 +19,10 @@ const Skills =()=> {
     `Klaviyo`,
     `Figma`,
     `Adobe PhotoShop`,
-]
+  ]
   const skillsList = skills.map((skill, k) => {
     return <span key={k}>{skill}</span>
-  })
+  });
   return(
       <Container>
           <h1>Skills</h1>

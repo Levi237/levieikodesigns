@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styled               from 'styled-components';
+import styled                                 from 'styled-components';
 
 
 const ServicesPage = ({ service }) => {
@@ -23,10 +23,10 @@ const ServicesPage = ({ service }) => {
   }, []);
     const mapChecklist = service.checklist.map((item, k) => {
       return <section key={k}><div>✔</div><div>{ item }</div></section>
-    })
+    });
     const mapCollage = service.collage.map((item, k) => {
       return <div key={k}><img src={`./${item}`} alt="collage one"/></div>
-    })
+    });
     return(
           <GraphicsBanner ref={intersectionRef} className={`${service.position.text} hide-intersection`}>
             <div className="title"><h1>{service.title}</h1></div>

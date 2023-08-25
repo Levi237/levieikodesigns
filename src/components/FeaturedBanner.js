@@ -24,13 +24,13 @@ export default class FeaturedBanner extends Component {
       ],
       link: ``
     }
-  }
+  };
   render(){
     const { featuredProject } = this.state;
 
     const listTech = featuredProject.technologies.map((item, key) => {
       return <li key={key}>{item}</li>
-    })
+    });
 
     return(
       <FeaturedWrapper>
@@ -61,7 +61,7 @@ export default class FeaturedBanner extends Component {
       </FeaturedWrapper>
     );
   };
-}
+};
 
 const FeaturedWrapper = styled.section`
   height: calc(100dvh);

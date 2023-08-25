@@ -119,7 +119,7 @@ export default class PortfolioPage extends Component {
             tasks: [`React/Firebase website & blog`, `MailChimp email automation`, `Photoshop`],
             technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`],
         }],
-    }
+    };
     render(){
         const { clientList,  skills } = this.state;
         return (

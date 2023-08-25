@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React    from 'react';
+import styled   from 'styled-components';
 
 const LeviEikoBrand = () => {
     const svgLogo = 
@@ -21,8 +21,8 @@ const LeviEikoBrand = () => {
                 <h2>L<small>evi</small>E<small>iko.com</small></h2>
             </section>
         </LogoWrapper>
-    )
-}
+    );
+};
 
 const LogoWrapper = styled.a`
     display: inline-flex;

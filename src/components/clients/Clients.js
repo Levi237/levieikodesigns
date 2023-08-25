@@ -6,17 +6,13 @@
 import React                    from 'react';
 import styled                   from 'styled-components';
 
-import ClientSection from './ClientSection';
+import ClientSection            from './ClientSection';
 
 const Clients = ({ clientList }) => {
 
     const liveClients = clientList.filter(client => client.status === 'live');
     const mapClientList = liveClients.map((client, key) => {
-
-        return(
-                <ClientSection key={key} client={client}/>
-                
-        );
+        return( <ClientSection key={key} client={client}/> );
     });
 
     return(
@@ -25,15 +21,6 @@ const Clients = ({ clientList }) => {
         </Container>
     );
 };
-
-// const MobileColumns = styled.div`
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     gap: 5px;
-//     @media screen and (max-width: 900px) {
-//         grid-template-columns: 60% 40%;
-//     }
-// `;
 
 const Container = styled.div`
     position: relative;

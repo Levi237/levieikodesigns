@@ -5,7 +5,6 @@
 import React  from 'react';
 import styled from 'styled-components';
 
-
 const FlipCards =({projects})=> {
     const projectSpread = projects.map((p, key) => {
         return(

@@ -4,44 +4,39 @@ import styled from 'styled-components';
 import { NavLink }                      from 'react-router-dom';
 import * as routes                      from './../constants/routes';
 
-import NavIcons from './NavIcons';
-
-import { ReactComponent as Mail }       from './../svg/icons/iconfinder_mail.svg';
-import { ReactComponent as Instagram }  from './../svg/icons/iconfinder_instagram.svg';
-import { ReactComponent as Linkedin }   from './../svg/icons/iconfinder_linkedin.svg';
-import { ReactComponent as Github }     from './../svg/icons/iconfinder_github.svg';
+// import NavIcons from './NavIcons';
 
 const Footer = () => {
-    return(
-        <Container>
-          <div>
+  return(
+    <Container>
+      <div>
 
-            <section>
-              <h2>Quick Links</h2>
-              <NavLink to={routes.ROOT}>
-                Home
-              </NavLink> 
-              <NavLink to={routes.SERV}>
-                Services
-              </NavLink>    
-              <NavLink to={routes.PORT}>
-                Clients
-              </NavLink>   
-              <NavLink to={routes.FAQS}>
-                FAQ
-              </NavLink> 
-              <NavLink to={routes.MAIL}>
-                Contact
-              </NavLink>             
-            </section>
-            {/* <NavIcons/> */}
-            <section>
-              <p>Built by LeviEikoDesigns</p>
-            </section>
+        <section>
+          <h2>Quick Links</h2>
+          <NavLink to={routes.ROOT}>
+            Home
+          </NavLink> 
+          <NavLink to={routes.SERV}>
+            Services
+          </NavLink>    
+          <NavLink to={routes.PORT}>
+            Clients
+          </NavLink>   
+          <NavLink to={routes.FAQS}>
+            FAQ
+          </NavLink> 
+          <NavLink to={routes.MAIL}>
+            Contact
+          </NavLink>             
+        </section>
+        {/* <NavIcons/> */}
+        <section>
+          <p>Built by LeviEikoDesigns</p>
+        </section>
 
-          </div>
-        </Container>
-        );
+      </div>
+    </Container>
+  );
 };
 
 

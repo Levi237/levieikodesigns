@@ -4,7 +4,7 @@
 // goak: when scroll into view, intersectionObserver triggers for each section
 
 import React, { useEffect, useRef, useState } from 'react';
-import styled               from 'styled-components';
+import styled                                 from 'styled-components';
 
 const ClientSection = ({ client }) => {
 // Add intersection observer to the section 
@@ -29,7 +29,7 @@ const ClientSection = ({ client }) => {
     const tasksList = client.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
-    console.log('client', client)
+    // console.log('client', client);
     return(
         <Wrapper ref={intersectionRef} className={`hide-intersection`}>
             <MobileImg href={`https://${client.link}`} target="_blank">
