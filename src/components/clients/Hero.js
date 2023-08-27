@@ -1,15 +1,15 @@
 import React from 'react';
 import styled   from 'styled-components';
 
-const PortfolioHero = ({ clientList }) => {   
-    clientList = clientList.filter(client => (client.status === 'live'));
+const PortfolioHero = ({ projects }) => {   
+    projects = projects.filter(project => (project.status === 'live'));
     
     setInterval(carouselClients, 1000);
-    function carouselClients(){ clientList.pop();}
-    const mapList = clientList.map((client, k) => {
+    function carouselClients(){ projects.pop();}
+    const mapList = projects.map((project, k) => {
 
         return (
-                <div style={{backgroundImage: `url(${client.image})`}}>
+                <div style={{backgroundImage: `url(${project.image})`}}>
                 </div>
             );
         });
