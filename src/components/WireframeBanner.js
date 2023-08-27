@@ -7,7 +7,7 @@ const WireframeBanner = () => {
       <h1>SEEING THE BIG PICTURE</h1>
       <p>Start with a plan and wireframe. You'll be surprised at what we can develop!</p>
       <b>MomoMuscle.co 2020 design</b>
-      <div>
+      <div className="page-width">
         <img className="desktop" src="/momo-wireframe-desktop.png" alt="Website display with Momo Muscle circa 2020"/>
         <img className="mobile" src="/momo-wireframe-mobile.png" alt="Website display with Momo Muscle circa 2020"/>
       </div>
@@ -65,7 +65,10 @@ const WireframeBannerWrapper = styled.section`
       display: inline-block;
     }
     > div {
-
+      > img {
+        width: 100%;
+        margin: 15px 0%;
+      }
     }
   }
   @media screen and (min-width: 1000px) {
