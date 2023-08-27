@@ -90,7 +90,7 @@ const MobileFirstBannerWrapper = styled.section`
         padding: 0% 15% 0% 10%;
       }
       h1 {
-        color: var(--black);
+        color: var(--blue);
         font-size: 8vw;
         margin: 0% 0% 5%!important;
         text-align: left;

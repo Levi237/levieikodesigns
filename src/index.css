@@ -17,7 +17,7 @@
   --drv-black: rgb(48, 48, 48);
 
 /* Update color  & font roots */
---color-white: 255 255 255;
+  --color-white: 255 255 255;
   --color-black: 0 23 47;
   --color-blue: 75 125 190;
   --color-darkblue: 0 54 110;
@@ -30,6 +30,10 @@
 
   --font-fancy: 'Alegreya Sans SC', Helvetica, sans-serif;
   --font-standard: 'Alegreya Sans', Helvetica, sans-serif;
+
+
+  --background-color: rgb(var(--color-rgb-darkgrey-new));
+
 }
 
 body {
@@ -98,6 +102,12 @@ a, h3, h4, h5, p, li {
 .no-break {
   display: inline-block!important;
 }
+
+/*==================== Set page width standards ====================*/
+.page-width {      
+  max-width: 900px;
+  margin: 0 auto;
+}  
 
 /*==================== NavBar STYLE ====================*/
 .nav-bar svg {

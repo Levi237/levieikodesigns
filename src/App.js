@@ -224,9 +224,10 @@ const AppContainer = styled.div`
     // text-transform: uppercase;
   }
   a {
-    color: var(--darkblue);
+    color: var(--blue);
     &:hover {
-      color: var(--blue);
+      color: var(--lightgrey);
+      text-decoration: underline;
     }
   }
 `;

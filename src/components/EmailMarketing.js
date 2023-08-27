@@ -69,7 +69,8 @@ const EmailMarketingWrapper = styled.section`
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
     margin-top: 60px!important;
     margin-bottom: -5.3vw !important;
-    background-color: var(--darkgrey);
+    background-color: var(--background-color);
+    );
     padding: 2px 22px;
     display: inline-block;
     &:last-of-type {
