@@ -4,6 +4,7 @@ import { NavLink }          from 'react-router-dom';
 import * as routes          from '../../constants/routes';
 
 // import FeaturedBanner       from '../FeaturedBanner';
+import Definition           from '../Definition';
 import EmailMarketing       from '../EmailMarketing';
 import WireframeBanner      from '../WireframeBanner';
 import MobileFirstBanner    from '../MobileFirstBanner';
@@ -32,6 +33,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
 
       <HomeBodyWrapper>  
         {/* <FeaturedBanner/> */}
+        <Definition />
         <MobileFirstBanner/>
         <EmailMarketing/>
         <WireframeBanner/>
@@ -104,7 +106,7 @@ const HomeBodyWrapper = styled.div`
   position: relative;
   width: 100vw;
   height: calc(100vh - 5vw - 50px);
-  background-color: var(--darkgrey);
+  background-color: var(--background-color);
   color: white;
   overflow: scroll;
   position: relative;
