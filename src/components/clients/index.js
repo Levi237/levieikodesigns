@@ -13,8 +13,8 @@ export default class PortfolioPage extends Component {
     state = {
         projects: [{
             title: `Red5 Performance`,
-            image: `./clients/red5performance.jpg`,
-            image2: `./clients/red5performance_2.jpg`,
+            image: `./projects/red5performance.jpg`,
+            image2: `./projects/red5performance_2.jpg`,
             link: `red5performance.com`,
             status: `live`,
             startDate: `2021`,
@@ -24,8 +24,8 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquids`, `MailChimp`, `Photoshop`, `FIGMA`]
         },{
             title: `Momo[Muscle]`,
-            image: `./clients/momomuscle-meta.png`,
-            image2: `./clients/momomuscle-meta_2.jpg`,
+            image: `./projects/momomuscle-meta.png`,
+            image2: `./projects/momomuscle-meta_2.jpg`,
             link: `momomuscle.com`,
             status: `live`,
             startDate: `2020`,
@@ -35,8 +35,8 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`, `Klaviyo`]
         },{
             title: `Nexus Housing`,
-            image: `./clients/nexushousing.jpg`,
-            image2: `./clients/nexushousing_2.jpg`,
+            image: `./projects/nexushousing.jpg`,
+            image2: `./projects/nexushousing_2.jpg`,
             link: `nexushousing.com`,
             status: `live`,
             startDate: `2023`,
@@ -46,8 +46,8 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Covered Perfectly`,
-            image: `./clients/coveredperfectly.png`,
-            image2: `./clients/coveredperfectly_2.jpg`,
+            image: `./projects/coveredperfectly.png`,
+            image2: `./projects/coveredperfectly_2.jpg`,
             link: `coveredperfectly.com`,
             status: `live`,
             startDate: `2022`,
@@ -57,8 +57,8 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Scared But Alive`,
-            image: `./clients/scaredbutalive.png`,
-            image2: `./clients/scaredbutalive_2.jpg`,
+            image: `./projects/scaredbutalive.png`,
+            image2: `./projects/scaredbutalive_2.jpg`,
             link: `scaredbutalive.com`,
             status: `live`,
             startDate: `2021`,
@@ -68,8 +68,8 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `Klaviyo`]
         },{
             title: `D I V I N I T Y`,
-            image: `./clients/divinity-ray.png`,
-            image2: `./clients/divinity-ray_2.jpg`,
+            image: `./projects/divinity-ray.png`,
+            image2: `./projects/divinity-ray_2.jpg`,
             link: `divinityray.com`,
             status: `live`,
             startDate: `2021`,
@@ -79,7 +79,7 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`]
         },{
             title: `Metamorphosis Medical Center`,
-            image: `./clients/metamorphosis.jpg`,
+            image: `./projects/metamorphosis.jpg`,
             link: `metatranshormone.com`,
             status: `live`,
             startDate: `2021`,
@@ -89,8 +89,8 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `MailChimp`, `FIGMA`],
         },{
             title: `Our Highest Mantra`,
-            image: `./clients/ourhighestmantra.jpg`,
-            image2: `./clients/ourhighestmantra_2.jpg`,
+            image: `./projects/ourhighestmantra.jpg`,
+            image2: `./projects/ourhighestmantra_2.jpg`,
             link: `ourhighestmantra.com`,
             status: `live`,
             startDate: `2023`,
@@ -100,8 +100,8 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Prana Wellness`,
-            image: `./clients/prana-wellness.png`,
-            image2: `./clients/prana-wellness_2.jpg`,
+            image: `./projects/prana-wellness.png`,
+            image2: `./projects/prana-wellness_2.jpg`,
             link: `pranawellnessworks.com`,
             status: `live`,
             startDate: `2019`,
@@ -111,8 +111,8 @@ export default class PortfolioPage extends Component {
             technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`],
         },{
             title: `Levi Eiko Designs`,
-            image: `./clients/levieikodesigns.jpg`,
-            image2: `./clients/levieikodesigns_2.jpg`,
+            image: `./projects/levieikodesigns.jpg`,
+            image2: `./projects/levieikodesigns_2.jpg`,
             link: `levieikodesigns.com`,
             status: `live`,
             startDate: `2019`,
