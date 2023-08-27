@@ -37,7 +37,8 @@ const ClientSection = ({ client }) => {
             </MobileImg>
             <section>
                 <h2>
-                    {client.title}&nbsp;<small className="no-break">{client.startDate}</small>
+                    {client.title}
+                    {/* &nbsp;<small className="no-break">{client.startDate}</small> */}
                 </h2>
                 <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
                     {client.link}
@@ -145,7 +146,7 @@ const Wrapper = styled.div`
         > a {
             width: 90%;
             max-width: 400px;
-            margin: 5% auto 0;
+            margin: 5% auto 6px;
             img {
                 width: 100%;
                 box-shadow: 0 1px 12px rgba(0,0,0,.2);

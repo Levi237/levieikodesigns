@@ -8,21 +8,22 @@ import styled                   from 'styled-components';
 
 import ClientSection            from './ClientSection';
 
-const Clients = ({ clientList }) => {
+const Clients = ({ projects }) => {
 
-    const liveClients = clientList.filter(client => client.status === 'live');
-    const mapClientList = liveClients.map((client, key) => {
+    const liveClients = projects.filter(client => client.status === 'live');
+    const mapProjects = liveClients.map((client, key) => {
         return( <ClientSection key={key} client={client}/> );
     });
 
     return(
         <Container>
-            {mapClientList}          
+            {mapProjects}          
         </Container>
     );
 };
 
 const Container = styled.div`
+    margin-top: 40px;
     position: relative;
     hr {
         height: 1px;
@@ -33,6 +34,7 @@ const Container = styled.div`
         object-fit: cover;
     }
     @media screen and (max-width: 900px) {
+        margin-top: 0px;
         section, img {
             width: 90%;
             margin: auto;
