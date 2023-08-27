@@ -20,7 +20,7 @@ const Footer = () => {
             Services
           </NavLink>    
           <NavLink to={routes.PORT}>
-            Clients
+            Portfolio
           </NavLink>   
           <NavLink to={routes.FAQS}>
             FAQ
