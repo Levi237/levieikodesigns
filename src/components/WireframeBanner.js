@@ -23,6 +23,7 @@ const WireframeBannerWrapper = styled.section`
     scroll-snap-align: start;
     position: relative;
     color: var(--darkgrey);
+    background: #fff;
     width: 100%;
     padding-top: 40px;
     text-align: center;

@@ -69,7 +69,7 @@ const EmailMarketingWrapper = styled.section`
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
     margin-top: 60px!important;
     margin-bottom: -5.3vw !important;
-    background-color: #fff;
+    background-color: var(--darkgrey);
     padding: 2px 22px;
     display: inline-block;
     &:last-of-type {
@@ -121,7 +121,7 @@ const EmailMarketingWrapper = styled.section`
           text-align: left;
           li {
             padding-bottom: 12px;
-            color: var(--darkgrey);
+            color: #fff;
           }
         }
       }

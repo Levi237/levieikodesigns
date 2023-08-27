@@ -104,7 +104,8 @@ const HomeBodyWrapper = styled.div`
   position: relative;
   width: 100vw;
   height: calc(100vh - 5vw - 50px);
-  background-color: #fff;
+  background-color: var(--darkgrey);
+  color: white;
   overflow: scroll;
   position: relative;
   .down-arrow-class {
@@ -114,7 +115,7 @@ const HomeBodyWrapper = styled.div`
   }
   // scroll-snap-type: y mandatory;
   > h1 {
-    color: var(--darkblue);
+    color: var(--blue);
     font-size: 32px;
   }
   > section {

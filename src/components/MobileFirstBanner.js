@@ -43,7 +43,7 @@ const MobileFirstBannerWrapper = styled.section`
     position: absolute;
     width: 80vw;
     height: 80vw;
-    border: 1px solid black;
+    border: 1px solid #fff;
     z-index: 0;
     top: calc(80vw + 20px);
     left: calc(10vw - 1px);
@@ -56,7 +56,7 @@ const MobileFirstBannerWrapper = styled.section`
     border: none;
     font-size: 0;
     z-index: 1;
-    color: var(--darkgrey);
+    color: #fff;
 
     &:first-of-type {
       margin: 5vw 0 0 5vw;
@@ -133,7 +133,8 @@ const MobileFirstBannerWrapper = styled.section`
       height: 35vw;
       max-width: 700px;
       max-height: 350px;
-      border: 1px solid black;
+      border: 1px solid #fff;
+      background: #fff;
       z-index: 0;
       
       top: 7.5vw;
@@ -146,7 +147,6 @@ const MobileFirstBannerWrapper = styled.section`
       border: none;
       font-size: 0;
       z-index: 1;
-      color: var(--darkgrey);
       margin: 0!important;
       &:last-of-type {
         
