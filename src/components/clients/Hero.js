@@ -9,7 +9,7 @@ const PortfolioHero = ({ projects }) => {
     const mapList = projects.map((project, k) => {
 
         return (
-                <div style={{backgroundImage: `url(${project.image})`}}>
+                <div key={k} style={{backgroundImage: `url(${project.image})`}}>
                 </div>
             );
         });
