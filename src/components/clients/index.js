@@ -1,26 +1,17 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
+import AnimateText          from '../AnimateText';
 import Footer               from '../Footer';
 
 import Skills               from './Skills';
 import Clients              from './Clients';
 import PastClients          from './PastClients';
 
+
 export default class PortfolioPage extends Component {
     state = {
-        clientList: [{
-            title: `Momo[Muscle]`,
-            image: `./clients/momomuscle-meta.png`,
-            image2: `./clients/momomuscle-meta_2.jpg`,
-            link: `momomuscle.com`,
-            status: `live`,
-            startDate: `2020`,
-            endDate: ``,
-            statement: `Basically, I design tools to teach women & AFAB babes to see sustainable results in less time. I want you to feel more like yourself & fitness is the catalyst.`,
-            tasks: [`Shopify store`, `Custom quiz w/ data capture`, `User friendly editable template`, `Graphic design & Photoshop`],
-            technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`, `Klaviyo`]
-        },{
+        projects: [{
             title: `Red5 Performance`,
             image: `./clients/red5performance.jpg`,
             image2: `./clients/red5performance_2.jpg`,
@@ -32,6 +23,17 @@ export default class PortfolioPage extends Component {
             tasks: [`Shopify store`, `MailChimp campaigns`, `Photoshop, graphics design`, `Digital product design & development`, `Marketing strategic planning`],
             technologies: [`Shopify`, `Liquids`, `MailChimp`, `Photoshop`, `FIGMA`]
         },{
+            title: `Momo[Muscle]`,
+            image: `./clients/momomuscle-meta.png`,
+            image2: `./clients/momomuscle-meta_2.jpg`,
+            link: `momomuscle.com`,
+            status: `live`,
+            startDate: `2020`,
+            endDate: ``,
+            statement: `Basically, I design tools to teach women & AFAB babes to see sustainable results in less time. I want you to feel more like yourself & fitness is the catalyst.`,
+            tasks: [`Shopify store`, `Custom quiz w/ data capture`, `User friendly editable template`, `Graphic design & Photoshop`],
+            technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`, `Klaviyo`]
+        },{
             title: `Nexus Housing`,
             image: `./clients/nexushousing.jpg`,
             image2: `./clients/nexushousing_2.jpg`,
@@ -41,17 +43,6 @@ export default class PortfolioPage extends Component {
             endDate: ``,
             statement: `Sustainable modular housing.`,
             tasks: [`Shopify website`, `Custom editable Liquid sections`],
-            technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
-        },{
-            title: `Our Highest Mantra`,
-            image: `./clients/ourhighestmantra.jpg`,
-            image2: `./clients/ourhighestmantra_2.jpg`,
-            link: `ourhighestmantra.com`,
-            status: `live`,
-            startDate: `2023`,
-            endDate: ``,
-            statement: `Find your higher self.`,
-            tasks: [`Shopify landing page`, `Customized Product page`, `Integrated 3rd part App`, `Photoshop Edits to Logo`],
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Covered Perfectly`,
@@ -97,16 +88,16 @@ export default class PortfolioPage extends Component {
             tasks: [`Custom single-page website`],
             technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `MailChimp`, `FIGMA`],
         },{
-            title: `Sathi Roy`,
-            image: `./clients/sathiroy.png`,
-            image2: `./clients/sathiroy_2.jpg`,
-            link: `sathiroy.com`,
+            title: `Our Highest Mantra`,
+            image: `./clients/ourhighestmantra.jpg`,
+            image2: `./clients/ourhighestmantra_2.jpg`,
+            link: `ourhighestmantra.com`,
             status: `live`,
-            startDate: `2021`,
+            startDate: `2023`,
             endDate: ``,
-            statement: `I help people reach their highest potential every day by taking a holistic and customized approach involving their mind, body, soul, and spirit.`,
-            tasks: [`Shopify website`, `Graphic design`, `Vector/digital graphics animations`],
-            technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `FIGMA`],
+            statement: `Find your higher self.`,
+            tasks: [`Shopify landing page`, `Customized Product page`, `Integrated 3rd part App`, `Photoshop Edits to Logo`],
+            technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Prana Wellness`,
             image: `./clients/prana-wellness.png`,
@@ -118,14 +109,32 @@ export default class PortfolioPage extends Component {
             statement: `Prana is Sanskrit for breath, considered as a life-giving force.  Prana is seen as a universal energy, which flows in currents in and around the body.`,
             tasks: [`React/Firebase website & blog`, `MailChimp email automation`, `Photoshop`],
             technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`],
+        },{
+            title: `Levi Eiko Designs`,
+            image: `./clients/levieikodesigns.jpg`,
+            image2: `./clients/levieikodesigns_2.jpg`,
+            link: `levieikodesigns.com`,
+            status: `live`,
+            startDate: `2019`,
+            endDate: ``,
+            statement: `Build your new website or upgrade an existing one.`,
+            tasks: [`Fully coded website`, `Built with React`, `Firebase Platform`],
+            technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`]
         }],
     };
     render(){
-        const { clientList,  skills } = this.state;
+        const { projects,  skills } = this.state;
         return (
             <Container>
-                <h1 className="titleDecoration">PROJECTS</h1>
-                <Clients clientList={clientList}/>
+                          <h1 className="titleDecoration">
+            <AnimateText 
+              animate="slide"
+              fade="on" 
+              speed="steady"
+              text="Projects" 
+              />
+          </h1>
+                <Clients projects={projects}/>
                 <Skills skills={skills}/>
                 <h1>PAST WORK</h1>
                 <PastClients/>
