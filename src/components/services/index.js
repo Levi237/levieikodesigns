@@ -3,6 +3,7 @@ import styled               from 'styled-components';
 
 import Footer               from '../Footer';
 import DisplaySection       from './DisplaySection';
+import AnimateText          from '../AnimateText'; 
 // import PricingSection       from './PricingSection';
 export default class ServicesPage extends Component {
   state = {
@@ -100,7 +101,14 @@ export default class ServicesPage extends Component {
     return(
       <LocalWrapper>
         <LocalBodyWrapper>  
-          <h1 className="titleDecoration">Services</h1>
+          <h1 className="titleDecoration">
+            <AnimateText 
+              animate="slide"
+              fade="on" 
+              speed="steady"
+              text="Services" 
+              />
+          </h1>
           <div>
             <DisplaySection service={services.websites}/>
             {/* <PricingSection/> */}
