@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default class PastClients extends Component {
     state = {
-        pastClientList: [{
+        pastProjects: [{
             title: `Dizzy with Excitement`,
             image: `./clients/dizzywithexcitement.jpg`,
             image2: `./clients/dizzywithexcitement_2.jpg`,
@@ -14,6 +14,17 @@ export default class PastClients extends Component {
             statement: `Endless options printed on demand.`,
             tasks: [`Create custom tools on purchaed template`,`Wallpaper size/price calculator`,`Color swatch tool in Collections`,`Color matching display on Products`],
             technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
+        },{
+            title: `Sathi Roy`,
+            image: `./clients/sathiroy.png`,
+            image2: `./clients/sathiroy_2.jpg`,
+            link: `sathiroy.com`,
+            status: `inactive`,
+            startDate: `2021`,
+            endDate: ``,
+            statement: `I help people reach their highest potential every day by taking a holistic and customized approach involving their mind, body, soul, and spirit.`,
+            tasks: [`Shopify website`, `Graphic design`, `Vector/digital graphics animations`],
+            technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `FIGMA`],
         },{
             title: `Baddie by Divinity`,
             image: `./clients/baddie-by-divinity.jpg`,
@@ -89,8 +100,8 @@ export default class PastClients extends Component {
         }]
     };
     render(){
-        const { pastClientList } = this.state
-        const mappastClientList = pastClientList.map((client, key) => {
+        const { pastProjects } = this.state
+        const mappastProjects = pastProjects.map((client, key) => {
             const technologiesList = client.technologies.map((c, k) => {
                 return <span key={k}>{c}</span>
             });
@@ -116,7 +127,7 @@ export default class PastClients extends Component {
         });
         return(
             <Container>
-                {mappastClientList}                
+                {mappastProjects}                
             </Container>
         );
     };
