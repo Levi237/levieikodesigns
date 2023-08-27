@@ -29,9 +29,7 @@ const AnimateText = ({ animate, fade, speed, text }) => {
                 key={ key } 
             >
                 { letter }
-                <span>
-                    { letter }
-                </span>
+                <span>{ letter }</span>
             </span>
         );
     });
