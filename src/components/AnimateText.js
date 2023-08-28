@@ -24,10 +24,7 @@ const AnimateText = ({ animate, fade, speed, text }) => {
     const splitWord = word.split('');
     const mapSplitWord = splitWord.map(( letter, key ) => {
         return(
-            <span 
-                className={`letter hide fade-${ fade } ${ speed } ${ animate }`} 
-                key={ key } 
-            >
+            <span className={`letter hide fade-${ fade } ${ speed } ${ animate }`} key={ key } >
                 { letter }
                 <span>{ letter }</span>
             </span>
