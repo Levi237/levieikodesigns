@@ -18,7 +18,7 @@ const Skills =()=> {
     `MailChimp`,
     `Klaviyo`,
     `Figma`,
-    `Adobe PhotoShop`,
+    `PhotoShop`,
   ]
   const skillsList = skills.map((skill, k) => {
     return <span key={k}>{skill}</span>
@@ -37,11 +37,11 @@ const Skills =()=> {
 const Container = styled.div`
   h1 {
     padding-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px!important;
   }
   section {
     text-align: center;
-    padding: 2% 0% 40px;
+    padding: 0% 0% 80px;
   }
   br {
     display: none;
