@@ -47,6 +47,21 @@ const HomePage = ({ pageStyle, btnScroll }) => {
     </div>
   );
 };
+const HomeHeroWrapper = styled.div`
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  overflow: scroll;
+  > a {
+    height: 150px!important;
+    width: 150px!important;
+  } 
+`;
 
 const HomeSecondNav = styled.nav`
   height: 80px;
@@ -55,7 +70,6 @@ const HomeSecondNav = styled.nav`
 
   position: relative;
   > h1 {
-    // margin: calc(5vw + 2px)!important;
     display: inline-block;
     font-size: 32px;
     line-height: 100%;
@@ -75,22 +89,6 @@ const HomeSecondNav = styled.nav`
       margin: 24px!important;
     }
   }
-`;
-
-const HomeHeroWrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  overflow: scroll;
-  > a {
-    height: 150px!important;
-    width: 150px!important;
-  } 
 `;
 
 const HomeBodyWrapper = styled.div`
