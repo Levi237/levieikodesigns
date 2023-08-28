@@ -6,7 +6,7 @@ import * as routes          from '../../constants/routes';
 // import FeaturedBanner       from '../FeaturedBanner';
 import Definition           from '../Definition';
 import EmailMarketing       from '../EmailMarketing';
-import WireframeBanner      from '../WireframeBanner';
+import WebsitePreview      from '../WebsitePreview';
 import MobileFirstBanner    from '../MobileFirstBanner';
 import Footer               from '../Footer';
 
@@ -36,7 +36,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
         <Definition />
         <MobileFirstBanner/>
         <EmailMarketing/>
-        <WireframeBanner/>
+        <WebsitePreview/>
         <Footer/>
         {/* <div className="down-arrow-class"></div> */}
       </HomeBodyWrapper>
