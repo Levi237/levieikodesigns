@@ -100,7 +100,7 @@ export default class ServicesPage extends Component {
   render(){
     const { services } = this.state;
     return(
-      <LocalWrapper>
+      <div className="index-wrapper">
         <LocalBodyWrapper>  
           <h1 className="titleDecoration">
             <AnimateText animate="slide" fade="on" speed="fast" text="Services" />
@@ -114,24 +114,16 @@ export default class ServicesPage extends Component {
           </div>
           <Footer/>
         </LocalBodyWrapper>
-      </LocalWrapper>
+      </div>
     );
   };
 };
 
-const LocalWrapper = styled.div`
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(var(--color-white) / 100%);
-  overflow: scroll;
-`;
-  
 const LocalBodyWrapper = styled.div`
   padding: 60px 0 0;
   position: relative;
   width: 100vw;
-  background-color: rgb(var(--color-rgb-darkgrey-new));;
+  background-color: var(--background-color);
   overflow: scroll;
   position: relative;
   

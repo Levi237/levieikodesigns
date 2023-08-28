@@ -238,6 +238,8 @@ button.selectedHighlighted {
     margin: 0 auto!important;
 }
 
+
+/* Down Arrow Animation */
 @-webkit-keyframes bounce {
   20%, 53%, 80%, 93%, 98%, 0%, 100% { transform: translateY(0px); opacity: 1}
   40%, 43% { transform: translateY(-20px); opacity: .0; }

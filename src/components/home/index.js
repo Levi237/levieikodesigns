@@ -15,7 +15,7 @@ import Footer               from '../Footer';
 import { ReactComponent as LogoSVG } from '../../svg/brand/logo.svg';
 const HomePage = ({ pageStyle, btnScroll }) => {
   return(
-    <HomeWrapper>
+    <div className="index-wrapper">
 
       <HomeHeroWrapper>
         <NavLink to={routes.PORT}>
@@ -44,16 +44,10 @@ const HomePage = ({ pageStyle, btnScroll }) => {
         {/* <div className="down-arrow-class"></div> */}
       </HomeBodyWrapper>
 
-    </HomeWrapper>
+    </div>
   );
 };
 
-const HomeWrapper = styled.div`
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  width: 100vw;
-  overflow: scroll;
-`;
 const HomeSecondNav = styled.nav`
   height: 80px;
   z-index: 2;
@@ -108,7 +102,6 @@ const HomeHeroWrapper = styled.div`
 const HomeBodyWrapper = styled.div`
   position: relative;
   width: 100vw;
-  height: calc(100vh - 5vw - 50px);
   background-color: var(--background-color);
   color: white;
   overflow: scroll;
@@ -118,7 +111,6 @@ const HomeBodyWrapper = styled.div`
     bottom: 2vw;
     left: calc(50vw - 51px);
   }
-  // scroll-snap-type: y mandatory;
   > h1 {
     color: var(--blue);
     font-size: 32px;
