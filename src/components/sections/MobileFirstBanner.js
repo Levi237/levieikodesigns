@@ -11,8 +11,8 @@ const MobileFirstBanner = () => {
       </section>
       <section>
         <div>
-          <h1>Why Mobile-First</h1>
-          <h3>So.. you actually <b>don't</b> need an app for that..</h3>
+          <h1>Mobile-First Web</h1>
+          <h3>So.. you actually <u>don't</u> need an app for that..</h3>
           <p>
             There are a lot of things a website can do that apps can do, but there are big perks when it comes to building a website that is mobile friendly first.
           </p>
