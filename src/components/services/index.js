@@ -16,16 +16,16 @@ export default class ServicesPage extends Component {
         paragraph: `Emailing your customers is an excellent way to maintain a positive relationship while promoting specials they might be interested in.  It's all about tact.  Knowing what to send to who and when is important.  The better you target you audiences the more effective you can be at driving up sales but now and in the long term.`,
         listName: `What I do:`,
         checklist: [
-          `Target audiences to promote sales & new products`,
           `Upgrade your professional look`,
+          `Target audiences to promote sales & new products`,
           `Feature custom graphic designs`,
+          `Create value-added content to build trust`,
           `Bypass the spam, get into the Inbox`,
-          `Create value-added content to build trust`
         ],
         collage: [
           `projects/coveredperfectly_3.png`, 
           `projects/baddie-by-divinity_2.jpg`,
-          `projects/bravo-built_3.jpg`
+          `projects/bravo-built_3.jpg`,
         ],
         position: {
           text: `right bottom`
@@ -41,12 +41,12 @@ export default class ServicesPage extends Component {
           `Graphics / photoshop touchups`,
           `Product imagery & packaging`,
           `Marketing / advertising campaigns`,
-          `Logos & brand identity development`
+          `Logos & brand identity development`,
         ],
         collage: [
           `services/red5-collection.png`,
           `services/bravo-video.png`, 
-          `services/divinity-youtube.png`
+          `services/divinity-youtube.png`,
         ],
         position: {
           text: `left bottom`
@@ -70,7 +70,7 @@ export default class ServicesPage extends Component {
           `services/custom-nexus-section.jpg`, 
         ],
         position: {
-          text: `right bottom`
+          text: `right bottom`,
         }
       },
       websites: {

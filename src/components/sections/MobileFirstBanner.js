@@ -17,9 +17,9 @@ const MobileFirstBanner = () => {
             There are a lot of things a website can do that apps can do, but there are big perks when it comes to building a website that is mobile friendly first.
           </p>
           <ul>
-            <li>Cheaper to start</li>
             <li>Accessible to a larger audience</li>
             <li>No downloads required for user</li>
+            <li>Cheaper to start</li>
             <li>Test UX/UI before App development</li>
             <li>You'll still need a website</li>
           </ul>
