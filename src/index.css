@@ -63,19 +63,14 @@ h1,h2,h3,h4,h5 {
   margin-block-end: 0;
   line-height: 100%;
 }
-h1 {
+h1, h2 {
   font-family: var(--font-fancy);
   font-weight: 300;
-  letter-spacing: .055rem;
   margin: 1rem auto;
 }
-h2 {
-  font-family: var(--font-fancy);
-  font-weight: 300;
+
+a, h1, h2, h3, h4, h5, p, li {
   letter-spacing: .055rem;
-}
-a, h3, h4, h5, p, li {
-  letter-spacing: .5px;
 }
 /* Desktop vs Mobile toggle */
 .mobile-block, .mobile-inline {
