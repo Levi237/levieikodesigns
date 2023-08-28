@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-export default class PastClients extends Component {
+export default class Pastprojects extends Component {
     state = {
         pastProjects: [{
             title: `Dizzy with Excitement`,
-            image: `./clients/dizzywithexcitement.jpg`,
-            image2: `./clients/dizzywithexcitement_2.jpg`,
+            image: `./projects/dizzywithexcitement.jpg`,
+            image2: `./projects/dizzywithexcitement_2.jpg`,
             link: `dizzywithexcitement.com`,
             status: `live`,
             startDate: `2023`,
@@ -16,8 +16,8 @@ export default class PastClients extends Component {
             technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
         },{
             title: `Sathi Roy`,
-            image: `./clients/sathiroy.png`,
-            image2: `./clients/sathiroy_2.jpg`,
+            image: `./projects/sathiroy.png`,
+            image2: `./projects/sathiroy_2.jpg`,
             link: `sathiroy.com`,
             status: `inactive`,
             startDate: `2021`,
@@ -27,8 +27,8 @@ export default class PastClients extends Component {
             technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `FIGMA`],
         },{
             title: `Baddie by Divinity`,
-            image: `./clients/baddie-by-divinity.jpg`,
-            image2: `./clients/baddie-by-divinity_2.jpg`,
+            image: `./projects/baddie-by-divinity.jpg`,
+            image2: `./projects/baddie-by-divinity_2.jpg`,
             link: `baddiebydivinity.com`,
             status: `inactive`,
             startDate: `2021`,
@@ -38,8 +38,8 @@ export default class PastClients extends Component {
             technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
         },{
             title: `Bravo Built`,
-            image: `./clients/bravo-built.jpg`,
-            image2: `./clients/bravo-built_2.jpg`,
+            image: `./projects/bravo-built.jpg`,
+            image2: `./projects/bravo-built_2.jpg`,
             link: `bravobuiltfit.com`,
             status: `live`,
             startDate: `2021`,
@@ -49,7 +49,7 @@ export default class PastClients extends Component {
             technologies: [`Shopify`,`Liquid`, `JS`, `CSS`, `SVG`, `Photoshop`, `FIGMA`, `MailChimp`]
         },{
             title: `Andrea Sells Maui`,
-            image: `./clients/andreasellsmaui2.jpg`,
+            image: `./projects/andreasellsmaui2.jpg`,
             link: `andreasellsmaui.com`,
             status: `inactive`,
             startDate: `2020`,
@@ -60,7 +60,7 @@ export default class PastClients extends Component {
         },{          
             title: `FITPLAN`,
             link: `fitplanapp.com`,
-            image: `./clients/fitplan-giftcard.png`,
+            image: `./projects/fitplan-giftcard.png`,
             status: `live`,
             startDate: `2019`,
             endDate: ``,
@@ -70,7 +70,7 @@ export default class PastClients extends Component {
         },{
             title: `IT After Hours`,
             link: `it-afterhours.com`,
-            image: `./clients/it-afterhours.png`,
+            image: `./projects/it-afterhours.png`,
             status: `inactive`,
             startDate: `2019`,
             endDate: ``,
@@ -80,7 +80,7 @@ export default class PastClients extends Component {
         },{
             title: `HeatSeeker Hot Sauce`,
             link: `heatseekersauce.com`,
-            image: `./clients/heatseeker.png`,
+            image: `./projects/heatseeker.png`,
             status: `inactive`,
             startDate: `2019`,
             endDate: ``,
@@ -89,7 +89,7 @@ export default class PastClients extends Component {
             technologies: [`Shopify`,`Liquid`,`CSS`,`JS`,`Photoshop`,`Figma`]
         },{
             title: `La Madre is Watching`,
-            image: `./clients/lamadreiswatching-ongina.JPG`,
+            image: `./projects/lamadreiswatching-ongina.JPG`,
             link: `lamadreiswatching.com`,
             status: `inactive`,
             startDate: `2007`,
