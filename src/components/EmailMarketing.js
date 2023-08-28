@@ -55,14 +55,17 @@ const EmailMarketingWrapper = styled.section`
   -moz-scroll-snap-align: start;
   -ms-scroll-snap-align: start;
   scroll-snap-align: start;
+  
   position: relative;
   width: 100vw;
   max-width: 100vw;
   width: 100%;
   height: auto;
+  margin-top: 40px;
   padding-bottom: 80px;
   padding-top: 10px;
   text-align: center;
+
   > h1 {
     font-size: 11.5vw;
     color: #fff;
@@ -151,7 +154,6 @@ const EmailMarketingWrapper = styled.section`
 
     > h1 {
       font-size: 38px;
-      margin-top: 80px!important;
       margin-bottom: -20px!important;
       &:last-of-type {
         margin-top: 12px!important;

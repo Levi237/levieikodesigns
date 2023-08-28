@@ -32,7 +32,6 @@ const WebsitePreview = () => {
             <img className="mobile" src="MomoMuscle2020_Website-mobile.png" alt="Website display with Momo Muscle built 2020"/>
         </div>
       </div>
-      <br/><br/><br/><br/>
     </WebsitePreviewWrapper>
   );
 };
@@ -44,9 +43,9 @@ const WebsitePreviewWrapper = styled.section`
   scroll-snap-align: start;
 
   position: relative;
-  width: 100%;
   padding-top: 40px;
   text-align: center;
+  margin: 0 auto;
   
   .mobile {
     display: inline-block;
@@ -56,6 +55,7 @@ const WebsitePreviewWrapper = styled.section`
   }
   
   > div {
+    width: 90%;
     color: var(--darkgrey);
     background: #fff;
     max-width: 800px;
@@ -84,15 +84,16 @@ const WebsitePreviewWrapper = styled.section`
   }
   @media screen and (min-width: 640px) {
     padding-top: 0;
-
+    
     .mobile {
       display: none;
     }
     .desktop {
       display: inline-block;
     }
-
+    
     > div {
+      width: 100%;
       > h1 {
         font-size: 38px;
       }
