@@ -24,11 +24,10 @@ margin: 80px auto;
     max-width: 800px; 
     margin: 0 auto; 
     border: 1px solid white;
-    // padding: 5% 10%;
     > div {
         max-width: 600px;
         width: 90%;
-        margin: 40px auto 20px; 
+        margin: 40px auto; 
     }
 }
 h2 {
