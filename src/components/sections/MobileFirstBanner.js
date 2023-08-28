@@ -19,8 +19,9 @@ const MobileFirstBanner = () => {
           <ul>
             <li>Cheaper to start</li>
             <li>Accessible to a larger audience</li>
-            <li>No downloads required to start</li>
+            <li>No downloads required for user</li>
             <li>Test UX/UI before App development</li>
+            <li>You'll still need a website</li>
           </ul>
         </div>
       </section>
