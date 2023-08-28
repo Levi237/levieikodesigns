@@ -3,13 +3,14 @@ import styled               from 'styled-components';
 import { NavLink }          from 'react-router-dom';
 import * as routes          from '../../constants/routes';
 
-// import FeaturedBanner       from '../FeaturedBanner';
-import Definition           from '../Definition';
-import EmailMarketing       from '../EmailMarketing';
+// import FeaturedBanner       from '../sections/FeaturedBanner';
+import Definition           from '../sections/Definition';
+import EmailMarketing       from '../sections/EmailMarketing';
+import MobileFirstBanner    from '../sections/MobileFirstBanner';
+import Skills               from '../sections/Skills';
+import WebsitePreview       from '../sections/WebsitePreview';
+
 import Footer               from '../Footer';
-import MobileFirstBanner    from '../MobileFirstBanner';
-import Skills               from '../Skills';
-import WebsitePreview       from '../WebsitePreview';
 
 import { ReactComponent as LogoSVG } from '../../svg/brand/logo.svg';
 const HomePage = ({ pageStyle, btnScroll }) => {

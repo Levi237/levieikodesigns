@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
-import AnimateText          from '../AnimateText';
+import AnimateText          from '../snippets/AnimateText';
 import Footer               from '../Footer';
 
 // import Skills               from './Skills';

@@ -3,7 +3,8 @@ import styled               from 'styled-components';
 
 import Footer               from '../Footer';
 import DisplaySection       from './DisplaySection';
-import AnimateText          from '../AnimateText'; 
+
+import AnimateText          from '../snippets/AnimateText'; 
 // import PricingSection       from './PricingSection';
 export default class ServicesPage extends Component {
   state = {
