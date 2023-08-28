@@ -17,7 +17,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
   return(
     <div className="index-wrapper">
 
-      <HomeHeroWrapper>
+      <HomeHeroWrapper className="scroll-snap-start">
         <NavLink to={routes.PORT}>
           <LogoSVG className="" style={{fill: pageStyle.color, display: pageStyle.display}}/>
         </NavLink>
@@ -28,7 +28,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
         </div>
       </HomeHeroWrapper>
 
-      <HomeSecondNav id="scroll-to">
+      <HomeSecondNav id="scroll-to" className="scroll-snap-start">
         <LogoSVG/>
         {/* <h1>Levi Eiko Designs</h1> */}
       </HomeSecondNav>
@@ -52,10 +52,7 @@ const HomeSecondNav = styled.nav`
   height: 80px;
   z-index: 2;
   background-color: var(--blue);
-  -webkit-scroll-snap-align: start;
-  -moz-scroll-snap-align: start;
-  -ms-scroll-snap-align: start;
-  scroll-snap-align: start;
+
   position: relative;
   > h1 {
     // margin: calc(5vw + 2px)!important;
@@ -83,10 +80,7 @@ const HomeSecondNav = styled.nav`
 const HomeHeroWrapper = styled.div`
   height: 100vh;
   width: 100vw;
-  -webkit-scroll-snap-align: start;
-  -moz-scroll-snap-align: start;
-  -ms-scroll-snap-align: start;
-  scroll-snap-align: start;
+
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -100,12 +94,6 @@ const HomeHeroWrapper = styled.div`
 `;
 
 const HomeBodyWrapper = styled.div`
-  position: relative;
-  width: 100vw;
-  background-color: var(--background-color);
-  color: white;
-  overflow: scroll;
-  position: relative;
   .down-arrow-class {
     position: fixed;
     bottom: 2vw;
@@ -115,12 +103,9 @@ const HomeBodyWrapper = styled.div`
     color: var(--blue);
     font-size: 32px;
   }
-  > section {
-    width: 100%;
-  }
-  @media screen and (min-width: 945px) {
-    height: calc(100vh - 80px);
-  }
+  // > section {
+  //   width: 100%;
+  // }
 `;
 
 export default HomePage;

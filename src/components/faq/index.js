@@ -4,7 +4,7 @@ import styled                           from 'styled-components';
 const FAQPage = () => { 
   return(
     <Container>
-        <h1 className="titleDecoration">FAQ</h1>
+        <h1 className="header">FAQ</h1>
         <div>
           <h2>The Basics</h2>
           <section>

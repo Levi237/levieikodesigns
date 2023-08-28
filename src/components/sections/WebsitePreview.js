@@ -22,7 +22,7 @@ const WebsitePreview = () => {
   }, []);
 
   return(
-    <WebsitePreviewWrapper>
+    <LocalSection className="scroll-snap-start">
       <div ref={ref}>
         <h1>SEEING THE BIG PICTURE</h1>
         <p>Start with a plan and wireframe. You'll be surprised at what we can develop!</p>
@@ -32,16 +32,11 @@ const WebsitePreview = () => {
             <img className="mobile" src="MomoMuscle2020_Website-mobile.png" alt="Website display with Momo Muscle built 2020"/>
         </div>
       </div>
-    </WebsitePreviewWrapper>
+    </LocalSection>
   );
 };
 
-const WebsitePreviewWrapper = styled.section`
-  -webkit-scroll-snap-align: start;
-  -moz-scroll-snap-align: start;
-  -ms-scroll-snap-align: start;
-  scroll-snap-align: start;
-
+const LocalSection = styled.section`
   position: relative;
   padding-top: 40px;
   text-align: center;

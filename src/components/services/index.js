@@ -101,8 +101,8 @@ export default class ServicesPage extends Component {
     const { services } = this.state;
     return(
       <div className="index-wrapper">
-        <LocalBodyWrapper>  
-          <h1 className="titleDecoration">
+        <Container>  
+          <h1 className="header">
             <AnimateText animate="slide" fade="on" speed="fast" text="Services" />
           </h1>
           <div>
@@ -113,33 +113,16 @@ export default class ServicesPage extends Component {
             <DisplaySection service={services.email}/>
           </div>
           <Footer/>
-        </LocalBodyWrapper>
+        </Container>
       </div>
     );
   };
 };
 
-const LocalBodyWrapper = styled.div`
-  padding: 60px 0 0;
-  position: relative;
-  width: 100vw;
-  background-color: var(--background-color);
-  overflow: scroll;
-  position: relative;
-  
+const Container = styled.div`
   > div {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
-  }
-
-  > section {
-    width: 100%;
-  }
-.title h1 {
-  font-weight: 500;
-}
-  @media screen and (min-width: 945px) {
-    height: calc(100vh);
   }
 `;

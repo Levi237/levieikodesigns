@@ -3,7 +3,7 @@ import styled  from 'styled-components';
 
 const EmailMarketing = () => {
   return(
-    <EmailMarketingWrapper>
+    <LocalSection className="scroll-snap-start">
       <h1 className="desktop-block">Email Marketing Solutions</h1>
       <h1 className="mobile-block">Email Marketing</h1>
       <h1 className="mobile-inline">Solutions</h1>
@@ -45,17 +45,12 @@ const EmailMarketing = () => {
           </section>
         </div>
       </div>
-    </EmailMarketingWrapper>
+    </LocalSection>
   );
 };
 
 
-const EmailMarketingWrapper = styled.section`
-  -webkit-scroll-snap-align: start;
-  -moz-scroll-snap-align: start;
-  -ms-scroll-snap-align: start;
-  scroll-snap-align: start;
-  
+const LocalSection = styled.section`
   position: relative;
   width: 100vw;
   max-width: 100vw;

@@ -126,7 +126,7 @@ export default class PortfolioPage extends Component {
         const { projects } = this.state;
         return (
             <Container>
-                <h1 className="titleDecoration">
+                <h1 className="header">
                     <AnimateText animate="slide" fade="on" speed="fast" text="Projects" />
                 </h1>
                 <Projects projects={projects}/>

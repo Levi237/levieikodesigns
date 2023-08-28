@@ -123,7 +123,7 @@ const Pricing = styled.div`
   h2 {
     text-align: center;
   }
-  .title {}
+  
   .content {
     > div:first-of-type {
       display: grid;

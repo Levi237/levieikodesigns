@@ -3,7 +3,7 @@ import styled   from 'styled-components';
 
 const MobileFirstBanner = () => {
   return(
-    <MobileFirstBannerWrapper>
+    <LocalSection className="scroll-snap-start">
       <section>
         <div></div>
         <img src="/pranawellnessworks-mobile-small.png" alt="mobile example"/>
@@ -25,15 +25,11 @@ const MobileFirstBanner = () => {
         </div>
       </section>
       <div></div>
-    </MobileFirstBannerWrapper>
+    </LocalSection>
   );
 };
 
-const MobileFirstBannerWrapper = styled.section`
-  -webkit-scroll-snap-align: start;
-  -moz-scroll-snap-align: start;
-  -ms-scroll-snap-align: start;
-  scroll-snap-align: start;
+const LocalSection = styled.section`
   position: relative;
   max-width: 100vw;
   // height: 100%;

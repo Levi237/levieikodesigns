@@ -7,7 +7,7 @@ const ContactPage = () => {
     return(
         <Container id="contact" className="contact-container">
             <EmailForm>
-            <h1 className="titleDecoration">CONTACT</h1>
+            <h1 className="header">CONTACT</h1>
             </EmailForm>
         </Container>
     );

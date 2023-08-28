@@ -29,8 +29,8 @@ const ServicesPage = ({ service }) => {
   });
   return(
     <GraphicsBanner ref={ref} className={`${service.position.text} hide-intersection`}>
-      <div className="title"><h1>{service.title}</h1></div>
-        <div className="text">
+      <div className="ttl"><h1>{service.title}</h1></div>
+        <div className="txt">
           <h2>{service.subtitle}</h2>
           <span>{service.subtext}</span>
           <p>{service.paragraph}</p>
@@ -100,10 +100,10 @@ const GraphicsBanner = styled.div`
     }
   }
 
-  .title {
+  .ttl {
     grid-area: title;
   }
-  .text {
+  .txt {
     grid-area: text;
     padding: 10px;
     }
