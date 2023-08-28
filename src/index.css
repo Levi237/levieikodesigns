@@ -199,11 +199,38 @@ a.active {
   color:#29bfff !important;
 }
 
+
+.index-wrapper {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+} 
+.index-wrapper > div {
+  position: relative;
+  width: 100vw;
+  background-color: var(--background-color);
+  overflow: scroll;
+}
+
+
+
+.scroll-snap-start {
+  -webkit-scroll-snap-align: start;
+  -moz-scroll-snap-align: start;
+  -ms-scroll-snap-align: start;
+  scroll-snap-align: start;
+}
+
+
+hide intersection observer before intersection reveal
 .hide-intersection {
   opacity: 0!important;
   margin-top: 20px!important;
   transition: 1s ease;
 }
+
+
 
 
 /* turn a list from column to row */
@@ -231,7 +258,7 @@ button.selectedHighlighted {
   100% { background-position: 0%; }
 }
 
-.titleDecoration {
+.header {
     font-family: var(--font-fancy);
     font-size: 48px;
     letter-spacing: 4px;
