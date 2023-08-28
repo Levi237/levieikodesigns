@@ -35,13 +35,14 @@ const Skills =()=> {
 };
 
 const Container = styled.div`
+padding-bottom: 80px;
   h1 {
     padding-top: 20px;
     margin-bottom: 40px!important;
   }
   section {
     text-align: center;
-    padding: 0% 0% 80px;
+    padding: 0;
   }
   br {
     display: none;
