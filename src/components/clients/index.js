@@ -123,7 +123,7 @@ export default class PortfolioPage extends Component {
         }],
     };
     render(){
-        const { projects,  skills } = this.state;
+        const { projects } = this.state;
         return (
             <Container>
                 <h1 className="titleDecoration">

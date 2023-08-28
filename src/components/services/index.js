@@ -131,7 +131,6 @@ const LocalBodyWrapper = styled.div`
   padding: 60px 0 0;
   position: relative;
   width: 100vw;
-  height: calc(100vh - 5vw - 50px);
   background-color: rgb(var(--color-rgb-darkgrey-new));;
   overflow: scroll;
   position: relative;

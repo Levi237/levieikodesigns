@@ -169,7 +169,7 @@ const Container = styled.div`
       margin-bottom: 60px;
     }
     > h2 {
-      margin: 20px 0 40px;
+      margin: 120px 0 40px;
       font-size: 28px;
       text-align: center;
     }
@@ -217,9 +217,9 @@ const Container = styled.div`
   }
   @media screen and (max-width: 745px){
     padding-top: 60px;  
-    // > h1 {
-    //     padding: 20px;
-    // }
+    > h1 {
+        padding: 20px;
+    }
     > div {
       > section {
         h3 {
