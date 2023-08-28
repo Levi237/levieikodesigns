@@ -5,8 +5,8 @@ import AnimateText          from '../AnimateText';
 import Footer               from '../Footer';
 
 import Skills               from './Skills';
-import Clients              from './Clients';
-import PastClients          from './PastClients';
+import Projects             from './Clients';
+import PastProjects         from './PastClients';
 
 
 export default class PortfolioPage extends Component {
@@ -129,10 +129,10 @@ export default class PortfolioPage extends Component {
                 <h1 className="titleDecoration">
                     <AnimateText animate="slide" fade="on" speed="steady" text="Projects" />
                 </h1>
-                <Clients projects={projects}/>
+                <Projects projects={projects}/>
                 <Skills skills={skills}/>
                 <h1>PAST WORK</h1>
-                <PastClients/>
+                <PastProjects/>
                 <Footer/>      
             </Container>
         );
