@@ -8,22 +8,22 @@ import styled                                 from 'styled-components';
 
 const ClientSection = ({ client }) => {
 // Add intersection observer to the section 
-    const intersectionRef = useRef();
-    const [refIntersection, setRefIntersection] = useState();
-    console.log("refIntersection", refIntersection);
+    const ref = useRef();
+    const [refState, setRefState] = useState();
+    console.log("refState", refState);
     useEffect(() => {
-        console.log('intersectionRef', intersectionRef.current);
+        console.log('ref', ref.current);
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            setRefIntersection(entry.isIntersecting);
+            setRefState(entry.isIntersecting);
             if (entry.isIntersecting){
-                entry.target.classList.remove('hide-intersection');
-                console.log('interested', entry.target);
-                observer.disconnect();
+            entry.target.classList.remove('hide-intersection');
+            console.log('interested', entry.target);
+            observer.disconnect();
             }
             console.log('entry', entry.target.className);
         });
-        observer.observe(intersectionRef.current);
+        observer.observe(ref.current);
     }, []);
 
     const tasksList = client.tasks.map((r, k) => {
@@ -31,7 +31,7 @@ const ClientSection = ({ client }) => {
     });
     // console.log('client', client);
     return(
-        <Wrapper ref={intersectionRef} className={`hide-intersection`}>
+        <Wrapper ref={ref} className={`hide-intersection`}>
             <MobileImg href={`https://${client.link}`} target="_blank">
                 <img src={client.image} alt={client.title}/>
             </MobileImg>
