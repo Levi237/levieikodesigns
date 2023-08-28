@@ -22,9 +22,9 @@ const Footer = () => {
           <NavLink to={routes.PORT}>
             Portfolio
           </NavLink>   
-          <NavLink to={routes.FAQS}>
+          {/* <NavLink to={routes.FAQS}>
             FAQ
-          </NavLink> 
+          </NavLink>  */}
           <NavLink to={routes.MAIL}>
             Contact
           </NavLink>             
