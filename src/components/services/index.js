@@ -102,12 +102,7 @@ export default class ServicesPage extends Component {
       <LocalWrapper>
         <LocalBodyWrapper>  
           <h1 className="titleDecoration">
-            <AnimateText 
-              animate="slide"
-              fade="on" 
-              speed="steady"
-              text="Services" 
-              />
+            <AnimateText animate="slide" fade="on" speed="fast" text="Services" />
           </h1>
           <div>
             <DisplaySection service={services.websites}/>
