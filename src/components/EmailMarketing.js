@@ -70,7 +70,6 @@ const EmailMarketingWrapper = styled.section`
     margin-top: 60px!important;
     margin-bottom: -5.3vw !important;
     background-color: var(--background-color);
-    );
     padding: 2px 22px;
     display: inline-block;
     &:last-of-type {
@@ -80,7 +79,7 @@ const EmailMarketingWrapper = styled.section`
   > div {
     border: 1px solid var(--lightgrey);
     width: 90%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     > h3 {
       letter-spacing: .33vw;
@@ -180,10 +179,11 @@ const EmailMarketingWrapper = styled.section`
           align-self: center;
           justify-content: center;
           &:first-of-type {
-            width: 37%;
+            width: 50%;
+            min-width: 400px;
           }
           &:last-of-type {
-            width: 55%;
+            width: 50%;
           }
           > ul {
             margin-left: 8%:
