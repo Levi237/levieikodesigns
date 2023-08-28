@@ -4,14 +4,14 @@ import styled                                 from 'styled-components';
 
 const ServicesPage = ({ service }) => {
   // Add intersection observer to the section 
-  const intersectionRef = useRef();
-  const [refIntersection, setRefIntersection] = useState();
-  console.log("refIntersection", refIntersection);
+  const ref = useRef();
+  const [refState, setRefState] = useState();
+  console.log("refState", refState);
   useEffect(() => {
-      console.log('intersectionRef', intersectionRef.current);
+      console.log('ref', ref.current);
       const observer = new IntersectionObserver((entries) => {
           const entry = entries[0];
-          setRefIntersection(entry.isIntersecting);
+          setRefState(entry.isIntersecting);
           if (entry.isIntersecting){
             entry.target.classList.remove('hide-intersection');
             console.log('interested', entry.target);
@@ -19,54 +19,53 @@ const ServicesPage = ({ service }) => {
           }
           console.log('entry', entry.target.className);
       });
-      observer.observe(intersectionRef.current);
+      observer.observe(ref.current);
   }, []);
-    const mapChecklist = service.checklist.map((item, k) => {
-      return <section key={k}><div>✔</div><div>{ item }</div></section>
-    });
-    const mapCollage = service.collage.map((item, k) => {
-      return <div key={k}><img src={`./${item}`} alt="collage one"/></div>
-    });
-    return(
-          <GraphicsBanner ref={intersectionRef} className={`${service.position.text} hide-intersection`}>
-            <div className="title"><h1>{service.title}</h1></div>
-            <div className="text">
-              <h2>{service.subtitle}</h2>
-              <span>{service.subtext}</span>
-              <p>{service.paragraph}</p>
-              <br/>
-              <h4>{service.listName}</h4>
-              <br/>
-              <Checklist className="checklist">
-                { mapChecklist }
-              </Checklist>
-            </div>
-            <div className="collage">
-              { mapCollage }
-            </div>
+  const mapChecklist = service.checklist.map((item, k) => {
+    return <section key={k}><div>✔</div><div>{ item }</div></section>
+  });
+  const mapCollage = service.collage.map((item, k) => {
+    return <div key={k}><img src={`./${item}`} alt="collage one"/></div>
+  });
+  return(
+    <GraphicsBanner ref={ref} className={`${service.position.text} hide-intersection`}>
+      <div className="title"><h1>{service.title}</h1></div>
+        <div className="text">
+          <h2>{service.subtitle}</h2>
+          <span>{service.subtext}</span>
+          <p>{service.paragraph}</p>
+          <br/>
+          <h4>{service.listName}</h4>
+          <br/>
+          <Checklist className="checklist">
+            { mapChecklist }
+          </Checklist>
+        </div>
+        <div className="collage">
+          { mapCollage }
+        </div>
 
-          </GraphicsBanner>
+      </GraphicsBanner>
     );
   };
 
 const Checklist = styled.div`
-
-> section {
-  width: 100%;
-  display: flex;
-  > div {
-    margin-bottom: 6px;
-    &:first-of-type {
-      width: 10px;
-      padding-left: 40px;
-      color: var(--blue);
-    }
-    &:last-of-type {
-      width: calc(100% - 10px);
-      padding-left: 20px;
+  > section {
+    width: 100%;
+    display: flex;
+    > div {
+      margin-bottom: 6px;
+      &:first-of-type {
+        width: 10px;
+        padding-left: 40px;
+        color: var(--blue);
+      }
+      &:last-of-type {
+        width: calc(100% - 10px);
+        padding-left: 20px;
+      }
     }
   }
-}
 `;
 const GraphicsBanner = styled.div`
 // animation for interestionObserver class.remove('hide-intersecion')
