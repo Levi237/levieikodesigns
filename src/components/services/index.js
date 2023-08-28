@@ -22,9 +22,9 @@ export default class ServicesPage extends Component {
           `Create value-added content to build trust`
         ],
         collage: [
-          `clients/coveredperfectly_3.png`, 
-          `clients/baddie-by-divinity_2.jpg`,
-          `clients/bravo-built_3.jpg`
+          `projects/coveredperfectly_3.png`, 
+          `projects/baddie-by-divinity_2.jpg`,
+          `projects/bravo-built_3.jpg`
         ],
         position: {
           text: `right bottom`
