@@ -6,9 +6,10 @@ import * as routes          from '../../constants/routes';
 // import FeaturedBanner       from '../FeaturedBanner';
 import Definition           from '../Definition';
 import EmailMarketing       from '../EmailMarketing';
-import WebsitePreview      from '../WebsitePreview';
-import MobileFirstBanner    from '../MobileFirstBanner';
 import Footer               from '../Footer';
+import MobileFirstBanner    from '../MobileFirstBanner';
+import Skills               from '../Skills';
+import WebsitePreview       from '../WebsitePreview';
 
 import { ReactComponent as LogoSVG } from '../../svg/brand/logo.svg';
 const HomePage = ({ pageStyle, btnScroll }) => {
@@ -34,10 +35,11 @@ const HomePage = ({ pageStyle, btnScroll }) => {
       <HomeBodyWrapper>  
         {/* <FeaturedBanner/> */}
         <Definition />
-        <MobileFirstBanner/>
-        <EmailMarketing/>
-        <WebsitePreview/>
-        <Footer/>
+        <Skills />
+        <MobileFirstBanner />
+        <EmailMarketing />
+        <WebsitePreview />
+        <Footer />
         {/* <div className="down-arrow-class"></div> */}
       </HomeBodyWrapper>
 
