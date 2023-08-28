@@ -101,28 +101,26 @@ export default class ServicesPage extends Component {
     const { services } = this.state;
     return(
       <div className="index-wrapper">
-        <Container>  
+        <div>  
           <h1 className="header">
             <AnimateText animate="slide" fade="on" speed="fast" text="Services" />
           </h1>
-          <div>
+          <Container>
             <DisplaySection service={services.websites}/>
             {/* <PricingSection/> */}
             <DisplaySection service={services.additions}/>
             <DisplaySection service={services.graphics}/>
             <DisplaySection service={services.email}/>
-          </div>
+          </Container>
           <Footer/>
-        </Container>
+        </div>
       </div>
     );
   };
 };
 
 const Container = styled.div`
-  > div {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-  }
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
 `;

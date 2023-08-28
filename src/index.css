@@ -206,11 +206,14 @@ a.active {
   width: 100vw;
   overflow: scroll;
 } 
-.index-wrapper > div {
+.index-wrapper > div, .container {
+  --padding-top: 18px;
   position: relative;
   width: 100vw;
   background-color: var(--background-color);
   overflow: scroll;
+  padding-top: var(--padding-top);
+  height: calc(100dvh - var(--padding-top))
 }
 
 
@@ -223,7 +226,7 @@ a.active {
 }
 
 
-hide intersection observer before intersection reveal
+/* hide intersection observer before intersection reveal */
 .hide-intersection {
   opacity: 0!important;
   margin-top: 20px!important;

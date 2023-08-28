@@ -125,7 +125,7 @@ export default class PortfolioPage extends Component {
     render(){
         const { projects } = this.state;
         return (
-            <Container>
+            <Container className="container">
                 <h1 className="header">
                     <AnimateText animate="slide" fade="on" speed="fast" text="Projects" />
                 </h1>
@@ -141,13 +141,13 @@ export default class PortfolioPage extends Component {
 
 const Container = styled.div`
     background-color: rgba(43, 41, 41, 1);
-    padding: 60px 0 0;
-    margin: 0 auto!important;
+    // padding: 60px 0 0;
+    // margin: 0 auto!important;
 
     @media screen and (max-width: 745px){
         padding-top: 60px;
         > h1 {
-            padding: 20px;
+            // padding: 20px;
         }
     }
 `;
