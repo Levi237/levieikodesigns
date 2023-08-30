@@ -16,7 +16,7 @@ export default class Pastprojects extends Component {
             technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
         },{
             title: `Sathi Roy`,
-            image: `./projects/sathiroy.png`,
+            image: `./projects/sathiroy.jpg`,
             image2: `./projects/sathiroy_2.jpg`,
             link: `sathiroy.com`,
             status: `inactive`,
@@ -60,7 +60,7 @@ export default class Pastprojects extends Component {
         },{          
             title: `FITPLAN`,
             link: `fitplanapp.com`,
-            image: `./projects/fitplan-giftcard.png`,
+            image: `./projects/fitplan-giftcard.jpg`,
             status: `live`,
             startDate: `2019`,
             endDate: ``,
@@ -70,7 +70,7 @@ export default class Pastprojects extends Component {
         },{
             title: `IT After Hours`,
             link: `it-afterhours.com`,
-            image: `./projects/it-afterhours.png`,
+            image: `./projects/it-afterhours.jpg`,
             status: `inactive`,
             startDate: `2019`,
             endDate: ``,
@@ -80,7 +80,7 @@ export default class Pastprojects extends Component {
         },{
             title: `HeatSeeker Hot Sauce`,
             link: `heatseekersauce.com`,
-            image: `./projects/heatseeker.png`,
+            image: `./projects/heatseeker.jpg`,
             status: `inactive`,
             startDate: `2019`,
             endDate: ``,

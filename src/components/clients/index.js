@@ -24,7 +24,7 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquids`, `MailChimp`, `Photoshop`, `FIGMA`]
         },{
             title: `Momo[Muscle]`,
-            image: `./projects/momomuscle-meta.png`,
+            image: `./projects/momomuscle-meta.jpg`,
             image2: `./projects/momomuscle-meta_2.jpg`,
             link: `momomuscle.com`,
             status: `live`,
@@ -46,7 +46,7 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Covered Perfectly`,
-            image: `./projects/coveredperfectly.png`,
+            image: `./projects/coveredperfectly.jpg`,
             image2: `./projects/coveredperfectly_2.jpg`,
             link: `coveredperfectly.com`,
             status: `live`,
@@ -57,7 +57,7 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Scared But Alive`,
-            image: `./projects/scaredbutalive.png`,
+            image: `./projects/scaredbutalive.jpg`,
             image2: `./projects/scaredbutalive_2.jpg`,
             link: `scaredbutalive.com`,
             status: `live`,
@@ -68,7 +68,7 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `Klaviyo`]
         },{
             title: `D I V I N I T Y`,
-            image: `./projects/divinity-ray.png`,
+            image: `./projects/divinity-ray.jpg`,
             image2: `./projects/divinity-ray_2.jpg`,
             link: `divinityray.com`,
             status: `live`,
@@ -100,7 +100,7 @@ export default class PortfolioPage extends Component {
             technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
         },{
             title: `Prana Wellness`,
-            image: `./projects/prana-wellness.png`,
+            image: `./projects/prana-wellness.jpg`,
             image2: `./projects/prana-wellness_2.jpg`,
             link: `pranawellnessworks.com`,
             status: `live`,
