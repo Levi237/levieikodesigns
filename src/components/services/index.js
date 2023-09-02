@@ -23,7 +23,7 @@ export default class ServicesPage extends Component {
           `Bypass the spam, get into the Inbox`,
         ],
         collage: [
-          `projects/coveredperfectly_3.png`, 
+          `projects/coveredperfectly_3.jpg`, 
           `projects/baddie-by-divinity_2.jpg`,
           `projects/bravo-built_3.jpg`,
         ],
