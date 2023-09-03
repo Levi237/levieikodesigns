@@ -6,11 +6,11 @@ const Skills =()=> {
     `Shopify`,
     `Liquid`,
     `WordPress`,
+    `React`,
     `JavaScript`,
     `VanillaJS`,
     `HTML`,
     `CSS`,
-    `React`,
     `NodeJs`,
     `Firebase`,
     `GitHub`,
@@ -24,63 +24,42 @@ const Skills =()=> {
     return <span key={k}>{skill}</span>
   });
   return(
-      <Container>
-          <h1>Skills</h1>
-          <br/>
-          <section>
-            {skillsList}
-          </section>
+    <Container>
+      <h1>Skills</h1>
+      <section>
+        {skillsList}
+      </section>
     </Container>
   );
 };
 
 const Container = styled.div`
-padding-bottom: 80px;
+  padding-bottom: 80px;
+  
   h1 {
     padding-top: 20px;
     margin-bottom: 40px!important;
   }
-  section {
+
+  > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    padding: 0;
-  }
-  br {
-    display: none;
-  }
-  section {
-    >span::after {
-      content: ' | ';
+
+    padding: 5%;
+    margin: 0 auto;
+    max-width: 100%;
+
+    > span {
+      border-right: 1px solid white;
+      border-left: 1px solid white;
+      padding: 0 10px;
+      margin-bottom: 5px;
     }
-    >span:last-of-type::after   {
-      content: '';
-    }
-  }
-  @media screen and (max-width: 400px){
-  }
-  @media screen and (max-width: 900px){
-    section {
-      margin: 0 auto;
-      >span::after {
-        content: ' | ';
-      }
-      >span:nth-of-type(4)::after,
-      >span:nth-of-type(9)::after,
-      >span:nth-of-type(12)::after {
-        content: '';
-        display: block;
-      }
-    }
-  }
-  @media screen and (max-width: 1200px){
-    section {
-      margin: 0 auto;
-      >span::after {
-        content: ' | ';
-      }
-      >span:nth-of-type(9)::after {
-        content: '';
-        display: block;
-      }
+    > span + span {
+      margin-left: -1px;
     }
   }
 `;
