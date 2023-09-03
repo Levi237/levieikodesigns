@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React    from 'react';
+import styled   from 'styled-components';
 
-const Skills =()=> {
+const Skills = () => {
   const skills = [
     `Shopify`,
     `Liquid`,
@@ -19,7 +19,7 @@ const Skills =()=> {
     `Klaviyo`,
     `Figma`,
     `PhotoShop`,
-  ]
+  ];
   const skillsList = skills.map((skill, k) => {
     return <span key={k}>{skill}</span>
   });
@@ -35,7 +35,7 @@ const Skills =()=> {
 
 const Container = styled.div`
   padding-bottom: 80px;
-  
+
   h1 {
     padding-top: 20px;
     margin-bottom: 40px!important;
