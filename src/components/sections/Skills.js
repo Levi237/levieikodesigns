@@ -48,7 +48,7 @@ const Container = styled.div`
     flex-wrap: wrap;
     text-align: center;
 
-    padding: 5%;
+    padding: 0 5%;
     margin: 0 auto;
     max-width: 100%;
 
