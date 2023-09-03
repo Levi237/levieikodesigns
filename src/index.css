@@ -53,8 +53,12 @@ code {
 a {
   cursor: pointer;
   text-decoration: none;
+  transition: .3s ease;
+  color: var(--blue);
 }
-
+a:hover {
+  color: var(--lightgrey);
+}
 svg * {
   transition: .3s ease;
 }
