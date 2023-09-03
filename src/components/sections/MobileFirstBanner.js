@@ -145,6 +145,7 @@ const LocalSection = styled.section`
       font-size: 0;
       z-index: 1;
       margin: 0!important;
+      color: var(--darkgrey);
       &:last-of-type {
         
         display: flex;
