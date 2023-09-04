@@ -2,13 +2,16 @@ import React    from 'react';
 import styled   from 'styled-components';
 
 //  Next goal: use component specific ID
+//==> <Gallery id='top-home' width="20" height="14" gap="2" second="3"/>
+//====> id:         identifies specific component, must be unique
+//====> list:       list of images as an object array, default imageList
+//====> width:      width of images in vw
+//====> height:     height of images in vw
+//====> gap:        gap of images in vw
+//====> seconds:    time of each duration
 
 const Gallery = ({ id, list, width, height, gap, seconds }) => {
-    const gallery = [
-        `./portfolio/divinity-ray.jpg`,
-    ]
-    console.log('gallery =>', gallery);
- 
+
 // Manually Update img
 // vector based off 0vw
 // Allow for option of links and other data
@@ -55,15 +58,13 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
     const _id = id ? id : '__NEED_ID__';
     const _list = list ? list : imageList;
     const _time = seconds ? seconds * 1000 : 3000;
-    // const _width = width ? width : '20';
-    // const _gap = gap ? gap : '2';
     const carousel_container = 'gallery-container--' + _id;
     const carousel_row = 'carousel-row--' + _id;
 
     //   Print original list of images
     const mapList = _list.map(( img, k) => {
         return(
-            <Image key={k} className={`gallery-card carousel-row ${carousel_row}`} width={width} height={height} gap={gap}>
+            <Image key={k} className={`gallery-card carousel-row ${carousel_row}`} width={width} height={height} gap={gap} seconds={seconds}>
                 <img src={img.img} alt={`URL: ${img.img}`}/>
             </Image>
         );
@@ -82,14 +83,14 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
         setTimeout(() => { 
             let firstCard = getCards[0];
             getContainer.append(firstCard);
-        }, setCarouselTime - 600);
+        }, setCarouselTime * .9);
     });
     setInterval(startCarousel, setCarouselTime);
 
     return(
         <LocalWrapper>    
             <div className="gallery-container">
-                <div id={`${carousel_container}`} className="gallery-row">
+                <div id={`${carousel_container}`} className="gallery-row" height={height}>
                     {mapList}
                 </div>
             </div>
@@ -98,29 +99,34 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
 };
 
 const Image = styled.div.attrs((props) => ({
-    width: props.width || "10vw",
-    hasPadding: props.hasPadding || false,
+    width: props.width || "10",
+    height: props.height || "10",
+    gap: props.gap || "2",
+    seconds: props.seconds || "3",
   }))`
 
 --card-width: ${props => props.width}vw;
 --card-height: ${props => props.height}vw;
 --card-gap: ${props => props.gap}vw;
 --card-margin-left: calc(-1 * var(--card-width) + -1 * var(--card-gap));
+--card-seconds: ${props => props.seconds}s;
+--card-speed: calc(.33 * var(--card-seconds));
 
 display: inline-block;
 width: var(--card-width);
 height: var(--card-height);
-overflow: hidden;
-border-radius: 5px;
 margin-right: var(--card-gap);
 
+border-radius: 5px;
+
+overflow: hidden;
+
 //==> .shift-left
-transition: .6s ease-in-out;
+transition: var(--card-speed) ease-in-out;
 opacity: 1;
 margin-left: 0;
 
 > img {
-    width: var(--card-width);
     overflow: hidden;
     object-fit: cover;
     height: 100%;
@@ -149,22 +155,21 @@ margin-left: 0;
     //   }
 `;
 
-const LocalWrapper = styled.div`
+const LocalWrapper = styled.div.attrs((props) => ({
+    height: props.height || "10",
+    gap: props.gap || "2",
+  }))`
+  --card-height: ${props => props.height}vw;
+  --card-gap: ${props => props.gap}vw;
 
---card-width: 20vw;
---card-height: 10vw;
---card-gap: 2vw;
-
-
-
-width: 100%;
+    width: 100%;
 
   .gallery-container {
     overflow: hidden;
   }
   .gallery-container .gallery-row {
     overflow: hidden;
-    height: 10vw;
+    height: var(--card-height);
     width: 150vw;
     margin: 1.25vw 0;
   }

@@ -6,7 +6,7 @@ import * as routes          from '../../constants/routes';
 // import FeaturedBanner       from '../sections/FeaturedBanner';
 import Definition           from '../sections/Definition';
 import EmailMarketing       from '../sections/EmailMarketing';
-import Gallery               from '../sections/Gallery';
+import Gallery              from '../sections/Gallery';
 import MobileFirstBanner    from '../sections/MobileFirstBanner';
 import Skills               from '../sections/Skills';
 import WebsitePreview       from '../sections/WebsitePreview';
@@ -39,7 +39,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
         <Definition />
         {/* <Gallery id='bottom-home' width="20" height="10" gap="2" /> */}
         <Skills />
-        <Gallery id='top-home' width="20" height="14" gap="2" second="3"/>
+        <Gallery id='top-home' width="18" height="10" gap="2" seconds="3"/>
         <MobileFirstBanner />
         <EmailMarketing />
         <WebsitePreview />
