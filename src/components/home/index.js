@@ -37,9 +37,9 @@ const HomePage = ({ pageStyle, btnScroll }) => {
       <HomeBodyWrapper>  
         {/* <FeaturedBanner/> */}
         <Definition />
-        <Gallery id='top-home' width="20" height="10" gap="2" />
-        <Gallery id='bottom-home' width="20" height="10" gap="2" />
+        {/* <Gallery id='bottom-home' width="20" height="10" gap="2" /> */}
         <Skills />
+        <Gallery id='top-home' width="20" height="14" gap="2" second="3"/>
         <MobileFirstBanner />
         <EmailMarketing />
         <WebsitePreview />
