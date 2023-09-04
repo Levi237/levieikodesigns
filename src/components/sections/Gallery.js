@@ -90,13 +90,30 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
     return(
         <LocalWrapper>    
             <div className="gallery-container">
-                <div id={`${carousel_container}`} className="gallery-row" height={height}>
+                <Window id={`${carousel_container}`} className="gallery-row" height={height}>
                     {mapList}
-                </div>
+                </Window>
             </div>
         </LocalWrapper>
     );
 };
+
+const Window = styled.div.attrs((props) => ({
+    height: props.height || "10",
+    gap: props.gap || "2",
+  }))`
+  --card-height: ${props => props.height}vw;
+  --card-gap: ${props => props.gap}vw;
+
+  overflow: hidden;
+  height: var(--card-height);
+  width: 150vw;
+  margin: 0 0 var(--card-gap);
+  @media only screen and (max-width: 749px) {
+      height: 30vw;
+      margin: 4vw 0;
+  }
+  `;
 
 const Image = styled.div.attrs((props) => ({
     width: props.width || "10",
@@ -155,32 +172,11 @@ margin-left: 0;
     //   }
 `;
 
-const LocalWrapper = styled.div.attrs((props) => ({
-    height: props.height || "10",
-    gap: props.gap || "2",
-  }))`
-  --card-height: ${props => props.height}vw;
-  --card-gap: ${props => props.gap}vw;
-
+const LocalWrapper = styled.div`
     width: 100%;
-
-  .gallery-container {
-    overflow: hidden;
-  }
-  .gallery-container .gallery-row {
-    overflow: hidden;
-    height: var(--card-height);
-    width: 150vw;
-    margin: 1.25vw 0;
-  }
-
-
-  @media only screen and (max-width: 749px) {
-    .gallery-container .gallery-row {
-      height: 30vw;
-      margin: 4vw 0;
+    .gallery-container {
+        overflow: hidden;
     }
-  }
 `;
 
 export default Gallery;
