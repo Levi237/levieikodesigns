@@ -3,7 +3,7 @@ import styled   from 'styled-components';
 
 //  Next goal: use component specific ID
 
-const Gallery = ({ id, list, width, gap }) => {
+const Gallery = ({ id, list, width, height, gap, seconds }) => {
     const gallery = [
         `./portfolio/divinity-ray.jpg`,
     ]
@@ -54,22 +54,23 @@ const Gallery = ({ id, list, width, gap }) => {
   
     const _id = id ? id : '__NEED_ID__';
     const _list = list ? list : imageList;
-    const _width = width ? width : '20';
-    const _gap = gap ? gap : '2';
+    const _time = seconds ? seconds * 1000 : 3000;
+    // const _width = width ? width : '20';
+    // const _gap = gap ? gap : '2';
     const carousel_container = 'gallery-container--' + _id;
     const carousel_row = 'carousel-row--' + _id;
 
     //   Print original list of images
     const mapList = _list.map(( img, k) => {
         return(
-            <div key={k} className={`gallery-card carousel-row ${carousel_row}`}>
+            <Image key={k} className={`gallery-card carousel-row ${carousel_row}`} width={width} height={height} gap={gap}>
                 <img src={img.img} alt={`URL: ${img.img}`}/>
-            </div>
+            </Image>
         );
     });
 
     //   Remove image from the front and add to back for continuous carousel
-    const setCarouselTime = 3000;
+    const setCarouselTime = _time;
     const startCarousel = (() => {
         const getContainer = document.getElementById(`${carousel_container}`);
         const getCards = document.getElementsByClassName(`${carousel_row}`);
@@ -96,79 +97,85 @@ const Gallery = ({ id, list, width, gap }) => {
     );
 };
 
+const Image = styled.div.attrs((props) => ({
+    width: props.width || "10vw",
+    hasPadding: props.hasPadding || false,
+  }))`
+
+--card-width: ${props => props.width}vw;
+--card-height: ${props => props.height}vw;
+--card-gap: ${props => props.gap}vw;
+--card-margin-left: calc(-1 * var(--card-width) + -1 * var(--card-gap));
+
+display: inline-block;
+width: var(--card-width);
+height: var(--card-height);
+overflow: hidden;
+border-radius: 5px;
+margin-right: var(--card-gap);
+
+//==> .shift-left
+transition: .6s ease-in-out;
+opacity: 1;
+margin-left: 0;
+
+> img {
+    width: var(--card-width);
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  @media only screen and (min-width: 750px) {
+    &.shift-left {
+        margin-left: var(--card-margin-left);
+        opacity: 0;
+    }
+  }
+    //   @media only screen and (max-width: 749px) {
+
+    //     .gallery-container .gallery-card {
+    //       width: 30vw;
+    //       height:30vw;
+    //       border-radius: 15px;
+    //       margin-right: 4vw;
+    //     }
+    //     .gallery-container img {
+    //         width: 30vw;
+    //     }
+    //     .gallery-container .shift-left {
+    //         margin-left: -34vw;
+    //     }
+    //   }
+`;
+
 const LocalWrapper = styled.div`
 
-    --card-width: 20vw;
-    --card-height: 10vw;
-    --card-gap: 2vw;
-    --card-width: ${(props) => props.width}vw;
-    // --card-height: ${this.props.height}vw;
-    // --card-gap: ${this.props.gap}vw;
-    width: 100%;
+--card-width: 20vw;
+--card-height: 10vw;
+--card-gap: 2vw;
 
-    .gallery-container {
-        overflow: hidden;
-      }
-      .gallery-container .gallery-row {
-        overflow: hidden;
-        height: 10vw;
-        width: 150vw;
-        margin: 1.25vw 0;
-      }
 
-      //==> Offsets margin
-        //   #gallery-second-row {
-        //     margin-left: calc(-11.75vw / 2);
-        //   }
-      .gallery-container .gallery-card {
-        display: inline-block;
-        width: var(--card-width);
-        height: var(--card-height);
-        overflow: hidden;
-        border-radius: 1vw;
-        margin-right: var(--card-gap);
 
-        //==> .shift-left
-        transition: .6s ease-in-out;
-        opacity: 1;
-        margin-left: 0;
-        
-      }
-      .gallery-container img {
-        width: var(--card-width);
-        overflow: hidden;
-      }
-      @media only screen and (min-width: 750px) {
-        .gallery-container .gallery-card.shift-left {
-          margin-left: calc(-1 * var(--card-width) + -1 * var(--card-gap));
-          opacity: 0;
-        }
-      }
-      @media only screen and (max-width: 749px) {
-        .gallery-container .gallery-row {
-          height: 30vw;
-          margin: 4vw 0;
-        }
-        // #gallery-carousel-row {
-        //   margin-left: -1.125vw;
-        // }
-        
-        // #gallery-second-row {
-        //   margin-left: -17vw;
-        // }
-        .gallery-container .gallery-card {
-          width: 30vw;
-          height:30vw;
-          border-radius: 15px;
-          margin-right: 4vw;
-        }
-        .gallery-container img {
-            width: 30vw;
-        }
-        .gallery-container .shift-left {
-            margin-left: -34vw;
-        }
-      }
+width: 100%;
+
+  .gallery-container {
+    overflow: hidden;
+  }
+  .gallery-container .gallery-row {
+    overflow: hidden;
+    height: 10vw;
+    width: 150vw;
+    margin: 1.25vw 0;
+  }
+
+
+  @media only screen and (max-width: 749px) {
+    .gallery-container .gallery-row {
+      height: 30vw;
+      margin: 4vw 0;
+    }
+  }
 `;
 
 export default Gallery;
