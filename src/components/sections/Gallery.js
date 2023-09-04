@@ -3,7 +3,7 @@ import styled   from 'styled-components';
 
 //  Next goal: use component specific ID
 
-const Gallery = ({ id, list }) => {
+const Gallery = ({ id, list, width, gap }) => {
     const gallery = [
         `./portfolio/divinity-ray.jpg`,
     ]
@@ -12,92 +12,55 @@ const Gallery = ({ id, list }) => {
 // Manually Update img
 // vector based off 0vw
 // Allow for option of links and other data
-
-const imageList = [{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_01.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_02.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_03.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_04.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_05.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_06.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_07.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_08.png`,  
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_09.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_10.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_11.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_12.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_13.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_14.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_15.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_16.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_17.png`,  
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_18.png`,  
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_19.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_20.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_21.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_22.png`,  
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_23.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_24.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_25.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_26.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_27.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_28.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_29.png`,  
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_30.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_31.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_32.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_34.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_35.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_36.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_37.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_38.png`,
-  },{
-    img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_39.png`,
-}];
+    const imageList = [{
+            img: `./projects/red5performance.jpg`,
+        },{            
+            img: `./projects/momomuscle-meta.jpg`,
+        },{            
+            img: `./projects/nexushousing.jpg`,
+        },{            
+            img: `./projects/coveredperfectly.jpg`,
+        },{            
+            img: `./projects/scaredbutalive.jpg`,
+        },{            
+            img: `./projects/divinity-ray.jpg`,
+        },{            
+            img: `./projects/metamorphosis.jpg`,
+        },{            
+            img: `./projects/ourhighestmantra.jpg`,
+        },{            
+            img: `./projects/prana-wellness.jpg`,
+        },{            
+            img: `./projects/levieikodesigns.jpg`,
+        },{
+            img: `./projects/dizzywithexcitement.jpg`,
+        },{
+            img: `./projects/sathiroy.jpg`,
+        },{
+            img: `./projects/baddie-by-divinity.jpg`,
+        },{
+            img: `./projects/bravo-built.jpg`,
+        },{
+            img: `./projects/andreasellsmaui2.jpg`,
+        },{
+            img: `./projects/fitplan-giftcard.jpg`,
+        },{
+            img: `./projects/it-afterhours.jpg`,
+        },{
+            img: `./projects/heatseeker.jpg`,
+        },{
+            img: `./projects/lamadreiswatching-ongina.JPG`,
+    }];
   
     const _id = id ? id : '__NEED_ID__';
     const _list = list ? list : imageList;
+    const _width = width ? width : '20';
+    const _gap = gap ? gap : '2';
     const carousel_container = 'gallery-container--' + _id;
     const carousel_row = 'carousel-row--' + _id;
 
     //   Print original list of images
-    const mapList = _list.map((img, k) => {
+    const mapList = _list.map(( img, k) => {
         return(
             <div key={k} className={`gallery-card carousel-row ${carousel_row}`}>
                 <img src={img.img} alt={`URL: ${img.img}`}/>
@@ -124,11 +87,9 @@ const imageList = [{
 
     return(
         <LocalWrapper>    
-            <div className="local-wrapper">
-                <div className="gallery-container">
-                    <div id={`${carousel_container}`} className="gallery-row">
-                        {mapList}
-                    </div>
+            <div className="gallery-container">
+                <div id={`${carousel_container}`} className="gallery-row">
+                    {mapList}
                 </div>
             </div>
         </LocalWrapper>
@@ -136,6 +97,13 @@ const imageList = [{
 };
 
 const LocalWrapper = styled.div`
+
+    --card-width: 20vw;
+    --card-height: 10vw;
+    --card-gap: 2vw;
+    --card-width: ${(props) => props.width}vw;
+    // --card-height: ${this.props.height}vw;
+    // --card-gap: ${this.props.gap}vw;
     width: 100%;
 
     .gallery-container {
@@ -149,25 +117,31 @@ const LocalWrapper = styled.div`
       }
 
       //==> Offsets margin
-      #gallery-second-row {
-        margin-left: calc(-11.75vw / 2);
-      }
+        //   #gallery-second-row {
+        //     margin-left: calc(-11.75vw / 2);
+        //   }
       .gallery-container .gallery-card {
         display: inline-block;
-        width: 10vw;
+        width: var(--card-width);
+        height: var(--card-height);
         overflow: hidden;
-        transition: .6s ease-in-out;
         border-radius: 1vw;
-        margin-right: 1.75vw;
-        height:10vw;
+        margin-right: var(--card-gap);
+
+        //==> .shift-left
+        transition: .6s ease-in-out;
+        opacity: 1;
+        margin-left: 0;
+        
       }
       .gallery-container img {
-        width: 10vw;
+        width: var(--card-width);
         overflow: hidden;
       }
       @media only screen and (min-width: 750px) {
-        .gallery-container .shift-left {
-          margin-left: -11.75vw;
+        .gallery-container .gallery-card.shift-left {
+          margin-left: calc(-1 * var(--card-width) + -1 * var(--card-gap));
+          opacity: 0;
         }
       }
       @media only screen and (max-width: 749px) {
@@ -175,13 +149,13 @@ const LocalWrapper = styled.div`
           height: 30vw;
           margin: 4vw 0;
         }
-        #gallery-carousel-row {
-          margin-left: -1.125vw;
-        }
+        // #gallery-carousel-row {
+        //   margin-left: -1.125vw;
+        // }
         
-        #gallery-second-row {
-          margin-left: -17vw;
-        }
+        // #gallery-second-row {
+        //   margin-left: -17vw;
+        // }
         .gallery-container .gallery-card {
           width: 30vw;
           height:30vw;
