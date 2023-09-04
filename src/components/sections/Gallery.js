@@ -1,13 +1,16 @@
 import React    from 'react';
 import styled   from 'styled-components';
 
-const Gallery = () => {
+//  Next goal: use component specific ID
+
+const Gallery = ({ id, list }) => {
     const gallery = [
         `./portfolio/divinity-ray.jpg`,
     ]
     console.log('gallery =>', gallery);
  
 // Manually Update img
+// vector based off 0vw
 // Allow for option of links and other data
 
 const imageList = [{
@@ -88,40 +91,42 @@ const imageList = [{
     img: `https://cdn.shopify.com/s/files/1/0017/7533/7583/files/momomuscle_BnA_39.png`,
 }];
   
+    const _id = id ? id : '__NEED_ID__';
+    const _list = list ? list : imageList;
+    const carousel_container = 'gallery-container--' + _id;
+    const carousel_row = 'carousel-row--' + _id;
 
     //   Print original list of images
-    const mapList = imageList.map((img, k) => {
+    const mapList = _list.map((img, k) => {
         return(
-            <div key={k} className="gallery-card carousel-row">
+            <div key={k} className={`gallery-card carousel-row ${carousel_row}`}>
                 <img src={img.img} alt={`URL: ${img.img}`}/>
             </div>
         );
     });
 
-
     //   Remove image from the front and add to back for continuous carousel
     const setCarouselTime = 3000;
     const startCarousel = (() => {
-        const getContainer = document.getElementById('gallery-carousel-row');
-        const getCards = document.getElementsByClassName('carousel-row');
-
+        const getContainer = document.getElementById(`${carousel_container}`);
+        const getCards = document.getElementsByClassName(`${carousel_row}`);
+        //  Shift first card to the left
         getCards[0].classList.add('shift-left');
-
+        //  Kicks in second cycle, removes className
+        getCards[getCards.length - 1].classList.remove('shift-left');
+        //  Move card from front to back right before next shift
         setTimeout(() => { 
             let firstCard = getCards[0];
-            firstCard.classList.remove('shift-left');
-                getContainer.append(firstCard);
-        }, 1000);
-        
+            getContainer.append(firstCard);
+        }, setCarouselTime - 600);
     });
     setInterval(startCarousel, setCarouselTime);
 
     return(
         <LocalWrapper>    
             <div className="local-wrapper">
-                <h1 >MOMO[MUSCLE] FIGHTERS</h1>
                 <div className="gallery-container">
-                    <div id="gallery-carousel-row" className="gallery-row">
+                    <div id={`${carousel_container}`} className="gallery-row">
                         {mapList}
                     </div>
                 </div>
@@ -129,12 +134,10 @@ const imageList = [{
         </LocalWrapper>
     );
 };
+
 const LocalWrapper = styled.div`
-h1 {
-    text-align: center;
-    padding-bottom: 10px;
-}
     width: 100%;
+
     .gallery-container {
         overflow: hidden;
       }
