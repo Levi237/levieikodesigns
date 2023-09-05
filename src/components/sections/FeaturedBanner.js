@@ -40,7 +40,7 @@ export default class FeaturedBanner extends Component {
           <div className="two-box-container">
             <section className="left-side">
               <div className="info-box">
-                <img className="logo-image" src="https://cdn.shopify.com/s/files/1/0580/4199/1317/files/Sathi_Roy_Logo_540x.png?v=1628695665" />
+                <img alt="sathiroy" className="logo-image" src="https://cdn.shopify.com/s/files/1/0580/4199/1317/files/Sathi_Roy_Logo_540x.png?v=1628695665" />
                 <h2 style={{fontFamily: `${featuredProject.titleFont}`}}>Life Coach</h2>
                 <a style={{fontFamily: `${featuredProject.bodyFont}`}} target="_blank" rel="noreferrer" href="https://sathiroy.com">Checkout SathiRoy.com →</a>
               </div>
