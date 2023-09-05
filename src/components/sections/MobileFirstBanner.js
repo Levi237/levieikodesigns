@@ -39,7 +39,7 @@ const LocalSection = styled.section`
   > div {
     position: absolute;
     width: 80vw;
-    height: 80vw;
+    height: 95vw;
     border: 1px solid #fff;
     z-index: 0;
     top: calc(80vw + 20px);
