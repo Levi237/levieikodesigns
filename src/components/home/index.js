@@ -39,7 +39,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
         <Definition />
         {/* <Gallery id='bottom-home' width="20" height="10" gap="2" /> */}
         <Skills />
-        <Gallery id='top-home' width="18" height="10" gap="2" seconds="3"/>
+        <Gallery id='top-home' width="24" height="13" gap="2" seconds="6"/>
         <MobileFirstBanner />
         <EmailMarketing />
         <WebsitePreview />

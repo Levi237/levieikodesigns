@@ -64,7 +64,7 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
     //   Print original list of images
     const mapList = _list.map(( img, k) => {
         return(
-            <Image key={k} className={`gallery-card carousel-row ${carousel_row}`} width={width} height={height} gap={gap} seconds={seconds}>
+            <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
                 <img src={img.img} alt={`URL: ${img.img}`}/>
             </Image>
         );
@@ -90,7 +90,7 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
     return(
         <LocalWrapper>    
             <div className="gallery-container">
-                <Window id={`${carousel_container}`} className="gallery-row" height={height}>
+                <Window id={`${carousel_container}`} className="gallery-row" width={width} height={height} gap={gap} seconds={seconds} >
                     {mapList}
                 </Window>
             </div>
@@ -99,84 +99,73 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
 };
 
 const Window = styled.div.attrs((props) => ({
+    width: props.width || "10",
     height: props.height || "10",
     gap: props.gap || "2",
+    seconds: props.seconds || "3",
   }))`
+  --card-width: ${props => props.width}vw;
   --card-height: ${props => props.height}vw;
+  --card-ratio: calc(${props => props.height} / ${props => props.width});
   --card-gap: ${props => props.gap}vw;
+  --card-margin-left: calc(-1 * var(--card-width) + -1 * var(--card-gap));
+  --card-seconds: ${props => props.seconds}s;
+  --card-speed: calc(.33 * var(--card-seconds));
+  --card-mobile-width: 80vw;
 
   overflow: hidden;
   height: var(--card-height);
   width: 150vw;
   margin: 0 0 var(--card-gap);
   @media only screen and (max-width: 749px) {
-      height: 30vw;
-      margin: 4vw 0;
+    // fit width of mobile by 80%
+    height: calc(var(--card-mobile-width) * var(--card-ratio));
+    width: 200vw
   }
   `;
 
-const Image = styled.div.attrs((props) => ({
-    width: props.width || "10",
-    height: props.height || "10",
-    gap: props.gap || "2",
-    seconds: props.seconds || "3",
-  }))`
+const Image = styled.div`
 
---card-width: ${props => props.width}vw;
---card-height: ${props => props.height}vw;
---card-gap: ${props => props.gap}vw;
---card-margin-left: calc(-1 * var(--card-width) + -1 * var(--card-gap));
---card-seconds: ${props => props.seconds}s;
---card-speed: calc(.33 * var(--card-seconds));
+    display: inline-block;
+    width: var(--card-width);
+    height: var(--card-height);
+    margin-right: var(--card-gap);
 
-display: inline-block;
-width: var(--card-width);
-height: var(--card-height);
-margin-right: var(--card-gap);
+    border-radius: 5px;
 
-border-radius: 5px;
-
-overflow: hidden;
-
-//==> .shift-left
-transition: var(--card-speed) ease-in-out;
-opacity: 1;
-margin-left: 0;
-
-> img {
     overflow: hidden;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-  @media only screen and (min-width: 750px) {
+
+    //==> .shift-left
+    transition: var(--card-speed) ease-in-out;
+    opacity: 1;
+    margin-left: 0;
+
+    > img {
+        overflow: hidden;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
     &.shift-left {
         margin-left: var(--card-margin-left);
         opacity: 0;
     }
-  }
-    //   @media only screen and (max-width: 749px) {
-
-    //     .gallery-container .gallery-card {
-    //       width: 30vw;
-    //       height:30vw;
-    //       border-radius: 15px;
-    //       margin-right: 4vw;
-    //     }
-    //     .gallery-container img {
-    //         width: 30vw;
-    //     }
-    //     .gallery-container .shift-left {
-    //         margin-left: -34vw;
-    //     }
-    //   }
+    @media only screen and (min-width: 750px) {
+    }
+    // fit width of mobile by 80%
+    @media only screen and (max-width: 749px) {
+        width: var(--card-mobile-width);
+        height: calc(var(--card-mobile-width) * var(--card-ratio));
+        margin-right: 10vw;
+        margin-left: 10vw;
+        &.shift-left {
+            margin-left: -90vw;
+        }
+    }
 `;
 
 const LocalWrapper = styled.div`
     width: 100%;
-    .gallery-container {
-        overflow: hidden;
-    }
 `;
 
 export default Gallery;
