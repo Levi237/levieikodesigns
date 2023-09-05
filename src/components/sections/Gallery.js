@@ -16,56 +16,116 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
 // vector based off 0vw
 // Allow for option of links and other data
     const imageList = [{
+            alt: `Red5`,
+            active: true,
+            link: `https://red5performance.com`,    
             img: `./projects/red5performance.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://momomuscle.com`,
             img: `./projects/momomuscle-meta.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://nexushousing.org`,
             img: `./projects/nexushousing.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://coveredperfectly.com`,
             img: `./projects/coveredperfectly.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://.com`,
             img: `./projects/scaredbutalive.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://divinityray.com`,
             img: `./projects/divinity-ray.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://metatranshormone.com`,
             img: `./projects/metamorphosis.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://ourhighestmantra.com`,
             img: `./projects/ourhighestmantra.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://pranawellnessworks.com`,
             img: `./projects/prana-wellness.jpg`,
         },{            
+            alt: ``,
+            active: true,
+            link: `https://levieikodesigns.com`,
             img: `./projects/levieikodesigns.jpg`,
         },{
+            alt: ``,
+            active: true,
+            link: `https://dizzywithexcitement.com`,
             img: `./projects/dizzywithexcitement.jpg`,
         },{
+            alt: ``,
+            active: false,
+            link: `https://sathiroy.com`,
             img: `./projects/sathiroy.jpg`,
         },{
+            alt: `Baddie by Divinity`,
+            active: false,
+            link: ``,
             img: `./projects/baddie-by-divinity.jpg`,
         },{
+            alt: `Bravo Built Fit`,
+            active: false,
+            link: ``,
             img: `./projects/bravo-built.jpg`,
         },{
+            alt: `Andrea Sells Maui`,
+            active: false,
+            link: ``,
             img: `./projects/andreasellsmaui2.jpg`,
         },{
+            alt: `Fit Plan`,
+            active: false,
+            link: ``,
             img: `./projects/fitplan-giftcard.jpg`,
         },{
+            alt: `IT Afterhours`,
+            active: false,
+            link: ``,
             img: `./projects/it-afterhours.jpg`,
         },{
+            alt: `Heatseeker Sauce`,
+            active: false,
+            link: ``,
             img: `./projects/heatseeker.jpg`,
         },{
+            alt: `La Madre is Watching`,
+            active: false,
+            link: ``,
             img: `./projects/lamadreiswatching-ongina.JPG`,
     }];
   
     const _id = id ? id : '__NEED_ID__';
     const _list = list ? list : imageList;
     const _time = seconds ? seconds * 1000 : 3000;
+    // Specify 'containerc & 'row' to allow multiple rows
     const carousel_container = 'gallery-container--' + _id;
     const carousel_row = 'carousel-row--' + _id;
 
     //   Print original list of images
-    const mapList = _list.map(( img, k) => {
+    const mapList = _list.map((img, k) => {
         return(
             <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
-                <img src={img.img} alt={`URL: ${img.img}`}/>
+                <a href={img.link}>
+                    <img src={img.img} alt={`img.alt`}/>
+                </a>
             </Image>
         );
     });
@@ -77,7 +137,7 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
         const getCards = document.getElementsByClassName(`${carousel_row}`);
         //  Shift first card to the left
         getCards[0].classList.add('shift-left');
-        //  Kicks in second cycle, removes className
+        //  Resets last card inserted
         getCards[getCards.length - 1].classList.remove('shift-left');
         //  Move card from front to back right before next shift
         setTimeout(() => { 
