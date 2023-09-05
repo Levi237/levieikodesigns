@@ -123,9 +123,12 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
     const mapList = _list.map((img, k) => {
         return(
             <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
-                <a href={img.link}>
-                    <img src={img.img} alt={`img.alt`}/>
-                </a>
+                { imageList.active 
+                ? <a href={img.link} target="_blank" rel="noreferrer">
+                    <img src={img.img} alt={img.alt}/>
+                  </a>
+                : <img src={img.img} alt={img.alt}/>
+                }
             </Image>
         );
     });
@@ -200,7 +203,7 @@ const Image = styled.div`
     opacity: 1;
     margin-left: 0;
 
-    > img {
+    img {
         overflow: hidden;
         object-fit: cover;
         height: 100%;
