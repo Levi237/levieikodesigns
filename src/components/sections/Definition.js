@@ -10,7 +10,7 @@ const Definition = () => {
                     <ol>
                         <li>Someone who creates and maintains websites</li>
                         <li>Someone who develops World Wide Web software applications</li>
-                        <li>Me ツ.  <a href="https://levieikodesigns.com/portfolio" alt="my portfolio">Check out my work <small className="folder"></small></a></li>
+                        <li>Me!  <a href="https://levieikodesigns.com/portfolio" alt="my portfolio">Check out my work <small className="folder"></small></a></li>
                     </ol>
                 </div>
             </div>
