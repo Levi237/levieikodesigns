@@ -32,7 +32,7 @@ const ClientSection = ({ client }) => {
     // console.log('client', client);
     return(
         <Wrapper ref={ref} className={`hide-intersection`}>
-            <MobileImg href={`https://${client.link}`} target="_blank">
+            <MobileImg href={`https://${client.link}`} target="_blank" rel="noreferrer">
                 <img src={client.image} alt={client.title}/>
             </MobileImg>
             <section>
@@ -54,7 +54,7 @@ const ClientSection = ({ client }) => {
                 </MobileColumns>
                 <br></br>
             </section>
-            <DesktopImg href={`https://${client.link}`} target="_blank">
+            <DesktopImg href={`https://${client.link}`} target="_blank" rel="noreferrer">
                 <img src={client.image} alt={client.title}/>
                 {client.image2 && <img className="image-2" src={client.image2} alt={client.title}/>}
             </DesktopImg>

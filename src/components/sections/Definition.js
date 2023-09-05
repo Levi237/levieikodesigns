@@ -5,7 +5,7 @@ const Definition = () => {
     return(<Container className="page-width">
             <div>
                 <div>
-                    <h2>web developer</h2> 
+                    <h2>Web Developer</h2> 
                     <span>noun</span>
                     <ol>
                         <li>Someone who creates and maintains websites</li>
