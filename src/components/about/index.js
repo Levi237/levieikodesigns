@@ -13,7 +13,7 @@ const AboutPage = ({ slideMe }) => {
           <h2>Meet Levi</h2>
           <p>
             <b>Who am I?</b>
-            &emsp;A web developer, of the great outdoors & photographer of random things...{" "}
+            &emsp;A web developer, lover of the great outdoors & photographer of random things...{" "}
             with a creative spirit. I'd like to think I have the eye of an artist{" "}
             & the mind of an engineer.
           </p>
