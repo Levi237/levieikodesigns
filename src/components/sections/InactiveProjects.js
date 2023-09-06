@@ -1,7 +1,7 @@
 import React  from 'react';
 import styled from 'styled-components';
 
-import InactiveProjectCard from './InactiveProjectCard';
+import InactiveProjectCard from '../snippets/InactiveProjectCard';
 
 const PastProjects = ({ projects }) => {
     const pastProjects = projects.filter(project => project.active_project === false);

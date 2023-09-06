@@ -2,7 +2,7 @@ import React        from 'react';
 import styled       from 'styled-components';
 
 // Insert card as independent function to enable scroll into view for each session
-import ProjectCard  from './ProjectCard';
+import ProjectCard  from '../snippets/ProjectCard';
 
 const Projects = ({ projects }) => {
     const liveProjects = projects.filter(project => project.active_project === true);

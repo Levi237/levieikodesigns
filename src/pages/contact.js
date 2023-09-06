@@ -1,7 +1,7 @@
 import React        from 'react';
 import styled       from 'styled-components';
 
-import EmailForm    from './contact/EmailForm';
+import EmailForm    from '../components/sections/EmailForm';
 
 const ContactPage = () => { 
     return(
