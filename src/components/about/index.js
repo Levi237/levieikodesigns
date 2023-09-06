@@ -3,7 +3,7 @@ import styled                           from 'styled-components';
 import { NavLink }                      from 'react-router-dom';
 import * as routes                      from '../../constants/routes';
 
-import NavIcons                         from '../NavIcons';
+import NavIcons                         from '../snippets/NavIcons';
 //=====================================>                                     
 const AboutPage = ({ slideMe }) => { 
   return(
