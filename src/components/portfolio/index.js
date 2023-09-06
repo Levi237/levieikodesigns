@@ -250,6 +250,7 @@ export default class PortfolioPage extends Component {
                 </h1>
                 <Projects projects={projects}/>
                 <h1>PAST WORK</h1>
+                <br/>
                 <PastProjects projects={projects}/>
                 <Footer/>      
             </Container>
