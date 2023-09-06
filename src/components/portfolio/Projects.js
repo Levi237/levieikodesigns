@@ -1,8 +1,3 @@
-// PROJECT NOTES *************************************************************
-// copy the DisplaySection example
-// pass client instead, must map in parent.
-// goal: when scroll into view, intersectionObserver triggers for each section
-
 import React        from 'react';
 import styled       from 'styled-components';
 
