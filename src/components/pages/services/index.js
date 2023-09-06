@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
-import Footer               from '../Footer';
 import DisplaySection       from './DisplaySection';
 
-import AnimateText          from '../snippets/AnimateText'; 
+import AnimateText          from '../../snippets/AnimateText'; 
+import Footer               from '../../Footer';
 // import PricingSection       from './PricingSection';
 export default class ServicesPage extends Component {
   state = {

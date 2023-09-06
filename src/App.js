@@ -4,7 +4,7 @@
 // replace pageStyle state with designStyle class
 
 import React, { Component }           from 'react';
-import { Routes, Route, Link }              from 'react-router-dom';
+import { Routes, Route, Link }        from 'react-router-dom';
 import styled                         from 'styled-components';
 
 import { ReactComponent as LogoSVG }  from './svg/brand/logo.svg';
@@ -14,15 +14,16 @@ import ModalWindow                    from './components/Modal';
 import NavMenu                        from './components/nav/NavMenu';
 import NavBar                         from './components/nav/NavBar';
 
-import AboutPage                      from './components/about';
-// import FAQPage                        from './components/faq';
-import HomePage                       from './components/home';
-import ServicesPage                   from './components/services';
-import PortfolioPage                  from './components/portfolio';
-import ContactPage                    from './components/contact';
-import EmailConfirmation              from './components/contact/EmailConfirmation';
+// ==> Pages
+import AboutPage                      from './components/pages/about';
+import HomePage                       from './components/pages/home';
+import ServicesPage                   from './components/pages/services';
+import PortfolioPage                  from './components/pages/portfolio';
+import ContactPage                    from './components/pages/contact';
+import EmailConfirmation              from './components/pages/contact/EmailConfirmation';
+// import FAQPage                        from './components/pages/faq';
 
-import { ReactComponent as Mail }       from './svg/icons/iconfinder_mail.svg';
+import { ReactComponent as Mail }     from './svg/icons/iconfinder_mail.svg';
 // import FontList                       from './fonts';
 
 export default class App extends Component {
@@ -109,9 +110,9 @@ export default class App extends Component {
 
     return (
       <AppContainer>
-        <LogoSVG className="establish-logo" style={{width: '0', height: '0', position: 'absolute'}}/>
-        <NavMenu btnHamburger={this.btnHamburger} resetslideMe={this.resetslideMe} toggleMenu={this.toggleMenu} animateSlideMe={this.animateSlideMe}/>
-        <ModalWindow contactType={modalType} toggleModal={this.toggleModal}/>
+        <LogoSVG className="establish-logo" style={{width: '0', height: '0', position: 'absolute'}} />
+        <NavMenu btnHamburger={this.btnHamburger} resetslideMe={this.resetslideMe} toggleMenu={this.toggleMenu} animateSlideMe={this.animateSlideMe} />
+        <ModalWindow contactType={modalType} toggleModal={this.toggleModal} />
         <Routes>
             <Route path={routes.MAIL} exact element={<>
               <GoblinValleyImageAnimation/>
@@ -199,12 +200,10 @@ const ContactMe = styled.div`
   }
   a:hover svg {
     transform: scale(1.1);
-    // fill: var(--darkblue);
     transition: transform .1s linear;
   }
   a:active svg {
     transform: scale(1.1) translate(0px,2px);
-    // fill: var(--darkblue);
   }
 `;
 
@@ -221,7 +220,6 @@ const BodyContainer = styled.div`
 const AppContainer = styled.div`
   h1 {
     text-align: center;
-    // text-transform: uppercase;
   }
 `;
 const HeroImageDiv = styled.div`
