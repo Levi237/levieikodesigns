@@ -1,12 +1,12 @@
 // PROJECT NOTES *************************************************************
 // copy the DisplaySection example
-// pass client instead, must map in parent.
+// pass project instead, must map in parent.
 // goak: when scroll into view, intersectionObserver triggers for each section
 
 import React, { useEffect, useRef, useState } from 'react';
 import styled                                 from 'styled-components';
 
-const ClientSection = ({ client }) => {
+const ProjectCard = ({ project }) => {
 // Add intersection observer to the section 
     const ref = useRef();
     const [refState, setRefState] = useState();
@@ -26,37 +26,36 @@ const ClientSection = ({ client }) => {
         observer.observe(ref.current);
     }, []);
 
-    const tasksList = client.tasks.map((r, k) => {
+    const tasksList = project.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
-    // console.log('client', client);
+    // console.log('project', project);
     return(
         <Wrapper ref={ref} className={`hide-intersection`}>
-            <MobileImg href={`https://${client.link}`} target="_blank" rel="noreferrer">
-                <img src={client.image} alt={client.title}/>
+            <MobileImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
+                <img src={project.image} alt={project.title}/>
             </MobileImg>
             <section>
                 <h2>
-                    {client.title}
-                    {/* &nbsp;<small className="no-break">{client.startDate}</small> */}
+                    {project.title}
                 </h2>
-                <a target="_blank" rel="noopener noreferrer" href={`https://${client.link}`}>
-                    {client.link}
+                <a target="_blank" rel="noopener noreferrer" href={`https://${project.link}`}>
+                    {project.link}
                 </a>
                 <p>
-                    “{client.statement}”
+                    “{project.statement}”
                 </p>
                 <MobileColumns className="mobile-columns">
                     <ul>
                         {tasksList}
                     </ul>
-                    {client.image2 && <img className="mobile-block" src={client.image2} alt={client.title}/>}
+                    {project.image2 && <img className="mobile-block" src={project.image2} alt={project.title}/>}
                 </MobileColumns>
                 <br></br>
             </section>
-            <DesktopImg href={`https://${client.link}`} target="_blank" rel="noreferrer">
-                <img src={client.image} alt={client.title}/>
-                {client.image2 && <img className="image-2" src={client.image2} alt={client.title}/>}
+            <DesktopImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
+                <img src={project.image} alt={project.title}/>
+                {project.image2 && <img className="image-2" src={project.image2} alt={project.title}/>}
             </DesktopImg>
             <hr/>
         </Wrapper>
@@ -202,4 +201,4 @@ const MobileColumns = styled.div`
     }
 `;
 
-export default ClientSection;
+export default ProjectCard;

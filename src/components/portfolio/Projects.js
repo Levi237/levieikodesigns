@@ -6,18 +6,19 @@
 import React                    from 'react';
 import styled                   from 'styled-components';
 
-import ClientSection            from './ClientSection';
+// Insert card as independent function to enable scroll into view for each session
+import ProjectCard            from './ProjectCard';
 
-const Clients = ({ projects }) => {
+const Projects = ({ projects }) => {
 
-    const liveClients = projects.filter(client => client.active_project === true);
-    const mapProjects = liveClients.map((client, key) => {
-        return( <ClientSection key={key} client={client}/> );
+    const liveProjects = projects.filter(project => project.active_project === true);
+    const showProjects = liveProjects.map((project, key) => {
+        return( <ProjectCard key={key} project={project}/> );
     });
 
     return(
         <Container>
-            {mapProjects}          
+            {showProjects}          
         </Container>
     );
 };
@@ -53,4 +54,4 @@ const Container = styled.div`
     }
 `;
 
-export default Clients;
+export default Projects;
