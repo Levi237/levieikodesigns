@@ -93,7 +93,9 @@ const PastProject = styled.div`
     
     img {
         width: 100%;
-        margin-top: 5%;
+        height: 100%;
+        object-fit: cover;
+        // margin-top: 5%;
     }
     a {
         text-decoration: none;
@@ -130,7 +132,8 @@ const PastProject = styled.div`
         > section {
             text-align: left;
             &:first-of-type {
-                height: 30vw;
+                height: 24vw;
+                margin-bottom: 10px;
             }
             &:last-of-type {
                 margin-bottom: 40px;
