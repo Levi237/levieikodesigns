@@ -32,26 +32,20 @@ const ProjectCard = ({ project }) => {
     // console.log('project', project);
     return(
         <Wrapper ref={ref} className={`hide-unobserved`}>
-            <MobileImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
+            <MobileImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
                 <img src={project.image} alt={project.name}/>
             </MobileImg>
             <section>
             {/* {project.image2 && <img className="mobile-block mobile-second-image" src={project.image2} alt={project.name}/>} */}
-                <h2>
-                    {project.name}
-                </h2>
-                <a target="_blank" rel="noopener noreferrer" href={`https://${project.link}`}>
+                <h2>{project.name}</h2>
+                <a href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
                     {project.link}
                 </a>
-                <p>
-                    “{project.statement}”
-                </p>
-                <ul>
-                    {tasksList}
-                </ul>
+                <p>“{project.statement}”</p>
+                <ul>{tasksList}</ul>
                 <br/>
             </section>
-            <DesktopImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
+            <DesktopImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
                 <img src={project.image} alt={project.name}/>
                 {project.image2 && <img className="image-2" src={project.image2} alt={project.name}/>}
             </DesktopImg>

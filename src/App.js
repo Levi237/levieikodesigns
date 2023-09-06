@@ -15,12 +15,12 @@ import NavMenu                        from './components/nav/NavMenu';
 import NavBar                         from './components/nav/NavBar';
 
 // ==> Pages
-import AboutPage                      from './components/pages/about';
-import HomePage                       from './components/pages/home';
-import ServicesPage                   from './components/pages/services';
-import PortfolioPage                  from './components/pages/portfolio';
-import ContactPage                    from './components/pages/contact';
-import EmailConfirmation              from './components/pages/contact/EmailConfirmation';
+import AboutPage                      from './pages/about';
+import HomePage                       from './pages/home';
+import ServicesPage                   from './pages/services';
+import PortfolioPage                  from './pages/portfolio';
+import ContactPage                    from './pages/contact';
+import EmailConfirmation              from './pages/contact/EmailConfirmation';
 // import FAQPage                        from './components/pages/faq';
 
 import { ReactComponent as Mail }     from './svg/icons/iconfinder_mail.svg';

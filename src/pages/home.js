@@ -1,19 +1,19 @@
 import React from 'react';
 import styled               from 'styled-components';
 import { NavLink }          from 'react-router-dom';
-import * as routes          from '../../../constants/routes';
+import * as routes          from '../constants/routes';
 
 // import FeaturedBanner       from '../sections/FeaturedBanner';
-import Definition           from '../../sections/Definition';
-import EmailMarketing       from '../../sections/EmailMarketing';
-import Gallery              from '../../sections/Gallery';
-import MobileFirstBanner    from '../../sections/MobileFirstBanner';
-import Skills               from '../../sections/Skills';
-import WebsitePreview       from '../../sections/WebsitePreview';
+import Definition           from '../components/sections/Definition';
+import EmailMarketing       from '../components/sections/EmailMarketing';
+import Gallery              from '../components/sections/Gallery';
+import MobileFirstBanner    from '../components/sections/MobileFirstBanner';
+import Skills               from '../components/sections/Skills';
+import WebsitePreview       from '../components/sections/WebsitePreview';
 
-import Footer               from '../../Footer';
+import Footer               from '../components/Footer';
 
-import { ReactComponent as LogoSVG } from '../../../svg/brand/logo.svg';
+import { ReactComponent as LogoSVG } from '../svg/brand/logo.svg';
 const HomePage = ({ pageStyle, btnScroll }) => {
   return(
     <div>

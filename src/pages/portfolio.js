@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
-import AnimateText          from '../../snippets/AnimateText';
+import AnimateText          from '../components/snippets/AnimateText';
 
 // import Skills               from './Skills';
-import Projects             from './Projects';
-import PastProjects         from './InactiveProjects';
-import Footer               from '../../Footer';
+import Projects             from './portfolio/Projects';
+import PastProjects         from './portfolio/InactiveProjects';
+import Footer               from '../components/Footer';
 
 
 export default class PortfolioPage extends Component {

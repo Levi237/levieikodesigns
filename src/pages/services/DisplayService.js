@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled                                 from 'styled-components';
 
 
-const ServicesPage = ({ service }) => {
+const DisplayService = ({ service }) => {
   // Add intersection observer to the section 
   const ref = useRef();
   const [refState, setRefState] = useState();
@@ -180,4 +180,4 @@ const GraphicsBanner = styled.div`
   }
 `;
 
-export default ServicesPage;
+export default DisplayService;

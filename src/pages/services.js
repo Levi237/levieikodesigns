@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
-import DisplaySection       from './DisplaySection';
+import DisplayService       from './services/DisplayService';
 
-import AnimateText          from '../../snippets/AnimateText'; 
-import Footer               from '../../Footer';
+import AnimateText          from '../components/snippets/AnimateText'; 
+import Footer               from '../components/Footer';
 // import PricingSection       from './PricingSection';
 export default class ServicesPage extends Component {
   state = {
@@ -106,11 +106,11 @@ export default class ServicesPage extends Component {
             <AnimateText animate="slide" fade="on" speed="fast" text="Services" />
           </h1>
           <Container>
-            <DisplaySection service={services.websites}/>
+            <DisplayService service={services.websites}/>
             {/* <PricingSection/> */}
-            <DisplaySection service={services.additions}/>
-            <DisplaySection service={services.graphics}/>
-            <DisplaySection service={services.email}/>
+            <DisplayService service={services.additions}/>
+            <DisplayService service={services.graphics}/>
+            <DisplayService service={services.email}/>
           </Container>
           <Footer/>
         </div>
