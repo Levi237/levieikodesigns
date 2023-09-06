@@ -31,8 +31,8 @@ const NavIcons = () => {
 };
 
 const Container = styled.section`
-background-color: transparent!important;
-section {
+  background-color: transparent!important;
+  section {
     text-align: center;
     img {
       width: 15%;
@@ -50,21 +50,21 @@ section {
       }
     }
     a {
-        font-weight: 500;
-        transition: .3s ease;
-        > svg.svg-about-link {
-            width: 40px;
-            height: 40px;
-            margin: 2.5%;
-            fill: rgb(var(--color-rgb-darkgrey-new));
-          }
-        &:hover {
-          > svg.svg-about-link * {
-            fill: var(--blue)!important;
-          }
+      font-weight: 500;
+      transition: .3s ease;
+      > svg.svg-about-link {
+        width: 40px;
+        height: 40px;
+        margin: 2.5%;
+        fill: rgb(var(--color-rgb-darkgrey-new));
+      }
+      &:hover {
+        > svg.svg-about-link * {
+          fill: var(--blue)!important;
         }
       }
     }
+  }
   @media screen and (max-width: 900px) {
   }
 `;
