@@ -21,8 +21,10 @@ const PastProjects = ({ projects }) => {
                     <h4>{project.link}</h4>
                     <p>“{project.statement}”</p>
                     <ul>{tasksList}</ul>
-                    <h3>Technologies: </h3>
+                    {/* <h3>Technologies: </h3> */}
+                    <div>
                     {technologiesList}
+                    </div>
                 </section>
             </PastProject>
         );
@@ -68,11 +70,20 @@ const PastProject = styled.div`
             max-height: 160px;
             margin-bottom: 20px;
         }
-        span::after {
-            content ' | ';
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            justify-content: center;
         }
-        span:last-of-type::after {
-            content: '';
+        > div > span {
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            padding: 0px .5vw;
+            margin-bottom: .2vw;
+        }
+        > div > span + span {
+            margin-left: -1px;
         }
     }
     
@@ -91,10 +102,11 @@ const PastProject = styled.div`
     }
     h2 {
         font-size: 21px;
+        margin: 0 0 5px;
     }
-    h3 {
-        font-size: 16px;
-    }
+    // h3 {
+    //     font-size: 16px;
+    // }
     h4 {
         font-size: 14px;
         font-weight: 100;
@@ -117,7 +129,7 @@ const PastProject = styled.div`
         section {
             text-align: left;
             &:first-of-type {
-                height: 21.33vw;
+                height: 30vw;
             }
             &:last-of-type {
                 margin-bottom: 40px;
@@ -125,19 +137,20 @@ const PastProject = styled.div`
         }
         h2 {
             font-size: 4.6vw;
-            margin: 0;
         }
         h4 {
             padding-top: 1vw;
         }
-        h3, h4, p, ul, li, span{
+        h4, p {
             font-size: 3.6vw;
             letter-spacing: .1vw;
         }
-
-        // h3, h4, p, ul, li, span{
-        //     font-size: 3.6vw;
-        // }
+        ul {
+            display: none;
+        }
+        h4, p {
+            letter-spacing: .1vw;
+        }
 
     }
 `;
