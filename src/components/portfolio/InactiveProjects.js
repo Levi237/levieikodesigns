@@ -13,10 +13,10 @@ const PastProjects = ({ projects }) => {
         return(
             <PastProject key={key}>
                 <section>
-                    <img src={project.image} alt={project.title}/>
+                    <img src={project.image} alt={project.name}/>
                 </section>
                 <section>
-                    <h2>{project.title}</h2>
+                    <h2>{project.name}</h2>
                     <small>{project.startDate} - {project.endDate}</small>
                     <h4>{project.link}</h4>
                     <p>“{project.statement}”</p>

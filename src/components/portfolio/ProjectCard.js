@@ -33,12 +33,12 @@ const ProjectCard = ({ project }) => {
     return(
         <Wrapper ref={ref} className={`hide-intersection`}>
             <MobileImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
-                <img src={project.image} alt={project.title}/>
+                <img src={project.image} alt={project.name}/>
             </MobileImg>
             <section>
-            {/* {project.image2 && <img className="mobile-block mobile-second-image" src={project.image2} alt={project.title}/>} */}
+            {/* {project.image2 && <img className="mobile-block mobile-second-image" src={project.image2} alt={project.name}/>} */}
                 <h2>
-                    {project.title}
+                    {project.name}
                 </h2>
                 <a target="_blank" rel="noopener noreferrer" href={`https://${project.link}`}>
                     {project.link}
@@ -52,8 +52,8 @@ const ProjectCard = ({ project }) => {
                 <br/>
             </section>
             <DesktopImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
-                <img src={project.image} alt={project.title}/>
-                {project.image2 && <img className="image-2" src={project.image2} alt={project.title}/>}
+                <img src={project.image} alt={project.name}/>
+                {project.image2 && <img className="image-2" src={project.image2} alt={project.name}/>}
             </DesktopImg>
             <hr/>
         </Wrapper>
