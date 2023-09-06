@@ -109,7 +109,7 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
             alt: `La Madre is Watching`,
             active: false,
             link: ``,
-            img: `./projects/lamadreiswatching-ongina.JPG`,
+            img: `./projects/lamadreiswatching-ongina.jpg`,
     }];
   
     const _id = id ? id : '__NEED_ID__';
