@@ -3,11 +3,11 @@
 // pass client instead, must map in parent.
 // goal: when scroll into view, intersectionObserver triggers for each section
 
-import React                    from 'react';
-import styled                   from 'styled-components';
+import React        from 'react';
+import styled       from 'styled-components';
 
 // Insert card as independent function to enable scroll into view for each session
-import ProjectCard            from './ProjectCard';
+import ProjectCard  from './ProjectCard';
 
 const Projects = ({ projects }) => {
 
