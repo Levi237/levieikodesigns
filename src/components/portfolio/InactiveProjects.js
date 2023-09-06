@@ -2,29 +2,29 @@ import React  from 'react';
 import styled from 'styled-components';
 
 const PastProjects = ({ projects }) => {
-    const pastProjects = projects.filter(client => client.active_project === false);
-    const mapPastProjects = pastProjects.map((client, key) => {
-        const technologiesList = client.technologies.map((c, k) => {
+    const pastProjects = projects.filter(project => project.active_project === false);
+    const mapPastProjects = pastProjects.map((project, key) => {
+        const technologiesList = project.technologies.map((c, k) => {
             return <span key={k}>{c}</span>
         });
-        const tasksList = client.tasks.map((r, k) => {
+        const tasksList = project.tasks.map((r, k) => {
             return <li key={k}><span>{r}</span></li>
         });
         return(
-            <Project key={key}>
+            <PastProject key={key}>
                 <section>
-                    <img src={client.image} alt={client.title}/>
+                    <img src={project.image} alt={project.title}/>
                 </section>
                 <section>
-                    <h2>{client.title}</h2>
-                    <small>{client.startDate}</small>
-                    <h4>{client.link}</h4>
-                    <p>“{client.statement}”</p>
+                    <h2>{project.title}</h2>
+                    <small>{project.startDate} - {project.endDate}</small>
+                    <h4>{project.link}</h4>
+                    <p>“{project.statement}”</p>
                     <ul>{tasksList}</ul>
                     <h3>Technologies: </h3>
                     {technologiesList}
                 </section>
-            </Project>
+            </PastProject>
         );
     });
     return(
@@ -34,9 +34,28 @@ const PastProjects = ({ projects }) => {
     );
 };
 
-const Project = styled.div`
-    display: inline-block;
-    vertical-align: top;
+const Container = styled.div`
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    flex-gap: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+
+    @media screen and (max-width: 640px) {
+        max-width: 600px;
+        section, img {
+            width: 90%;
+            margin: auto;
+        }
+    }
+`;
+
+const PastProject = styled.div`
     width: 21%;
     margin: 40px 1%;
     text-align: center;
@@ -93,7 +112,7 @@ const Project = styled.div`
         padding-inline-start: 12px;
     }
     @media screen and (max-width: 640px) {
-        width: 45%;
+        width: 50%;
         margin: 0 0%;
         section {
             text-align: left;
@@ -106,29 +125,23 @@ const Project = styled.div`
         }
         h2 {
             font-size: 4.6vw;
+            margin: 0;
         }
         h4 {
             padding-top: 1vw;
         }
         h3, h4, p, ul, li, span{
             font-size: 3.6vw;
+            letter-spacing: .1vw;
         }
+
+        // h3, h4, p, ul, li, span{
+        //     font-size: 3.6vw;
+        // }
 
     }
 `;
 
-const Container = styled.div`
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    @media screen and (max-width: 640px) {
-        max-width: 600px;
-        section, img {
-            width: 90%;
-            margin: auto;
-        }
-    }
-`;
+
 
 export default PastProjects;
