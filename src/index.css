@@ -120,10 +120,16 @@ a, h1, h2, h3, h4, h5, p, li {
 .nav-bar.blue {
   ---color: var(--blue);
 }
+.blue:hover {
+  ---color: #FFF;
+}
 .nav-bar.home,
 .nav-bar.white {
   ---color: #FFF;
 }
+.white:hover {
+  ---color: var(--blue);
+  }
 .nav-bar.home svg {
   display: none;
 }
