@@ -233,7 +233,7 @@ export default class PortfolioPage extends Component {
             startDate: 2007,
             endDate: 2009,
             title: `La Madre is Watching`,
-            image: `./projects/lamadreiswatching-ongina.JPG`,
+            image: `./projects/lamadreiswatching-ongina.jpg`,
             image2: ``,
             link: `lamadreiswatching.com`,
             statement: `Photographing the edgy side of the Los Angeles night scene.`,
