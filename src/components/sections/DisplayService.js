@@ -81,6 +81,7 @@ const GraphicsBanner = styled.div`
 
 //*************** STYLE
   color: #fff;
+  margin-top: 40px;
 
   display: grid;
   grid-template-rows: auto auto auto;
