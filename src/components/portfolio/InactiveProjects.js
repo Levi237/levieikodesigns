@@ -144,7 +144,7 @@ const PastProject = styled.div`
             margin: 0;
         }
         h4 {
-            margin-bottom: .1vw;
+            margin: .1vw 0;
             letter-spacing: .1vw;
         }
         p, ul {
