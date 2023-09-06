@@ -36,6 +36,7 @@ const ProjectCard = ({ project }) => {
                 <img src={project.image} alt={project.title}/>
             </MobileImg>
             <section>
+            {/* {project.image2 && <img className="mobile-block mobile-second-image" src={project.image2} alt={project.title}/>} */}
                 <h2>
                     {project.title}
                 </h2>
@@ -45,12 +46,9 @@ const ProjectCard = ({ project }) => {
                 <p>
                     “{project.statement}”
                 </p>
-                <MobileColumns className="mobile-columns">
-                    <ul>
-                        {tasksList}
-                    </ul>
-                    {project.image2 && <img className="mobile-block" src={project.image2} alt={project.title}/>}
-                </MobileColumns>
+                <ul>
+                    {tasksList}
+                </ul>
                 <br></br>
             </section>
             <DesktopImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
@@ -64,6 +62,13 @@ const ProjectCard = ({ project }) => {
 
 
 const Wrapper = styled.div`
+.mobile-second-image {
+    float: right;
+    width: 35%;
+}
+
+
+
 // animation for interestionObserver class.remove('hide-intersecion')
     opacity: 1;
     // margin-top: 0;
@@ -163,7 +168,7 @@ const Wrapper = styled.div`
             margin: 5% auto;
         }
         ul {
-            padding-left: 24px;
+            padding-left: 10vw;
         }
         li span {
             position: relative;
@@ -194,14 +199,6 @@ const MobileImg = styled.a`
     display: none;
     @media screen and (max-width: 900px) {
         display: block;
-`;
-const MobileColumns = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;
-    @media screen and (max-width: 900px) {
-        grid-template-columns: 60% 40%;
-    }
 `;
 
 export default ProjectCard;
