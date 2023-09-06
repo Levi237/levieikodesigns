@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
             const entry = entries[0];
             setRefState(entry.isIntersecting);
             if (entry.isIntersecting){
-            entry.target.classList.remove('hide-intersection');
+            entry.target.classList.remove('hide-unobserved');
             console.log('interested', entry.target);
             observer.disconnect();
             }
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
     });
     // console.log('project', project);
     return(
-        <Wrapper ref={ref} className={`hide-intersection`}>
+        <Wrapper ref={ref} className={`hide-unobserved`}>
             <MobileImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
                 <img src={project.image} alt={project.name}/>
             </MobileImg>
@@ -62,22 +62,25 @@ const ProjectCard = ({ project }) => {
 
 
 const Wrapper = styled.div`
-.mobile-second-image {
-    float: right;
-    width: 35%;
-}
-
-
-
-// animation for interestionObserver class.remove('hide-intersecion')
-    opacity: 1;
-    // margin-top: 0;
-    transition: 1.6s ease;
-
-    margin: 0 auto;
     padding: 20px 0;
     max-width: 800px;
     text-align: center;
+
+    // animation for interestionObserver class.remove('hide-intersecion')
+    opacity: 1;
+    margin: 0 auto;
+    transition: 1.6s ease;
+    &.hide-unobserved {
+        opacity: 0!important;
+        margin-top: 20px!important;
+        transition: 1s ease;
+    }
+
+
+    .mobile-second-image {
+        float: right;
+        width: 35%;
+    }
 
     section {
         width: 40%;

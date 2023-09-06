@@ -231,12 +231,6 @@ a.active {
 
 
 /* hide intersection observer before intersection reveal */
-.hide-intersection {
-  opacity: 0!important;
-  margin-top: 20px!important;
-  transition: 1s ease;
-}
-
 
 
 

@@ -12,16 +12,15 @@ const InactiveProjectCard = ({ project }) => {
     const [refState, setRefState] = useState();
     console.log("refState", refState);
     useEffect(() => {
-        console.log('ref', ref.current);
+        // console.log('ref', ref.current);
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             setRefState(entry.isIntersecting);
             if (entry.isIntersecting){
-            entry.target.classList.remove('hide-intersection');
-            console.log('interested', entry.target);
-            observer.disconnect();
+                entry.target.classList.remove('hide-unobserved');
+                console.log('interested', entry.target);
+                observer.disconnect();
             }
-            console.log('entry', entry.target.className);
         });
         observer.observe(ref.current);
     }, []);
@@ -33,7 +32,7 @@ const InactiveProjectCard = ({ project }) => {
         return <li key={k}><span>{r}</span></li>
     });
     return(
-        <PastProject  ref={ref}>
+        <PastProjectCard ref={ref} className={`hide-unobserved`}>
             <section>
                 <img src={project.image} alt={project.name}/>
             </section>
@@ -45,20 +44,30 @@ const InactiveProjectCard = ({ project }) => {
                 <ul>{tasksList}</ul>
                 <div>{technologiesList}</div>
             </section>
-        </PastProject>
+        </PastProjectCard>
     );
 };
 
-const PastProject = styled.div`
+const PastProjectCard = styled.div`
     width: 21%;
-    margin: 40px 1%;
     text-align: center;
+
+    // animation for interestionObserver class.remove('hide-intersecion')
+    opacity: 1;
+    transition: 2s ease;
+    margin: 0 1% 40px;
+    &.hide-unobserved {
+        opacity: 0!important;
+        margin-top: 20px!important;
+        transition: 1s ease;
+    }
+
     
-    section {
+    > section {
         text-align: left;
         &:first-of-type {
             overflow: hidden;
-            height: 13.33vw;
+            height: 10vw;
             max-height: 160px;
             margin-bottom: 20px;
         }
