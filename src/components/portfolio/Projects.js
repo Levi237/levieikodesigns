@@ -5,12 +5,10 @@ import styled       from 'styled-components';
 import ProjectCard  from './ProjectCard';
 
 const Projects = ({ projects }) => {
-
     const liveProjects = projects.filter(project => project.active_project === true);
     const showProjects = liveProjects.map((project, key) => {
         return( <ProjectCard key={key} project={project}/> );
     });
-
     return(
         <Container>
             {showProjects}          
@@ -21,11 +19,7 @@ const Projects = ({ projects }) => {
 const Container = styled.div`
     margin-top: 40px;
     position: relative;
-    hr {
-        height: 1px;
-        background-color: #fff;
-        border: none;
-    }
+
     img {
         object-fit: cover;
     }
@@ -35,9 +29,7 @@ const Container = styled.div`
             width: 90%;
             margin: auto;
         }
-        >hr {
-            display: none;
-        }
+
     }
     div:nth-of-type(odd) > a {
         float: left;

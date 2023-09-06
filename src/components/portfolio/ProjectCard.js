@@ -129,7 +129,10 @@ const Wrapper = styled.div`
         margin: 10px auto!important;
         line-height: 140%;
     }
-    >hr {
+    hr {
+        height: 1px;
+        background-color: #fff;
+        border: none;
         width: 100%;
         margin: 0px auto 20px;
     }
@@ -151,7 +154,7 @@ const Wrapper = styled.div`
                 box-shadow: 0 1px 12px rgba(0,0,0,.2);
             }
         }
-        > hr {
+        hr {
             display: none;
         }
         section > hr {
