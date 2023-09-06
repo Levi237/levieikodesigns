@@ -49,7 +49,7 @@ const ProjectCard = ({ project }) => {
                 <ul>
                     {tasksList}
                 </ul>
-                <br></br>
+                <br/>
             </section>
             <DesktopImg href={`https://${project.link}`} target="_blank" rel="noreferrer">
                 <img src={project.image} alt={project.title}/>
