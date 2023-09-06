@@ -10,7 +10,7 @@ import ClientSection            from './ClientSection';
 
 const Clients = ({ projects }) => {
 
-    const liveClients = projects.filter(client => client.status === 'live');
+    const liveClients = projects.filter(client => client.status === 'active');
     const mapProjects = liveClients.map((client, key) => {
         return( <ClientSection key={key} client={client}/> );
     });

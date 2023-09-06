@@ -18,7 +18,7 @@ import AboutPage                      from './components/about';
 // import FAQPage                        from './components/faq';
 import HomePage                       from './components/home';
 import ServicesPage                   from './components/services';
-import PortfolioPage                  from './components/clients';
+import PortfolioPage                  from './components/portfolio';
 import ContactPage                    from './components/contact';
 import EmailConfirmation              from './components/contact/EmailConfirmation';
 
