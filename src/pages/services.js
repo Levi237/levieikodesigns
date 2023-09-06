@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
-import DisplayService       from './services/DisplayService';
+import DisplayService       from '../components/sections/DisplayService';
 
 import AnimateText          from '../components/snippets/AnimateText'; 
 import Footer               from '../components/Footer';
