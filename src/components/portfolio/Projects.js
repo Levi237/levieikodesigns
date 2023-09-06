@@ -31,7 +31,7 @@ const Container = styled.div`
         }
 
     }
-    div:nth-of-type(odd) > a {
+    > div:nth-of-type(odd) > a {
         float: left;
     }
     @media screen and (max-width: 900px) {
