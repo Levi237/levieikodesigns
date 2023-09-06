@@ -117,7 +117,7 @@ const FAQPage = () => {
             </p>
             <div className="figma-example">              
                 <h3>MomoMuscle.co 2020</h3>
-                <img src="/faq/launch-example.png"/>
+                <img src="/faq/launch-example.png" alt="launch example"/>
             </div>
           </section>
           <section>
@@ -147,7 +147,7 @@ const FAQPage = () => {
                 <p>
                   Have you ever seen this? 👇
                 </p>
-              <img src="/faq/no-ssl_example.png"/>
+              <img src="/faq/no-ssl_example.png" alt="no ssl example"/>
             </div>
           </section>
           <div style={{textAlign: 'center', marginTop: '200px'}}>This FAQ was last updated April 2021.</div>
