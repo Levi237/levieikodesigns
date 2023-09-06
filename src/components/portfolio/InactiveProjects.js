@@ -21,10 +21,7 @@ const PastProjects = ({ projects }) => {
                     <h4>{project.link}</h4>
                     <p>“{project.statement}”</p>
                     <ul>{tasksList}</ul>
-                    {/* <h3>Technologies: </h3> */}
-                    <div>
-                    {technologiesList}
-                    </div>
+                    <div>{technologiesList}</div>
                 </section>
             </PastProject>
         );
@@ -49,10 +46,16 @@ const Container = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 640px) {
-        max-width: 600px;
+        // max-width: 600px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 10px;
+
         section, img {
-            width: 90%;
-            margin: auto;
+            // width: 90%;
+            // margin: auto;
         }
     }
 `;
@@ -74,16 +77,17 @@ const PastProject = styled.div`
             display: flex;
             flex-wrap: wrap;
             align-items: start;
-            justify-content: center;
+            justify-content: start;
         }
         > div > span {
             border-left: 1px solid grey;
             border-right: 1px solid grey;
-            padding: 0px .5vw;
-            margin-bottom: .2vw;
+            // border: 1px solid grey;
+            padding: 0px .85vw;
+            margin-bottom: 1px;
         }
-        > div > span + span {
-            margin-left: -1px;
+        > div > span {
+            margin-right: -1px;
         }
     }
     
@@ -104,16 +108,13 @@ const PastProject = styled.div`
         font-size: 21px;
         margin: 0 0 5px;
     }
-    // h3 {
-    //     font-size: 16px;
-    // }
+
     h4 {
         font-size: 14px;
         font-weight: 100;
     }
     p {
         margin: 10px auto;
-        // font-style: italic;
         font-size: 14px;
     }
     ul, span {
@@ -124,9 +125,9 @@ const PastProject = styled.div`
         padding-inline-start: 12px;
     }
     @media screen and (max-width: 640px) {
-        width: 50%;
+        width: 100%;
         margin: 0 0%;
-        section {
+        > section {
             text-align: left;
             &:first-of-type {
                 height: 30vw;
@@ -134,24 +135,21 @@ const PastProject = styled.div`
             &:last-of-type {
                 margin-bottom: 40px;
             }
+            > div {
+                margin-top: 5px;
+            }
         }
         h2 {
             font-size: 4.6vw;
+            margin: 0;
         }
         h4 {
-            padding-top: 1vw;
-        }
-        h4, p {
-            font-size: 3.6vw;
+            margin-bottom: .1vw;
             letter-spacing: .1vw;
         }
-        ul {
+        p, ul {
             display: none;
         }
-        h4, p {
-            letter-spacing: .1vw;
-        }
-
     }
 `;
 
