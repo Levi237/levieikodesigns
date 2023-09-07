@@ -8,8 +8,8 @@ import React, { useEffect, useRef } from 'react';
 import styled                                 from 'styled-components';
 
 const ProjectCard = ({ project }) => {
-    let mobile = project.image.replace('/', '/mobile/');
-    let desktop = project.image.replace('/', '/desktop/');
+    // let mobile = project.image.replace('/', '/mobile/');
+    // let desktop = project.image.replace('/', '/desktop/');
 
 // Add intersection observer to the section 
     const ref = useRef();
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
     return(
         <Wrapper ref={ref} className={`hide-unobserved`}>
             <MobileImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                <img className="mobile-block" src={`./${mobile}`} alt={project.name}/>
+                <img className="mobile-block" src={`./mobile/${project.iamge}`} alt={project.name}/>
             </MobileImg>
             <section>
             {/* {project.image2 && <img className="mobile-block mobile-second-image" src={project.image2} alt={project.name}/>} */}
@@ -50,7 +50,7 @@ const ProjectCard = ({ project }) => {
                 <br/>
             </section>
             <DesktopImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                <img className="desktop-block" src={`./${desktop}`} alt={project.name}/>
+                <img className="desktop-block" src={`./desktop/${project.image}`} alt={project.name}/>
                 {project.image2 && <img className="image-2" src={project.image2} alt={project.name}/>}
             </DesktopImg>
             <hr/>

@@ -16,100 +16,62 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
 // vector based off 0vw
 // Allow for option of links and other data
     const imageList = [{
-            alt: `Red5`,
-            active: true,
-            link: `https://red5performance.com`,    
-            img: `red5performance.jpg`,
+            name: `Red5`,
+            image: `red5performance.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://momomuscle.com`,
-            img: `momomuscle-meta.jpg`,
+            name: ``,
+            image: `momomuscle-meta.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://nexushousing.org`,
-            img: `nexushousing.jpg`,
+            name: ``,
+            image: `nexushousing.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://coveredperfectly.com`,
-            img: `coveredperfectly.jpg`,
+            name: ``,
+            image: `coveredperfectly.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://scaredbutalive.com`,
-            img: `scaredbutalive.jpg`,
+            name: ``,
+            image: `scaredbutalive.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://divinityray.com`,
-            img: `divinity-ray.jpg`,
+            name: ``,
+            image: `divinity-ray.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://metatranshormone.com`,
-            img: `metamorphosis.jpg`,
+            name: ``,
+            image: `metamorphosis.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://ourhighestmantra.com`,
-            img: `ourhighestmantra.jpg`,
+            name: ``,
+            image: `ourhighestmantra.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://pranawellnessworks.com`,
-            img: `prana-wellness.jpg`,
+            name: ``,
+            image: `prana-wellness.jpg`,
         },{            
-            alt: ``,
-            active: true,
-            link: `https://levieikodesigns.com`,
-            img: `levieikodesigns.jpg`,
+            name: ``,
+            image: `levieikodesigns.jpg`,
         },{
-            alt: ``,
-            active: true,
-            link: `https://dizzywithexcitement.com`,
-            img: `dizzywithexcitement.jpg`,
+            name: ``,
+            image: `dizzywithexcitement.jpg`,
         },{
-            alt: ``,
-            active: false,
-            link: `https://sathiroy.com`,
-            img: `sathiroy.jpg`,
+            name: ``,
+            image: `sathiroy.jpg`,
         },{
-            alt: `Baddie by Divinity`,
-            active: false,
-            link: ``,
-            img: `baddie-by-divinity.jpg`,
+            name: `Baddie by Divinity`,
+            image: `baddie-by-divinity.jpg`,
         },{
-            alt: `Bravo Built Fit`,
-            active: false,
-            link: ``,
-            img: `bravo-built.jpg`,
+            name: `Bravo Built Fit`,
+            image: `bravo-built.jpg`,
         },{
-            alt: `Andrea Sells Maui`,
-            active: false,
-            link: ``,
-            img: `andreasellsmaui2.jpg`,
+            name: `Andrea Sells Maui`,
+            image: `andreasellsmaui2.jpg`,
         },{
-            alt: `Fit Plan`,
-            active: false,
-            link: ``,
-            img: `fitplan-giftcard.jpg`,
+            name: `Fit Plan`,
+            image: `fitplan-giftcard.jpg`,
         },{
-            alt: `IT Afterhours`,
-            active: false,
-            link: ``,
-            img: `it-afterhours.jpg`,
+            name: `IT Afterhours`,
+            image: `it-afterhours.jpg`,
         },{
-            alt: `Heatseeker Sauce`,
-            active: false,
-            link: ``,
-            img: `heatseeker.jpg`,
+            name: `Heatseeker Sauce`,
+            image: `heatseeker.jpg`,
         },{
-            alt: `La Madre is Watching`,
-            active: false,
-            link: ``,
-            img: `lamadreiswatching-ongina.jpg`,
+            name: `La Madre is Watching`,
+            image: `lamadreiswatching-ongina.jpg`,
     }];
   
     const _id = id ? id : '__NEED_ID__';
@@ -123,14 +85,14 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
     const mapList = _list.map((img, k) => {
         return(
             <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
-                { imageList.active 
-                ? <a href={img.link} target="_blank" rel="noreferrer">
-                    <img className="mobile-block" src={`./mobile/${img.img}`} alt={img.alt}/>
-                    <img className="desktop-block" src={`./desktop/${img.img}`} alt={img.alt}/>
+                { img.active_site && img.active_project
+                ? <a href={`https://${img.link}`} target="_blank" rel="noreferrer">
+                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
+                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
                   </a>
                 : <>
-                    <img className="mobile-block" src={`./mobile/${img.img}`} alt={img.alt}/>
-                    <img className="desktop-block" src={`./desktop/${img.img}`} alt={img.alt}/>
+                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
+                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
                   </>
                 }
             </Image>

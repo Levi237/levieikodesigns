@@ -15,7 +15,7 @@ import WebsitePreview       from '../components/sections/WebsitePreview';
 import Footer               from '../components/Footer';
 
 import { ReactComponent as LogoSVG } from '../svg/brand/logo.svg';
-const HomePage = ({ pageStyle, btnScroll }) => {
+const HomePage = ({ pageStyle, projects, btnScroll }) => {
   return(
     <div>
 
@@ -41,7 +41,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
         <Definition />
         {/* <Gallery id='bottom-home' width="20" height="10" gap="2" /> */}
         <Skills />
-        <Gallery id='top-home' width="24" height="13" gap="2" seconds="6"/>
+        <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/>
         <MobileFirstBanner />
         <EmailMarketing />
         <WebsitePreview />

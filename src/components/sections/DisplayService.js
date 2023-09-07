@@ -32,8 +32,8 @@ const DisplayService = ({ service }) => {
     let mobile = item.replace('/', '/mobile/');
     return( 
       <div key={k}>
-        <img className="desktop-block" src={`../${desktop}`} alt="collage one"/>
-        <img className="mobile-block" src={`../${mobile}`} alt="collage one"/>
+        <img className="desktop-block" src={`../desktop/${desktop}`} alt="collage one"/>
+        <img className="mobile-block" src={`../mobile/${mobile}`} alt="collage one"/>
       </div>
     )
   });
