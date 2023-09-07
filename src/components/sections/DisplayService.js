@@ -29,26 +29,27 @@ const DisplayService = ({ service }) => {
     return <div key={k}><img src={`../${item}`} alt="collage one"/></div>
   });
   return(
-    <GraphicsBanner ref={ref} className={`${service.position.text} hide-unobserved`}>
-      <div className="ttl"><h1>{service.title}</h1></div>
-        <div className="txt">
-          <h2>{service.subtitle}</h2>
-          <span>{service.subtext}</span>
-          <p>{service.paragraph}</p>
-          <br/>
-          <h4>{service.listName}</h4>
-          <br/>
-          <Checklist className="checklist">
-            { mapChecklist }
-          </Checklist>
-        </div>
-        <div className="collage">
-          { mapCollage }
-        </div>
-
-      </GraphicsBanner>
-    );
-  };
+    <DesiplaySection ref={ref} className={`${service.position.text} hide-unobserved`}>
+      <div className="ttl">
+        <h1>{service.title}</h1>
+      </div>
+      <div className="txt">
+        <h2>{service.subtitle}</h2>
+        <span>{service.subtext}</span>
+        <p>{service.paragraph}</p>
+        <br/>
+        <h4>{service.listName}</h4>
+        <br/>
+        <Checklist className="checklist">
+          { mapChecklist }
+        </Checklist>
+      </div>
+      <div className="collage">
+        { mapCollage }
+      </div>
+    </DesiplaySection>
+  );
+};
 
 const Checklist = styled.div`
   > section {
@@ -68,16 +69,60 @@ const Checklist = styled.div`
     }
   }
 `;
-const GraphicsBanner = styled.div`
-// animation for interestionObserver class.remove('hide-unobserved')
+const DesiplaySection = styled.section`
+
+//==> animation for interestionObserver class.remove('hide-unobserved')
   opacity: 1;
   margin-top: 0;
   transition: 2s ease;
+  .collage > div {
+    opacity: 1;
+  }
+  .txt {
+    width: 90%;
+    padding: 0 5%;
+    margin-left: 0%;
+    opacity: 1;
+  }
   &.hide-unobserved {
     opacity: 0!important;
-    margin-top: 20px!important;
     transition: 1s ease;
-}
+    .collage > div {
+      opacity: 0;
+    }
+    .txt {
+      opacity: 0;
+      margin-left: -15%;
+    }
+  }
+  //==> Animate in timing for both desktop and mobile
+  .collage > div:first-of-type {
+    transition: opacity 1.5s ease-in .5s;
+  }
+  .collage > div:nth-of-type(2) {
+    transition: opacity 1.5s ease-in 1s;
+  }
+  .collage > div:nth-of-type(3) {
+    transition: opacity 1.5s ease-in 1.5s;
+  }
+  .txt {
+    transition: margin 1.5s ease-out 0s, opacity 1s ease-in .75s;
+  }
+  @media screen and (max-width: 749px) {
+    .collage > div:first-of-type {
+      transition: opacity 1.5s ease-in .5s;
+    }
+    .collage > div:nth-of-type(2) {
+      transition: opacity 1.5s ease-in 1s;
+    }
+    .collage > div:nth-of-type(3) {
+      transition: opacity 1.5s ease-in 1.5s;
+    }
+    .txt {
+      transition: margin 1s ease-in 1.5s, opacity .75s ease-in 2s;
+    }
+  }
+
 
 //*************** STYLE
   color: #fff;
