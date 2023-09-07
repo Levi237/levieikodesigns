@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
     return(
         <Wrapper ref={ref} className={`hide-unobserved`}>
             <MobileImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                <img className="mobile-block" src={`./mobile/${project.iamge}`} alt={project.name}/>
+                <img className="mobile-block" src={`./mobile/${project.image}`} alt={project.name}/>
             </MobileImg>
             <section>
             {/* {project.image2 && <img className="mobile-block mobile-second-image" src={project.image2} alt={project.name}/>} */}
@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
             </section>
             <DesktopImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
                 <img className="desktop-block" src={`./desktop/${project.image}`} alt={project.name}/>
-                {project.image2 && <img className="image-2" src={project.image2} alt={project.name}/>}
+                {project.image2 && <img className="image-2" src={`./desktop/${project.image2}`} alt={project.name}/>}
             </DesktopImg>
             <hr/>
         </Wrapper>
@@ -186,6 +186,7 @@ const DesktopImg = styled.a`
     .image-2 {
         position: absolute;
         left: 0;
+        top: 0;
         opacity: 0;
         transition: .3s ease;
     }

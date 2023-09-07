@@ -9,8 +9,8 @@ import styled                                 from 'styled-components';
 
 const InactiveProjectCard = ({ project }) => {
     // Add intersection observer to the section 
-    let mobile = project.image.replace('/', '/mobile/');
-    let desktop = project.image.replace('/', '/desktop/');
+    // let mobile = project.image.replace('/', '/mobile/');
+    // let desktop = project.image.replace('/', '/desktop/');
 
     const ref = useRef();
     // const [refState, setRefState] = useState();
@@ -39,8 +39,8 @@ const InactiveProjectCard = ({ project }) => {
     return(
         <PastProjectCard ref={ref} className={`hide-unobserved`}>
             <section>
-                <img className="mobile-block" src={`../${mobile}`} alt={project.name}/>
-                <img className="desktop-block" src={`../${desktop}`} alt={project.name}/>
+                <img className="mobile-block" src={`../mobile/${project.image}`} alt={project.name}/>
+                <img className="desktop-block" src={`../desktop/${project.image}`} alt={project.name}/>
             </section>
             <section>
                 <h2>{project.name}</h2>
