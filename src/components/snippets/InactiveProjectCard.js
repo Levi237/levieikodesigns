@@ -3,7 +3,8 @@
 // pass project instead, must map in parent.
 // goak: when scroll into view, intersectionObserver triggers for each section
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
+// import React, { useEffect, useRef, useState } from 'react';
 import styled                                 from 'styled-components';
 
 const InactiveProjectCard = ({ project }) => {
@@ -12,16 +13,16 @@ const InactiveProjectCard = ({ project }) => {
     let desktop = project.image.replace('/', '/desktop/');
 
     const ref = useRef();
-    const [refState, setRefState] = useState();
-    console.log("refState", refState);
+    // const [refState, setRefState] = useState();
+    // console.log("refState", refState);
     useEffect(() => {
         // console.log('ref', ref.current);
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            setRefState(entry.isIntersecting);
+            // setRefState(entry.isIntersecting);
             if (entry.isIntersecting){
                 entry.target.classList.remove('hide-unobserved');
-                console.log('interested', entry.target);
+                // console.log('interested', entry.target);
                 observer.disconnect();
             }
         });

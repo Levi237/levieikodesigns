@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
+// import React, { useEffect, useRef, useState } from 'react';
 import styled                                 from 'styled-components';
 
 
@@ -6,21 +7,21 @@ const DisplayService = ({ service }) => {
   // Add intersection observer to the section 
   // css style changes for animations must be added locally
   const ref = useRef();
-  const [refState, setRefState] = useState();
-  console.log("refState", refState);
+  // const [refState, setRefState] = useState();
+  // console.log("refState", refState);
   useEffect(() => {
-      console.log('ref', ref.current);
-      const observer = new IntersectionObserver((entries) => {
-          const entry = entries[0];
-          setRefState(entry.isIntersecting);
-          if (entry.isIntersecting){
-            entry.target.classList.remove('hide-unobserved');
-            console.log('interested', entry.target);
-            observer.disconnect();
-          }
-          console.log('entry', entry.target.className);
-      });
-      observer.observe(ref.current);
+    console.log('ref', ref.current);
+    const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        // setRefState(entry.isIntersecting);
+        if (entry.isIntersecting){
+          entry.target.classList.remove('hide-unobserved');
+          console.log('interested', entry.target);
+          observer.disconnect();
+        }
+        // console.log('entry', entry.target.className);
+    });
+    observer.observe(ref.current);
   }, []);
 
   const mapChecklist = service.checklist.map((item, k) => {
@@ -36,6 +37,7 @@ const DisplayService = ({ service }) => {
       </div>
     )
   });
+
   return(
     <DesiplaySection ref={ref} className={`${service.position.text} hide-unobserved`}>
       <div className="ttl">
