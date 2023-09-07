@@ -386,7 +386,7 @@ export default class App extends Component {
                 </>}/>
               <Route path={routes.PORT} exact element={<>
                 <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="white"/>
-                <PortfolioPage/>
+                <PortfolioPage projects={projects}/>
                 </>}/>
               <Route path={routes.INFO} exact element={<>
                 <NavBar btnHamburger={this.btnHamburger} toggleMenu={this.toggleMenu} designStyle="info"/>
