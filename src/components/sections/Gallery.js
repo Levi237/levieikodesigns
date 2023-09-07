@@ -19,97 +19,97 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
             alt: `Red5`,
             active: true,
             link: `https://red5performance.com`,    
-            img: `./projects/red5performance.jpg`,
+            img: `red5performance.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://momomuscle.com`,
-            img: `./projects/momomuscle-meta.jpg`,
+            img: `momomuscle-meta.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://nexushousing.org`,
-            img: `./projects/nexushousing.jpg`,
+            img: `nexushousing.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://coveredperfectly.com`,
-            img: `./projects/coveredperfectly.jpg`,
+            img: `coveredperfectly.jpg`,
         },{            
             alt: ``,
             active: true,
-            link: `https://.com`,
-            img: `./projects/scaredbutalive.jpg`,
+            link: `https://scaredbutalive.com`,
+            img: `scaredbutalive.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://divinityray.com`,
-            img: `./projects/divinity-ray.jpg`,
+            img: `divinity-ray.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://metatranshormone.com`,
-            img: `./projects/metamorphosis.jpg`,
+            img: `metamorphosis.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://ourhighestmantra.com`,
-            img: `./projects/ourhighestmantra.jpg`,
+            img: `ourhighestmantra.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://pranawellnessworks.com`,
-            img: `./projects/prana-wellness.jpg`,
+            img: `prana-wellness.jpg`,
         },{            
             alt: ``,
             active: true,
             link: `https://levieikodesigns.com`,
-            img: `./projects/levieikodesigns.jpg`,
+            img: `levieikodesigns.jpg`,
         },{
             alt: ``,
             active: true,
             link: `https://dizzywithexcitement.com`,
-            img: `./projects/dizzywithexcitement.jpg`,
+            img: `dizzywithexcitement.jpg`,
         },{
             alt: ``,
             active: false,
             link: `https://sathiroy.com`,
-            img: `./projects/sathiroy.jpg`,
+            img: `sathiroy.jpg`,
         },{
             alt: `Baddie by Divinity`,
             active: false,
             link: ``,
-            img: `./projects/baddie-by-divinity.jpg`,
+            img: `baddie-by-divinity.jpg`,
         },{
             alt: `Bravo Built Fit`,
             active: false,
             link: ``,
-            img: `./projects/bravo-built.jpg`,
+            img: `bravo-built.jpg`,
         },{
             alt: `Andrea Sells Maui`,
             active: false,
             link: ``,
-            img: `./projects/andreasellsmaui2.jpg`,
+            img: `andreasellsmaui2.jpg`,
         },{
             alt: `Fit Plan`,
             active: false,
             link: ``,
-            img: `./projects/fitplan-giftcard.jpg`,
+            img: `fitplan-giftcard.jpg`,
         },{
             alt: `IT Afterhours`,
             active: false,
             link: ``,
-            img: `./projects/it-afterhours.jpg`,
+            img: `it-afterhours.jpg`,
         },{
             alt: `Heatseeker Sauce`,
             active: false,
             link: ``,
-            img: `./projects/heatseeker.jpg`,
+            img: `heatseeker.jpg`,
         },{
             alt: `La Madre is Watching`,
             active: false,
             link: ``,
-            img: `./projects/lamadreiswatching-ongina.jpg`,
+            img: `lamadreiswatching-ongina.jpg`,
     }];
   
     const _id = id ? id : '__NEED_ID__';
@@ -125,9 +125,13 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
             <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
                 { imageList.active 
                 ? <a href={img.link} target="_blank" rel="noreferrer">
-                    <img src={img.img} alt={img.alt}/>
+                    <img className="mobile-block" src={`./mobile/${img.img}`} alt={img.alt}/>
+                    <img className="desktop-block" src={`./desktop/${img.img}`} alt={img.alt}/>
                   </a>
-                : <img src={img.img} alt={img.alt}/>
+                : <>
+                    <img className="mobile-block" src={`./mobile/${img.img}`} alt={img.alt}/>
+                    <img className="desktop-block" src={`./desktop/${img.img}`} alt={img.alt}/>
+                  </>
                 }
             </Image>
         );
