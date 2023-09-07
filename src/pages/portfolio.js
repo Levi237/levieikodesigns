@@ -4,8 +4,8 @@ import styled               from 'styled-components';
 import AnimateText          from '../components/snippets/AnimateText';
 
 // import Skills               from './Skills';
-import Projects             from '../components/sections/Projects';
-import PastProjects         from '../components/sections/InactiveProjects';
+import Projects             from '../components/sections/projects/Projects';
+import PastProjects         from '../components/sections/inactive-projects/InactiveProjects';
 import Footer               from '../components/Footer';
 
 
