@@ -4,6 +4,7 @@ import styled                                 from 'styled-components';
 
 const DisplayService = ({ service }) => {
   // Add intersection observer to the section 
+  // css style changes for animations must be added locally
   const ref = useRef();
   const [refState, setRefState] = useState();
   console.log("refState", refState);
