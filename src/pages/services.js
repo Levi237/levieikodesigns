@@ -23,9 +23,9 @@ export default class ServicesPage extends Component {
           `Bypass the spam, get into the Inbox`,
         ],
         collage: [
-          `projects/coveredperfectly_3.jpg`, 
-          `projects/baddie-by-divinity_2.jpg`,
-          `projects/bravo-built_3.jpg`,
+          `coveredperfectly_3.jpg`, 
+          `baddie-by-divinity_2.jpg`,
+          `bravo-built_3.jpg`,
         ],
         position: {
           text: `right bottom`
@@ -44,9 +44,9 @@ export default class ServicesPage extends Component {
           `Logos & brand identity development`,
         ],
         collage: [
-          `services/red5-collection.png`,
-          `services/bravo-video.png`, 
-          `services/divinity-youtube.png`,
+          `red5-collection.png`,
+          `bravo-video.png`, 
+          `divinity-youtube.png`,
         ],
         position: {
           text: `left bottom`
@@ -65,9 +65,9 @@ export default class ServicesPage extends Component {
           `Install, integrate and personalize third party apps`,
         ],
         collage: [
-          `services/custom-red5-section.jpg`, 
-          `services/custom-red5-file.jpg`, 
-          `services/custom-nexus-section.jpg`, 
+          `custom-red5-section.jpg`, 
+          `custom-red5-file.jpg`, 
+          `custom-nexus-section.jpg`, 
         ],
         position: {
           text: `right bottom`,
@@ -86,9 +86,9 @@ export default class ServicesPage extends Component {
           `Create marketing strategies to capture leads & drive sales`,
         ],
         collage: [
-          `services/divinity-home.png`, 
-          `services/metamorphosis-banner.png`,
-          `services/momo-quiz.png`,
+          `divinity-home.png`, 
+          `metamorphosis-banner.png`,
+          `momo-quiz.png`,
         ],
         position: {
           text: `left bottom`,
