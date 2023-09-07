@@ -3,12 +3,13 @@ import styled               from 'styled-components';
 import { NavLink }          from 'react-router-dom';
 import * as routes          from '../constants/routes';
 
-// import FeaturedBanner       from '../sections/FeaturedBanner';
 import Definition           from '../components/sections/Definition';
 import EmailMarketing       from '../components/sections/EmailMarketing';
+// import FeaturedBanner       from '../sections/FeaturedBanner';
 import Gallery              from '../components/sections/Gallery';
 import MobileFirstBanner    from '../components/sections/MobileFirstBanner';
 import Skills               from '../components/sections/Skills';
+// import WebsiteInfo          from '../components/sections/WebsiteInfo';
 import WebsitePreview       from '../components/sections/WebsitePreview';
 
 import Footer               from '../components/Footer';
@@ -36,6 +37,7 @@ const HomePage = ({ pageStyle, btnScroll }) => {
 
       <HomeBodyWrapper>  
         {/* <FeaturedBanner/> */}
+        {/* <WebsiteInfo /> */}
         <Definition />
         {/* <Gallery id='bottom-home' width="20" height="10" gap="2" /> */}
         <Skills />

@@ -27,7 +27,14 @@ const DisplayService = ({ service }) => {
     return <section key={k}><div>✔</div><div>{ item }</div></section>
   });
   const mapCollage = service.collage.map((item, k) => {
-    return <div key={k}><img src={`../${item}`} alt="collage one"/></div>
+    let desktop = item.replace('/', '/desktop/');
+    let mobile = item.replace('/', '/mobile/');
+    return( 
+      <div key={k}>
+        <img className="desktop-block" src={`../${desktop}`} alt="collage one"/>
+        <img className="mobile-block" src={`../${mobile}`} alt="collage one"/>
+      </div>
+    )
   });
   return(
     <DesiplaySection ref={ref} className={`${service.position.text} hide-unobserved`}>
@@ -155,6 +162,7 @@ const DesiplaySection = styled.section`
 
   .ttl {
     grid-area: title;
+    font-size: 24px;
   }
   .txt {
     grid-area: text;

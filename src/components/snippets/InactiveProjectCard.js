@@ -7,7 +7,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled                                 from 'styled-components';
 
 const InactiveProjectCard = ({ project }) => {
-// Add intersection observer to the section 
+    // Add intersection observer to the section 
+    let mobile = project.image.replace('/', '/mobile/');
+    let desktop = project.image.replace('/', '/desktop/');
+
     const ref = useRef();
     const [refState, setRefState] = useState();
     console.log("refState", refState);
@@ -31,10 +34,12 @@ const InactiveProjectCard = ({ project }) => {
     const tasksList = project.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
+
     return(
         <PastProjectCard ref={ref} className={`hide-unobserved`}>
             <section>
-                <img src={project.image} alt={project.name}/>
+                <img className="mobile-block" src={`../${mobile}`} alt={project.name}/>
+                <img className="desktop-block" src={`../${desktop}`} alt={project.name}/>
             </section>
             <section>
                 <h2>{project.name}</h2>
