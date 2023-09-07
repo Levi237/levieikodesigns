@@ -220,10 +220,6 @@ const DesiplaySection = styled.section`
     }
 
   }
-
-  @media screen and (max-width: 749px) {
-
-  }
 `;
 
 export default DisplayService;
