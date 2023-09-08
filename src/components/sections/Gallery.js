@@ -195,6 +195,10 @@ const Image = styled.div`
 
 const LocalWrapper = styled.div`
     width: 100%;
+    .gallery-container {
+        width: 100vw;
+        overflow: hidden;
+    }
 `;
 
 export default Gallery;
