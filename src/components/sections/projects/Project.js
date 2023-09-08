@@ -8,10 +8,8 @@ import React, { useEffect, useRef } from 'react';
 import styled                       from 'styled-components';
 
 const ProjectCard = ({ project }) => {
-    // let mobile = project.image.replace('/', '/mobile/');
-    // let desktop = project.image.replace('/', '/desktop/');
-
-// Add intersection observer to the section 
+    // Add intersection observer to the section 
+    // Map in parent to create scroll into view effect
     const ref = useRef();
     // const [refState, setRefState] = useState();
     // console.log("refState", refState);

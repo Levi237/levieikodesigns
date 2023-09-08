@@ -9,20 +9,13 @@ import styled                                 from 'styled-components';
 
 const InactiveProjectCard = ({ project }) => {
     // Add intersection observer to the section 
-    // let mobile = project.image.replace('/', '/mobile/');
-    // let desktop = project.image.replace('/', '/desktop/');
-
+    // Map in parent to create scroll into view effect
     const ref = useRef();
-    // const [refState, setRefState] = useState();
-    // console.log("refState", refState);
     useEffect(() => {
-        // console.log('ref', ref.current);
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            // setRefState(entry.isIntersecting);
             if (entry.isIntersecting){
                 entry.target.classList.remove('hide-unobserved');
-                // console.log('interested', entry.target);
                 observer.disconnect();
             }
         });
