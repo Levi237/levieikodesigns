@@ -10,20 +10,17 @@ import styled                       from 'styled-components';
 const ProjectCard = ({ project }) => {
     // Add intersection observer to the section 
     // Map in parent to create scroll into view effect
+    // Save state example for future components
     const ref = useRef();
     // const [refState, setRefState] = useState();
-    // console.log("refState", refState);
     useEffect(() => {
-        // console.log('ref', ref.current);
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             // setRefState(entry.isIntersecting);
             if (entry.isIntersecting){
                 entry.target.classList.remove('hide-unobserved');
-                // console.log('interested', entry.target);
                 observer.disconnect();
             }
-            // console.log('entry', entry.target.className);
         });
         observer.observe(ref.current);
     }, []);
@@ -31,14 +28,12 @@ const ProjectCard = ({ project }) => {
     const tasksList = project.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
-    // console.log('project', project);
     return(
         <Wrapper ref={ref} className={`hide-unobserved`}>
             <MobileImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
                 <img className="mobile-block" src={`./mobile/${project.image}`} alt={project.name}/>
             </MobileImg>
             <section>
-            {/* {project.image2 && <img className="mobile-block mobile-second-image" src={project.image2} alt={project.name}/>} */}
                 <h2>{project.name}</h2>
                 <a href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
                     {project.link}
