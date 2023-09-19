@@ -11,6 +11,7 @@ const Skills = () => {
     `VanillaJS`,
     `HTML`,
     `CSS`,
+    `PHP`,
     `NodeJs`,
     `Firebase`,
     `GitHub`,
