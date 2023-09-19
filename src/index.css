@@ -76,6 +76,10 @@ h1, h2 {
 a, h1, h2, h3, h4, h5, p, li {
   letter-spacing: .055rem;
 }
+/* + ✚ ＋ ﹢ */
+ul { 
+  list-style-type: '﹢  ';
+}
 /* Desktop vs Mobile toggle */
 .mobile-block, .mobile-inline {
   display: none!important;

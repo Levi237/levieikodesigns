@@ -28,7 +28,14 @@ const InactiveProjectCard = ({ project }) => {
     const tasksList = project.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
-
+    const workList = project.work.map((r, k) => {
+        return ( 
+            <section className="work-type" key={k}>
+                {k > 0 && '﹢ '}
+                {r}&nbsp;
+            </section>
+        )
+    });
     return(
         <PastProjectCard ref={ref} className={`hide-unobserved`}>
             <section>
@@ -37,10 +44,11 @@ const InactiveProjectCard = ({ project }) => {
             </section>
             <section>
                 <h2>{project.name}</h2>
-                <small>{project.startDate} - {project.endDate}</small>
                 <h4>{project.link}</h4>
+                <small>{project.startDate} - {project.endDate}</small>
                 <p>“{project.statement}”</p>
-                <ul>{tasksList}</ul>
+                <ul className="desktop">{tasksList}</ul>
+                <div className="mobile work-type">{workList}<section>&nbsp;<span>website</span></section></div>
                 <div>{technologiesList}</div>
             </section>
         </PastProjectCard>
@@ -60,8 +68,17 @@ const PastProjectCard = styled.div`
         margin-top: 20px!important;
         transition: 1s ease;
     }
-
     
+    .work-type {
+        section {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: capitalize;
+            font-weight: 300;
+        }
+    }
+
     > section {
         text-align: left;
         &:first-of-type {
@@ -121,7 +138,10 @@ const PastProjectCard = styled.div`
     }
     ul {
         margin: 10px auto!important;
-        padding-inline-start: 12px;
+        padding-inline-start: 18px;
+    }
+    .mobile {
+        display: none;
     }
     @media screen and (max-width: 640px) {
         width: 100%;
@@ -147,8 +167,11 @@ const PastProjectCard = styled.div`
             margin: .1vw 0;
             letter-spacing: .1vw;
         }
-        p, ul {
+        p, ul.desktop {
             display: none;
+        }
+        .mobile {
+            display: block;
         }
     }
 `;

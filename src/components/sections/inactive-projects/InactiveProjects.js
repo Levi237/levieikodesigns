@@ -1,12 +1,12 @@
 import React  from 'react';
 import styled from 'styled-components';
 
-import InactiveProjectCard from './InactiveProject';
+import InactiveProject from './InactiveProject';
 
 const PastProjects = ({ projects }) => {
     const pastProjects = projects.filter(project => project.active_project === false);
     const mapPastProjects = pastProjects.map((project, key) => {
-        return( <InactiveProjectCard project={project} key={key}/> )
+        return( <InactiveProject project={project} key={key}/> )
     });
     return(
         <Container>
