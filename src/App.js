@@ -29,6 +29,32 @@ import { ReactComponent as Mail }     from './svg/icons/iconfinder_mail.svg';
 export default class App extends Component {
   state = {
     projects: [{
+  //     name: ``,
+  //     active_site: true,
+  //     active_project: true,
+  //     startDate: 2023,
+  //     endDate: null,
+  //     image: `.jpg`,
+  //     image2: `.jpg`,
+  //     link: `.com`,
+  //     type: [`build, contract, remodel, update, upgrade, maintain`],
+  //     statement: ``,
+  //     tasks: [`Shopify store`, `MailChimp campaigns`, `Photoshop, graphics design`, `Digital product design & development`, `Marketing strategic planning`],
+  //     technologies: [`Shopify`, `Liquid`, `MailChimp`, `Photoshop`, `FIGMA`]
+  // },{
+      name: `Flawed™️`,
+      active_site: true,
+      active_project: true,
+      startDate: 2023,
+      endDate: null,
+      image: `flawed.jpg`,
+      image2: `flawed_2.jpg`,
+      link: `dateflawed.com`,
+      statement: `Flawed™ is the first dating app where you can find what you want by eliminating what you don’t.`,
+      work: [`remodel, upgrade`],
+      tasks: [`WordPress website remodel`, `Update match-making quiz`],
+      technologies: [`WordPress`, `PHP`,  `DateBook`]
+  },{
       name: `Red5 Performance`,
       active_site: true,
       active_project: true,
@@ -38,8 +64,9 @@ export default class App extends Component {
       image2: `red5performance_2.jpg`,
       link: `red5performance.com`,
       statement: `THE EQUATION IS SIMPLE: PHYSICS + DISCIPLINE + RED5 = HAPPIER, HEALTHIER, STRONGER YOU`,
+      work: [`build`, `maintain`],
       tasks: [`Shopify store`, `MailChimp campaigns`, `Photoshop, graphics design`, `Digital product design & development`, `Marketing strategic planning`],
-      technologies: [`Shopify`, `Liquids`, `MailChimp`, `Photoshop`, `FIGMA`]
+      technologies: [`Shopify`, `Liquid`, `MailChimp`, `Photoshop`, `FIGMA`]
   },{
       name: `Momo[Muscle]`,
       active_site: true,
@@ -49,8 +76,9 @@ export default class App extends Component {
       image: `momomuscle-meta.jpg`,
       image2: `momomuscle-meta_2.jpg`,
       link: `momomuscle.com`,
-      statement: `Basically, I design tools to teach women & AFAB babes to see sustainable results in less time. I want you to feel more like yourself & fitness is the catalyst.`,
-      tasks: [`Shopify store`, `Custom quiz w/ data capture`, `User friendly editable template`, `Graphic design & Photoshop`],
+      statement: `Basically, I design tools to teach women & AFAB babes to see sustainable results in less time.`,
+      work: [`build`, `update`],
+      tasks: [`Shopify store`, `Custom quiz w/ Klaviyo data capture`, `User friendly editable template`, `Graphic design & Photoshop`],
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`, `Klaviyo`]
   },{
       name: `Nexus Housing`,
@@ -62,6 +90,7 @@ export default class App extends Component {
       image2: `nexushousing_2.jpg`,
       link: `nexushousing.com`,
       statement: `Sustainable modular housing.`,
+      work: [`build`, `update`],
       tasks: [`Shopify website`, `Custom editable Liquid sections`],
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
   },{
@@ -74,6 +103,7 @@ export default class App extends Component {
       image2: `coveredperfectly_2.jpg`,
       link: `coveredperfectly.com`,
       statement: `Because looking beautiful never gets old.`,
+      work: [`remodel`, `update`],
       tasks: [`Re-design Shopify store & logo`, `MailChimp email marketing`, `Social media graphic design`],
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
   },{
@@ -86,6 +116,7 @@ export default class App extends Component {
       image2: `scaredbutalive_2.jpg`,
       link: `scaredbutalive.com`,
       statement: `Where street meets fitness. Unisex clothing with specific fit for AFAB, non-binary + women.`,
+      work: [`build`, `update`],
       tasks: [`Shopify store`, `Customized sections & blocks`, `Photoshop`],
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `Klaviyo`]
   },{
@@ -98,6 +129,7 @@ export default class App extends Component {
       image2: `divinity-ray_2.jpg`,
       link: `divinityray.com`,
       statement: `With a passion for beauty, fashion and mental health, Divinity offers a refreshing approach to the world of social media.`,
+      work: [`build`, `update`],
       tasks: [`Shopify website`, `Graphic design`, `Dropshipping integration`],
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`]
   },{
@@ -110,6 +142,7 @@ export default class App extends Component {
       image2: ``,
       link: `metatranshormone.com`,
       statement: `Our MISSION is to provide a safe, nurturing environment in which patients may access personalized therapies delivered at the highest standard of care, enabling them to heal and transform into their full potential for health and well-being.`,
+      work: [`build`],
       tasks: [`Custom single-page website`],
       technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `MailChimp`, `FIGMA`],
   },{
@@ -122,6 +155,7 @@ export default class App extends Component {
       image2: `ourhighestmantra_2.jpg`,
       link: `ourhighestmantra.com`,
       statement: `Find your higher self.`,
+      work: [`build`],
       tasks: [`Shopify landing page`, `Customized Product page`, `Integrated 3rd part App`, `Photoshop Edits to Logo`],
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
   },{
@@ -134,6 +168,7 @@ export default class App extends Component {
       image2: `prana-wellness_2.jpg`,
       link: `pranawellnessworks.com`,
       statement: `Prana is Sanskrit for breath, considered as a life-giving force.  Prana is seen as a universal energy, which flows in currents in and around the body.`,
+      work: [`build`, `update`],
       tasks: [`React/Firebase website & blog`, `MailChimp email automation`, `Photoshop`],
       technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`],
   },{
@@ -146,6 +181,7 @@ export default class App extends Component {
       image2: `levieikodesigns_2.jpg`,
       link: `levieikodesigns.com`,
       statement: `Build your new website or upgrade an existing one.`,
+      work: [`build`, `maintain`],
       tasks: [`Fully coded website`, `Built with React`, `Firebase Platform`],
       technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`]
   },{
@@ -158,6 +194,7 @@ export default class App extends Component {
       image2: `dizzywithexcitement_2.jpg`,
       link: `dizzywithexcitement.com`,
       statement: `Endless options printed on demand.`,
+      work: [`upgrades`],
       tasks: [`Create custom tools on purchaed template`,`Wallpaper size/price calculator`,`Color swatch tool in Collections`,`Color matching display on Products`],
       technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
   },{
@@ -170,6 +207,7 @@ export default class App extends Component {
       image2: `sathiroy_2.jpg`,
       link: `sathiroy.com`,
       statement: `I help people reach their highest potential every day by taking a holistic and customized approach involving their mind, body, soul, and spirit.`,
+      work: [`build`],
       tasks: [`Shopify website`, `Graphic design`, `Vector/digital graphics animations`],
       technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `FIGMA`],
   },{
@@ -182,6 +220,7 @@ export default class App extends Component {
       image2: `baddie-by-divinity_2.jpg`,
       link: `baddiebydivinity.com`,
       statement: `Baddie By Divinity is here to help us find and embrace our badassery, no matter what form it takes and no matter how we show it to the world.`,
+      work: [`build`],
       tasks: [`Custom built Shopify website`,`Graphic design & touchups`,`Email marketing & automation`],
       technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
   },{
@@ -194,6 +233,7 @@ export default class App extends Component {
       image2: `bravo-built_2.jpg`,
       link: `bravobuiltfit.com`,
       statement: `Within these programs you will find a constant changing routine that helps build a brick by brick foundation.`,
+      work: [`build`],
       tasks: [`Custom built Shopify website`, `MailChimp email automation`, `Photoshop/graphic design`, `Marketing strategic planning`, `Merch/product design`],
       technologies: [`Shopify`,`Liquid`, `JS`, `CSS`, `SVG`, `Photoshop`, `FIGMA`, `MailChimp`]
   },{
@@ -206,6 +246,7 @@ export default class App extends Component {
       image2: ``,
       link: `andreasellsmaui.com`,
       statement: `Maui real estate agent serving her local community`,
+      work: [`build`],
       tasks: [`Wordpress real estate website`, `Graphic design`, `Ad creation` ],
       technologies: [`WordPress`, `JS`, `CSS`, `Photoshop`, `FIGMA`, `IDX Broker`]
   },{          
@@ -218,6 +259,7 @@ export default class App extends Component {
       image: `fitplan-giftcard.jpg`,
       image2: ``,
       statement: `Workout with elite personal trainers.`,
+      work: [`contract`, `update`],
       tasks: [`Custom email: design & marketing`,`Web development, design & troubleshooting`,`Graphic design`],
       technologies: [`React`,`Shopify`,`Liquid`,`CSS`,`JS`,`WordPress`,`Photoshop`,`Figma`,`MailChimp`]
   },{
@@ -230,6 +272,7 @@ export default class App extends Component {
       image: `it-afterhours.jpg`,
       image2: ``,
       statement: `Professional, affordable computer service company`,
+      work: [`remodel`],
       tasks: [`Streamline WordPress & resolve bugs`,`Customize CSS code`,`Mobile friendly upgrade`],
       technologies: [`WordPress`,`CSS`,`JS`]
   },{
@@ -242,6 +285,7 @@ export default class App extends Component {
       image: `heatseeker.jpg`,
       image2: ``,
       statement: `Bold and minimal, pure and simple... That's what we do.`,
+      work: [`remodel`, `upgrade`],
       tasks: [`Re-design Shopify website`,`Streamline content & UX`, `Add wholesale accounts`],
       technologies: [`Shopify`,`Liquid`,`CSS`,`JS`,`Photoshop`,`Figma`]
   },{
@@ -254,10 +298,11 @@ export default class App extends Component {
       image2: ``,
       link: `lamadreiswatching.com`,
       statement: `Photographing the edgy side of the Los Angeles night scene.`,
+      work: [`build`, `maintain`],
       tasks: [`Build custom social media website`,`Party events shareable photo gallery`,`Graphic design`],
       technologies: [`HTML`,`CSS`,`Javascript`,`Photoshop`]
   }],
-    modalType: ``,
+    modalType: ``,   
     pageStyle: {
       home: {
         title: ``,
