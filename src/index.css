@@ -2,31 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 :root {
-  --black: rgb(0, 23, 47);
-  --blue: rgb(75, 125, 190);
-  --darkblue: rgb(0, 54, 110);
+  --lightgrey: #f0f3f9;
   --darkgrey: #424656;
-  --lightgrey: #A6ABBD;
-  --darkbrown: #483300;
-  --lightbrown: #7C6225;
-
+  --black: #09090C;
+  --blue: #577abe;
+  --darkblue: #2e4676;
+  --lightbrown: #Be9b57;
+  --brown: #493b1d;
+  --darkbrown: #3a2f17;
+/* 
   --drv-blue: rgb(85, 205, 252);
   --drv-pink: rgb(247, 168, 184);
   --drv-periwinkle: rgb(166,187,218);
   --drv-lavender: rgb(169, 170, 219);
-  --drv-black: rgb(48, 48, 48);
+  --drv-black: rgb(48, 48, 48); */
 
-/* Update color  & font roots */
-  --color-white: 255 255 255;
+  /* Update color  & font roots */
+  --color-rgb-darkgrey-new: 43, 41, 41;
+  /* --color-white: 255 255 255;
   --color-black: 0 23 47;
   --color-blue: 75 125 190;
   --color-darkblue: 0 54 110;
   --color-darkgrey: 66 70 86;
-  --color-rgb-darkgrey-new: 43, 41, 41;
   --color-grey: 58 57 57;
   --color-lightgrey: 166 171 189;
   --color-darkbrown: 72 51 0;
-  --color-lightbrown: 124 98 37;
+  --color-lightbrown: 124 98 37; */
 
   --font-fancy: 'Alegreya Sans SC', Helvetica, sans-serif;
   --font-standard: 'Alegreya Sans', Helvetica, sans-serif;
