@@ -41,6 +41,7 @@
 
   --background-color: rgb(var(--color-rgb-darkgrey-new));
 
+  --section-padding: 64px;
 }
 
 body {

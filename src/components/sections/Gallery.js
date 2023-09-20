@@ -145,7 +145,8 @@ const Window = styled.div.attrs((props) => ({
   overflow: hidden;
   height: var(--card-height);
   width: 150vw;
-  margin: 0 0 var(--card-gap);
+//   margin: var(--card-gap) 0;
+//   background-color: var(--blue);
   @media only screen and (max-width: 749px) {
     // fit width of mobile by 80%
     height: calc(var(--card-mobile-width) * var(--card-ratio));
@@ -194,8 +195,10 @@ const Image = styled.div`
 `;
 
 const LocalWrapper = styled.div`
-    width: 100%;
-    .gallery-container {
+padding: var(--section-padding) 0;
+background-color: var(--darkblue);
+.gallery-container {
+        width: 100%;
         width: 100vw;
         overflow: hidden;
     }

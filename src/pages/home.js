@@ -43,8 +43,8 @@ const HomePage = ({ pageStyle, projects, btnScroll }) => {
         <Skills />
         <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/>
         <MobileFirstBanner />
-        <EmailMarketing />
         <WebsitePreview />
+        <EmailMarketing />
         <Footer />
         {/* <div className="down-arrow-class"></div> */}
       </HomeBodyWrapper>

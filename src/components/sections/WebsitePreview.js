@@ -26,11 +26,11 @@ const WebsitePreview = () => {
       <div ref={ref}>
         <h1>SEEING THE BIG PICTURE</h1>
         <p>Start with a plan and wireframe. You'll be surprised at what we can develop!</p>
-        <b>MomoMuscle.co 2020 design</b>
         <div className="">
             <img className="desktop" src="MomoMuscle2020_Website-desktop.png" alt="Website display with Momo Muscle built 2020"/>
             <img className="mobile" src="MomoMuscle2020_Website-mobile.png" alt="Website display with Momo Muscle built 2020"/>
         </div>
+        <b>MomoMuscle.co 2020 design</b>
       </div>
     </LocalSection>
   );
@@ -38,9 +38,10 @@ const WebsitePreview = () => {
 
 const LocalSection = styled.section`
   position: relative;
-  padding-top: 40px;
+  // padding-top: 40px;
   text-align: center;
   margin: 0 auto;
+  padding: var(--section-padding) 0;
   background-color: var(--lightgrey);
   .mobile {
     display: inline-block;
@@ -59,8 +60,8 @@ const LocalSection = styled.section`
       color: var(--darkblue);
       font-size: 32px;
       margin: 0 auto!important;
-      padding-top: 40px;
-      padding-bottom: 10px;
+      // padding-top: 40px;
+      padding-bottom: 6px;
     }
     > div {
       width: 90%;
@@ -74,11 +75,14 @@ const LocalSection = styled.section`
     > p {
       text-align: center;
       max-width: 1000px;
+      margin-block-start: 0;
+      margin-block-end: 20px;
+  
       // margin: 10px 20%;
-    }    
+    }   
   }
   @media screen and (min-width: 640px) {
-    padding-top: 0;
+    // padding-top: 0;
     
     .mobile {
       display: none;

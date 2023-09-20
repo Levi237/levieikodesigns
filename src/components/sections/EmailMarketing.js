@@ -56,16 +56,16 @@ const LocalSection = styled.section`
   max-width: 100vw;
   width: 100%;
   height: auto;
-  margin-top: 40px;
-  padding-bottom: 80px;
-  padding-top: 10px;
+  // margin-top: 40px;
+  // padding-bottom: 80px;
+  padding-top: var(--section-padding);
   text-align: center;
 
   > h1 {
     font-size: 11.5vw;
     color: #fff;
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
-    margin-top: 60px!important;
+    // margin-top: 60px!important;
     margin-bottom: -5.3vw !important;
     background-color: var(--background-color);
     padding: 2px 22px;
