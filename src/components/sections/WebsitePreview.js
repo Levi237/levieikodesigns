@@ -74,7 +74,7 @@ const LocalSection = styled.section`
     > p {
       text-align: center;
       max-width: 1000px;
-      margin: 10px 20%;
+      // margin: 10px 20%;
     }    
   }
   @media screen and (min-width: 640px) {
