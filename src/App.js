@@ -20,7 +20,7 @@ import HomePage                       from './pages/home';
 import ServicesPage                   from './pages/services';
 import PortfolioPage                  from './pages/portfolio';
 import ContactPage                    from './pages/contact';
-import EmailConfirmation              from './components/sections/EmailConfirmation';
+import EmailConfirmation              from './components/sections/email/EmailConfirmation';
 // import FAQPage                        from './components/pages/faq';
 
 import { ReactComponent as Mail }     from './svg/icons/iconfinder_mail.svg';
