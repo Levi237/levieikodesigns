@@ -10,24 +10,30 @@
   --lightbrown: #Be9b57;
   --brown: #493b1d;
   --darkbrown: #3a2f17;
-/* 
-  --drv-blue: rgb(85, 205, 252);
-  --drv-pink: rgb(247, 168, 184);
-  --drv-periwinkle: rgb(166,187,218);
-  --drv-lavender: rgb(169, 170, 219);
-  --drv-black: rgb(48, 48, 48); */
+
+  --hex-lightgrey: #f0f3f9;
+  --hex-darkgrey: #424656;
+  --hex-black: #09090C;
+  --hex-blue: #577abe;
+  --hex-darkblue: #2e4676;
+  --hex-lightbrown: #Be9b57;
+  --hex-brown: #493b1d;
+  --hex-darkbrown: #3a2f17;
+
+  --hsl-lightgrey: hsl(220, 43%, 96%);
+  --hsl-darkgrey: hsl(228, 13%, 30%);
+  --hsl-black: hsl(240, 14%, 4%);
+  --hsl-blue: hsl(220, 44%, 54%);
+  --hsl-darkblue: hsl(220, 44%, 32%);
+  --hsl-lightbrown: hsl(40, 44%, 54%);
+  --hsl-brown: hsl(41, 43%, 20%);
+  --hsl-darkbrown: hsl(41, 43%, 16%);
+
+
+
 
   /* Update color  & font roots */
   --color-rgb-darkgrey-new: 43, 41, 41;
-  /* --color-white: 255 255 255;
-  --color-black: 0 23 47;
-  --color-blue: 75 125 190;
-  --color-darkblue: 0 54 110;
-  --color-darkgrey: 66 70 86;
-  --color-grey: 58 57 57;
-  --color-lightgrey: 166 171 189;
-  --color-darkbrown: 72 51 0;
-  --color-lightbrown: 124 98 37; */
 
   --font-fancy: 'Alegreya Sans SC', Helvetica, sans-serif;
   --font-standard: 'Alegreya Sans', Helvetica, sans-serif;
@@ -38,7 +44,7 @@
 }
 
 body {
-  color: var(--black);
+  color: var(--hex-black);
   margin: 0;
   font-family: var(--font-standard);
   font-weight: 300;
@@ -55,10 +61,10 @@ a {
   cursor: pointer;
   text-decoration: none;
   transition: .3s ease;
-  color: var(--blue);
+  color: var(--hex- blue);
 }
 a:hover {
-  color: var(--lightgrey);
+  color: var(--hex-lightgrey);
 }
 svg * {
   transition: .3s ease;
@@ -123,7 +129,7 @@ ul {
 }
 
 .nav-bar.blue {
-  ---color: var(--blue);
+  ---color: var(--hex-blue);
 }
 .blue:hover {
   ---color: #FFF;
@@ -133,7 +139,7 @@ ul {
   ---color: #FFF;
 }
 .white:hover {
-  ---color: var(--blue);
+  ---color: var(--hex-blue);
   }
 .nav-bar.home svg {
   display: none;
@@ -142,7 +148,7 @@ ul {
   ---color: #FFF;
 }
 .nav-bar.info > #hamburger-btn > section {
-  ---color: var(--blue);
+  ---color: var(--hex-blue);
 }
 /*==================== HAMBURGER ICON ====================*/
 .hamburger-close {
@@ -225,7 +231,7 @@ a.active {
   --padding-top: 18px;
   position: relative;
   width: 100vw;
-  background-color: var(--background-color);
+  background-color: var(--hex-background-color);
   overflow: scroll;
   padding-top: var(--padding-top);
   height: calc(100dvh - var(--padding-top))
