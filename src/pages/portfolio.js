@@ -7,7 +7,6 @@ import Projects             from '../components/sections/projects/Projects';
 import PastProjects         from '../components/sections/inactive-projects/InactiveProjects';
 import Footer               from '../components/Footer';
 
-
  const PortfolioPage = ({ projects }) => {
     return (
         <Container className="container">
