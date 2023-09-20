@@ -40,8 +40,10 @@ const HomePage = ({ pageStyle, projects, btnScroll }) => {
         {/* <WebsiteInfo /> */}
         <Definition />
         {/* <Gallery id='bottom-home' width="20" height="10" gap="2" /> */}
-        <Skills />
-        <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/>
+        <Skills projects={projects}>
+          {/* <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/> */}
+        </Skills>
+        {/* <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/> */}
         <MobileFirstBanner />
         <WebsitePreview />
         <EmailMarketing />
