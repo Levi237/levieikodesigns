@@ -41,7 +41,7 @@ const LocalSection = styled.section`
   padding-top: 40px;
   text-align: center;
   margin: 0 auto;
-  
+  background-color: var(--lightgrey);
   .mobile {
     display: inline-block;
   }
@@ -52,7 +52,7 @@ const LocalSection = styled.section`
   > div {
     width: 90%;
     color: var(--darkgrey);
-    background: #fff;
+    // background: #fff;
     max-width: 800px;
     margin: 0 auto;
     > h1 {
