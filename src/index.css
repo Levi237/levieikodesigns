@@ -5,19 +5,19 @@
   --lightgrey: #f0f3f9;
   --darkgrey: #424656;
   --black: #09090C;
-  --blue: #577abe;
-  --darkblue: #2e4676;
-  --lightbrown: #Be9b57;
-  --brown: #493b1d;
+  --blue: #4568b0;
+  --darkblue: #283d67;
+  --lightbrown: #b08d45;
+  --brown: #2c2311;
   --darkbrown: #3a2f17;
 
   --hex-lightgrey: #f0f3f9;
   --hex-darkgrey: #424656;
   --hex-black: #09090C;
-  --hex-blue: #577abe;
-  --hex-darkblue: #2e4676;
-  --hex-lightbrown: #Be9b57;
-  --hex-brown: #493b1d;
+  --hex-blue: #4568b0;
+  --hex-darkblue: #283d67;
+  --hex-lightbrown: #b08d45;
+  --hex-brown: #2c2311;
   --hex-darkbrown: #3a2f17;
 
   --hsl-lightgrey: hsl(220, 43%, 96%);
@@ -38,10 +38,14 @@
   --font-fancy: 'Alegreya Sans SC', Helvetica, sans-serif;
   --font-standard: 'Alegreya Sans', Helvetica, sans-serif;
 
+  --h1: 48px;
+  --h2: 36px;
+  --h3: 24px;
+  --p: 18px;
 
   --background-color: rgb(var(--color-rgb-darkgrey-new));
 
-  --section-padding: 64px;
+  --section-padding: 80px;
 }
 
 body {
@@ -65,6 +69,9 @@ a {
   color: var(--hex- blue);
 }
 a:hover {
+  color: var(--hex-lightbrown);
+}
+a:visited {
   color: var(--hex-lightgrey);
 }
 svg * {
@@ -78,7 +85,19 @@ h1,h2,h3,h4,h5 {
 h1, h2 {
   font-family: var(--font-fancy);
   font-weight: 300;
-  margin: 1rem auto;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+p {
+  font-size: var(--o);
 }
 
 a, h1, h2, h3, h4, h5, p, li {
@@ -119,6 +138,8 @@ ul {
   max-width: 800px;
   margin: 0 auto;
 }  
+
+
 
 /*==================== NavBar STYLE ====================*/
 .nav-bar svg {

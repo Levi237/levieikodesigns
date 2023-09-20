@@ -12,14 +12,14 @@ const MobileFirstBanner = () => {
       <section>
         <div>
           <h1>Mobile-First Web</h1>
-          <h3>So.. you actually <u>don't</u> need an app for that..</h3>
+          <h3>So.. you probably <u>don't</u> need an app for that..</h3>
           <p>
-            There are a lot of things a website can do that apps can do, but there are big perks when it comes to building a website that is mobile friendly first.
+            Make your mobile-friendly website as effective as an app without all the added hassle.
           </p>
           <ul>
             <li>Accessible to a larger audience</li>
             <li>No downloads required for user</li>
-            <li>Cheaper to start</li>
+            <li>Cheaper to start and maintain</li>
             <li>Test UX/UI before App development</li>
             <li>You'll still need a website</li>
           </ul>
@@ -35,7 +35,7 @@ const LocalSection = styled.section`
   max-width: 100vw;
   // height: 100%;
   margin: 0 auto;
-  padding-top: 20px;
+  // padding: var(--section-padding) 0;
   > div {
     position: absolute;
     width: 80vw;
@@ -119,7 +119,7 @@ const LocalSection = styled.section`
     height: 50vw;
     max-height: 500px;
     margin: 0 auto;
-    padding-top: 0;
+    // padding-top: 0;
     font-size: 0; 
     display: flex;
     align-items: center;  

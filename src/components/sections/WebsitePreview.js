@@ -24,7 +24,7 @@ const WebsitePreview = () => {
   return(
     <LocalSection className="scroll-snap-start">
       <div ref={ref}>
-        <h1>SEEING THE BIG PICTURE</h1>
+        <h2>Seeing the Big Picture</h2>
         <p>Start with a plan and wireframe. You'll be surprised at what we can develop!</p>
         <div className="">
             <img className="desktop" src="MomoMuscle2020_Website-desktop.png" alt="Website display with Momo Muscle built 2020"/>
@@ -38,11 +38,11 @@ const WebsitePreview = () => {
 
 const LocalSection = styled.section`
   position: relative;
-  // padding-top: 40px;
   text-align: center;
   margin: 0 auto;
   padding: var(--section-padding) 0;
   background-color: var(--lightgrey);
+
   .mobile {
     display: inline-block;
   }
@@ -53,14 +53,12 @@ const LocalSection = styled.section`
   > div {
     width: 90%;
     color: var(--darkgrey);
-    // background: #fff;
     max-width: 800px;
     margin: 0 auto;
     > h1 {
       color: var(--darkblue);
       font-size: 32px;
       margin: 0 auto!important;
-      // padding-top: 40px;
       padding-bottom: 6px;
     }
     > div {
@@ -77,13 +75,9 @@ const LocalSection = styled.section`
       max-width: 1000px;
       margin-block-start: 0;
       margin-block-end: 20px;
-  
-      // margin: 10px 20%;
     }   
   }
   @media screen and (min-width: 640px) {
-    // padding-top: 0;
-    
     .mobile {
       display: none;
     }
@@ -93,8 +87,8 @@ const LocalSection = styled.section`
     
     > div {
       width: 100%;
-      > h1 {
-        font-size: 38px;
+      > h2 {
+        font-size: var(--h2);
       }
       > div {
         > img {

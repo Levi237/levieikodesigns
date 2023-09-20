@@ -4,9 +4,9 @@ import styled  from 'styled-components';
 const EmailMarketing = () => {
   return(
     <LocalSection className="scroll-snap-start">
-      <h1 className="desktop-block">Email Marketing Solutions</h1>
-      <h1 className="mobile-block">Email Marketing</h1>
-      <h1 className="mobile-inline">Solutions</h1>
+      <h2 className="desktop-block">Email Marketing Solutions</h2>
+      <h2 className="mobile-block">Email Marketing</h2>
+      <h2 className="mobile-inline">Solutions</h2>
       <div>
         <section className="mobile">
         <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
@@ -56,16 +56,15 @@ const LocalSection = styled.section`
   max-width: 100vw;
   width: 100%;
   height: auto;
-  // margin-top: 40px;
-  // padding-bottom: 80px;
+
   padding-top: var(--section-padding);
   text-align: center;
 
-  > h1 {
+  > h2 {
     font-size: 11.5vw;
     color: #fff;
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
-    // margin-top: 60px!important;
+
     margin-bottom: -5.3vw !important;
     background-color: var(--background-color);
     padding: 2px 22px;
@@ -83,7 +82,7 @@ const LocalSection = styled.section`
       letter-spacing: .33vw;
       text-transform: uppercase;
       text-align: center;
-      font-size: 3.8vw;
+      font-size: 4.6vw;
       padding: 0vw 10vw 2.5vw!important;
       font-weight: 500;
       color: var(--blue);
@@ -147,8 +146,8 @@ const LocalSection = styled.section`
 
     padding-bottom: 120px;
 
-    > h1 {
-      font-size: 38px;
+    > h2 {
+      font-size: var(--h2);
       margin-bottom: -20px!important;
       &:last-of-type {
         margin-top: 12px!important;
