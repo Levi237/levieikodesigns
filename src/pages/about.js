@@ -29,7 +29,7 @@ const AboutPage = ({ slideMe }) => {
             &emsp;If you have a project you want to come{" "}
             to life, an existing page that needs upgrades,{" "}
             some graphic design or email marketing assitance I'm your person. <br/><br/>
-            <NavLink to={routes.MAIL}>Schedule your complimentary consultation today ➡</NavLink>
+            <NavLink to={routes.MAIL}>Schedule your complimentary consultation today 💬</NavLink>
           </p>
           <NavIcons/>
         </div>
