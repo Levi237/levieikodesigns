@@ -32,15 +32,17 @@ const NavContainer = styled.div`
     position: fixed;
 
     > div > a {
-        text-decoration: none;
         display: block;
         height: 44px;
         padding-top: 20px;
+
         color: #FFF;
+        font-weight: 400;
         letter-spacing: 2px;
+        text-decoration: none;
     }
     a:hover {
-        color: #29bfff!important;
+        color: var(--lightblue)!important;
     }
     div {
         padding-top: 140px;
