@@ -40,8 +40,10 @@ const LocalSection = styled.section`
   position: relative;
   text-align: center;
   margin: 0 auto;
-  padding: var(--section-padding) 0;
-  background-color: var(--lightgrey);
+  padding: var(--large-section-padding) 0 calc(var(--large-section-padding) / 2);
+  // background-color: var(--lightgrey);
+  background-image: linear-gradient(hsla(var(--hsl-lightgrey), 0.72),hsla(var(--hsl-lightgrey), 0.80)),url('glass-building.jpg');
+  background-size: cover;
 
   .mobile {
     display: inline-block;
@@ -87,9 +89,7 @@ const LocalSection = styled.section`
     
     > div {
       width: 100%;
-      > h2 {
-        font-size: var(--h2);
-      }
+      > h2 { font-size: min(var(--h2-vw), var(--h2-px)); }
       > div {
         > img {
           width: 100%;
