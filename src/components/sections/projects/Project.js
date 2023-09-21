@@ -110,7 +110,7 @@ const Wrapper = styled.div`
         margin-bottom: 10px!important;
     }
     h2 {
-        font-weight: 500;
+        font-weight: 300;
         margin-bottom: 0;
         small {
             font-weight: 100;
