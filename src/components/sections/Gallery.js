@@ -195,7 +195,6 @@ const Image = styled.div`
 `;
 
 const LocalWrapper = styled.div`
-// padding: var(--section-padding) 0;
 // background-color: var(--darkblue);
 .gallery-container {
         width: 100%;

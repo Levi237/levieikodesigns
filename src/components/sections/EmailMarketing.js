@@ -12,7 +12,7 @@ const EmailMarketing = () => {
         <img src="/klaviyo-dashboard.jpg" alt="MailChimp Example Automation"/>
             <img src="/mailchimp-forms.png" alt="MailChimp Example Forms"/>
         </section>
-        <h3>How using an email service provider can help.</h3>
+        <h4>How using an email service provider can help.</h4>
         <div>
           <section>
             <ul>
@@ -57,9 +57,8 @@ const LocalSection = styled.section`
   width: 100%;
   height: auto;
 
-  padding-top: var(--section-padding);
+  padding-top: var(--large-section-padding);
   text-align: center;
-
   > h2 {
     font-size: 11.5vw;
     color: #fff;
@@ -78,12 +77,12 @@ const LocalSection = styled.section`
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    > h3 {
+    > h4 {
       letter-spacing: .33vw;
       text-transform: uppercase;
       text-align: center;
-      font-size: 4.6vw;
-      padding: 0vw 10vw 2.5vw!important;
+      font-size: min(var(--h4-vw), var(--h4-px));
+      padding: 0vw 4vw 2.5vw!important;
       font-weight: 500;
       color: var(--blue);
     }
@@ -110,14 +109,15 @@ const LocalSection = styled.section`
           width: 100%;
         }
         > ul {
-          margin-left: 8%:
+          margin-left: 5vw;
+          padding-right: 5vw;
           display: inline-block;
           vertical-align: middle;
-          font-size: 3.6vw;
+          font-size: min(var(--p-vw), var(--p-px));
           color: white;
           text-align: left;
           li {
-            padding-bottom: 12px;
+            padding-bottom: 6px;
             color: #fff;
           }
         }
@@ -146,15 +146,15 @@ const LocalSection = styled.section`
 
     padding-bottom: 120px;
 
+    h2 { font-size: min(var(--h2-vw), var(--h2-px)); }
     > h2 {
-      font-size: var(--h2);
       margin-bottom: -20px!important;
       &:last-of-type {
         margin-top: 12px!important;
       }
     }
     > div {
-      > h3 {
+      > h4 {
         letter-spacing: 1px;
         font-size: 20px;
         padding: 2.5vw 5vw 0!important;
@@ -182,7 +182,8 @@ const LocalSection = styled.section`
             width: 50%;
           }
           > ul {
-            margin-left: 8%:
+            margin-left: 8%;    
+            padding-right: 0;
             display: inline-block;
             vertical-align: middle;
             font-size: 18px;

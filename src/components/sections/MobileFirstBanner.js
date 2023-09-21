@@ -3,16 +3,18 @@ import styled   from 'styled-components';
 
 const MobileFirstBanner = () => {
   return(
-    <LocalSection className="scroll-snap-start">
+    <Wrapper className="scroll-snap-start">
+      <GridContainer>
+
       <section>
-        <div></div>
-        <img src="/pranawellnessworks-mobile-small.png" alt="mobile example"/>
-        <section></section>
+        <img class="square-image" src="https://pranawellnessworks.com/home-meet.png" alt="Prana Wellness meditation"/>
+        <img class="phone-image" src="/pranawellnessworks-mobile-small.png" alt="mobile example"/>
       </section>
-      <section>
+
+      <Content>
         <div>
-          <h1>Mobile-First Web</h1>
-          <h3>So.. you probably <u>don't</u> need an app for that..</h3>
+          <h2>Mobile-First Web</h2>
+          <h4>So.. you probably <u>won't</u> need an app for that..</h4>
           <p>
             Make your mobile-friendly website as effective as an app without all the added hassle.
           </p>
@@ -24,202 +26,105 @@ const MobileFirstBanner = () => {
             <li>You'll still need a website</li>
           </ul>
         </div>
-      </section>
-      <div></div>
-    </LocalSection>
+      </Content>
+
+      </GridContainer>
+    </Wrapper>
   );
 };
 
-const LocalSection = styled.section`
+const Content = styled.section`
+max-width: 100%;
+padding: 7vw 5vw 10vw;
+overflow: hidden;
+@media (min-width: 750px) {
+  padding: 0 40px;
+  height: 50vw;
+  max-height: 400px;
+}
+
+  h2 { font-size: min(var(--h2-vw), var(--h2-px)); }
+  h4 { font-size: min(var(--h4-vw), var(--h4-px)); }
+  p { font-size: min(var(--p-vw), var(--p-px)); }
+  ul { font-size: min(var(--p-vw), var(--p-px)); }
+
+  ul:last-child { margin-bottom: 0; }
+`;
+
+const Wrapper = styled.div`
+  width: 100vw;
+  // height: 60vw;
+  // max-height: 600px;
+  padding: var(--large-section-padding) 0;
+
   position: relative;
-  max-width: 100vw;
-  // height: 100%;
-  margin: 0 auto;
-  // padding: var(--section-padding) 0;
-  > div {
-    position: absolute;
-    width: 80vw;
-    height: 95vw;
-    border: 1px solid #fff;
-    z-index: 0;
-    top: calc(80vw + 20px);
-    left: calc(10vw - 1px);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--large-section-padding) 0;
+`;
 
-  > section {
-    position: relative;
-    height: 90vw;
-    width: 90vw;
-    border: none;
-    font-size: 0;
-    z-index: 1;
-    color: #fff;
-
-    &:first-of-type {
-      margin: 5vw 0 0 5vw;
-
-      > div {
-        height: 85%;
-        width: 85%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-image: url(https://pranawellnessworks.com/home-meet.png);
-        background-size: cover;
-      }
-      > img {
-        width: 36%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-      }
-    }
-    &:last-of-type {
-      margin: 0 0 5vw 5vw;
-      display: flex;
-      align-items: start;
-      justify-content: center;
-
-      > div {
-        width: 100%;
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0% 15% 0% 10%;
-      }
-      h1 {
-        color: var(--blue);
-        font-size: 8vw;
-        margin: 0% 0% 5%!important;
-        text-align: left;
-      }
-      h3 {
-        font-size: 3.6vw;
-        font-weight: 500;
-        margin: 0!important;
-      }
-      h4 {
-        font-size: 2.33vw;
-        font-weight: 300;
-        color: black;
-      }
-      p {
-        font-size: 3.5vw;
-        &:last-of-type {
-          margin-bottom: 0!important;
-          // font-weight: bold;
-        }
-      }
-      ul, li {
-        font-size: 15px;
-      }
-    }
-  }
-  @media screen and (min-width: 640px) {
-    max-width: 1000px;
+const GridContainer = styled.div`
+  width: 100vw;
+  height: auto;
+  margin-top: var(--large-section-padding);
+  margin-bottom: var(--large-section-padding);
+  background-color: #fff;
+  color: var(--black);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (min-width: 750px) {
     height: 50vw;
-    max-height: 500px;
-    margin: 0 auto;
-    // padding-top: 0;
-    font-size: 0; 
-    display: flex;
-    align-items: center;  
-    justify-content: center; 
-    > div {
-      position: absolute;
-      width: 70vw;
-      height: 35vw;
-      max-width: 700px;
-      max-height: 350px;
-      border: 1px solid #fff;
-      background: #fff;
-      z-index: 0;
-      
-      top: 7.5vw;
-      left: 15vw;
-    }
-    > section {
-      position: relative;
-      height: 80%;
-      width: 40%;
-      border: none;
-      font-size: 0;
-      z-index: 1;
-      margin: 0!important;
-      color: var(--darkgrey);
-      &:last-of-type {
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        > div {
-          width: 100%;
-          display: inline-block;
-          vertical-align: middle;
-          padding: 0% 15% 0% 10%;
-        }
-        h1 {
-          color: var(--black);
-          font-size: 3.6vw;
-          margin: 0% 0% 5%!important;
-          text-align: left;
-        }
-        h3 {
-          font-size: 1.8vw;
-        }
-        h4 {
-          font-size: 1vw;
-        }
-        p {
-          font-size: 1.5vw;
-          &:last-of-type {
-            margin-bottom: 0!important;
-          }
-        }
-      }
-    }
+    max-width: 800px;
+    max-height: 400px;
   }
-  @media screen and (min-width: 1000px) {
-    > div {
-      top: 75px;
-      left: 150px;
-    }
-    > section {
-      position: relative;
-      height: 80%;
-      width: 40%;
-      border: none;
-      font-size: 0;
-      z-index: 1;
-      color: var(--darkgrey);
+  @media (max-width: 749px) {
+    grid-template-columns: 1fr;
+    --margin: 10vw;
+    width: 80vw;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+  }
 
-      &:last-of-type {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        > div {
-          width: 100%;
-          display: inline-block;
-          vertical-align: middle;
-          padding: 0% 15% 0% 10%;
-        }
-        h1 {
-          color: var(--black);
-          font-size: 32px;
-          margin: 0% 0% 5%!important;
-          text-align: left;
-        }
-        h3 {
-          font-size: 17px;
-        }
-        h4 {
-          font-size: 10px;
-        }
-        p {
-          font-size: 15px;
-        }
-      }
+  .square-image {
+    height: 50vw;
+    width: 50vw;
+    max-height: 400px;
+    max-width: 400px;
+    margin-top: max(-5vw, -40px);
+    margin-left: max(-5vw, -40px);
+  }
+  .phone-image {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: max(-5vw, -40px);
+  }
+  @media (max-width: 749px) {
+    .square-image {
+      height: 80vw;
+      width: 80vw;
+      margin-top: -10vw;
+      margin-left: -10vw;
+    }
+    .phone-image {
+      width: 34vw;
+      right: -7vw;
+      bottom: -7vw;
     }
   }
+  >section {
+    position: relative;
+  }
+  > section:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
 `;
 
 export default MobileFirstBanner;

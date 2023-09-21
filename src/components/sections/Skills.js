@@ -35,8 +35,7 @@ const Skills = ({projects}) => {
 };
 
 const Container = styled.div`
-// --section-padding: 80px;
-  padding: var(--section-padding) 0;
+  padding: var(--small-section-padding) 0;
   background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.90)),url('grey-laptop-keyboard-close-up.jpg');
   background-size: cover;
   background-position: center;
