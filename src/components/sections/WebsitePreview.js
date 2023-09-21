@@ -44,7 +44,7 @@ const LocalSection = styled.section`
   // background-color: var(--lightgrey);
   background-image: linear-gradient(hsla(var(--hsl-lightgrey), 0.72),hsla(var(--hsl-lightgrey), 0.80)),url('glass-building.jpg');
   background-size: cover;
-
+  background-position: top 0% left 36%;
   .mobile {
     display: inline-block;
   }
@@ -80,13 +80,14 @@ const LocalSection = styled.section`
     }   
   }
   @media screen and (min-width: 640px) {
+    background-position: top center;
     .mobile {
+      
       display: none;
     }
     .desktop {
       display: inline-block;
     }
-    
     > div {
       width: 100%;
       > h2 { font-size: min(var(--h2-vw), var(--h2-px)); }
