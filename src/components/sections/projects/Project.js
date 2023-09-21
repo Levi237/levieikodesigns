@@ -98,7 +98,7 @@ const Wrapper = styled.div`
     }
 
     a {
-        color: var(--blue)!important;
+        color: var(--hex-blue)!important;
         font-weight: 400;
         text-decoration: none;
         margin-bottom: 40px;

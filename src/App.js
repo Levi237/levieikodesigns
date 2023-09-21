@@ -311,7 +311,7 @@ export default class App extends Component {
       },
       about: {
         title: ``,
-        color: `var(--blue)`,
+        color: `var(--hex-blue)`,
         displayLogo: `none`,
       },
       portfolio: {
@@ -469,7 +469,7 @@ const ContactMe = styled.div`
   right: 12px;
   width: 48px;
   a svg { 
-    fill: var(--blue);
+    fill: var(--hex-blue);
     transition: transform .3s ease;
   }
   a:hover svg {

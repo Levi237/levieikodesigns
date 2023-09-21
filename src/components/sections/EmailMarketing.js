@@ -84,7 +84,7 @@ const LocalSection = styled.section`
       font-size: min(var(--h4-vw), var(--h4-px));
       padding: 0vw 4vw 2.5vw!important;
       font-weight: 500;
-      color: var(--blue);
+      color: var(--hex-blue);
     }
     img {
       width: 70%;

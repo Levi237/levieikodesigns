@@ -52,10 +52,10 @@ const Container = styled.div`
   a {
     font-weight: 500;
     transition: .3s ease;
-    color: var(--blue)!important;
+    color: var(--hex-blue)!important;
   }
   a:hover {
-    color: var(--darkblue)!important;
+    color: var(--hex-darkblue)!important;
   }
   div {
     background-color: rgba(250,250,250,1);
@@ -70,7 +70,7 @@ const Container = styled.div`
     margin: 0 10%;
     font-size: 36px;
     text-align: center;
-    color: var(--blue);
+    color: var(--hex-blue);
   }
   p {
     margin: 15px 15%;

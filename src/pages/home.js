@@ -73,7 +73,7 @@ const HomeHeroWrapper = styled.div`
 const HomeSecondNav = styled.nav`
   height: 80px;
   z-index: 2;
-  background-color: var(--blue);
+  background-color: var(--hex-blue);
 
   position: relative;
   > h1 {
@@ -111,7 +111,7 @@ const HomeBodyWrapper = styled.div`
     left: calc(50vw - 51px);
   }
   > h1 {
-    color: var(--blue);
+    color: var(--hex-blue);
     font-size: 32px;
   }
   > section {

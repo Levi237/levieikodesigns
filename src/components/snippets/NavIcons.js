@@ -60,7 +60,7 @@ const Container = styled.section`
       }
       &:hover {
         > svg.svg-about-link * {
-          fill: var(--blue)!important;
+          fill: var(--hex-blue)!important;
         }
       }
     }

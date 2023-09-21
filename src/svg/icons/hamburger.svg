@@ -7,7 +7,7 @@
   >
 <style>
   svg:hover rect.hamburger {
-      fill: var(--blue);
+      fill: var(--hex-blue);
   }
 </style>
   <rect class="hamburger" stroke-width="0" width="36" height="4" y="6" x="0" />

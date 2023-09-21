@@ -70,7 +70,7 @@ const Checklist = styled.div`
       &:first-of-type {
         width: 10px;
         padding-left: 40px;
-        color: var(--blue);
+        color: var(--hex-blue);
       }
       &:last-of-type {
         width: calc(100% - 10px);

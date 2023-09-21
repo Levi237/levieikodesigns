@@ -303,7 +303,7 @@ a.active {
   padding: 0 24px;
 }
 .horizontal-list li + li {
-  border-left: 1px solid var(--blue);
+  border-left: 1px solid var(--hex-blue);
 }
 
 /* Email Form */
