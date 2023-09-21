@@ -22,9 +22,6 @@ const Footer = () => {
           <NavLink to={routes.PORT}>
             Portfolio
           </NavLink>   
-          {/* <NavLink to={routes.FAQS}>
-            FAQ
-          </NavLink>  */}
           <NavLink to={routes.MAIL}>
             Contact
           </NavLink>             
@@ -33,7 +30,7 @@ const Footer = () => {
         <section ></section>
         <section ></section>
         <section>
-          <p>Built by LeviEikoDesigns w/ React</p>
+          <small>Built by LeviEikoDesigns w/ React</small>
         </section>
 
       </div>
@@ -57,13 +54,13 @@ const Container = styled.div`
 
     width: calc(100% - 80px);
     margin: 0 auto;
-    padding: var(--small-section-padding) 40px 20px;
+    padding: 40px 40px 20px;
     @media(max-width: 749px){
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto auto;
       gap: 0;
       width: calc(100vw - 10vw);
-      padding: var(--large-section-padding) 5vw 5vw;
+      padding: 40px 5vw 5vw;
     }
     > section {
       height: 100%;
@@ -86,7 +83,6 @@ const Container = styled.div`
       }
     }
   }
-
 `;
 
 
