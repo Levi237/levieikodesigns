@@ -6,7 +6,7 @@ import * as routes          from '../constants/routes';
 import Definition           from '../components/sections/Definition';
 import EmailMarketing       from '../components/sections/EmailMarketing';
 // import FeaturedBanner       from '../sections/FeaturedBanner';
-import Gallery              from '../components/sections/Gallery';
+// import Gallery              from '../components/sections/Gallery';
 import MobileFirstBanner    from '../components/sections/MobileFirstBanner';
 import Skills               from '../components/sections/Skills';
 // import WebsiteInfo          from '../components/sections/WebsiteInfo';
@@ -17,7 +17,7 @@ import Footer               from '../components/Footer';
 import { ReactComponent as LogoSVG } from '../svg/brand/logo.svg';
 const HomePage = ({ pageStyle, projects, btnScroll }) => {
   return(
-    <div>
+    <LocalWrapper>
 
       <HomeHeroWrapper className="scroll-snap-start">
         <NavLink to={routes.PORT}>
@@ -51,9 +51,16 @@ const HomePage = ({ pageStyle, projects, btnScroll }) => {
         {/* <div className="down-arrow-class"></div> */}
       </HomeBodyWrapper>
 
-    </div>
+    </LocalWrapper>
   );
 };
+
+const LocalWrapper = styled.div`
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(300px);
+  scroll-snap-points-x: repeat(300px);
+`;
 const HomeHeroWrapper = styled.div`
   height: 100vh;
   width: 100vw;
