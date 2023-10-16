@@ -30,8 +30,8 @@ export default class App extends Component {
   state = {
     projects: [{
   //     name: ``,
-  //     active_site: true,
   //     active_project: true,
+  //     active_site: true,
   //     startDate: 2023,
   //     endDate: null,
   //     image: `.jpg`,
@@ -43,8 +43,8 @@ export default class App extends Component {
   //     technologies: [`Shopify`, `Liquid`, `MailChimp`, `Photoshop`, `FIGMA`]
   // },{
       name: `Flawed™️`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2023,
       endDate: null,
       image: `flawed.jpg`,
@@ -56,8 +56,8 @@ export default class App extends Component {
       technologies: [`WordPress`, `PHP`,  `DateBook`]
   },{
       name: `Red5 Performance`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2021,
       endDate: null,
       image: `red5performance.jpg`,
@@ -69,8 +69,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `MailChimp`, `Photoshop`, `FIGMA`]
   },{
       name: `Momo[Muscle]`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2020,
       endDate: null,
       image: `momomuscle-meta.jpg`,
@@ -82,8 +82,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`, `Klaviyo`]
   },{
       name: `Nexus Housing`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2023,
       endDate: null,
       image: `nexushousing.jpg`,
@@ -95,8 +95,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
   },{
       name: `Covered Perfectly`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2022,
       endDate: null,
       image: `coveredperfectly.jpg`,
@@ -108,8 +108,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
   },{
       name: `Scared But Alive`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2021,
       endDate: null,
       image: `scaredbutalive.jpg`,
@@ -121,8 +121,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `Klaviyo`]
   },{
       name: `D I V I N I T Y`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2021,
       endDate: null,
       image: `divinity-ray.jpg`,
@@ -134,8 +134,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`, `MailChimp`]
   },{
       name: `Metamorphosis Medical Center`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2021,
       endDate: null,
       image: `metamorphosis.jpg`,
@@ -147,8 +147,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `MailChimp`, `FIGMA`],
   },{
       name: `Our Highest Mantra`,
+      active_project: false,
       active_site: true,
-      active_project: true,
       startDate: 2023,
       endDate: null,
       image: `ourhighestmantra.jpg`,
@@ -160,8 +160,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `Photoshop`, `FIGMA`]
   },{
       name: `Prana Wellness`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2019,
       endDate: null,
       image: `prana-wellness.jpg`,
@@ -173,8 +173,8 @@ export default class App extends Component {
       technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`],
   },{
       name: `Levi Eiko Designs`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2019,
       endDate: null,
       image: `levieikodesigns.jpg`,
@@ -186,8 +186,8 @@ export default class App extends Component {
       technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`, `MailChimp`]
   },{
       name: `Dizzy with Excitement`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2023,
       endDate: null,
       image: `dizzywithexcitement.jpg`,
@@ -199,8 +199,8 @@ export default class App extends Component {
       technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
   },{
       name: `Sathi Roy`,
-      active_site: false,
       active_project: false,
+      active_site: false,
       startDate: 2021,
       endDate: 2023,
       image: `sathiroy.jpg`,
@@ -212,8 +212,8 @@ export default class App extends Component {
       technologies: [`Shopify`, `Liquid`, `SVG`, `Photoshop`, `FIGMA`],
   },{
       name: `Baddie by Divinity`,
-      active_site: false,
       active_project: false,
+      active_site: false,
       startDate: 2021,
       endDate: 2022,
       image: `baddie-by-divinity.jpg`,
@@ -225,8 +225,8 @@ export default class App extends Component {
       technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
   },{
       name: `Bravo Built`,
-      active_site: true,
       active_project: true,
+      active_site: true,
       startDate: 2021,
       endDate: null,
       image: `bravo-built.jpg`,
@@ -238,8 +238,8 @@ export default class App extends Component {
       technologies: [`Shopify`,`Liquid`, `JS`, `CSS`, `SVG`, `Photoshop`, `FIGMA`, `MailChimp`]
   },{
       name: `Andrea Sells Maui`,
-      active_site: false,
       active_project: false,
+      active_site: false,
       startDate: 2020,
       endDate: 2021,
       image: `andreasellsmaui2.jpg`,
@@ -251,8 +251,8 @@ export default class App extends Component {
       technologies: [`WordPress`, `JS`, `CSS`, `Photoshop`, `FIGMA`, `IDX Broker`]
   },{          
       name: `FITPLAN`,
-      active_site: true,
       active_project: false,
+      active_site: true,
       startDate: 2019,
       endDate: 2020,
       link: `fitplanapp.com`,
@@ -264,8 +264,8 @@ export default class App extends Component {
       technologies: [`React`,`Shopify`,`Liquid`,`CSS`,`JS`,`WordPress`,`Photoshop`,`Figma`,`MailChimp`]
   },{
       name: `IT After Hours`,
-      active_site: false,
       active_project: false,
+      active_site: false,
       startDate: 2019,
       endDate: 2020,
       link: `it-afterhours.com`,
@@ -277,8 +277,8 @@ export default class App extends Component {
       technologies: [`WordPress`,`CSS`,`JS`]
   },{
       name: `HeatSeeker Hot Sauce`,
-      active_site: false,
       active_project: false,
+      active_site: false,
       startDate: 2019,
       endDate: 2020,
       link: `heatseekersauce.com`,
@@ -290,8 +290,8 @@ export default class App extends Component {
       technologies: [`Shopify`,`Liquid`,`CSS`,`JS`,`Photoshop`,`Figma`]
   },{
       name: `La Madre is Watching`,
-      active_site: false,
       active_project: false,
+      active_site: false,
       startDate: 2007,
       endDate: 2009,
       image: `lamadreiswatching-ongina.jpg`,
