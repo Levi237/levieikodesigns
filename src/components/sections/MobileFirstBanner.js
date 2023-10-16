@@ -7,8 +7,8 @@ const MobileFirstBanner = () => {
       <GridContainer>
 
       <section>
-        <img class="square-image" src="https://pranawellnessworks.com/home-meet.png" alt="Prana Wellness meditation"/>
-        <img class="phone-image" src="/pranawellnessworks-mobile-small.png" alt="mobile example"/>
+        <img className="square-image" src="https://pranawellnessworks.com/home-meet.png" alt="Prana Wellness meditation"/>
+        <img className="phone-image" src="/pranawellnessworks-mobile-small.png" alt="mobile example"/>
       </section>
 
       <Content>
