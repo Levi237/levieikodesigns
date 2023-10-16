@@ -5,18 +5,18 @@ const WebsitePreview = () => {
 
   const ref = useRef();
   const [refState, setRefState] = useState();
-  console.log("refState", refState);
+  // console.log("refState", refState);
   useEffect(() => {
-      console.log('ref', ref.current);
+      // console.log('ref', ref.current);
       const observer = new IntersectionObserver((entries) => {
           const entry = entries[0];
           setRefState(entry.isIntersecting);
           if (entry.isIntersecting){
             entry.target.classList.remove('hide-intersection');
-            console.log('interested', entry.target);
+            // console.log('interested', entry.target);
             observer.disconnect();
           }
-          console.log('entry', entry.target.className);
+          // console.log('entry', entry.target.className);
       });
       observer.observe(ref.current);
   }, []);
@@ -41,7 +41,6 @@ const LocalSection = styled.section`
   text-align: center;
   margin: 0 auto;
   padding: var(--large-section-padding) 0 calc(var(--large-section-padding) / 2);
-  // background-color: var(--lightgrey);
   background-image: linear-gradient(hsla(var(--hsl-lightgrey), 0.72),hsla(var(--hsl-lightgrey), 0.80)),url('glass-building.jpg');
   background-size: cover;
   background-position: top 0% left 36%;
@@ -82,7 +81,7 @@ const LocalSection = styled.section`
   @media screen and (min-width: 640px) {
     background-position: top center;
     .mobile {
-      
+
       display: none;
     }
     .desktop {
