@@ -42,6 +42,19 @@ export default class App extends Component {
   //     tasks: [`Shopify store`, `MailChimp campaigns`, `Photoshop, graphics design`, `Digital product design & development`, `Marketing strategic planning`],
   //     technologies: [`Shopify`, `Liquid`, `MailChimp`, `Photoshop`, `FIGMA`]
   // },{
+    name: `Kimberly Charter Ministries`,
+    active_project: true,
+    active_site: true,
+    startDate: 2023,
+    endDate: null,
+    image: `kimberlycharterministries.jpg`,
+    image2: `kimberlycharterministries_2.jpg`,
+    link: `kimberlycharter.com`,
+    type: [`build, contract, remodel, update, upgrade, maintain`],
+    statement: `Kimberly has brought the world of fellowship and friendship to a new platform...`,
+    tasks: [`React website with Firebase`, `MailChimp form`, `Photoshop, graphics`, `Logo design`, `Marketing strategic planning`],
+    technologies: [`React`, `Firebase`, `MailChimp`, `Photoshop`, `FIGMA`]
+},{
       name: `Flawed™️`,
       active_project: true,
       active_site: true,
