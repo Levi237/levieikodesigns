@@ -52,7 +52,7 @@ export default class App extends Component {
     link: `kimberlycharter.com`,
     type: [`build, contract, remodel, update, upgrade, maintain`],
     statement: `Kimberly has brought the world of fellowship and friendship to a new platform...`,
-    tasks: [`React website with Firebase`, `MailChimp form`, `Photoshop, graphics`, `Logo design`, `Marketing strategic planning`],
+    tasks: [`React website with Firebase`, `MailChimp form`, `Photoshop, graphics`, `Logo design`],
     technologies: [`React`, `Firebase`, `MailChimp`, `Photoshop`, `FIGMA`]
 },{
       name: `Flawed™️`,
@@ -64,7 +64,7 @@ export default class App extends Component {
       image2: `flawed_2.jpg`,
       link: `dateflawed.com`,
       statement: `Flawed™ is the first dating app where you can find what you want by eliminating what you don’t.`,
-      work: [`remodel, upgrade`],
+      work: [`work-in-progress, remodel, upgrade`],
       tasks: [`WordPress website remodel`, `Update match-making quiz`],
       technologies: [`WordPress`, `PHP`,  `DateBook`]
   },{
