@@ -5,15 +5,20 @@ import styled               from 'styled-components';
 import * as routes          from '../../constants/routes';
 
 const NavMenu = ({ animateSlideMe, btnHamburger, toggleMenu }) => {
+    const NavClickResponse = () => {
+        toggleMenu(); 
+        animateSlideMe(); 
+        btnHamburger();
+    }
     return(
         <NavContainer id="menu" className="inactive">
             <div>
-                <NavLink activeclassname="active" to={routes.ROOT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>HOME</NavLink>
-                <NavLink activeclassname="active" to={routes.SERV} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>SERVICES</NavLink>
-                <NavLink activeclassname="active" to={routes.PORT} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>PORTFOLIO</NavLink>
-                <NavLink activeclassname="active" to={routes.INFO} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>ABOUT ME</NavLink>
-                <NavLink activeclassname="active" to={routes.MAIL} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>CONTACT</NavLink>
-                {/* <NavLink activeclassname="active" to={routes.FAQS} onClick={() => {toggleMenu(); animateSlideMe(); btnHamburger();}}>FAQ</NavLink> */}
+                <NavLink activeclassname="active" to={routes.ROOT} onClick={() => {NavClickResponse();}}>HOME</NavLink>
+                <NavLink activeclassname="active" to={routes.PORT} onClick={() => {NavClickResponse();}}>PORTFOLIO</NavLink>
+                <NavLink activeclassname="active" to={routes.SERV} onClick={() => {NavClickResponse();}}>SERVICES</NavLink>
+                <NavLink activeclassname="active" to={routes.INFO} onClick={() => {NavClickResponse();}}>ABOUT ME</NavLink>
+                <NavLink activeclassname="active" to={routes.MAIL} onClick={() => {NavClickResponse();}}>CONTACT</NavLink>
+                {/* <NavLink activeclassname="active" to={routes.FAQS} onClick={() => {NavClickResponse();}}>FAQ</NavLink> */}
             </div>
         </NavContainer>
     );
