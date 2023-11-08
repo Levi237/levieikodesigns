@@ -3,6 +3,12 @@
 // create generic style for all pages (hieght: 80px; etc.)
 // replace pageStyle state with designStyle class
 
+//====================================> Create a sort option for customers to view 
+// "High Budget to Low Budget"
+// "Full Websites First"
+// "Newest to Oldest"
+
+
 import React, { Component }           from 'react';
 import { Routes, Route, Link }        from 'react-router-dom';
 import styled                         from 'styled-components';
@@ -42,6 +48,19 @@ export default class App extends Component {
   //     tasks: [`Shopify store`, `MailChimp campaigns`, `Photoshop, graphics design`, `Digital product design & development`, `Marketing strategic planning`],
   //     technologies: [`Shopify`, `Liquid`, `MailChimp`, `Photoshop`, `FIGMA`]
   // },{
+    name: `Tarotfied`,
+    active_project: true,
+    active_site: true,
+    startDate: 2023,
+    endDate: null,
+    image: `tarotfied.jpg`,
+    image2: `tarotfied_2.jpg`,
+    link: `tarotfied.com`,
+    type: [`design, build`],
+    statement: `Manifest answers pulling your own cards on a layout`,
+    tasks: [`React website with Firebase`, `Deck and Card function`, `Photoshop, graphics`, `Logo design`],
+    technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`]
+},{
     name: `Kimberly Charter Ministries`,
     active_project: true,
     active_site: true,
@@ -208,7 +227,7 @@ export default class App extends Component {
       link: `dizzywithexcitement.com`,
       statement: `Endless options printed on demand.`,
       work: [`upgrades`],
-      tasks: [`Create custom tools on purchaed template`,`Wallpaper size/price calculator`,`Color swatch tool in Collections`,`Color matching display on Products`],
+      tasks: [`Build custom tools on collections & product templates`,`Wallpaper size/price calculator`,`Show additional cart information`,`Color swatch tool in Collections`,`Color matching display on Products`],
       technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
   },{
       name: `Sathi Roy`,
@@ -238,7 +257,7 @@ export default class App extends Component {
       technologies: [`Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`]
   },{
       name: `Bravo Built`,
-      active_project: true,
+      active_project: false,
       active_site: true,
       startDate: 2021,
       endDate: null,

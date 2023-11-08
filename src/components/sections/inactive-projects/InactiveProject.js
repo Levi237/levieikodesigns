@@ -98,7 +98,7 @@ const PastProjectCard = styled.div`
             border-right: 1px solid grey;
             // border: 1px solid grey;
             padding: 0px .85vw;
-            margin-bottom: 1px;
+            margin-bottom: 2px;
         }
         > div > span {
             margin-right: -1px;

@@ -10,16 +10,16 @@ const DisplayService = ({ service }) => {
   // const [refState, setRefState] = useState();
   // console.log("refState", refState);
   useEffect(() => {
-    console.log('ref', ref.current);
+    // console.log('ref', ref.current);
     const observer = new IntersectionObserver((entries) => {
         const entry = entries[0];
         // setRefState(entry.isIntersecting);
         if (entry.isIntersecting){
           entry.target.classList.remove('hide-unobserved');
-          console.log('interested', entry.target);
+          // console.log('interested', entry.target);
           observer.disconnect();
         }
-        // console.log('entry', entry.target.className);
+        // console.log('entry', entry.target.className); 
     });
     observer.observe(ref.current);
   }, []);
