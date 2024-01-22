@@ -42,8 +42,7 @@ export default class App extends Component {
   //     image: `.jpg`,
   //     image2: `.jpg`,
   //     link: `.com`,
-  //     type: [`build, contract, remodel, update, upgrade, maintain`,
-// ],
+  //     type: [`build, contract, remodel, update, upgrade, maintain`],
   //     statement: ``,
   //     tasks: [
           // `Shopify store`,
