@@ -5,7 +5,7 @@ import styled       from 'styled-components';
 import ProjectCard  from './Project';
 
 const Projects = ({ projects }) => {
-    const liveProjects = projects.filter(project => project.active_project === true);
+    const liveProjects = projects.filter(project => project.endDate === null);
     const showProjects = liveProjects.map((project, key) => {
         return( <ProjectCard key={key} project={project}/> );
     });

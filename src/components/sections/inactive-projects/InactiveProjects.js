@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import InactiveProject from './InactiveProject';
 
 const PastProjects = ({ projects }) => {
-    const pastProjects = projects.filter(project => project.active_project === false);
+    const pastProjects = projects.filter(project => project.endDate !== null);
     const mapPastProjects = pastProjects.map((project, key) => {
         return( <InactiveProject project={project} key={key}/> )
     });

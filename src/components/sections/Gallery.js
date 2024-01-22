@@ -1,4 +1,4 @@
-import React    from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled   from 'styled-components';
 
 //  Next goal: use component specific ID
@@ -81,23 +81,8 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
     const carousel_container = 'gallery-container--' + _id;
     const carousel_row = 'carousel-row--' + _id;
 
-    //   Print original list of images
-    const mapList = _list.map((img, k) => {
-        return(
-            <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
-                { img.active_site && img.active_project
-                ? <a href={`https://${img.link}`} target="_blank" rel="noreferrer">
-                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
-                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
-                  </a>
-                : <>
-                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
-                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
-                  </>
-                }
-            </Image>
-        );
-    });
+
+
 
     //   Remove image from the front and add to back for continuous carousel
     const setCarouselTime = _time;
@@ -114,11 +99,44 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
             getContainer.append(firstCard);
         }, setCarouselTime * .9);
     });
-    setInterval(startCarousel, setCarouselTime);
+    
+
+
+    const ref = useRef();
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            if (entry.isIntersecting){
+                setInterval(startCarousel, setCarouselTime);
+            }
+        });
+        observer.observe(ref.current);
+    }, []);
+
+
+
+    //   Print original list of images
+    const mapList = _list.map((img, k) => {
+        return(
+            <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
+                { img.endDate != null && img.endDate !== null
+                ? <a href={`https://${img.link}`} target="_blank" rel="noreferrer">
+                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
+                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
+                  </a>
+                : <>
+                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
+                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
+                  </>
+                }
+            </Image>
+        );
+    });
+
 
     return(
         <LocalWrapper>    
-            <div className="gallery-container">
+            <div ref={ref} className="gallery-container">
                 <Window id={`${carousel_container}`} className="gallery-row" width={width} height={height} gap={gap} seconds={seconds} >
                     {mapList}
                 </Window>

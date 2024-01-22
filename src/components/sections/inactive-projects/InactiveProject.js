@@ -46,10 +46,10 @@ const InactiveProjectCard = ({ project }) => {
                 <h2>{project.name}</h2>
                 <h4>{project.link}</h4>
                 <small>{project.startDate} - {project.endDate}</small>
-                <p>“{project.statement}”</p>
+                {/* <p>“{project.statement}”</p> */}
                 <ul className="desktop">{tasksList}</ul>
-                <div className="mobile work-type">{workList}<section>&nbsp;<span>website</span></section></div>
-                <div>{technologiesList}</div>
+                {/* <div className="mobile work-type">{workList}<section>&nbsp;<span>website</span></section></div> */}
+                {/* <div>{technologiesList}</div> */}
             </section>
         </PastProjectCard>
     );
