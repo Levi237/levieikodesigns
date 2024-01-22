@@ -29,7 +29,7 @@ const Skills = ({projects}) => {
     <Container>
       <h1>Skills</h1>
       <section>{skillsList}</section>
-      <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/>
+      <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="3"/>
     </Container>
   );
 };

@@ -25,26 +25,27 @@ const ProjectCard = ({ project }) => {
         observer.observe(ref.current);
     }, []);
 
+
     const tasksList = project.tasks.map((r, k) => {
         return <li key={k}><span>{r}</span></li>
     });
     return(
         <Wrapper ref={ref} className={`hide-unobserved`}>
-            <MobileImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                <img className="mobile-block" src={`./projects/${project.image}`} alt={project.name}/>
+            <MobileImg href={`https://${project.domain}${project.ext}`} target="_blank" rel="noopener noreferrer">
+                <img className="mobile-block" src={`./projects/${project.domain}.png`} alt={project.name}/>
             </MobileImg>
             <section>
                 <h2>{project.name}</h2>
-                <a href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                    {project.link}
+                <a href={`https://${project.domain}${project.ext}`} target="_blank" rel="noopener noreferrer">
+                    {project.domain}{project.ext}
                 </a>
                 <p>“{project.statement}”</p>
                 <ul>{tasksList}</ul>
                 <br/>
             </section>
-            <DesktopImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                <img className="desktop-block" src={`./projects/${project.image}`} alt={project.name}/>
-                {project.image2 && <img className="image-2" src={`./desktop/${project.image2}`} alt={project.name}/>}
+            <DesktopImg href={`https://${project.domain}${project.ext}`} target="_blank" rel="noopener noreferrer">
+                <img className="desktop-block" src={`./projects/${project.domain}.png`} alt={project.name}/>
+                <img className="image-2" src={`./projects/${project.domain}_2.png`} alt={project.name}/>
             </DesktopImg>
             <hr/>
         </Wrapper>

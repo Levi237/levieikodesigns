@@ -39,12 +39,11 @@ const InactiveProjectCard = ({ project }) => {
     return(
         <PastProjectCard ref={ref} className={`hide-unobserved`}>
             <section>
-                <img className="mobile-block" src={`../mobile/${project.image}`} alt={project.name}/>
-                <img className="desktop-block" src={`../desktop/${project.image}`} alt={project.name}/>
+                <img className="" src={`../projects/${project.domain}.png`} alt={project.name}/>
             </section>
             <section>
                 <h2>{project.name}</h2>
-                <h4>{project.link}</h4>
+                <h4>{project.domain}{project.ext}</h4>
                 <small>{project.startDate} - {project.endDate}</small>
                 {/* <p>“{project.statement}”</p> */}
                 <ul className="desktop">{tasksList}</ul>

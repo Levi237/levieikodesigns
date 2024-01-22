@@ -35,37 +35,13 @@ import { ReactComponent as Mail }     from './svg/icons/iconfinder_mail.svg';
 export default class App extends Component {
   state = {
     projects: [{
-  //     name: ``,
-  //     startDate: 2023,
-  //     lastUpdated: null,
-  //     endDate: null,
-  //     image: `.png`,
-  //     image2: `.png`,
-  //     link: `.com`,
-  //     type: [`build, contract, remodel, update, upgrade, maintain`],
-  //     statement: ``,
-  //     tasks: [
-          // `Shopify store`,
-        //  `MailChimp campaigns`,
-        //  `Photoshop, graphics design`,
-        //  `Digital product design & development`,
-        //  `Marketing strategic planning`,
-      // ],
-  //     technologies: [
-          // `Shopify`,
-        //  `Liquid`,
-        //  `MailChimp`,
-        //  `Photoshop`,
-        //  `FIGMA`,
-      // ]
-  // },{
+
     name: `Wescare Home Health Providers`,
     startDate: 2024,
     lastUpdated: 2024,
     endDate: null,
-    image: `wescarehomehealth.png`,
-    image2: `wescarehomehealth_2.png`,
-    link: `wescarehomehealth.com`,
+    domain: `wescarehomehealth`,
+    ext: `.com`,
     statement: ``,
     work: [
             `build`,
@@ -89,9 +65,8 @@ export default class App extends Component {
     startDate: 2024,
     lastUpdated: 2024,
     endDate: null,
-    image: `faithandhopehomehealth.png`,
-    image2: `faithandhopehomehealth_2.png`,
-    link: `faithandhopehomehealth.com`,
+    domain: `faithandhopehomehealth`,
+    ext: `.com`,
     statement: ``,
     work: [
             `build`,
@@ -114,9 +89,8 @@ export default class App extends Component {
     startDate: 2021,
     lastUpdated: 2023,
     endDate: null,
-    image: `scaredbutalive.png`,
-    image2: `scaredbutalive_2.png`,
-    link: `scaredbutalive.com`,
+    domain: `scaredbutalive`,
+    ext: `.com`,
     statement: `Where street meets fitness. Unisex clothing with specific fit for AFAB, non-binary + women.`,
     work: [
             `build`,
@@ -139,9 +113,8 @@ export default class App extends Component {
     startDate: 2023,
     lastUpdated: 2023,
     endDate: null,
-    image: `tarotfied.png`,
-    image2: `tarotfied_2.png`,
-    link: `tarotfied.com`,
+    domain: `tarotfied`,
+    ext: `.com`,
     type: [`design, build`
   ],
     statement: `Manifest answers pulling your own cards on a layout`,
@@ -160,11 +133,9 @@ export default class App extends Component {
     startDate: 2023,
     lastUpdated: 2023,
     endDate: null,
-    image: `kimberlycharterministries.png`,
-    image2: `kimberlycharterministries_2.png`,
-    link: `kimberlycharter.com`,
-    type: [`build, contract, remodel, update, upgrade, maintain`
-  ],
+    domain: `kimberlycharter`,
+    ext: `.com`,
+    type: [`build, contract, remodel, update, upgrade, maintain`],
     statement: `Kimberly has brought the world of fellowship and friendship to a new platform...`,
     tasks: [
             `Custom built website`,
@@ -184,155 +155,148 @@ export default class App extends Component {
       startDate: 2023,
       lastUpdated: 2023,
       endDate: null,
-      image: `flawed.png`,
-      image2: `flawed_2.png`,
-      link: `dateflawed.com`,
-      statement: `Flawed™ is the first dating app where you can find what you want by eliminating what you don’t.`,
+      domain: `dateflawed`,
+      ext: `.com`,
+      statement: `Flawed™ is the first dating app where you can find what you want by eliminating what you don't.`,
       work: [
               `work-in-progress, remodel, upgrade`
     ],
       tasks: [
               `WordPress website remodel`,
-             `Update match-making quiz`
+              `Update match-making quiz`
             ],
       technologies: [
               `WordPress`,
-             `PHP`,  `DateBook`,
+              `PHP`,  `DateBook`,
             ]
   },{
       name: `Red5 Performance`,
       startDate: 2021,
       lastUpdated: 2024,
       endDate: null,
-      image: `red5performance.png`,
-      image2: `red5performance_2.png`,
-      link: `red5performance.com`,
+      domain: `red5performance`,
+      ext: `.com`,
       statement: `THE EQUATION IS SIMPLE: PHYSICS + DISCIPLINE + RED5 = HAPPIER, HEALTHIER, STRONGER YOU`,
       work: [
               `build`,
-             `maintain`
+              `maintain`
             ],
       tasks: [
               `Shopify store`,
-             `MailChimp campaigns`,
-             `Photoshop, graphics design`,
-             `Digital product design & development`,
-             `Marketing strategic planning`
+              `MailChimp campaigns`,
+              `Photoshop, graphics design`,
+              `Digital product design & development`,
+              `Marketing strategic planning`
             ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `MailChimp`,
-             `Photoshop`,
-             `FIGMA`,
+              `Liquid`,
+              `MailChimp`,
+              `Photoshop`,
+              `FIGMA`,
             ]
   },{
       name: `Momo[Muscle]`,
       startDate: 2020,
       lastUpdated: 2024,
       endDate: null,
-      image: `momomuscle-meta.png`,
-      image2: `momomuscle-meta_2.png`,
-      link: `momomuscle.com`,
+      domain: `momomuscle`,
+      ext: `.com`,
       statement: `Basically, I design tools to teach women & AFAB babes to see sustainable results in less time.`,
       work: [
               `build`,
-             `update`
+              `update`
             ],
       tasks: [
               `Shopify store`,
-             `Custom quiz w/ Klaviyo data capture`,
-             `User friendly editable template`,
-             `Graphic design & Photoshop`
+              `Custom quiz w/ Klaviyo data capture`,
+              `User friendly editable template`,
+              `Graphic design & Photoshop`
             ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `Photoshop`,
-             `FIGMA`,
-             `MailChimp`,
-             `Klaviyo`,
+              `Liquid`,
+              `Photoshop`,
+              `FIGMA`,
+              `MailChimp`,
+              `Klaviyo`,
             ]
   },{
       name: `Nexus Housing`,
       startDate: 2023,
       lastUpdated: 2023,
       endDate: null,
-      image: `nexushousing.png`,
-      image2: `nexushousing_2.png`,
-      link: `nexushousing.com`,
+      domain: `nexushousing`,
+      ext: `.org`,
       statement: `Sustainable modular housing.`,
       work: [
               `build`,
-             `update`
+              `update`
             ],
       tasks: [
               `Shopify website`,
-             `Custom editable Liquid sections`
+              `Custom editable Liquid sections`
             ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `Photoshop`,
-             `FIGMA`,
+              `Liquid`,
+              `Photoshop`,
+              `FIGMA`,
             ]
   },{
       name: `Covered Perfectly`,
       startDate: 2022,
       lastUpdated: 2023,
       endDate: 2023,
-      image: `coveredperfectly.png`,
-      image2: `coveredperfectly_2.png`,
-      link: `coveredperfectly.com`,
+      domain: `coveredperfectly`,
+      ext: `.com`,
       statement: `Because looking beautiful never gets old.`,
       work: [
               `remodel`,
-             `update`
+              `update`
             ],
       tasks: [
               `Re-design Shopify store & logo`,
-             `MailChimp email marketing`,
-             `Social media graphic design`
+              `MailChimp email marketing`,
+              `Social media graphic design`
             ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `Photoshop`,
-             `FIGMA`,
+              `Liquid`,
+              `Photoshop`,
+              `FIGMA`,
             ]
   },{
       name: `D I V I N I T Y`,
       startDate: 2021,
       lastUpdated: 2023,
       endDate: null,
-      image: `divinity-ray.png`,
-      image2: `divinity-ray_2.png`,
-      link: `divinityray.com`,
+      domain: `divinityray`,
+      ext: `.com`,
       statement: `With a passion for beauty, fashion and mental health, Divinity offers a refreshing approach to the world of social media.`,
       work: [
               `build`,
-             `update`
+              `update`
             ],
       tasks: [
               `Shopify website`,
-             `Graphic design`,
-             `Dropshipping integration`
+              `Graphic design`,
+              `Dropshipping integration`
             ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `Photoshop`,
-             `FIGMA`,
-             `MailChimp`,
+              `Liquid`,
+              `Photoshop`,
+              `FIGMA`,
+              `MailChimp`,
             ]
   },{
       name: `Metamorphosis Medical Center`,
       startDate: 2021,
       lastUpdated: 2022,
       endDate: null,
-      image: `metamorphosis.png`,
-      image2: ``,
-      link: `metatranshormone.com`,
+      domain: `metatranshormone`,
+      ext: `.com`,
       statement: `Our MISSION is to provide a safe, nurturing environment in which patients may access personalized therapies delivered at the highest standard of care, enabling them to heal and transform into their full potential for health and well-being.`,
       work: [
               `build`
@@ -342,94 +306,90 @@ export default class App extends Component {
     ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `SVG`,
-             `Photoshop`,
-             `MailChimp`,
-             `FIGMA`,
+              `Liquid`,
+              `SVG`,
+              `Photoshop`,
+              `MailChimp`,
+              `FIGMA`,
             ],
   },{
       name: `Our Highest Mantra`,
       startDate: 2023,
       lastUpdated: 2023,
       endDate: 2023,
-      image: `ourhighestmantra.png`,
-      image2: `ourhighestmantra_2.png`,
-      link: `ourhighestmantra.com`,
+      domain: `ourhighestmantra`,
+      ext: `.com`,
       statement: `Find your higher self.`,
       work: [
               `build`
     ],
       tasks: [
               `Shopify landing page`,
-             `Customized Product page`,
-             `Integrated 3rd part App`,
-             `Photoshop Edits to Logo`
+              `Customized Product page`,
+              `Integrated 3rd part App`,
+              `Photoshop Edits to Logo`
             ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `Photoshop`,
-             `FIGMA`,
+              `Liquid`,
+              `Photoshop`,
+              `FIGMA`,
             ]
   },{
       name: `Prana Wellness`,
       startDate: 2019,
       lastUpdated: 2023,
       endDate: 2023,
-      image: `prana-wellness.png`,
-      image2: `prana-wellness_2.png`,
-      link: `pranawellnessworks.com`,
+      domain: `pranawellnessworks`,
+      ext: `.com`,
       statement: `Prana is Sanskrit for breath, considered as a life-giving force.  Prana is seen as a universal energy, which flows in currents in and around the body.`,
       work: [
               `build`,
-             `update`
+              `update`
             ],
       tasks: [
               `React/Firebase website & blog`,
-             `MailChimp email automation`,
-             `Photoshop`
+              `MailChimp email automation`,
+              `Photoshop`
             ],
       technologies: [
               `React`,
-             `Firebase`,
-             `Photoshop`,
-             `FIGMA`,
-             `MailChimp`,
+              `Firebase`,
+              `Photoshop`,
+              `FIGMA`,
+              `MailChimp`,
             ],
   },{
       name: `Levi Eiko Designs`,
       startDate: 2019,
       lastUpdated: 2023,
       endDate: null,
-      image: `levieikodesigns.png`,
-      image2: `levieikodesigns_2.png`,
-      link: `levieikodesigns.com`,
+      domain: `levieikodesigns`,
+      ext: `.com`,
       statement: `Build your new website or upgrade an existing one.`,
       work: [
               `build`,
-             `maintain`
+              `maintain`
             ],
       tasks: [
               `Fully coded website`,
-             `Built with React`,
-             `Firebase Platform`
+              `Built with React`,
+              `Firebase Platform`
             ],
       technologies: [
               `React`,
-             `Firebase`,
-             `Photoshop`,
-             `FIGMA`,
-             `MailChimp`,
+              `Firebase`,
+              `Photoshop`,
+              `FIGMA`,
+              `MailChimp`,
             ]
   },{
       name: `Dizzy with Excitement`,
       startDate: 2023,
       lastUpdated: 2023,
       endDate: null,
-      image: `dizzywithexcitement.png`,
-      image2: `dizzywithexcitement_2.png`,
-      link: `dizzywithexcitement.com`,
+      domain: `dizzywithexcitement`,
+      ext: `.com`,
       statement: `Endless options printed on demand.`,
       work: [
               `upgrades`
@@ -445,33 +405,31 @@ export default class App extends Component {
       startDate: 2021,
       lastUpdated: 2023,
       endDate: 2023,
-      image: `sathiroy.png`,
-      image2: `sathiroy_2.png`,
-      link: `sathiroy.com`,
+      domain: `sathiroy`,
+      ext: `.com`,
       statement: `I help people reach their highest potential every day by taking a holistic and customized approach involving their mind, body, soul, and spirit.`,
       work: [
               `build`
     ],
       tasks: [
               `Shopify website`,
-             `Graphic design`,
-             `Vector/digital graphics animations`
+              `Graphic design`,
+              `Vector/digital graphics animations`
             ],
       technologies: [
               `Shopify`,
-             `Liquid`,
-             `SVG`,
-             `Photoshop`,
-             `FIGMA`,
+              `Liquid`,
+              `SVG`,
+              `Photoshop`,
+              `FIGMA`,
             ],
   },{
       name: `Baddie by Divinity`,
       startDate: 2021,
       lastUpdated: 2022,
       endDate: 2022,
-      image: `baddie-by-divinity.png`,
-      image2: `baddie-by-divinity_2.png`,
-      link: `baddiebydivinity.com`,
+      domain: `baddiebydivinity`,
+      ext: `.com`,
       statement: `Baddie By Divinity is here to help us find and embrace our badassery, no matter what form it takes and no matter how we show it to the world.`,
       work: [
               `build`
@@ -487,66 +445,63 @@ export default class App extends Component {
       startDate: 2021,
       lastUpdated: 2022,
       endDate: 2022,
-      image: `bravo-built.png`,
-      image2: `bravo-built_2.png`,
-      link: `bravobuiltfit.com`,
+      domain: `bravobuiltfit`,
+      ext: `.com`,
       statement: `Within these programs you will find a constant changing routine that helps build a brick by brick foundation.`,
       work: [
               `build`
     ],
       tasks: [
               `Custom built Shopify website`,
-             `MailChimp email automation`,
-             `Photoshop/graphic design`,
-             `Marketing strategic planning`,
-             `Merch/product design`
+              `MailChimp email automation`,
+              `Photoshop/graphic design`,
+              `Marketing strategic planning`,
+              `Merch/product design`
             ],
       technologies: [
               `Shopify`,`Liquid`,
-             `JS`,
-             `CSS`,
-             `SVG`,
-             `Photoshop`,
-             `FIGMA`,
-             `MailChimp`,
+              `JS`,
+              `CSS`,
+              `SVG`,
+              `Photoshop`,
+              `FIGMA`,
+              `MailChimp`,
             ]
   },{
       name: `Andrea Sells Maui`,
       startDate: 2020,
       lastUpdated: 2021,
       endDate: 2021,
-      image: `andreasellsmaui2.png`,
-      image2: ``,
-      link: `andreasellsmaui.com`,
+      domain: `andreasellsmaui`,
+      ext: `.com`,
       statement: `Maui real estate agent serving her local community`,
       work: [
               `build`
     ],
       tasks: [
               `Wordpress real estate website`,
-             `Graphic design`,
-             `Ad creation` 
+              `Graphic design`,
+              `Ad creation` 
             ],
       technologies: [
               `WordPress`,
-             `JS`,
-             `CSS`,
-             `Photoshop`,
-             `FIGMA`,
-             `IDX Broker`,
+              `JS`,
+              `CSS`,
+              `Photoshop`,
+              `FIGMA`,
+              `IDX Broker`,
             ]
   },{          
       name: `FITPLAN`,
       startDate: 2019,
       lastUpdated: 2020,
       endDate: 2020,
-      link: `fitplanapp.com`,
-      image: `fitplan-giftcard.png`,
-      image2: ``,
+      domain: `fitplanapp`,
+      ext: `.com`,
       statement: `Workout with elite personal trainers.`,
       work: [
               `contract`,
-             `update`
+              `update`
             ],
       tasks: [
               `Custom email: design & marketing`,`Web development, design & troubleshooting`,`Graphic design`
@@ -559,9 +514,8 @@ export default class App extends Component {
       startDate: 2019,
       lastUpdated: 2020,
       endDate: 2020,
-      link: `it-afterhours.com`,
-      image: `it-afterhours.png`,
-      image2: ``,
+      domain: `it-afterhours`,
+      ext: `.com`,
       statement: `Professional, affordable computer service company`,
       work: [
               `remodel`
@@ -577,17 +531,16 @@ export default class App extends Component {
       startDate: 2019,
       lastUpdated: 2020,
       endDate: 2020,
-      link: `heatseekersauce.com`,
-      image: `heatseeker.png`,
-      image2: ``,
+      domain: `heatseekersauce`,
+      ext: `.com`,
       statement: `Bold and minimal, pure and simple... That's what we do.`,
       work: [
               `remodel`,
-             `upgrade`
+              `upgrade`
             ],
       tasks: [
               `Re-design Shopify website`,`Streamline content & UX`,
-             `Add wholesale accounts`
+              `Add wholesale accounts`
             ],
       technologies: [
               `Shopify`,`Liquid`,`CSS`,`JS`,`Photoshop`,`Figma`,
@@ -597,13 +550,12 @@ export default class App extends Component {
       startDate: 2007,
       lastUpdated: 2009,
       endDate: 2009,
-      image: `lamadreiswatching-ongina.png`,
-      image2: ``,
-      link: `lamadreiswatching.com`,
+      domain: `lamadreiswatching`,
+      ext: `.com`,
       statement: `Photographing the edgy side of the Los Angeles night scene.`,
       work: [
               `build`,
-             `maintain`
+              `maintain`
             ],
       tasks: [
               `Social media website`,`Shareable photo gallery`,`Graphic design`
