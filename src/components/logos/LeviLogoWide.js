@@ -10,7 +10,7 @@ const LeviEikoBrand = () => {
     </svg>
 
     return (
-        <LogoWrapper href="https://levieikodesigns.com" alt="LeviEikoDesigns.com" target="_blank">
+        <LogoWrapper href="https://levieikodesigns.com" alt="LeviEikoDesigns.com" target="_blank" rel="noreferrer">
             <section>
                 { svgLogo }
             </section>

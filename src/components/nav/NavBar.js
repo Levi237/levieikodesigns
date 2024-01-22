@@ -20,8 +20,8 @@ const NavBar = ({ btnHamburger, toggleMenu, designStyle }) => {
 };
 
 const GlobalDiv = styled.div`
-  position: absolute;
-  z-index:999;
+  position: fixed;
+  z-index: 999;
   top: 24px;
   width: 36px;
   height: 36px;
