@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
     return(
         <Wrapper ref={ref} className={`hide-unobserved`}>
             <MobileImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                <img className="mobile-block" src={`./mobile/${project.image}`} alt={project.name}/>
+                <img className="mobile-block" src={`./projects/${project.image}`} alt={project.name}/>
             </MobileImg>
             <section>
                 <h2>{project.name}</h2>
@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
                 <br/>
             </section>
             <DesktopImg href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
-                <img className="desktop-block" src={`./desktop/${project.image}`} alt={project.name}/>
+                <img className="desktop-block" src={`./projects/${project.image}`} alt={project.name}/>
                 {project.image2 && <img className="image-2" src={`./desktop/${project.image2}`} alt={project.name}/>}
             </DesktopImg>
             <hr/>
