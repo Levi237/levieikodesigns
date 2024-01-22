@@ -28,12 +28,10 @@ const DisplayService = ({ service }) => {
     return <section key={k}><div>✔</div><div>{ item }</div></section>
   });
   const mapCollage = service.collage.map((item, k) => {
-    let desktop = item.replace('/', '/desktop/');
-    let mobile = item.replace('/', '/mobile/');
+
     return( 
       <div key={k}>
-        <img className="desktop-block" src={`../desktop/${desktop}`} alt="collage one"/>
-        <img className="mobile-block" src={`../mobile/${mobile}`} alt="collage one"/>
+        <img src={`../services/${item}`} alt="collage one"/>
       </div>
     )
   });
