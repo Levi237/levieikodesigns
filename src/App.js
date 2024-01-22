@@ -58,7 +58,7 @@ export default class App extends Component {
     link: `tarotfied.com`,
     type: [`design, build`],
     statement: `Manifest answers pulling your own cards on a layout`,
-    tasks: [`React website with Firebase`, `Deck and Card function`, `Photoshop, graphics`, `Logo design`],
+    tasks: [`React website with Firebase`, `Deck and Card function`, `Photoshop, graphics`],
     technologies: [`React`, `Firebase`, `Photoshop`, `FIGMA`]
 },{
     name: `Kimberly Charter Ministries`,

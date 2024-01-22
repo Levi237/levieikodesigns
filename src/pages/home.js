@@ -44,7 +44,7 @@ const HomePage = ({ pageStyle, projects, btnScroll }) => {
           {/* <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/> */}
         </Skills>
         {/* <Gallery id='top-home' list={projects} width="24" height="13" gap="2" seconds="6"/> */}
-        <MobileFirstBanner />
+        {/* <MobileFirstBanner /> */}
         <WebsitePreview />
         <EmailMarketing />
         <Footer />
