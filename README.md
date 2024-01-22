@@ -7,3 +7,7 @@ This website was originally created to be used as a Web Dev Portfolio page.  The
 ## Technologies:
 
 React, NodeJs, Firebase, Git, GitHub, JS, CSS, HTML, MailChimp
+
+### NOTES:
+
+Project images must be .png
