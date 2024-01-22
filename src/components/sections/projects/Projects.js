@@ -22,6 +22,7 @@ const Container = styled.div`
 
     img {
         object-fit: cover;
+        object-position: top;
     }
     @media screen and (max-width: 900px) {
         margin-top: 0px;

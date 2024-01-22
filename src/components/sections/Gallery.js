@@ -189,6 +189,7 @@ const Image = styled.div`
     img {
         overflow: hidden;
         object-fit: cover;
+        object-position: top;
         height: 100%;
         width: 100%;
     }

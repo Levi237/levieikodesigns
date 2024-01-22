@@ -108,6 +108,7 @@ const PastProjectCard = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: top;
         // margin-top: 5%;
     }
     a {
