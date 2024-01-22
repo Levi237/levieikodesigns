@@ -116,17 +116,15 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
 
 
     //   Print original list of images
-    const mapList = _list.map((img, k) => {
+    const mapList = _list.map((project, k) => {
         return(
             <Image key={k} className={`gallery-card carousel-row ${carousel_row}`}>
-                { img.endDate != null && img.endDate !== null
-                ? <a href={`https://${img.link}`} target="_blank" rel="noreferrer">
-                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
-                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
+                { project.endDate != null
+                ? <a href={`https://${project.domain}${project.extensions}`} target="_blank" rel="noreferrer">
+                    <img src={`./projects/${project.domain}.png`} alt={project.name}/>
                   </a>
                 : <>
-                    <img className="mobile-block" src={`./mobile/${img.image}`} alt={img.name}/>
-                    <img className="desktop-block" src={`./desktop/${img.image}`} alt={img.name}/>
+                    <img src={`./projects/${project.domain}.png`} alt={project.name}/>
                   </>
                 }
             </Image>
