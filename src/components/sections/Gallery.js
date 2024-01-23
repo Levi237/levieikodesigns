@@ -100,26 +100,22 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
         }, setCarouselTime * .9);
     });
     
-    var galleryInterval = null;
-    // Function to start setInterval call
-        function startGalleryInterval(){
-            galleryInterval = setInterval(startCarousel, setCarouselTime);
-        }
-    
-        // Function to stop setInterval call
-        function stopGalleryInterval(){
-            clearInterval(galleryInterval);
-        }
-
+    let galleryInterval = null;
+    function startGalleryInterval(){
+        galleryInterval = setInterval(startCarousel, setCarouselTime);
+    }
+    function stopGalleryInterval(){
+        clearInterval(galleryInterval);
+    }
 
     const ref = useRef();
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             if (entry.isIntersecting){
-                start()
+                startGalleryInterval()
             } else {
-                clearInterval(stop());
+                clearInterval(stopGalleryInterval());
             }
         });
         observer.observe(ref.current);
