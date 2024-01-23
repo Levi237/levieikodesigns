@@ -100,6 +100,16 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
         }, setCarouselTime * .9);
     });
     
+    var thisInterval = null;
+    // Function to start setInterval call
+        function start(){
+            thisInterval = setInterval(startCarousel, setCarouselTime);
+        }
+    
+        // Function to stop setInterval call
+        function stop(){
+            clearInterval(thisInterval);
+        }
 
 
     const ref = useRef();
@@ -107,7 +117,9 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             if (entry.isIntersecting){
-                setInterval(startCarousel, setCarouselTime);
+                start()
+            } else {
+                clearInterval(stop());
             }
         });
         observer.observe(ref.current);
@@ -161,8 +173,7 @@ const Window = styled.div.attrs((props) => ({
   overflow: hidden;
   height: var(--card-height);
   width: 150vw;
-//   margin: var(--card-gap) 0;
-//   background-color: var(--blue);
+
   @media only screen and (max-width: 749px) {
     // fit width of mobile by 80%
     height: calc(var(--card-mobile-width) * var(--card-ratio));
