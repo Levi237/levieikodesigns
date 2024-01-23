@@ -100,15 +100,15 @@ const Gallery = ({ id, list, width, height, gap, seconds }) => {
         }, setCarouselTime * .9);
     });
     
-    var thisInterval = null;
+    var galleryInterval = null;
     // Function to start setInterval call
-        function start(){
-            thisInterval = setInterval(startCarousel, setCarouselTime);
+        function startGalleryInterval(){
+            galleryInterval = setInterval(startCarousel, setCarouselTime);
         }
     
         // Function to stop setInterval call
-        function stop(){
-            clearInterval(thisInterval);
+        function stopGalleryInterval(){
+            clearInterval(galleryInterval);
         }
 
 
