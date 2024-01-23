@@ -205,7 +205,7 @@ export default class App extends Component {
       statement: `Basically, I design tools to teach women & AFAB babes to see sustainable results in less time.`,
       work: [
               `build`,
-              `update`
+              `update`,
             ],
       tasks: [
               `Shopify store`,
@@ -231,7 +231,7 @@ export default class App extends Component {
       statement: `Sustainable modular housing.`,
       work: [
               `build`,
-              `update`
+              `update`,
             ],
       tasks: [
               `Shopify website`,
@@ -253,7 +253,7 @@ export default class App extends Component {
       statement: `Because looking beautiful never gets old.`,
       work: [
               `remodel`,
-              `update`
+              `update`,
             ],
       tasks: [
               `Re-design Shopify store & logo`,
@@ -276,7 +276,7 @@ export default class App extends Component {
       statement: `With a passion for beauty, fashion and mental health, Divinity offers a refreshing approach to the world of social media.`,
       work: [
               `build`,
-              `update`
+              `update`,
             ],
       tasks: [
               `Shopify website`,
@@ -345,7 +345,7 @@ export default class App extends Component {
       statement: `Prana is Sanskrit for breath, considered as a life-giving force.  Prana is seen as a universal energy, which flows in currents in and around the body.`,
       work: [
               `build`,
-              `update`
+              `update`,
             ],
       tasks: [
               `React/Firebase website & blog`,
@@ -395,10 +395,21 @@ export default class App extends Component {
               `upgrades`
     ],
       tasks: [
-              `Build custom tools on collections & product templates`,`Wallpaper size/price calculator`,`Show additional cart information`,`Color swatch tool in Collections`,`Color matching display on Products`
+              `Build custom tools on collections & product templates`,
+              `Wallpaper size/price calculator`,
+              `Show additional cart information`,
+              `Color swatch tool in Collections`,
+              `Color matching display on Products`
     ],
       technologies: [
-              `Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`,
+              `Shopify`,
+              `Liquid`,
+              `JS`,
+              `CSS`,
+              `SVG`,
+              `Photoshop`,
+              `MailChimp`,
+              `FIGMA`,
             ]
   },{
       name: `Sathi Roy`,
@@ -435,10 +446,19 @@ export default class App extends Component {
               `build`
     ],
       tasks: [
-              `Custom built Shopify website`,`Graphic design & touchups`,`Email marketing & automation`
+              `Custom built Shopify website`,
+              `Graphic design & touchups`,
+              `Email marketing & automation`
     ],
       technologies: [
-              `Shopify`,`Liquid`,`JS`,`CSS`,`SVG`,`Photoshop`,`MailChimp`,`FIGMA`,
+              `Shopify`,
+              `Liquid`,
+              `JS`,
+              `CSS`,
+              `SVG`,
+              `Photoshop`,
+              `MailChimp`,
+              `FIGMA`,
             ]
   },{
       name: `Bravo Built`,
@@ -459,7 +479,8 @@ export default class App extends Component {
               `Merch/product design`
             ],
       technologies: [
-              `Shopify`,`Liquid`,
+              `Shopify`,
+              `Liquid`,
               `JS`,
               `CSS`,
               `SVG`,
@@ -501,13 +522,23 @@ export default class App extends Component {
       statement: `Workout with elite personal trainers.`,
       work: [
               `contract`,
-              `update`
+              `update`,
             ],
       tasks: [
-              `Custom email: design & marketing`,`Web development, design & troubleshooting`,`Graphic design`
+              `Custom email: design & marketing`,
+              `Web development, design & troubleshooting`,
+              `Graphic design`
     ],
       technologies: [
-              `React`,`Shopify`,`Liquid`,`CSS`,`JS`,`WordPress`,`Photoshop`,`Figma`,`MailChimp`,
+              `React`,
+              `Shopify`,
+              `Liquid`,
+              `CSS`,
+              `JS`,
+              `WordPress`,
+              `Photoshop`,
+              `Figma`,
+              `MailChimp`,
             ]
   },{
       name: `IT After Hours`,
@@ -521,10 +552,14 @@ export default class App extends Component {
               `remodel`
     ],
       tasks: [
-              `Streamline WordPress & resolve bugs`,`Customize CSS code`,`Mobile friendly upgrade`
+              `Streamline WordPress & resolve bugs`,
+              `Customize CSS code`,
+              `Mobile friendly upgrade`
     ],
       technologies: [
-              `WordPress`,`CSS`,`JS`,
+              `WordPress`,
+              `CSS`,
+              `JS`,
             ]
   },{
       name: `HeatSeeker Hot Sauce`,
@@ -539,11 +574,17 @@ export default class App extends Component {
               `upgrade`
             ],
       tasks: [
-              `Re-design Shopify website`,`Streamline content & UX`,
+              `Re-design Shopify website`,
+              `Streamline content & UX`,
               `Add wholesale accounts`
             ],
       technologies: [
-              `Shopify`,`Liquid`,`CSS`,`JS`,`Photoshop`,`Figma`,
+              `Shopify`,
+              `Liquid`,
+              `CSS`,
+              `JS`,
+              `Photoshop`,
+              `Figma`,
             ]
   },{
       name: `La Madre is Watching`,
@@ -558,10 +599,15 @@ export default class App extends Component {
               `maintain`
             ],
       tasks: [
-              `Social media website`,`Shareable photo gallery`,`Graphic design`
+              `Social media website`,
+              `Shareable photo gallery`,
+              `Graphic design`
     ],
       technologies: [
-              `HTML`,`CSS`,`Javascript`,`Photoshop`,
+              `HTML`,
+              `CSS`,
+              `Javascript`,
+              `Photoshop`,
             ]
   }
 ],
